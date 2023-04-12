@@ -9,6 +9,9 @@ from .utils import Util
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
+from rest_framework.response import Response
 
 
 """class RegisterUsers(CreateAPIView):
@@ -26,23 +29,24 @@ class RegisterUser(generics.GenericAPIView):
         user = request.data 
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
-        serializer.save
-        user_data = serializer.validated_data['user']
+        serializer.save()
+        user_data = serializer.data
         user = MyUser.objects.get(email=user_data['email'])
 
-        token, created = Token.objects.get_or_create(user=user).key
+        token, created = Token.objects.get_or_create(user=user_data).key
+
 
 
         current_site = get_current_site(request).domain
         relativeLink=reverse('verify-email')
         
-        absurl = 'http://' + current_site + relativeLink+"?token="+token
+        absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
         Util.send_email(data)
         email_body ='Hi'+user.username+'Use link below to verify your email \n'+absurl
-        data = {'email_body':email_body, 'email_subject':'Verify your email'}
+        data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':user.email}
 
 
-        return Response({'token': token.key}) 
+        return Response(user_data, {'token': token.key}, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
 
