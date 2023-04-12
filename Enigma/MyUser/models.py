@@ -19,9 +19,11 @@ class MyUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email,username, password, **kwargs):
+        
         u = self.create_user(email, username ,password, **kwargs)
-        u.is_admin = True
-        u.is_active = True
+        u.is_staff = True
+        u.is_superuser = True
+
         u.save(using=self._db)
         return u
 
@@ -34,6 +36,7 @@ class MyUser(AbstractBaseUser):
     picture_id = models.IntegerField(blank=False, default=0)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
 
     objects = MyUserManager()
 
@@ -44,9 +47,13 @@ class MyUser(AbstractBaseUser):
     groupID = models.ForeignKey(members, related_name='group_member', on_delete=models.CASCADE)
 
     """
+    def __str__(self):
+        return self.username
 
     def has_perm(self, perm, obj=None):
         return True
 
     def has_module_perms(self, app_label):
         return True
+    def get_is_staff(self):
+        return self.is_staff

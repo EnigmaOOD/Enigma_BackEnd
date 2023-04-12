@@ -33,20 +33,19 @@ class RegisterUser(generics.GenericAPIView):
         user_data = serializer.data
         user = MyUser.objects.get(email=user_data['email'])
 
-        token, created = Token.objects.get_or_create(user=user_data).key
-
+        token, created = Token.objects.get_or_create(user=user)
 
 
         current_site = get_current_site(request).domain
         relativeLink=reverse('verify-email')
         
         absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
-        Util.send_email(data)
         email_body ='Hi'+user.username+'Use link below to verify your email \n'+absurl
-        data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':user.email}
+        data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':[user.email]}
+        Util.send_email(data)
 
 
-        return Response(user_data, {'token': token.key}, status=status.HTTP_201_CREATED)  
+        return Response(user_data, {'token': token}, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
 
