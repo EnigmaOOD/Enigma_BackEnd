@@ -12,6 +12,7 @@ from django.urls import reverse
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
+from rest_framework import status
 
 
 """class RegisterUsers(CreateAPIView):
@@ -42,10 +43,11 @@ class RegisterUser(generics.GenericAPIView):
         absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
         email_body ='Hi'+user.username+'Use link below to verify your email \n'+absurl
         data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':[user.email]}
+        print(data)
         Util.send_email(data)
 
 
-        return Response(user_data, {'token': token}, status=status.HTTP_201_CREATED)  
+        return Response(user_data, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
 
