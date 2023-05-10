@@ -41,15 +41,25 @@ class RegisterUser(generics.GenericAPIView):
         relativeLink=reverse('verify-email')
         
         absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
-        email_body ='Hi'+user.username+'Use link below to verify your email \n'+absurl
+        email_body ='Hi '+user.username+' Use link below to verify your email \n'+absurl
         data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':[user.email]}
         print(data)
+        print("---------------------------------------------------------------------")
         Util.send_email(data)
-
-
+        print("---------------------------------------------------------------------")
         return Response(user_data, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
 
-    def get(self):
-        pass
+    def get(self, request):
+        token = request.query_params.get('token')
+        if token:
+            try:
+                user = Token.objects.get(key=token).user
+                user.is_active = True
+                user.save()
+                return Response({'message': 'Email verified successfully.'}, status=status.HTTP_200_OK)
+            except Token.DoesNotExist:
+                return Response({'error': 'Invalid token.'}, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            return Response({'error': 'Token parameter is missing.'}, status=status.HTTP_400_BAD_REQUEST)
