@@ -15,13 +15,6 @@ from rest_framework.response import Response
 from rest_framework import status
 
 
-"""class RegisterUsers(CreateAPIView):
-    model = get_user_model()
-    permission_classes = [
-        permissions.AllowAny
-    ]
-    serializer_class = MyUserSerializer
-"""
 class RegisterUser(generics.GenericAPIView):
 
     serializer_class = MyUserSerializer

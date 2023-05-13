@@ -23,6 +23,7 @@ class MyUserManager(BaseUserManager):
         u = self.create_user(email, username ,password, **kwargs)
         u.is_staff = True
         u.is_superuser = True
+        u.is_active = True
 
         u.save(using=self._db)
         return u
