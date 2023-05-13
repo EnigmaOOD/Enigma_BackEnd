@@ -78,7 +78,7 @@ class DeleteUser(APIView):
                     Group.objects.get(groupID=group_id).delete()
                 return Response({'message': 'User deleted successfully.'})
             else:
-                return Response({'message': 'The settlement has not been completed'})
+                return Response({'message': 'The settlement has not been completed'}, status=status.HTTP_402_PAYMENT_REQUIRED)
         except MyUser.DoesNotExist:
             return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
         except Group.DoesNotExist:
