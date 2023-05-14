@@ -128,6 +128,103 @@ class UserGroupBuysTest(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(response.data['message'], 'An error occurred.')
 
+
+
+class GetGroupBuysTestCase(APITestCase):
+    def setUp(self):
+        self.user = MyUser.objects.create(email='testuser', password='testpass')
+        self.group = Group.objects.create(name='Test Group')
+        Members.objects.create(userID=self.user, groupID=self.group)
+
+        self.buy1 = buy.objects.create(groupID=self.group, cost=10, added_by=self.user)
+        self.buy2 = buy.objects.create(groupID=self.group, cost=20, added_by=self.user)
+        self.buy3 = buy.objects.create(groupID=self.group, cost=5, added_by=self.user)
+        self.url = '/buy/GetGroupBuys/'
+
+    def test_get_group_buys(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url, {'groupID': self.group.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 3)
+        self.assertEqual(response.data[0]['cost'], 10)
+        self.assertEqual(response.data[1]['cost'], 20)
+        self.assertEqual(response.data[2]['cost'], 5)
+
+    def test_get_group_buys_sorted(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url, {'groupID': self.group.id, 'sort': 'cost'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 3)
+        self.assertEqual(response.data[0]['cost'], 5)
+        self.assertEqual(response.data[1]['cost'], 10)
+        self.assertEqual(response.data[2]['cost'], 20)
+
+
+    def test_get_group_buys_no_buys(self):
+        group = Group.objects.create(name='Empty Group')
+        self.client.force_authenticate(user=self.user)
+        Members.objects.create(userID=self.user, groupID=group)
+        response = self.client.post(self.url, {'groupID': group.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 0)
+
+    def test_get_group_buys_same_cost(self):
+        group = Group.objects.create(name='Same Cost Group')
+        buy1 = buy.objects.create(groupID=group, cost=10, added_by=self.user)
+        buy2 = buy.objects.create(groupID=group, cost=10, added_by=self.user)
+        self.client.force_authenticate(user=self.user)
+        Members.objects.create(userID=self.user, groupID=group)
+        response = self.client.post(self.url, {'groupID': group.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 2)
+
+
+    def test_get_group_buys_same_cost_sorted(self):
+        group = Group.objects.create(name='Same Cost Group')
+        buy1 = buy.objects.create(groupID=group, cost=10, added_by=self.user)
+        buy2 = buy.objects.create(groupID=group, cost=10, added_by=self.user)
+        self.client.force_authenticate(user=self.user)
+        Members.objects.create(userID=self.user, groupID=group)
+        response = self.client.post(self.url, {'groupID': group.id, 'sort': 'cost'})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 2)
+        self.assertEqual(response.data[0]['cost'], 10)
+        self.assertEqual(response.data[0]['id'], buy1.id)
+
+    def test_get_group_buys_large_data_set(self):
+        group = Group.objects.create(name='Large Group')
+        for i in range(100):
+            buy.objects.create(groupID=group, cost=i, added_by=self.user)
+        self.client.force_authenticate(user=self.user)
+        Members.objects.create(userID=self.user, groupID=group)
+        response = self.client.post(self.url, {'groupID': group.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 100)
+        self.assertEqual(response.data[0]['cost'], 0)
+        self.assertEqual(response.data[99]['cost'], 99)
+
+    def test_get_group_buys_unauthenticated(self):
+        response = self.client.post(self.url, {'groupID': self.group.id})
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN) #becuase of permission
+
+    def test_get_group_buys_invalid_group_id(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url, {'groupID': 999}) # 999 is an invalid group ID
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN) #becuase of permission
+
+    def test_get_group_buys_missing_group_id(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url) # Missing groupID parameter
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+
+    def test_get_group_buys_not_member_of_group(self):
+        group = Group.objects.create(name='Test Group')
+        buy.objects.create(groupID=group, cost=1, added_by=self.user)
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url, {'groupID': group.id})
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
 """  
 class CreateBuyViewTest(APITestCase):
     def setUp(self):

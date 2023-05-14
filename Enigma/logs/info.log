@@ -1492,3 +1492,460 @@ WARNING 2023-05-14 14:20:23,875 log 13356 14172 Forbidden: /group/AddUserGroup/
 WARNING 2023-05-14 14:20:23,879 log 13356 14172 Forbidden: /group/AddUserGroup/
 WARNING 2023-05-14 14:20:23,883 log 13356 14172 Forbidden: /group/AddUserGroup/
 WARNING 2023-05-14 14:20:23,913 log 13356 14172 Not Found: /group/AddUserGroup/
+WARNING 2023-05-14 18:40:34,597 log 12240 15556 Not Found: /group/AddUserGroup/
+WARNING 2023-05-14 18:40:34,605 log 12240 15556 Forbidden: /group/AddUserGroup/
+WARNING 2023-05-14 18:40:34,613 log 12240 15556 Forbidden: /group/AddUserGroup/
+WARNING 2023-05-14 18:40:34,645 log 12240 15556 Not Found: /group/AddUserGroup/
+WARNING 2023-05-14 18:40:34,661 log 12240 15556 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 18:40:34,669 log 12240 15556 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-14 18:40:34,677 log 12240 15556 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 18:40:34,677 log 12240 15556 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 18:40:34,685 log 12240 15556 Internal Server Error: /group/GroupInfo/
+WARNING 2023-05-14 18:40:34,685 log 12240 15556 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 18:40:34,701 log 12240 15556 Unauthorized: /group/GroupInfo/
+WARNING 2023-05-14 18:40:34,701 log 12240 15556 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 18:40:34,701 log 12240 15556 Forbidden: /group/GroupInfo/
+ERROR 2023-05-14 18:40:34,709 log 12240 15556 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-14 18:40:34,717 log 12240 15556 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-14 18:40:34,717 log 12240 15556 Not Found: /group/ShowGroups/
+WARNING 2023-05-14 18:40:34,725 log 12240 15556 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-14 18:40:34,733 log 12240 15556 Not Found: /group/ShowGroups/
+ERROR 2023-05-14 18:40:34,749 log 12240 15556 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-14 18:40:34,749 log 12240 15556 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 18:40:34,765 log 12240 15556 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 18:40:34,789 log 12240 15556 Forbidden: /group/ShowMembers/
+ERROR 2023-05-14 18:40:34,869 log 12240 15556 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\Group\views.py", line 25, in post
+    data["emails"] = request.data['emails']
+                     ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'emails'
+WARNING 2023-05-14 18:41:00,151 log 5312 3388 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 18:41:00,159 log 5312 3388 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-14 18:41:00,159 log 5312 3388 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 18:41:00,167 log 5312 3388 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 18:41:00,175 log 5312 3388 Internal Server Error: /group/GroupInfo/
+WARNING 2023-05-14 18:41:00,175 log 5312 3388 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 18:41:00,191 log 5312 3388 Unauthorized: /group/GroupInfo/
+WARNING 2023-05-14 18:41:00,191 log 5312 3388 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 18:41:00,199 log 5312 3388 Forbidden: /group/GroupInfo/
+ERROR 2023-05-14 18:41:00,199 log 5312 3388 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-14 18:41:00,207 log 5312 3388 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-14 18:41:00,207 log 5312 3388 Not Found: /group/ShowGroups/
+WARNING 2023-05-14 18:41:00,215 log 5312 3388 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-14 18:41:00,223 log 5312 3388 Not Found: /group/ShowGroups/
+ERROR 2023-05-14 18:41:00,231 log 5312 3388 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-14 18:41:00,243 log 5312 3388 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 18:41:00,247 log 5312 3388 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 18:41:00,275 log 5312 3388 Forbidden: /group/ShowMembers/
+ERROR 2023-05-14 18:41:15,634 log 6344 10992 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\Group\views.py", line 25, in post
+    data["emails"] = request.data['emails']
+                     ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'emails'
+WARNING 2023-05-14 18:41:52,689 log 10644 15184 Not Found: /group/AddUserGroup/
+WARNING 2023-05-14 18:41:52,697 log 10644 15184 Forbidden: /group/AddUserGroup/
+WARNING 2023-05-14 18:41:52,705 log 10644 15184 Forbidden: /group/AddUserGroup/
+WARNING 2023-05-14 18:41:52,741 log 10644 15184 Not Found: /group/AddUserGroup/
+WARNING 2023-05-14 18:55:36,618 log 6704 1404 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 18:55:36,634 log 6704 1404 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:55:36,666 log 6704 1404 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:55:36,674 log 6704 1404 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:55:36,751 log 6704 1404 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:56:17,344 log 10596 9308 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 18:56:17,360 log 10596 9308 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 18:56:17,376 log 10596 9308 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:56:17,408 log 10596 9308 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:56:17,408 log 10596 9308 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:56:17,472 log 10596 9308 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:04,545 log 5672 17172 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 18:57:04,553 log 5672 17172 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:04,593 log 5672 17172 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:04,601 log 5672 17172 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:04,665 log 5672 17172 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:17,088 log 8240 8872 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 18:57:17,096 log 8240 8872 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:17,136 log 8240 8872 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:17,136 log 8240 8872 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:57:17,208 log 8240 8872 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:59:06,095 log 9896 16936 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 18:59:06,103 log 9896 16936 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:59:06,135 log 9896 16936 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:59:06,143 log 9896 16936 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 18:59:06,207 log 9896 16936 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:00:31,154 log 4976 12800 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:00:31,178 log 4976 12800 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:00:31,187 log 4976 12800 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:00:31,218 log 4976 12800 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:00:31,227 log 4976 12800 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:00:31,290 log 4976 12800 Forbidden: /buy/UserGroupBuys/
+INFO 2023-05-14 19:06:54,710 autoreload 9572 16780 Watching for file changes with StatReloader
+WARNING 2023-05-14 19:07:17,024 log 9572 13076 Bad Request: /auth/token/
+WARNING 2023-05-14 19:07:17,024 basehttp 9572 13076 "POST /auth/token/?access_token=151d1f4eddc4f0c37baa37133170c17ff9d287fb HTTP/1.1" 400 68
+INFO 2023-05-14 19:07:29,603 basehttp 9572 13076 "POST /auth/register/ HTTP/1.1" 201 65
+INFO 2023-05-14 19:07:34,641 basehttp 9572 13076 "POST /auth/token/?access_token=151d1f4eddc4f0c37baa37133170c17ff9d287fb HTTP/1.1" 200 52
+INFO 2023-05-14 19:10:18,482 autoreload 9572 16780 E:\Exe-T8\design\Enigma_BackEnd\Enigma\buy\views.py changed, reloading.
+INFO 2023-05-14 19:10:19,901 autoreload 14540 16992 Watching for file changes with StatReloader
+WARNING 2023-05-14 19:15:13,717 log 5852 13252 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:15:13,736 log 5852 13252 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:15:13,749 log 5852 13252 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:13,813 log 5852 13252 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:13,850 log 5852 13252 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:13,933 log 5852 13252 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:43,767 log 8316 4976 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:15:43,785 log 8316 4976 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:15:43,792 log 8316 4976 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:43,826 log 8316 4976 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:43,834 log 8316 4976 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:15:43,893 log 8316 4976 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:16:22,153 log 9672 5732 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:16:22,173 log 9672 5732 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:16:22,194 log 9672 5732 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:16:22,203 log 9672 5732 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:16:22,236 log 9672 5732 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:16:22,242 log 9672 5732 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:16:22,306 log 9672 5732 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:17,514 log 10884 16852 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:17:17,518 log 10884 16852 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:17:17,535 log 10884 16852 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:17:17,554 log 10884 16852 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:17:17,566 log 10884 16852 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:17,599 log 10884 16852 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:17,604 log 10884 16852 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:17,670 log 10884 16852 Forbidden: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:17:42,257 log 9504 12608 Internal Server Error: /buy/GetGroupBuys/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'groupID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\buy\views.py", line 36, in post
+    perch = buy.objects.filter(groupID=request.data['groupID'])
+                                       ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'groupID'
+WARNING 2023-05-14 19:17:42,289 log 9504 12608 Unauthorized: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:17:42,307 log 9504 12608 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:17:42,317 log 9504 12608 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:42,349 log 9504 12608 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:42,354 log 9504 12608 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:17:42,419 log 9504 12608 Forbidden: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:18:01,267 log 7444 10368 Internal Server Error: /buy/GetGroupBuys/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'groupID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\buy\views.py", line 36, in post
+    perch = buy.objects.filter(groupID=request.data['groupID'])
+                                       ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'groupID'
+WARNING 2023-05-14 19:18:01,292 log 7444 10368 Unauthorized: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:18:01,307 log 7444 10368 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:18:01,318 log 7444 10368 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:01,352 log 7444 10368 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:01,358 log 7444 10368 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:01,422 log 7444 10368 Forbidden: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:18:21,174 log 16276 1340 Internal Server Error: /buy/GetGroupBuys/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'groupID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\buy\views.py", line 36, in post
+    perch = buy.objects.filter(groupID=request.data['groupID'])
+                                       ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'groupID'
+WARNING 2023-05-14 19:18:21,201 log 16276 1340 Unauthorized: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:18:21,217 log 16276 1340 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:18:21,225 log 16276 1340 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:21,260 log 16276 1340 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:21,266 log 16276 1340 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:18:21,330 log 16276 1340 Forbidden: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:19:03,258 log 16256 1844 Internal Server Error: /buy/GetGroupBuys/
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'groupID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Exe-T8\design\Enigma_BackEnd\Enigma\buy\views.py", line 36, in post
+    perch = buy.objects.filter(groupID=request.data['groupID'])
+                                       ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\PASARGAD\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'groupID'
+WARNING 2023-05-14 19:19:03,284 log 16256 1844 Unauthorized: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:19:03,307 log 16256 1844 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:19:03,316 log 16256 1844 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:03,354 log 16256 1844 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:03,359 log 16256 1844 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:03,427 log 16256 1844 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:33,841 log 17268 2736 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:19:33,846 log 17268 2736 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:19:33,865 log 17268 2736 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:19:33,884 log 17268 2736 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:19:33,897 log 17268 2736 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:33,930 log 17268 2736 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:33,934 log 17268 2736 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:19:34,005 log 17268 2736 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:20:00,867 log 2592 10204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:20:00,870 log 2592 10204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:20:00,890 log 2592 10204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:20:00,909 log 2592 10204 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:20:00,920 log 2592 10204 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:20:00,952 log 2592 10204 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:20:00,957 log 2592 10204 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:20:01,023 log 2592 10204 Forbidden: /buy/UserGroupBuys/
+INFO 2023-05-14 19:21:07,038 autoreload 6440 6072 Watching for file changes with StatReloader
+INFO 2023-05-14 19:21:21,126 basehttp 6440 17132 "POST /auth/token/?access_token=151d1f4eddc4f0c37baa37133170c17ff9d287fb HTTP/1.1" 200 52
+INFO 2023-05-14 19:21:46,693 basehttp 6440 17132 "POST /buy/UserGroupBuys/ HTTP/1.1" 200 1849
+INFO 2023-05-14 19:22:20,031 basehttp 6440 17132 "POST /buy/GetGroupBuys/ HTTP/1.1" 200 2684
+WARNING 2023-05-14 19:22:43,936 log 6440 17132 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:22:43,937 basehttp 6440 17132 "POST /buy/GetGroupBuys/ HTTP/1.1" 403 63
+INFO 2023-05-14 19:22:51,625 basehttp 6440 17132 "POST /buy/GetGroupBuys/ HTTP/1.1" 200 2684
+WARNING 2023-05-14 19:22:56,594 log 6440 17132 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:22:56,594 basehttp 6440 17132 "POST /buy/GetGroupBuys/ HTTP/1.1" 403 63
+WARNING 2023-05-14 19:23:20,525 log 13556 17372 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:23:20,529 log 13556 17372 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:23:20,562 log 13556 17372 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:23:20,585 log 13556 17372 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:23:20,594 log 13556 17372 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:23:20,631 log 13556 17372 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:23:20,638 log 13556 17372 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:23:20,703 log 13556 17372 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:26:39,646 log 14192 7200 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:26:39,649 log 14192 7200 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:26:39,674 log 14192 7200 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:26:39,695 log 14192 7200 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:26:39,706 log 14192 7200 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:26:39,739 log 14192 7200 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:26:39,748 log 14192 7200 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:26:39,814 log 14192 7200 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:34,207 log 7844 10884 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:34,211 log 7844 10884 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:34,258 log 7844 10884 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:34,278 log 7844 10884 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:27:34,289 log 7844 10884 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:34,322 log 7844 10884 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:34,327 log 7844 10884 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:34,399 log 7844 10884 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:57,535 log 13264 17204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:57,540 log 13264 17204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:57,584 log 13264 17204 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:27:57,605 log 13264 17204 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:27:57,617 log 13264 17204 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:57,655 log 13264 17204 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:57,662 log 13264 17204 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:27:57,735 log 13264 17204 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:29:26,431 log 16396 17220 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:29:26,435 log 16396 17220 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:29:26,494 log 16396 17220 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:29:26,515 log 16396 17220 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:29:26,525 log 16396 17220 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:29:26,561 log 16396 17220 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:29:26,567 log 16396 17220 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:29:26,630 log 16396 17220 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:07,821 log 15972 3004 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:07,861 log 15972 3004 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:07,866 log 15972 3004 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:07,919 log 15972 3004 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:07,938 log 15972 3004 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:33:07,949 log 15972 3004 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:07,984 log 15972 3004 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:07,988 log 15972 3004 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:08,058 log 15972 3004 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:24,773 log 5420 15652 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:24,945 log 5420 15652 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:24,998 log 5420 15652 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:25,016 log 5420 15652 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:33:25,024 log 5420 15652 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:25,059 log 5420 15652 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:25,067 log 5420 15652 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:25,127 log 5420 15652 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:54,864 log 14736 1588 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:55,035 log 14736 1588 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:55,089 log 14736 1588 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:33:55,107 log 14736 1588 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:33:55,119 log 14736 1588 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:55,151 log 14736 1588 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:55,155 log 14736 1588 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:33:55,220 log 14736 1588 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:35:59,233 log 2056 1116 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:35:59,416 log 2056 1116 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:35:59,483 log 2056 1116 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:35:59,501 log 2056 1116 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:35:59,513 log 2056 1116 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:35:59,548 log 2056 1116 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:35:59,553 log 2056 1116 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:35:59,618 log 2056 1116 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:21,238 log 12796 7212 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:21,410 log 12796 7212 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:21,462 log 12796 7212 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:21,482 log 12796 7212 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:36:21,492 log 12796 7212 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:21,524 log 12796 7212 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:21,528 log 12796 7212 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:21,594 log 12796 7212 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:49,504 log 4180 10388 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:49,679 log 4180 10388 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:49,694 log 4180 10388 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:49,735 log 4180 10388 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-14 19:36:49,754 log 4180 10388 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-14 19:36:49,765 log 4180 10388 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:49,796 log 4180 10388 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:49,802 log 4180 10388 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-14 19:36:49,866 log 4180 10388 Forbidden: /buy/UserGroupBuys/
