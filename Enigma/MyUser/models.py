@@ -1,29 +1,29 @@
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.db import models, IntegrityError
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 from rest_framework.exceptions import ValidationError
 
 
 class MyUserManager(BaseUserManager):
-    def create_user(self, email, username, password=None, **kwargs):
+    def create_user(self, email, name, password=None, **kwargs):
         if not email:
             raise ValueError('Users must have an email address.')
 
         user = self.model(**kwargs)
         email = self.normalize_email(email)
         user.email = email
-        user.username = username
+        user.name = name
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email,username, password, **kwargs):
+    def create_superuser(self, email, name, password, **kwargs):
         
-        u = self.create_user(email, username ,password, **kwargs)
+        u = self.create_user(email, name ,password, **kwargs)
         u.is_staff = True
         u.is_superuser = True
-        u.is_active = True
 
         u.save(using=self._db)
         return u
@@ -33,8 +33,8 @@ class MyUser(AbstractBaseUser):
 
     user_id = models.AutoField(primary_key=True)
     email = models.EmailField(max_length=255, unique=True)
-    username = models.CharField(max_length=255)
-    picture_id = models.IntegerField(blank=False, default=0)
+    name = models.CharField(max_length=255)
+    picture_id = models.IntegerField(blank=False, default=0, validators=[MinValueValidator(0), MaxValueValidator(21)])
     is_active = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
@@ -42,19 +42,20 @@ class MyUser(AbstractBaseUser):
     objects = MyUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'picture_id']
+    REQUIRED_FIELDS = ['name', 'picture_id']
 
     """
     groupID = models.ForeignKey(members, related_name='group_member', on_delete=models.CASCADE)
 
     """
     def __str__(self):
-        return self.username
+        return self.name
 
     def has_perm(self, perm, obj=None):
         return True
 
     def has_module_perms(self, app_label):
         return True
+    
     def get_is_staff(self):
         return self.is_staff

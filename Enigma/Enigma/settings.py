@@ -24,8 +24,9 @@ SECRET_KEY = 'django-insecure-#&t%e9y+z*85#h3!@+r%lhvh%@($-t6vs_pi9ed#$8&)cf^%ck
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+#'fatemehshafiei.pythonanywhere.com'
 ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -37,18 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework', 
+    'rest_framework',
     'rest_framework.authtoken',
     "corsheaders",
     'rest_auth',
-    'allauth', 
+    'allauth',
     'allauth.account',
-    'allauth.socialaccount', 
+    'allauth.socialaccount',
+    'drf_yasg',
     'rest_auth.registration',
     'MyUser.apps.MyuserConfig',
-
+    'buy.apps.BuyConfig',
+    'Group.apps.GroupConfig',
 ]
-#'django.contrib.sites',
+# 'django.contrib.sites',
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -81,6 +84,20 @@ TEMPLATES = [
         },
     },
 ]
+
+# adding "DEFAULT_AUTHENTICATION_CLASSES" 
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':(
+        'rest_framework.authentication.TokenAuthentication',
+        # for browsable api view usage
+        #'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+}
+
 
 WSGI_APPLICATION = 'Enigma.wsgi.application'
 
@@ -146,3 +163,35 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'uioodenigma@zohomail.com'
 EMAIL_HOST_PASSWORD = 'uiood1234'
 DEFAULT_FROM_EMAIL = 'uioodenigma@zohomail.com'
+AUTH_USER_MODEL = 'MyUser.MyUser'
+
+LOGGING ={
+    'version':1,
+    'loggers':{
+        'django':{
+            'handlers':['file','file2'],
+            'level':'DEBUG'
+        }
+    },
+    'handlers':{
+        'file':{
+            'level':'INFO',
+            'class': 'logging.FileHandler',
+            'filename':'./logs/info.log',
+            'formatter':'simpleRe',
+        },
+        'file2':{
+            'level':'ERROR',
+            'class': 'logging.FileHandler',
+            'filename':'./logs/error.log',
+            'formatter':'simpleRe',
+        }
+    },
+    'formatters':{
+        'simpleRe': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        }
+
+    }
+}
