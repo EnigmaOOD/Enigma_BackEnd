@@ -143,3 +143,44 @@ Traceback (most recent call last):
 AttributeError: 'str' object has no attribute 'append'
 ERROR 2023-05-13 18:59:36,912 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 98375
 INFO 2023-05-13 19:00:23,051 autoreload 14068 3132 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Enigma\settings.py changed, reloading.
+INFO 2023-05-14 00:12:17,583 autoreload 13032 2848 Watching for file changes with StatReloader
+INFO 2023-05-14 00:12:25,013 autoreload 13032 2848 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Enigma\settings.py changed, reloading.
+INFO 2023-05-14 00:12:25,949 autoreload 16628 8300 Watching for file changes with StatReloader
+WARNING 2023-05-14 00:31:51,563 log 2652 14600 Not Found: /group/DeleteGroup/
+WARNING 2023-05-14 00:31:51,573 log 2652 14600 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 00:31:51,576 log 2652 14600 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:31:51,578 log 2652 14600 Internal Server Error: /group/GroupInfo/
+WARNING 2023-05-14 00:31:51,581 log 2652 14600 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 00:31:51,587 log 2652 14600 Unauthorized: /group/GroupInfo/
+WARNING 2023-05-14 00:31:51,590 log 2652 14600 Not Found: /group/GroupInfo/
+ERROR 2023-05-14 00:31:51,592 log 2652 14600 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-14 00:31:51,594 log 2652 14600 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-14 00:31:51,596 log 2652 14600 Not Found: /group/ShowGroups/
+WARNING 2023-05-14 00:31:51,603 log 2652 14600 Unauthorized: /group/ShowGroups/
+ERROR 2023-05-14 00:31:51,608 log 2652 14600 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-14 00:31:51,612 log 2652 14600 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:31:51,617 log 2652 14600 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:31:51,627 log 2652 14600 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:31:52,657 log 2652 14600 Bad Request: /auth/token/
+WARNING 2023-05-14 00:31:53,181 log 2652 14600 Bad Request: /auth/token/
+WARNING 2023-05-14 00:31:53,184 log 2652 14600 Bad Request: /auth/register/
+WARNING 2023-05-14 00:31:53,188 log 2652 14600 Bad Request: /auth/register/
+WARNING 2023-05-14 00:32:52,307 log 13468 2160 Not Found: /group/DeleteGroup/
+WARNING 2023-05-14 00:32:52,315 log 13468 2160 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-14 00:32:52,318 log 13468 2160 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:32:52,321 log 13468 2160 Internal Server Error: /group/GroupInfo/
+WARNING 2023-05-14 00:32:52,323 log 13468 2160 Not Found: /group/GroupInfo/
+WARNING 2023-05-14 00:32:52,329 log 13468 2160 Unauthorized: /group/GroupInfo/
+WARNING 2023-05-14 00:32:52,332 log 13468 2160 Not Found: /group/GroupInfo/
+ERROR 2023-05-14 00:32:52,334 log 13468 2160 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-14 00:32:52,336 log 13468 2160 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-14 00:32:52,339 log 13468 2160 Not Found: /group/ShowGroups/
+WARNING 2023-05-14 00:32:52,345 log 13468 2160 Unauthorized: /group/ShowGroups/
+ERROR 2023-05-14 00:32:52,353 log 13468 2160 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-14 00:32:52,359 log 13468 2160 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:32:52,362 log 13468 2160 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:32:52,372 log 13468 2160 Forbidden: /group/ShowMembers/
+WARNING 2023-05-14 00:32:53,435 log 13468 2160 Bad Request: /auth/token/
+WARNING 2023-05-14 00:32:53,925 log 13468 2160 Bad Request: /auth/token/
+WARNING 2023-05-14 00:32:53,927 log 13468 2160 Bad Request: /auth/register/
+WARNING 2023-05-14 00:32:53,929 log 13468 2160 Bad Request: /auth/register/

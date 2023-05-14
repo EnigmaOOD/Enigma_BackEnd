@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import MyUser
-from .serializers import MyUserSerializer, UpdateUserSerializer
+from Group.models import Group, Members
+from buy.models import buyer, consumer
+from .serializers import MyUserSerializer, UpdateUserSerializer, ChangePasswordSerializer
 from django.contrib.auth import get_user_model
 from rest_framework import permissions
 from rest_framework import generics
@@ -11,8 +13,6 @@ from rest_framework.generics import UpdateAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from Group.models import Members, Group
-from buy.models import buy, buyer, consumer 
 
 
 

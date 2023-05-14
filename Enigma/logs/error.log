@@ -124,3 +124,11 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'append'
 ERROR 2023-05-13 18:59:36,912 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 98375
+ERROR 2023-05-14 00:31:51,576 log 2652 14600 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:31:51,578 log 2652 14600 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:31:51,592 log 2652 14600 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-14 00:31:51,608 log 2652 14600 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-14 00:32:52,318 log 13468 2160 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:32:52,321 log 13468 2160 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-14 00:32:52,334 log 13468 2160 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-14 00:32:52,353 log 13468 2160 Internal Server Error: /group/ShowMembers/

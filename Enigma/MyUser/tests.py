@@ -51,8 +51,10 @@ class RegisterAndAuthenticateTest(APITestCase):
 
     def test_should_get_token(self):
         user_info = {
-        "username":"u@u.com",
-        "password":"usER!@123"}
+        "email":"u@u.com",
+        "password":"usER!@123",
+        "name":"Uali",
+        "picture_id" :10}
         
         self.client.post(('/auth/register/'),user_info)
         response = self.client.post(('/auth/token/'), {"username":"u@u.com",
@@ -62,9 +64,10 @@ class RegisterAndAuthenticateTest(APITestCase):
 
     def test_should_not_get_token_invalid_username(self):
         user_info = {
-        "username":"u@u.com",
-        "password":"usER!@123"}
-        
+        "email":"u@u.com",
+        "password":"usER!@123",
+        "name":"Uali",
+        "picture_id" :10}
         self.client.post(('/auth/register/'),user_info)
         response = self.client.post(('/auth/token/'), {"username":"u@a.com",
                                                        "password":'usER!@123'})
@@ -72,8 +75,10 @@ class RegisterAndAuthenticateTest(APITestCase):
 
     def test_should_not_get_token_invalid_password(self):
         user_info = {
-        "username":"u@u.com",
-        "password":"usER!@123"}
+        "email":"u@u.com",
+        "password":"usER!@123",
+        "name":"Uali",
+        "picture_id" :10}
         
         self.client.post(('/auth/register/'),user_info)
         response = self.client.post(('/auth/token/'), {"username":"u@u.com",

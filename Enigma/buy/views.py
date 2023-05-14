@@ -1,7 +1,9 @@
+from tracemalloc import start
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
-from .models import buy, Group, buyer, consumer
+from .models import buy, buyer, consumer
+from Group.models import Group, Members
 from rest_framework import permissions
 from rest_framework.generics import CreateAPIView
 from buy.serializers import BuySerializer, CreateBuySerializer, BuyListSerializer
@@ -21,6 +23,8 @@ class CreateBuyView(CreateAPIView):
         serializer.is_valid(raise_exception=True)
         instance = self.perform_create(serializer)
         instance_serializer = BuyListSerializer(instance)
+        print("this is to check CI/CD")
+
         return Response(instance_serializer.data)
 
 
@@ -42,9 +46,14 @@ class UserGroupBuys(APIView):
             user_id = request.user.user_id
 
             group_id = request.data.get('groupID')
-            if not group_id:
+            group_exists = Group.objects.filter(id=group_id).exists()
+
+            if not group_exists:
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
-                            
+            
+            if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
+                return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
+
                 # Get buys where the user is a buyer
             buyer_buys = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
 
