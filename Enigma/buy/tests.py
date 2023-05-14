@@ -26,11 +26,12 @@ class UserGroupBuysTest(APITestCase):
         self.consumer2 = consumer.objects.create(buy=self.buy1, userID=self.user2, percent=30)
         self.consumer3 = consumer.objects.create(buy=self.buy2, userID=self.user1, percent=100)
 
+        self.url = '/buy/UserGroupBuys/'
+
     def test_user_group_buys(self): #correct / buyer & consumer
         self.client.force_authenticate(user=self.user1)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['buyer_buys']), 1)
         self.assertEqual(len(response.data['consumer_buys']), 2)
@@ -45,9 +46,8 @@ class UserGroupBuysTest(APITestCase):
         buy3 = buy.objects.create(description='Buy3',cost=50,groupID=self.group, added_by=self.user2)
         buyer3 = buyer.objects.create(buy=buy3, userID=user3, percent=50)
         self.client.force_authenticate(user=user3)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['buyer_buys']), 1)
         self.assertEqual(len(response.data['consumer_buys']), 0)
@@ -60,9 +60,8 @@ class UserGroupBuysTest(APITestCase):
         buy4 = buy.objects.create(description='Buy4',cost=20,groupID=self.group, added_by=self.user2)
         consumer4 = consumer.objects.create(buy=buy4, userID=user4, percent=20)
         self.client.force_authenticate(user=user4)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['buyer_buys']), 0)
         self.assertEqual(len(response.data['consumer_buys']), 1)
@@ -70,9 +69,8 @@ class UserGroupBuysTest(APITestCase):
 
     def test_user_group_buys_sort(self):
         self.client.force_authenticate(user=self.user1)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id, 'sort': 'cost'}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['buyer_buys']), 1)
         self.assertEqual(len(response.data['consumer_buys']), 2)
@@ -84,47 +82,42 @@ class UserGroupBuysTest(APITestCase):
         group2 = Group.objects.create(name='Group2')
         user1 = MyUser.objects.create(email='user1@test.com', password='testpass', name='test')
         Members.objects.create(userID=user1, groupID=group2)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': group2.id}
         self.client.force_authenticate(user=user1)
-        response = self.client.post(url, data=data)
+        response = self.client.post(self.url, data=data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['buyer_buys']), 0)
         self.assertEqual(len(response.data['consumer_buys']), 0)
 
     def test_post_with_invalid_group_id(self):
         self.client.force_authenticate(user=self.user1)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': 9999}
-        response = self.client.post(url, data, format='json')
+        response = self.client.post(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(response.data['error'], 'Group ID not provided')
 
     def test_user_group_buys_missing_group_id(self):
         self.client.force_authenticate(user=self.user1)
-        url = '/buy/UserGroupBuys/'
-        response = self.client.post(url, {})
+        response = self.client.post(self.url, {})
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_user_group_buys_not_authenticated(self):
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     def test_user_is_not_member_of_group(self):
         user2 = MyUser.objects.create(email='user2@test.com', password='testpass', name='test')
         self.client.force_authenticate(user=user2)
-        url = '/buy/UserGroupBuys/'
         data = {'groupID': self.group.id}
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
     @mock.patch('buy.views.buy.objects.filter')
     def test_server_error(self, mock_filter):
         mock_filter.side_effect = Exception('Test Exception')
         self.client.force_authenticate(user=self.user1)
-        response = self.client.post('/buy/UserGroupBuys/', {'groupID': self.group.id})
+        response = self.client.post(self.url, {'groupID': self.group.id})
         self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(response.data['message'], 'An error occurred.')
 
