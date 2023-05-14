@@ -3,9 +3,8 @@ from .models import MyUser
 from Group.models import Group, Members
 from buy.models import buyer, consumer
 from .serializers import MyUserSerializer, UpdateUserSerializer
-from rest_framework import permissions
-from rest_framework import generics
-from rest_framework.generics import CreateAPIView
+from rest_framework import permissions, generics
+from rest_framework.exceptions import ValidationError
 from .utils import Util
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
@@ -79,7 +78,11 @@ class EditProfile(UpdateAPIView):
         return self.request.user
 
     def perform_update(self, serializer):
-        serializer.save(user=self.request.user)
+        try:
+            serializer.save(user=self.request.user)
+        except ValidationError as e:
+            return Response({'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.data)
     
 
 class UserInfo(APIView):

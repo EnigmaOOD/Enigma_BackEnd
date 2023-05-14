@@ -223,7 +223,7 @@ class ShowMembersTests(APITestCase):
             self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
             self.assertEqual(response.data, {'Error': 'Test Exception'})
 
-class TestCreateGroup(TestCase):
+class CreateGroupTest(TestCase):
 
     def setUp(self):
         self.user1 = MyUser.objects.create(email='test1@example.com', password='test1', name='test1', picture_id=1)
@@ -416,7 +416,7 @@ class TestCreateGroup(TestCase):
 
     # اگر می خواین ارور ایمیل نامعتبر تغییر کند بگویید
 
-class AddUserGroupTestCase(TestCase):
+class AddUserGroupTest(TestCase):
 
     def setUp(self):
         self.client = APIClient()
