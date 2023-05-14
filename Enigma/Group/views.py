@@ -100,8 +100,14 @@ class GroupInfo(APIView):
 
     def post(self, request):
         try:
+            user_id = request.user.user_id
             group_id = request.data.get('groupID')
             group = Group.objects.get(id=group_id)
+
+            if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
+                return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
+
+
             serializer = GroupSerializer(group)
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Group.DoesNotExist:
@@ -122,8 +128,6 @@ class DeleteGroup(APIView):
             group = Group.objects.get(id=group_id)
             group.delete()
             return Response({'message': 'Group deleted successfully.'}, status=status.HTTP_200_OK)
-        except Group.DoesNotExist:
-            return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
         except:
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
