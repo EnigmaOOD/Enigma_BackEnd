@@ -1,12 +1,13 @@
 from asyncio.windows_events import NULL
 from queue import Empty
 from rest_framework.response import Response
-from Group.models import Group, Members
-from buy.models import buyer, consumer
-from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
+from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
 from rest_framework.views import APIView
 from rest_framework import status
+from Group.models import Group, Members
+from buy.models import buyer, consumer
+from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from MyUser.models import MyUser
 from .permissions import IsGroupUser
 
@@ -36,17 +37,28 @@ class AddUserGroup(APIView):
             data = data.data
         serializer_data = MemberSerializer(data=data)
         if serializer_data.is_valid():
-            for emailUser in data['emails']:
+            emails = data.get('emails', [])
+            group_id = data.get('groupID')
+            try:
+                group = Group.objects.get(id=group_id)
+            except Group.DoesNotExist:
+                return Response({'message': 'group not found.'}, status=status.HTTP_404_NOT_FOUND)
+            for emailUser in emails:
                 try:
                     user = MyUser.objects.get(email=emailUser)
-                    group = Group.objects.get(id=data['groupID'])
-                    member = Members(groupID=group, userID=user)
-                    member.save()
+                    if not Members.objects.filter(groupID=group, userID=user).exists():
+                        member = Members(groupID=group, userID=user)
+                        member.save()
                 except MyUser.DoesNotExist:
                     return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
 
             return Response(status=status.HTTP_200_OK)
         return Response(serializer_data.errors)
+    
+    def handle_exception(self, exc):
+        if isinstance(exc, PermissionDenied):
+            return Response({'message': str(exc)}, status=status.HTTP_403_FORBIDDEN)
+        return super().handle_exception(exc)
 
 
 class ShowGroups(APIView):
