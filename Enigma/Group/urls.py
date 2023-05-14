@@ -2,7 +2,7 @@ from django.urls import path
 from Group import views
 from django.urls import path, re_path
 from .views import CreateGroup, DeleteGroup, AddUserGroup, AmountofDebtandCredit
-
+#just simple comment
 app_name = 'Group'
 urlpatterns = [
 
