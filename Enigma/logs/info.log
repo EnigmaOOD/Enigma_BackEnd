@@ -1,0 +1,145 @@
+INFO 2023-05-13 18:49:04,915 autoreload 5080 492 Watching for file changes with StatReloader
+INFO 2023-05-13 18:52:57,793 autoreload 14068 3132 Watching for file changes with StatReloader
+WARNING 2023-05-13 18:53:20,871 log 14068 8360 Not Found: /
+WARNING 2023-05-13 18:53:20,871 basehttp 14068 8360 "GET / HTTP/1.1" 404 2374
+WARNING 2023-05-13 18:53:20,938 log 14068 8360 Not Found: /favicon.ico
+INFO 2023-05-13 18:53:20,939 basehttp 14068 8360 - Broken pipe from ('127.0.0.1', 59487)
+INFO 2023-05-13 18:54:04,296 basehttp 14068 8716 "GET /auth/register HTTP/1.1" 301 0
+WARNING 2023-05-13 18:54:04,470 log 14068 8716 Method Not Allowed: /auth/register/
+WARNING 2023-05-13 18:54:04,471 basehttp 14068 8716 "GET /auth/register/ HTTP/1.1" 405 8050
+INFO 2023-05-13 18:54:04,704 basehttp 14068 2028 - Broken pipe from ('127.0.0.1', 60362)
+INFO 2023-05-13 18:54:04,740 basehttp 14068 7120 - Broken pipe from ('127.0.0.1', 60364)
+INFO 2023-05-13 18:54:04,745 basehttp 14068 8716 - Broken pipe from ('127.0.0.1', 60358)
+INFO 2023-05-13 18:54:04,756 basehttp 14068 2276 - Broken pipe from ('127.0.0.1', 60366)
+INFO 2023-05-13 18:54:04,786 basehttp 14068 9592 - Broken pipe from ('127.0.0.1', 60363)
+WARNING 2023-05-13 18:54:26,709 log 14068 3504 Bad Request: /auth/register/
+WARNING 2023-05-13 18:54:26,710 basehttp 14068 3504 "POST /auth/register/ HTTP/1.1" 400 8163
+INFO 2023-05-13 18:55:16,605 basehttp 14068 3504 "POST /auth/register/ HTTP/1.1" 201 8231
+INFO 2023-05-13 18:56:17,049 basehttp 14068 8500 "POST /auth/token/ HTTP/1.1" 200 52
+ERROR 2023-05-13 18:58:37,213 log 14068 4572 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'emails'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py", line 24, in post
+    data["emails"] = request.data['emails']
+                     ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'emails'
+ERROR 2023-05-13 18:58:37,216 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 106419
+ERROR 2023-05-13 18:59:26,194 log 14068 4572 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py", line 25, in post
+    data["emails"].append(str(self.request.user.email))
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+ERROR 2023-05-13 18:59:26,195 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 98367
+ERROR 2023-05-13 18:59:32,256 log 14068 4572 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py", line 25, in post
+    data["emails"].append(str(self.request.user.email))
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+ERROR 2023-05-13 18:59:32,258 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 98402
+ERROR 2023-05-13 18:59:36,911 log 14068 4572 Internal Server Error: /group/CreateGroup/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py", line 25, in post
+    data["emails"].append(str(self.request.user.email))
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'
+ERROR 2023-05-13 18:59:36,912 basehttp 14068 4572 "POST /group/CreateGroup/ HTTP/1.1" 500 98375
+INFO 2023-05-13 19:00:23,051 autoreload 14068 3132 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Enigma\settings.py changed, reloading.
