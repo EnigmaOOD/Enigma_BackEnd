@@ -42,7 +42,12 @@ class DeleteGroupTests(APITestCase):
             mock_get.side_effect = Exception('Something went wrong')
             response = self.client.post(self.url, data)
             self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
-    
+
+    def test_user_info_put_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
 class GroupInfoTest(APITestCase):
     def setUp(self):
         self.user1 = MyUser.objects.create(email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
@@ -96,6 +101,10 @@ class GroupInfoTest(APITestCase):
         response = self.client.post(self.url, {'groupID': 'invalid'})
         self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+    def test_user_info_put_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 class ShowGroupsTestCase(APITestCase):
     
@@ -165,7 +174,12 @@ class ShowGroupsTestCase(APITestCase):
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertIn('Error', response.data)
-        
+
+    def test_user_info_put_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
 class ShowMembersTests(APITestCase):
     def setUp(self):
         self.group = Group.objects.create(name='Test Group', currency='USD')
@@ -218,3 +232,8 @@ class ShowMembersTests(APITestCase):
             response = self.client.post(self.url, {'groupID': self.group.id})
             self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
             self.assertEqual(response.data, {'Error': 'Test Exception'})
+
+    def test_user_info_put_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
