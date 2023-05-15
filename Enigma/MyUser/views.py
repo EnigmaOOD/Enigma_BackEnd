@@ -1,3 +1,4 @@
+from urllib import response
 from django.shortcuts import render
 from .models import MyUser
 from Group.models import Group, Members
@@ -50,6 +51,9 @@ class UserInfo(APIView):
         try:
             
             user = self.request.user
+            if not MyUser.objects.filter(pk=user.pk).exists():
+                return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+                
             user_info = {
                 'user_id': user.user_id,
                 'email': user.email,
@@ -59,9 +63,8 @@ class UserInfo(APIView):
                 'is_admin': user.is_admin,
                 'is_staff': user.is_staff,
             }
+
             return Response({'user_info': user_info})
-        except MyUser.DoesNotExist:
-            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
