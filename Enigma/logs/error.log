@@ -162,3 +162,10 @@ ERROR 2023-05-15 23:50:51,762 log 12840 13424 Internal Server Error: /group/Grou
 ERROR 2023-05-15 23:50:51,781 log 12840 13424 Internal Server Error: /group/ShowGroups/
 ERROR 2023-05-15 23:50:51,804 log 12840 13424 Internal Server Error: /group/ShowMembers/
 ERROR 2023-05-15 23:50:54,786 log 12840 13424 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-16 00:02:08,252 log 14164 11836 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-16 00:02:08,261 log 14164 11836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-16 00:02:08,263 log 14164 11836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-16 00:02:08,283 log 14164 11836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-16 00:02:08,304 log 14164 11836 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-16 00:02:11,250 log 14164 11836 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-16 00:02:11,468 log 14164 11836 Internal Server Error: /buy/UserGroupBuys/

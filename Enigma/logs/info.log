@@ -465,3 +465,43 @@ ERROR 2023-05-15 23:50:54,786 log 12840 13424 Internal Server Error: /buy/UserGr
 WARNING 2023-05-15 23:50:54,807 log 12840 13424 Bad Request: /buy/UserGroupBuys/
 WARNING 2023-05-15 23:50:54,811 log 12840 13424 Unauthorized: /buy/UserGroupBuys/
 WARNING 2023-05-15 23:50:54,852 log 12840 13424 Forbidden: /buy/UserGroupBuys/
+WARNING 2023-05-16 00:02:08,248 log 14164 11836 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-16 00:02:08,252 log 14164 11836 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-16 00:02:08,254 log 14164 11836 Forbidden: /group/DeleteGroup/
+WARNING 2023-05-16 00:02:08,257 log 14164 11836 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-16 00:02:08,261 log 14164 11836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-16 00:02:08,263 log 14164 11836 Internal Server Error: /group/GroupInfo/
+WARNING 2023-05-16 00:02:08,267 log 14164 11836 Not Found: /group/GroupInfo/
+WARNING 2023-05-16 00:02:08,272 log 14164 11836 Unauthorized: /group/GroupInfo/
+WARNING 2023-05-16 00:02:08,275 log 14164 11836 Not Found: /group/GroupInfo/
+WARNING 2023-05-16 00:02:08,277 log 14164 11836 Method Not Allowed: /group/GroupInfo/
+WARNING 2023-05-16 00:02:08,281 log 14164 11836 Forbidden: /group/GroupInfo/
+ERROR 2023-05-16 00:02:08,283 log 14164 11836 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-16 00:02:08,285 log 14164 11836 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-16 00:02:08,287 log 14164 11836 Not Found: /group/ShowGroups/
+WARNING 2023-05-16 00:02:08,292 log 14164 11836 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-16 00:02:08,295 log 14164 11836 Not Found: /group/ShowGroups/
+WARNING 2023-05-16 00:02:08,300 log 14164 11836 Method Not Allowed: /group/ShowGroups/
+ERROR 2023-05-16 00:02:08,304 log 14164 11836 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-16 00:02:08,309 log 14164 11836 Forbidden: /group/ShowMembers/
+WARNING 2023-05-16 00:02:08,313 log 14164 11836 Forbidden: /group/ShowMembers/
+WARNING 2023-05-16 00:02:08,328 log 14164 11836 Forbidden: /group/ShowMembers/
+WARNING 2023-05-16 00:02:08,331 log 14164 11836 Forbidden: /group/ShowMembers/
+WARNING 2023-05-16 00:02:09,955 log 14164 11836 Bad Request: /auth/token/
+WARNING 2023-05-16 00:02:10,475 log 14164 11836 Bad Request: /auth/token/
+WARNING 2023-05-16 00:02:10,991 log 14164 11836 Bad Request: /auth/token/
+WARNING 2023-05-16 00:02:10,993 log 14164 11836 Bad Request: /auth/register/
+WARNING 2023-05-16 00:02:10,995 log 14164 11836 Bad Request: /auth/register/
+ERROR 2023-05-16 00:02:11,250 log 14164 11836 Internal Server Error: /auth/UserInfo/
+WARNING 2023-05-16 00:02:11,261 log 14164 11836 Not Found: /auth/UserInfo/
+WARNING 2023-05-16 00:02:11,262 log 14164 11836 Method Not Allowed: /auth/UserInfo/
+WARNING 2023-05-16 00:02:11,267 log 14164 11836 Unauthorized: /auth/UserInfo/
+WARNING 2023-05-16 00:02:11,282 log 14164 11836 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-16 00:02:11,419 log 14164 11836 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-16 00:02:11,427 log 14164 11836 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-16 00:02:11,452 log 14164 11836 Forbidden: /buy/GetGroupBuys/
+WARNING 2023-05-16 00:02:11,463 log 14164 11836 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-16 00:02:11,468 log 14164 11836 Internal Server Error: /buy/UserGroupBuys/
+WARNING 2023-05-16 00:02:11,488 log 14164 11836 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-16 00:02:11,492 log 14164 11836 Unauthorized: /buy/UserGroupBuys/
+WARNING 2023-05-16 00:02:11,531 log 14164 11836 Forbidden: /buy/UserGroupBuys/
