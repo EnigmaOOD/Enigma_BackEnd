@@ -137,3 +137,28 @@ Traceback (most recent call last):
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
 ERROR 2023-05-15 23:31:38,367 basehttp 6408 17072 "POST /auth/register/ HTTP/1.1" 500 140705
+ERROR 2023-05-15 23:40:54,603 log 16776 14204 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-15 23:40:54,603 log 16776 14204 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:40:54,603 log 16776 14204 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:40:54,634 log 16776 14204 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-15 23:40:54,650 log 16776 14204 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-15 23:40:57,548 log 16776 14204 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-15 23:40:57,771 log 16776 14204 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-15 23:41:42,415 log 8692 4968 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-15 23:41:42,415 log 8692 4968 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:41:42,415 log 8692 4968 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:41:42,430 log 8692 4968 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-15 23:41:42,462 log 8692 4968 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-15 23:41:45,339 log 8692 4968 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-15 23:50:00,785 log 11596 7124 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-15 23:50:00,798 log 11596 7124 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:50:00,800 log 11596 7124 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:50:00,825 log 11596 7124 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-15 23:50:00,851 log 11596 7124 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-15 23:50:04,193 log 11596 7124 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-15 23:50:51,749 log 12840 13424 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-15 23:50:51,759 log 12840 13424 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:50:51,762 log 12840 13424 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-15 23:50:51,781 log 12840 13424 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-15 23:50:51,804 log 12840 13424 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-15 23:50:54,786 log 12840 13424 Internal Server Error: /buy/UserGroupBuys/
