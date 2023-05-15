@@ -44,10 +44,7 @@ class RegisterUser(generics.GenericAPIView):
         absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
         email_body ='Hi '+user.name+' Use link below to verify your email \n'+absurl
         data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':[user.email]}
-        print(data)
-        print("---------------------------------------------------------------------")
         Util.send_email(data)
-        print("---------------------------------------------------------------------")
         return Response(user_data, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):

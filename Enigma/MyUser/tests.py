@@ -2,6 +2,11 @@ from rest_framework.test import APITestCase
 from rest_framework import status
 from MyUser.models import MyUser
 from unittest.mock import patch
+from rest_framework.test import APITestCase, APIClient
+from rest_framework.authtoken.models import Token
+from django.contrib.sites.shortcuts import get_current_site
+from django.urls import reverse
+
 
 class RegisterAndAuthenticateTest(APITestCase):
 
@@ -84,6 +89,44 @@ class RegisterAndAuthenticateTest(APITestCase):
         response = self.client.post(('/auth/token/'), {"username":"u@u.com",
                                                        "password":'usER!@12'})
         self.assertEqual(response.status_code, 400)
+
+class VerifyEmailTestCase(APITestCase):
+
+    def setUp(self):
+        self.client = APIClient()
+        self.user = MyUser.objects.create(email='testuser@test.local', password='testpass',  name='test', picture_id=4)
+        self.token, self.created = Token.objects.get_or_create(user=self.user)
+        self.verify_email_url = reverse('verify-email')
+
+    def test_verify_email_ok(self):
+        user = self.user
+
+        # Build the URL for verifying the email with the token
+        
+        url = f'{self.verify_email_url}?token={self.token}'
+        # Send a GET request to the verification URL
+        response = self.client.get(url)
+
+        # Assert that the response status code is 200 (OK)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        # Retrieve the user from the database and assert that it is now active
+        self.user.refresh_from_db()
+        self.assertTrue(user.is_active)
+
+    def test_verify_email_wrong_token(self):
+
+        token = "Wrong"
+
+        url = f'{self.verify_email_url}?token={token}'
+        # Send a GET request to the verification URL
+        response = self.client.get(url)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.user.refresh_from_db()
+        self.assertFalse(self.user.is_active)
+
+
 
 
 class UserInfoTestCase(APITestCase):
