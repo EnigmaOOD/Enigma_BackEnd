@@ -256,3 +256,53 @@ Traceback (most recent call last):
 ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
 ERROR 2023-05-15 23:31:38,367 basehttp 6408 17072 "POST /auth/register/ HTTP/1.1" 500 140705
 INFO 2023-05-15 23:32:06,162 basehttp 6408 7784 "GET /admin/MyUser/myuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 23:33:54,853 autoreload 9432 6116 Watching for file changes with StatReloader
+INFO 2023-05-15 23:33:55,388 basehttp 9432 9396 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-15 23:33:55,419 basehttp 9432 9396 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:34:02,046 basehttp 9432 9396 "POST /admin/MyUser/myuser/ HTTP/1.1" 200 7639
+INFO 2023-05-15 23:34:03,276 basehttp 9432 9396 "POST /admin/MyUser/myuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 23:34:03,326 basehttp 9432 9396 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8753
+INFO 2023-05-15 23:34:03,357 basehttp 9432 9396 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:34:13,708 basehttp 9432 9396 "POST /auth/register/ HTTP/1.1" 201 8220
+WARNING 2023-05-15 23:34:49,548 log 9432 9396 Unauthorized: /auth/verify-email/
+WARNING 2023-05-15 23:34:49,548 basehttp 9432 9396 "GET /auth/verify-email/?token=0734e17e3b77cc7eaaefc5ca932edd35e3950ea0 HTTP/1.1" 401 5309
+INFO 2023-05-15 23:34:49,782 basehttp 9432 9396 - Broken pipe from ('127.0.0.1', 50083)
+INFO 2023-05-15 23:34:49,820 basehttp 9432 7564 - Broken pipe from ('127.0.0.1', 50565)
+INFO 2023-05-15 23:34:49,843 basehttp 9432 7720 - Broken pipe from ('127.0.0.1', 50564)
+INFO 2023-05-15 23:35:39,634 autoreload 9432 6116 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-15 23:35:40,600 autoreload 12176 7780 Watching for file changes with StatReloader
+INFO 2023-05-15 23:35:43,987 basehttp 12176 6100 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-15 23:35:44,025 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:35:45,912 basehttp 12176 6100 "GET /admin/MyUser/myuser/16/change/ HTTP/1.1" 200 11906
+INFO 2023-05-15 23:35:45,944 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:35:51,991 basehttp 12176 6100 "GET /admin/MyUser/myuser/16/delete/ HTTP/1.1" 200 7516
+INFO 2023-05-15 23:35:53,214 basehttp 12176 6100 "POST /admin/MyUser/myuser/16/delete/ HTTP/1.1" 302 0
+INFO 2023-05-15 23:35:53,225 basehttp 12176 6100 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8781
+INFO 2023-05-15 23:35:53,257 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:36:09,263 basehttp 12176 6100 "POST /auth/register/ HTTP/1.1" 201 8220
+INFO 2023-05-15 23:36:40,687 basehttp 12176 6100 "GET /auth/verify-email/?token=1127cbb6d9071526bd3c9f40be600da740bb5392 HTTP/1.1" 200 5537
+INFO 2023-05-15 23:36:54,955 basehttp 12176 6100 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-15 23:36:54,986 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:36:56,103 basehttp 12176 6100 "GET /admin/MyUser/myuser/17/change/ HTTP/1.1" 200 11906
+INFO 2023-05-15 23:36:56,134 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:37:15,894 basehttp 12176 6100 "POST /auth/register/ HTTP/1.1" 201 8227
+INFO 2023-05-15 23:37:16,495 basehttp 12176 10880 "GET /auth/verify-email/?token=1127cbb6d9071526bd3c9f40be600da740bb5392 HTTP/1.1" 200 5537
+INFO 2023-05-15 23:37:25,056 basehttp 12176 6100 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 9053
+INFO 2023-05-15 23:37:26,890 basehttp 12176 6100 "GET /admin/MyUser/myuser/18/change/ HTTP/1.1" 200 11915
+INFO 2023-05-15 23:37:26,911 basehttp 12176 10880 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:38:03,949 autoreload 12176 7780 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\models.py changed, reloading.
+INFO 2023-05-15 23:38:04,854 autoreload 6852 11168 Watching for file changes with StatReloader
+INFO 2023-05-15 23:38:08,578 basehttp 6852 10752 "GET /admin/MyUser/myuser/18/delete/ HTTP/1.1" 200 7522
+INFO 2023-05-15 23:38:09,708 basehttp 6852 10752 "POST /admin/MyUser/myuser/18/delete/ HTTP/1.1" 302 0
+INFO 2023-05-15 23:38:09,734 basehttp 6852 10752 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 9001
+INFO 2023-05-15 23:38:09,765 basehttp 6852 10752 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:38:26,322 basehttp 6852 10752 "POST /auth/register/ HTTP/1.1" 201 8227
+INFO 2023-05-15 23:39:14,655 basehttp 6852 10752 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 9053
+INFO 2023-05-15 23:39:14,703 basehttp 6852 10752 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:39:16,152 basehttp 6852 10752 "GET /admin/MyUser/myuser/19/change/ HTTP/1.1" 200 11907
+INFO 2023-05-15 23:39:16,177 basehttp 6852 8460 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-15 23:39:23,711 basehttp 6852 10056 "GET /auth/verify-email/?token=7d66f8ba6f5c26079aebd883c55d39bf4820ae92 HTTP/1.1" 200 5537
+WARNING 2023-05-15 23:39:24,110 log 6852 10056 Not Found: /favicon.ico
+WARNING 2023-05-15 23:39:24,110 basehttp 6852 10056 "GET /favicon.ico HTTP/1.1" 404 2425
+WARNING 2023-05-15 23:39:30,965 log 6852 10056 Bad Request: /auth/verify-email/
+WARNING 2023-05-15 23:39:30,965 basehttp 6852 10056 "GET /auth/verify-email/?token=7d66f8ba6f5c26079aebd883c55d9bf4820ae92 HTTP/1.1" 400 5525

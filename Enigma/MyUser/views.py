@@ -51,6 +51,7 @@ class RegisterUser(generics.GenericAPIView):
         return Response(user_data, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         token = request.query_params.get('token')
