@@ -17,8 +17,7 @@ class RegisterAndAuthenticateTest(APITestCase):
         "picture_id" :10}
         
         self.client.post(('/auth/register/'),user_info)
-        response = self.client.post(('/auth/token/'), {"username":"u@u.com",
-                                                       "password":123})
+        response = self.client.post(('/auth/token/'), {"username":"u@u.com","password":123})
 
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + response.data['token'])
 
@@ -95,6 +94,14 @@ class EditProfileTest(APITestCase):
         self.user = MyUser.objects.create(email='test@example.com', name='test', password='test', picture_id=15)
         self.client.force_authenticate(user=self.user)
         self.url = '/auth/EditProfile/'
+        self.valid_payload = {
+            'name': 'John Doe',
+            'picture_id': 15,
+        }
+    
+    def test_post_without_authentication(self):
+        response = self.client.post(self.url, self.valid_payload)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def test_update_profile_successfully(self):
         data = {
@@ -105,6 +112,11 @@ class EditProfileTest(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['name'], data['name'])
         self.assertEqual(response.data['picture_id'], data['picture_id'])
+    
+    def test_update_profile_non_data(self):
+        response = self.client.put(self.url, data={}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"non_field_errors":["Either name or picture_id must be provided"]})
 
     def test_update_profile_just_name(self):
         data = {'name': 'new name'}
@@ -113,17 +125,12 @@ class EditProfileTest(APITestCase):
         self.assertEqual(response.data['name'], data['name'])
         self.assertEqual(response.data['picture_id'], self.user.picture_id)
 
-    # def test_update_profile_non_data(self):
-    #     response = self.client.put(self.url, data={}, format='json')
-    #     self.assertEqual(response.status_code, status.HTTP_200_OK)
-
     def test_update_profile_just_pictureID(self):
         data = {'picture_id': 10}
         response = self.client.put(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['name'], self.user.name)
         self.assertEqual(response.data['picture_id'], data['picture_id'])
-
 
     def test_update_profile_pictureID_is_nagative(self):
         data = {
@@ -147,21 +154,22 @@ class EditProfileTest(APITestCase):
         self.assertNotEqual(data['name'], self.user.name)
         self.assertNotEqual(data['picture_id'], self.user.picture_id)
     
-    # def test_edit_profile_with_email(self):
-    #     data = {'email': 'test1@example.com'}
-    #     response = self.client.put(self.url, data, format='json')
-    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    def test_edit_profile_with_email_that_is_not_permission(self):
+        data = {'email': 'test1@example.com'}
+        response = self.client.put(self.url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"non_field_errors":["Either name or picture_id must be provided"]})
 
-    # def test_edit_profile_with_password(self):
-    #     data = {'password': 'new'}
-    #     response = self.client.put(self.url, data, format='json')
-    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    def test_edit_profile_with_password(self):
+        data = {'password': 'new'}
+        response = self.client.put(self.url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"non_field_errors":["Either name or picture_id must be provided"]})
 
-    # def test_serializer_validations(self):
-    #     serializer = UpdateUserSerializer(data={})
-    #     print(serializer.is_valid())
-    #     self.assertTrue(serializer.is_valid())
-    #     self.assertEqual(set(serializer.errors.keys()), {'name', 'picture_id'})
+    def test_serializer_validations(self):
+        serializer = UpdateUserSerializer(data={})
+        self.assertFalse(serializer.is_valid())
+        self.assertEqual(set(serializer.errors.keys()), {'non_field_errors'})
 
 class DeleteUser(APITestCase):
     def setUp(self):

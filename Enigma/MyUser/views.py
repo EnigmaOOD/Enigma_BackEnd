@@ -71,18 +71,19 @@ class ChangePasswordView(generics.UpdateAPIView):
 class EditProfile(UpdateAPIView):
     
     users = MyUser.objects.all()
+    permission_classes = [IsAuthenticated]
     serializer_class = UpdateUserSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self):
         return self.request.user
 
     def perform_update(self, serializer):
         try:
+            serializer.is_valid(raise_exception=True)
             serializer.save(user=self.request.user)
         except ValidationError as e:
             return Response({'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
 
 class UserInfo(APIView):
