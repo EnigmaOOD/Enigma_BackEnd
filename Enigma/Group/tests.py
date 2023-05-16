@@ -259,7 +259,7 @@ class CreateGroupTest(TestCase):
         response = self.client.post('/group/CreateGroup/', data)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_create_group(self):
+    def test_create_group_successfully(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 

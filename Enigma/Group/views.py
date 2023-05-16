@@ -22,26 +22,31 @@ class CreateGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
-        logger.info("Request recieved: POST group/CreateGroup")
+        logger.info("Request received: POST group/CreateGroup")
         logger.info("User is authenticated.")
+
         serializer_data = GroupSerializer(data=request.data)
         if serializer_data.is_valid():
             logger.info("Validating group data.")
+
             new_group = serializer_data.save()
             group_id = new_group.id
             data = {}
             data["groupID"] = group_id
             data['emails'] = request.data.get('emails', [])
             data["emails"].append(str(self.request.user.email))
+
             logger.info("Sending request to add users to the group.")
             AddUserGroup.post(self=self, data=data)
             ans = AddUserGroup.post(self=self, data=data)
             if ans.status_code == 404:
-                logger.error('User not found.Removing the newly created group. Group ID: {}'.format(group_id))
+                logger.error(f'User not found.Removing the newly created group. Group ID: {group_id}')
                 Group.objects.last().delete()
                 return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
-            logger.info('Group create successfully. Group ID: {}'.format(group_id))
+            
+            logger.info(f'Group create successfully. Group ID: {group_id}')
             return Response(status=status.HTTP_201_CREATED)
+        
         logger.error('Invalid group data.')
         return Response(serializer_data.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -50,30 +55,46 @@ class AddUserGroup(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
     def post(self, data):
+        logger.info("Request received to add users to a group.: POST group/AddUserGroup")
+        logger.info("User is authenticated.")
+
         if not isinstance(data, dict):
             data = data.data
         serializer_data = MemberSerializer(data=data)
         if serializer_data.is_valid():
+            logger.info("Validating group data.")
+
             emails = data.get('emails', [])
             group_id = data.get('groupID')
             try:
                 group = Group.objects.get(id=group_id)
+                logger.info(f"Found group with ID:{group_id}")
+
             except Group.DoesNotExist:
+                logger.error(f"Group with ID:{group_id} not found.")
                 return Response({'message': 'group not found.'}, status=status.HTTP_404_NOT_FOUND)
+            
             for emailUser in emails:
                 try:
                     user = MyUser.objects.get(email=emailUser)
                     if not Members.objects.filter(groupID=group, userID=user).exists():
                         member = Members(groupID=group, userID=user)
                         member.save()
-                except MyUser.DoesNotExist:
-                    return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
+                    logger.info(f'Add user with email:{emailUser} to the group:{group_id}')
 
+                except MyUser.DoesNotExist:
+                    logger.error(f'User with email:{emailUser} not found.')
+                    return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
+                
+            logger.info(f"Users added to group:{group_id} successfully.")
             return Response(status=status.HTTP_200_OK)
+        
+        logger.error("Invalid member data.")
         return Response(serializer_data.errors)
     
     def handle_exception(self, exc):
         if isinstance(exc, PermissionDenied):
+            logger.error(f"Permission deneid: {str(exc)}")
             return Response({'message': str(exc)}, status=status.HTTP_403_FORBIDDEN)
         return super().handle_exception(exc)
 
@@ -93,16 +114,11 @@ class ShowGroups(APIView):
             if groups_count>0:
                 group_list = [{'id': group.id, 'name': group.name,
                            'currency': group.currency} for group in groups]
-               
-                logger.info('Groups retrieved successfully for User ID : {}'.format(self.request.user.user_id))
+
                 return Response({'groups': group_list})
             else:
-                
-                logger.warning('User does not belong to any groups. User ID: {}'.format(self.request.user.user_id))
                 return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
-            
-            logger.error('An error occurred while retrieving groups for User ID: {}'.format(self.request.user.user_id))
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
@@ -126,7 +142,6 @@ class ShowMembers(APIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
             logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
-            logger.error('Error:'+  str(e))
             logger.error('Error: {}'.format(str(e)))
 
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
