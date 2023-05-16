@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.db import models, IntegrityError
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 from rest_framework.exceptions import ValidationError
 
@@ -34,7 +35,7 @@ class MyUser(AbstractBaseUser):
     user_id = models.AutoField(primary_key=True)
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
-    picture_id = models.IntegerField(blank=False, default=0)
+    picture_id = models.IntegerField(blank=False, default=0, validators=[MinValueValidator(0), MaxValueValidator(21)])
     is_active = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)

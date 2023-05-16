@@ -56,7 +56,19 @@ class ChangePasswordSerializer(serializers.ModelSerializer):
 
         return instance
     
+
 class UpdateUserSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(required=False)
+
     class Meta:
         model = MyUser
         fields = ("name", "picture_id")
+        partial = True
+
+    def validate(self, data):
+        # Check that at least one of 'name' or 'picture_id' is present in request data
+        if 'name' not in data and 'picture_id' not in data:
+            raise serializers.ValidationError('Either name or picture_id must be provided')
+
+        return data
+

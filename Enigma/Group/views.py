@@ -22,11 +22,15 @@ class CreateGroup(APIView):
             group_id = new_group.id
             data = {}
             data["groupID"] = group_id
-            data["emails"] = request.data['emails']
+            data['emails'] = request.data.get('emails', [])
             data["emails"].append(str(self.request.user.email))
             AddUserGroup.post(self=self, data=data)
+            ans = AddUserGroup.post(self=self, data=data)
+            if ans.status_code == 404:
+                Group.objects.last().delete()
+                return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
             return Response(status=status.HTTP_201_CREATED)
-        return Response(serializer_data.errors)
+        return Response(serializer_data.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class AddUserGroup(APIView):

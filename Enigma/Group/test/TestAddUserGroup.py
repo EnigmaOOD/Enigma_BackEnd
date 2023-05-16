@@ -7,7 +7,6 @@ import json
 from ..models import Group, MyUser, Members
 from ..serializers import MemberSerializer
 from ..views import AddUserGroup
-from ..permissions import IsGroupUser
 
 
 class AddUserGroupTestCase(TestCase):

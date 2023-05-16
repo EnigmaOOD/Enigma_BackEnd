@@ -19,8 +19,6 @@ from rest_framework.response import Response
 from rest_framework import status
 
 
-
-
 class RegisterUser(generics.GenericAPIView):
 
     permission_classes = [permissions.AllowAny]
@@ -77,14 +75,19 @@ class ChangePasswordView(generics.UpdateAPIView):
 class EditProfile(UpdateAPIView):
     
     users = MyUser.objects.all()
+    permission_classes = [IsAuthenticated]
     serializer_class = UpdateUserSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
     def get_object(self):
         return self.request.user
 
     def perform_update(self, serializer):
-        serializer.save(user=self.request.user)
+        try:
+            serializer.is_valid(raise_exception=True)
+            serializer.save(user=self.request.user)
+        except ValidationError as e:
+            return Response({'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
 
 class UserInfo(APIView):
@@ -110,33 +113,53 @@ class UserInfo(APIView):
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class DeleteUser(APIView):
+class LeaveGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
         try:
-            user_id = request.data['userID']
             group_id = request.data['groupID']
-            if DebtandCreditforMemberinGroup(user_id, group_id) == 0:
-                Members.objects.get(groupID=group_id, userID=user_id).delete()
+            result = DebtandCreditforMemberinGroup(self.request.user, group_id)
+            if isinstance(result, str):
+                if result == 'Group not found.':
+                     return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
+                if result == 'User not found.':
+                     return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
+                else:
+                     return Response({'message': result}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                
+            if result == 0:
+                Members.objects.get(groupID=group_id, userID=self.request.user).delete()
                 if Members.objects.filter(groupID=group_id).count() == 0:
                     Group.objects.get(groupID=group_id).delete()
-                return Response({'message': 'User deleted successfully.'})
+                return Response({'message': 'User deleted successfully.'}, status=status.HTTP_200_OK)
             else:
                 return Response({'message': 'The settlement has not been completed'}, status=status.HTTP_402_PAYMENT_REQUIRED)
         except MyUser.DoesNotExist:
             return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
         except Group.DoesNotExist:
             return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
-        except:
-            return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as e:
+            return Response({'message': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 def DebtandCreditforMemberinGroup(user_id, group_id):
-    list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-    list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-    sum = 0
-    for buy in list_buyer:
-        sum += buy.percent
-    for buy in list_consumer:
-        sum -= buy.percent
-    return sum
+    try:
+        try:
+            Group.objects.get(groupID = group_id)
+        except Group.DoesNotExist:
+            return 'Group not found.'
+        try:
+            Members.objects.get(groupID = group_id, userID=user_id)
+        except:
+            return 'User not found.'
+        
+        list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        sum = 0
+        for buy in list_buyer:
+            sum += buy.percent
+        for buy in list_consumer:
+            sum -= buy.percent
+        return sum
+    except Exception as e:
+        return str(e)
