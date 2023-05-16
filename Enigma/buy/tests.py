@@ -1,4 +1,3 @@
-from unicodedata import name
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from Group.models import Group, Members

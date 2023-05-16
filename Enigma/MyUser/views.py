@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from .models import MyUser
 from Group.models import Group, Members
 from buy.models import buyer, consumer
@@ -12,12 +11,11 @@ from django.urls import reverse
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.permissions import AllowAny
 from rest_framework.generics import UpdateAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-import logging, traceback
+import logging
 
 logger = logging.getLogger('django')
 

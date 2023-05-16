@@ -1,9 +1,7 @@
 from asyncio.log import logger
 from asyncio.windows_events import NULL
-from datetime import date
 from shutil import ExecError
 from time import strftime
-from unicodedata import name
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
@@ -14,7 +12,7 @@ from buy.models import buyer, consumer
 from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from MyUser.models import MyUser
 from .permissions import IsGroupUser
-import logging, traceback
+import logging
 
 logger = logging.getLogger('django')
 
