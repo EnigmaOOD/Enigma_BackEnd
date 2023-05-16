@@ -396,6 +396,15 @@ class LeaveGroup(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
         self.assertTrue(Members.objects.get(groupID = self.group1.id, userID = self.user1))
 
+    def test_leave_group_internal_server_error(self):
+        # Mock the DebtandCreditforMemberinGroup function to raise an exception
+        with patch('MyUser.views.DebtandCreditforMemberinGroup') as mock_function:
+            mock_function.side_effect = Exception('Internal Server Error')
+            self.client.force_authenticate(user=self.user1)
+            response = self.client.post(self.url, data={'groupID': self.group1.id})
+            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(json.loads(response.content), {'message': 'Internal Server Error'})
+
     def test_post_without_authentication(self):
         self.client.force_authenticate(user=None)
         response = self.client.post(self.url, data={'groupID': 1})

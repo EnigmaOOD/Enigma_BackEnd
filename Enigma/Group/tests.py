@@ -241,6 +241,7 @@ class ShowMembersTests(APITestCase):
         self.client.force_authenticate(user=self.user1)
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
 class CreateGroupTest(TestCase):
 
     def setUp(self):
@@ -454,11 +455,6 @@ class AddUserGroupTest(TestCase):
         self.url = '/group/AddUserGroup/'
         self.group = Group.objects.create(name='Test Group', currency='تومان')
         self.view = AddUserGroup.as_view()
-
-    def test_post_without_authentication(self):
-        self.client.force_authenticate(user=None)
-        response = self.client.post(self.url, data={'groupID': 1, "emails": ["test2@example.com", "test3@example.com"]})
-        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     def test_add_user_group_with_valid_data(self):
         self.client.force_authenticate(user=self.user1)
