@@ -1,9 +1,7 @@
 from asyncio.log import logger
 from asyncio.windows_events import NULL
-from datetime import date
 from shutil import ExecError
 from time import strftime
-from unicodedata import name
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
@@ -14,7 +12,7 @@ from buy.models import buyer, consumer
 from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from MyUser.models import MyUser
 from .permissions import IsGroupUser
-import logging, traceback
+import logging
 
 logger = logging.getLogger('django')
 
@@ -114,6 +112,9 @@ class ShowGroups(APIView):
             if groups_count>0:
                 group_list = [{'id': group.id, 'name': group.name,
                            'currency': group.currency} for group in groups]
+               
+                logger.info('Groups retrieved successfully for User ID : {}'.format(self.request.user.user_id))
+                logger.debug('Number of groups retrieved: {}'.format(groups_count))
 
                 return Response({'groups': group_list})
             else:
@@ -129,6 +130,8 @@ class ShowMembers(APIView):
         try:
             cost=[]
             members = Members.objects.filter(groupID=request.data['groupID'])
+            logger.debug('Number of members retrieved: {}'.format(len(members)))
+
             for member in members:
                 member_id = member.userID.user_id
 

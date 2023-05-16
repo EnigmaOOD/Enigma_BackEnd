@@ -1,14 +1,15 @@
-from tracemalloc import start
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
-from .models import buy, buyer, consumer
+from .models import buy
 from Group.models import Group, Members
 from rest_framework import permissions
 from rest_framework.generics import CreateAPIView
 from buy.serializers import BuySerializer, CreateBuySerializer, BuyListSerializer
 from Group.permissions import IsGroupUser
+import logging
 
+logger = logging.getLogger('django')
 
 class CreateBuyView(CreateAPIView):
     serializer_class = CreateBuySerializer
@@ -23,8 +24,6 @@ class CreateBuyView(CreateAPIView):
         serializer.is_valid(raise_exception=True)
         instance = self.perform_create(serializer)
         instance_serializer = BuyListSerializer(instance)
-        print("this is to check CI/CD")
-
         return Response(instance_serializer.data)
 
 
@@ -32,13 +31,17 @@ class GetGroupBuys(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
     def post(self, request):
-
-        perch = buy.objects.filter(groupID=request.data['groupID'])
-        if 'sort' in request.data:
-            perch = perch.order_by('cost')
-        perchase = BuySerializer(perch, many=True)
-        return Response(perchase.data)
-
+        try:
+            perch = buy.objects.filter(groupID=request.data['groupID'])
+            if 'sort' in request.data:
+                perch = perch.order_by('cost')
+            perchase = BuySerializer(perch, many=True)
+            logger.info('Group buys retrieved successfully. Group ID: {}. Number of buys: {}'.format(request.data['groupID'], len(perchase.data)))
+            return Response(perchase.data)
+        except Exception as e:
+            logger.error('An error occurred while retrieving group buys. Group ID: {}'.format(request.data['groupID']))
+            logger.error('Error: {}'.format(str(e)))
+            return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class UserGroupBuys(APIView):
     def post(self, request):
@@ -49,9 +52,11 @@ class UserGroupBuys(APIView):
             group_exists = Group.objects.filter(id=group_id).exists()
 
             if not group_exists:
+                logger.warning('Group ID not provided. GroupID:{}'.format(group_id))
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
             
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
+                logger.warning('User is not a member of the group. Group ID: {}, User ID: {}'.format(group_id, user_id))
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
                 # Get buys where the user is a buyer
@@ -64,6 +69,9 @@ class UserGroupBuys(APIView):
                 consumer_buys = consumer_buys.order_by('cost')
                 buyer_buys = buyer_buys.order_by('cost')
 
+            logger.debug('Buyer buys count: {}'.format(buyer_buys.count()))
+            logger.debug('Consumer buys count: {}'.format(consumer_buys.count()))
+
             consumer_serializer = BuySerializer(consumer_buys, many=True)
             buyer_serializer = BuySerializer(buyer_buys, many=True)
 
@@ -71,8 +79,12 @@ class UserGroupBuys(APIView):
                     'buyer_buys': buyer_serializer.data,
                     'consumer_buys': consumer_serializer.data
                 }
+
+            logger.info('Group buys retrieved successfully for Group ID: {}, User ID: {}'.format(group_id, user_id))
             return Response(response_data, status=status.HTTP_200_OK)
         except:
+
+            logger.error('An error occurred while retrieving group buys. Group ID: {}, User ID: {}'.format(group_id, user_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     """
     def post(self, request):
