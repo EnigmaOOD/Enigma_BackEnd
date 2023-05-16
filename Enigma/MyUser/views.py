@@ -17,6 +17,9 @@ from rest_framework.generics import UpdateAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+import logging, traceback
+
+logger = logging.getLogger('django')
 
 
 class RegisterUser(generics.GenericAPIView):
@@ -97,6 +100,7 @@ class UserInfo(APIView):
             
             user = self.request.user
             if not MyUser.objects.filter(pk=user.pk).exists():
+                logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
                 
             user_info = {
@@ -109,8 +113,13 @@ class UserInfo(APIView):
                 'is_staff': user.is_staff,
             }
 
+            logger.info('User information retrieved successfully. User ID: {}, Email: {}'.format(user.user_id, user.email))
+            logger.debug('User information: {}'.format(user_info))
+
             return Response({'user_info': user_info})
         except Exception as e:
+            logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+            logger.error('Error: '+ str(e))
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class LeaveGroup(APIView):
