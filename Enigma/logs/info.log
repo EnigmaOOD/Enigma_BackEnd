@@ -2504,3 +2504,147 @@ WARNING 2023-05-15 01:31:20,029 log 7248 11472 Bad Request: /auth/EditProfile/
 WARNING 2023-05-15 01:31:20,032 log 7248 11472 Bad Request: /auth/EditProfile/
 WARNING 2023-05-15 01:37:07,360 log 11400 17552 Bad Request: /auth/EditProfile/
 WARNING 2023-05-15 01:37:07,362 log 11400 17552 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:17:26,779 log 12300 9176 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:17:26,782 log 12300 9176 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:18:28,812 log 17656 18288 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:18:28,814 log 17656 18288 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:18:59,780 log 7680 17848 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:18:59,782 log 7680 17848 Bad Request: /auth/EditProfile/
+ERROR 2023-05-15 08:23:58,748 log 7108 16260 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 81, in perform_update
+    if 'name' not in self.request.user and 'picture_id'not in self.request.user:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'MyUser' is not iterable
+ERROR 2023-05-15 08:23:58,758 log 7108 16260 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 81, in perform_update
+    if 'name' not in self.request.user and 'picture_id'not in self.request.user:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'MyUser' is not iterable
+ERROR 2023-05-15 08:23:58,763 log 7108 16260 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 81, in perform_update
+    if 'name' not in self.request.user and 'picture_id'not in self.request.user:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'MyUser' is not iterable
+WARNING 2023-05-15 08:23:58,767 log 7108 16260 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:23:58,768 log 7108 16260 Bad Request: /auth/EditProfile/
+ERROR 2023-05-15 08:23:58,771 log 7108 16260 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 81, in perform_update
+    if 'name' not in self.request.user and 'picture_id'not in self.request.user:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'MyUser' is not iterable
+WARNING 2023-05-15 08:32:25,993 log 9196 9120 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:32:25,995 log 9196 9120 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:33:38,518 log 17420 6364 Bad Request: /auth/EditProfile/
+WARNING 2023-05-15 08:33:38,521 log 17420 6364 Bad Request: /auth/EditProfile/

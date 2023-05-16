@@ -1,8 +1,10 @@
 import json
-from rest_framework.test import APITestCase
 from django.urls import reverse
+from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
-from .models import MyUser
+from MyUser.models import MyUser
+from Group.models import Group, Members
+from buy.models import buy, buyer, consumer
 from .serializers import UpdateUserSerializer, ChangePasswordSerializer
 
 class RegisterAndAuthenticateTest(APITestCase):
@@ -160,3 +162,19 @@ class EditProfileTest(APITestCase):
     #     print(serializer.is_valid())
     #     self.assertTrue(serializer.is_valid())
     #     self.assertEqual(set(serializer.errors.keys()), {'name', 'picture_id'})
+
+class DeleteUser(APITestCase):
+    def setUp(self):
+        self.client = APIClient()
+        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
+        self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
+        self.url = '/auth/DeleteUser/'
+        self.group = Group.objects.create(name='Test Group', currency='تومان')
+
+    def test_delete_user_from_group_successfully(self):
+        Members.objects.create(userID = self.user1, groupID=self.group)
+        Members.objects.create(userID = self.user2, groupID=self.group)
+        Members.objects.create(userID = self.user3, groupID=self.group)
+
+        buy.objects.create
