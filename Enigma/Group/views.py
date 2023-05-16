@@ -22,20 +22,27 @@ class CreateGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
+        logger.info("Request recieved: POST group/CreateGroup")
+        logger.info("User is authenticated.")
         serializer_data = GroupSerializer(data=request.data)
         if serializer_data.is_valid():
+            logger.info("Validating group data.")
             new_group = serializer_data.save()
             group_id = new_group.id
             data = {}
             data["groupID"] = group_id
             data['emails'] = request.data.get('emails', [])
             data["emails"].append(str(self.request.user.email))
+            logger.info("Sending request to add users to the group.")
             AddUserGroup.post(self=self, data=data)
             ans = AddUserGroup.post(self=self, data=data)
             if ans.status_code == 404:
+                logger.error('User not found.Removing the newly created group. Group ID: {}'.format(group_id))
                 Group.objects.last().delete()
                 return Response({'message': 'user not found.'}, status=status.HTTP_404_NOT_FOUND)
+            logger.info('Group create successfully. Group ID: {}'.format(group_id))
             return Response(status=status.HTTP_201_CREATED)
+        logger.error('Invalid group data.')
         return Response(serializer_data.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
