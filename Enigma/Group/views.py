@@ -88,6 +88,8 @@ class ShowGroups(APIView):
                            'currency': group.currency} for group in groups]
                
                 logger.info('Groups retrieved successfully for User ID : {}'.format(self.request.user.user_id))
+                logger.debug('Number of groups retrieved: {}'.format(groups_count))
+
                 return Response({'groups': group_list})
             else:
                 
@@ -106,6 +108,8 @@ class ShowMembers(APIView):
         try:
             cost=[]
             members = Members.objects.filter(groupID=request.data['groupID'])
+            logger.debug('Number of members retrieved: {}'.format(len(members)))
+
             for member in members:
                 member_id = member.userID.user_id
 
