@@ -230,6 +230,16 @@ class CreateGroupTest(TestCase):
         self.user2 = MyUser.objects.create(email='test2@example.com', password='test2', name='test2', picture_id=2)
         self.user3 = MyUser.objects.create(email='test3@example.com', password='test3', name='test3', picture_id=3)
 
+    def test_post_without_authentication(self):
+        data = {
+            'name': 'Test Group',
+            'currency': 'تومان',
+            'picture_id': 1,
+            'emails': ["test2@example.com","test3@example.com"]
+        }
+        response = self.client.post('/group/CreateGroup/', data)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
     def test_create_group(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
@@ -425,8 +435,6 @@ class AddUserGroupTest(TestCase):
         self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
         self.url = '/group/AddUserGroup/'
         self.group = Group.objects.create(name='Test Group', currency='تومان')
-        # self.data = {'groupID': self.group.id, 'emails': ['test2@example.com', 'test3.example.com']}
-        # self.invalid_data = {'groupID': 'invalid', 'emails': ['invalid']}
         self.view = AddUserGroup.as_view()
 
     def test_add_user_group_with_valid_data(self):
@@ -503,19 +511,6 @@ class AddUserGroupTest(TestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-
-    # def test_add_user_group_with_invalid_serializer_data(self):
-    #     self.client.force_authenticate(user=self.user2)
-    #     Members.objects.create(userID=self.user2, groupID=self.group)
-    #     data = {
-    #         'groupID': self.group.id,
-    #         "emails": ["test1@example.com", "test2@example.com"]
-    #     }
-    #     serializer_data = MemberSerializer(data=data)
-    #     serializer_data.is_valid(raise_exception=True)
-    #     response = self.client.post(self.url, data=serializer_data.data)
-    #     self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-    #     self.assertEqual(response.data, serializer_data._errors)
 
     def test_add_user_group_with_non_data(self):
         response = self.client.post(self.url, {}, format='json')
