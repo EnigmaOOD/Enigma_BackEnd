@@ -107,15 +107,14 @@ class UserInfo(APIView):
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class DeleteUser(APIView):
+class LeaveGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
         try:
-            user_id = request.data['userID']
             group_id = request.data['groupID']
-            if DebtandCreditforMemberinGroup(user_id, group_id) == 0:
-                Members.objects.get(groupID=group_id, userID=user_id).delete()
+            if DebtandCreditforMemberinGroup(self.request.user, group_id) == 0:
+                Members.objects.get(groupID=group_id, userID=self.request.user).delete()
                 if Members.objects.filter(groupID=group_id).count() == 0:
                     Group.objects.get(groupID=group_id).delete()
                 return Response({'message': 'User deleted successfully.'})

@@ -4208,3 +4208,9 @@ ERROR 2023-05-16 07:08:28,893 log 6680 15148 Internal Server Error: /group/ShowM
 WARNING 2023-05-16 07:08:28,898 log 6680 15148 Forbidden: /group/ShowMembers/
 WARNING 2023-05-16 07:08:28,903 log 6680 15148 Forbidden: /group/ShowMembers/
 WARNING 2023-05-16 07:08:28,923 log 6680 15148 Forbidden: /group/ShowMembers/
+WARNING 2023-05-16 07:25:07,124 log 11512 4596 Bad Request: /auth/EditProfile/
+WARNING 2023-05-16 07:25:07,126 log 11512 4596 Bad Request: /auth/EditProfile/
+WARNING 2023-05-16 07:25:07,128 log 11512 4596 Method Not Allowed: /auth/EditProfile/
+WARNING 2023-05-16 07:25:07,134 log 11512 4596 Bad Request: /auth/EditProfile/
+WARNING 2023-05-16 07:25:07,136 log 11512 4596 Bad Request: /auth/EditProfile/
+WARNING 2023-05-16 07:25:07,139 log 11512 4596 Bad Request: /auth/EditProfile/

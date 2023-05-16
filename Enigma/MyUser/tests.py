@@ -177,12 +177,30 @@ class DeleteUser(APITestCase):
         self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
         self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
         self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
+        
+        self.member1 = Members.objects.create(userID = self.user1, groupID=self.group)
+        self.member2 = Members.objects.create(userID = self.user2, groupID=self.group)
+        self.member3 = Members.objects.create(userID = self.user3, groupID=self.group)
+
+        self.buy1 = buy.objects.create(groupID= self.group.id, cost=85000, date= "2023-02-01", picture_id= 1)
+        self.buy1_buyer1 = buyer.objects.create(buy=self.buy1, userID=self.user1, percent=40000)
+        self.buy1_buyer2 = buyer.objects.create(buy=self.buy1, userID=self.user2, percent=45000)
+        self.buy1_consumer1 = consumer.objects.create(buy=self.buy1, userID=self.user1, percent=30000)
+        self.buy1_consumer2 = consumer.objects.create(buy=self.buy1, userID=self.user2, percent=35000)
+        self.buy1_consumer3 = consumer.objects.create(buy=self.buy1, userID=self.user3, percent=20000)
+
+        self.buy2 = buy.objects.create(groupID= self.group.id, cost=400000, date= "2023-02-02", picture_id= 2)
+        self.buy2_buyer1 = buyer.objects.create(buy=self.buy2, userID=self.user1, percent=400000)
+        self.buy2_consumer1 = consumer.objects.create(buy=self.buy2, userID=self.user1, percent=300000)
+        self.buy2_consumer2 = consumer.objects.create(buy=self.buy2, userID=self.user2, percent=100000)
+
+        self.buy3 = buy.objects.create(groupID= self.group.id, cost=90000, date= "2023-02-03", picture_id= 3)
+        self.buy3_buyer1 = buyer.objects.create(buy=self.buy3, userID=self.user2, percent=200000)
+        self.buy3_consumer1 = consumer.objects.create(buy=self.buy3, userID=self.user2, percent=110000)
+        self.buy3_consumer2 = consumer.objects.create(buy=self.buy3, userID=self.user2, percent=90000)
+
         self.url = '/auth/DeleteUser/'
         self.group = Group.objects.create(name='Test Group', currency='تومان')
 
-    def test_delete_user_from_group_successfully(self):
-        Members.objects.create(userID = self.user1, groupID=self.group)
-        Members.objects.create(userID = self.user2, groupID=self.group)
-        Members.objects.create(userID = self.user3, groupID=self.group)
-
-        buy.objects.create
+    # def test_delete_user_from_group_successfully(self):
+        
