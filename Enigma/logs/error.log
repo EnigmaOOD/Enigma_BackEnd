@@ -3153,3 +3153,348 @@ ERROR 2023-05-16 07:08:28,843 log 6680 15148 Internal Server Error: /group/Group
 ERROR 2023-05-16 07:08:28,848 log 6680 15148 Internal Server Error: /group/GroupInfo/
 ERROR 2023-05-16 07:08:28,869 log 6680 15148 Internal Server Error: /group/ShowGroups/
 ERROR 2023-05-16 07:08:28,893 log 6680 15148 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-16 08:50:55,541 log 4276 8272 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 09:18:27,347 log 16252 16140 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 09:49:24,992 log 16864 8056 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 09:53:16,933 log 17216 5992 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 09:57:16,964 log 16168 16148 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 09:59:20,786 log 13608 5692 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\http\response.py", line 131, in __init__
+    self.status_code = int(status)
+                       ^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'DoesNotExist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    return Response({'message': str(e)}, status=e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\response.py", line 30, in __init__
+    super().__init__(None, status=status)
+  File "C:\Python311\Lib\site-packages\django\template\response.py", line 44, in __init__
+    super().__init__("", content_type, status, charset=charset, headers=headers)
+  File "C:\Python311\Lib\site-packages\django\http\response.py", line 371, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Python311\Lib\site-packages\django\http\response.py", line 133, in __init__
+    raise TypeError("HTTP status code must be an integer.")
+TypeError: HTTP status code must be an integer.
+ERROR 2023-05-16 09:59:47,096 log 6156 15036 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    return Response({'message': str(e)}, status=e.status)
+                                                ^^^^^^^^
+AttributeError: 'DoesNotExist' object has no attribute 'status'
+ERROR 2023-05-16 10:02:21,064 log 8444 14288 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 128, in post
+    return Response({'message': str(e)}, status=getattr(e, 'status'))
+                                                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DoesNotExist' object has no attribute 'status'
+ERROR 2023-05-16 10:02:57,460 log 10348 14092 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 10:04:37,988 log 12540 7544 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 10:07:04,294 log 6260 4492 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 130, in post
+    return Response({'message': str(e)}, status=e.status)
+                                                ^^^^^^^^
+AttributeError: 'DoesNotExist' object has no attribute 'status'
+ERROR 2023-05-16 10:09:54,171 log 2552 15340 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 130, in post
+    return Response({'message': str(e)}, status=e.status)
+                                                ^^^^^^^^
+AttributeError: 'DoesNotExist' object has no attribute 'status'
+ERROR 2023-05-16 10:11:46,341 log 16876 17692 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 10:15:03,390 log 6880 13408 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 117, in post
+    Members.objects.get(groupID=group_id, userID=self.request.user).delete()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+Group.models.Members.DoesNotExist: Members matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 128, in post
+    if e.status == 404:
+       ^^^^^^^^
+AttributeError: 'DoesNotExist' object has no attribute 'status'
+ERROR 2023-05-16 10:57:04,887 log 5884 2436 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 10:57:04,931 log 5884 2436 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:02:48,761 log 5004 12500 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:02:48,806 log 5004 12500 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,388 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,402 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,413 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,424 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,435 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:13:12,448 log 7928 15060 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,629 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,642 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,655 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,666 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,678 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:15:16,691 log 6876 16568 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,409 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,421 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,432 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,445 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,459 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:16:53,472 log 8652 8540 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:17:25,535 log 8836 12892 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:18:43,060 log 5584 2104 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:19:32,105 log 14688 13788 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:25:09,224 log 16544 6332 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:26:38,475 log 15452 16212 Internal Server Error: /auth/LeaveGroup/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\permissions.py", line 140, in has_permission
+    return bool(request.user and request.user.is_authenticated)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'is_authenticated'
+ERROR 2023-05-16 11:28:03,703 log 8700 5516 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:28:24,807 log 12192 2280 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:28:52,648 log 8432 13680 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:29:14,518 log 5236 5144 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:29:38,771 log 14288 3244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:30:16,966 log 11456 13556 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:30:46,502 log 15684 8036 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:31:33,193 log 17456 13712 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:41:24,049 log 13232 11744 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:41:51,373 log 11732 11524 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:42:46,678 log 1548 18320 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:50:19,258 log 9044 12444 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:50:47,522 log 6452 11732 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:53:03,011 log 8700 8316 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:56:20,536 log 15492 14688 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:56:59,314 log 12252 9056 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-16 11:57:41,895 log 9060 11172 Internal Server Error: /auth/LeaveGroup/

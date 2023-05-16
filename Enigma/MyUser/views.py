@@ -113,26 +113,47 @@ class LeaveGroup(APIView):
     def post(self, request):
         try:
             group_id = request.data['groupID']
-            if DebtandCreditforMemberinGroup(self.request.user, group_id) == 0:
+            result = DebtandCreditforMemberinGroup(self.request.user, group_id)
+            if isinstance(result, str):
+                if result == 'Group not found.':
+                     return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
+                if result == 'User not found.':
+                     return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
+                else:
+                     return Response({'message': result}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                
+            if result == 0:
                 Members.objects.get(groupID=group_id, userID=self.request.user).delete()
                 if Members.objects.filter(groupID=group_id).count() == 0:
                     Group.objects.get(groupID=group_id).delete()
-                return Response({'message': 'User deleted successfully.'})
+                return Response({'message': 'User deleted successfully.'}, status=status.HTTP_200_OK)
             else:
                 return Response({'message': 'The settlement has not been completed'}, status=status.HTTP_402_PAYMENT_REQUIRED)
         except MyUser.DoesNotExist:
             return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
         except Group.DoesNotExist:
             return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
-        except:
-            return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as e:
+            return Response({'message': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 def DebtandCreditforMemberinGroup(user_id, group_id):
-    list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-    list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-    sum = 0
-    for buy in list_buyer:
-        sum += buy.percent
-    for buy in list_consumer:
-        sum -= buy.percent
-    return sum
+    try:
+        try:
+            Group.objects.get(groupID = group_id)
+        except Group.DoesNotExist:
+            return 'Group not found.'
+        try:
+            Members.objects.get(groupID = group_id, userID=user_id)
+        except:
+            return 'User not found.'
+        
+        list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        sum = 0
+        for buy in list_buyer:
+            sum += buy.percent
+        for buy in list_consumer:
+            sum -= buy.percent
+        return sum
+    except Exception as e:
+        return str(e)
