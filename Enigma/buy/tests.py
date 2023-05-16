@@ -218,6 +218,15 @@ class GetGroupBuysTestCase(APITestCase):
         response = self.client.post(self.url, {'groupID': group.id})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+    @mock.patch('buy.views.buy.objects.filter')
+    def test_server_error(self, mock_filter):
+        mock_filter.side_effect = Exception('Test Exception')
+        self.client.force_authenticate(user=self.user)
+        response = self.client.post(self.url, {'groupID': self.group.id})
+        self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+        self.assertEqual(response.data['message'], 'An error occurred.')
+
+
 """  
 class CreateBuyViewTest(APITestCase):
     def setUp(self):

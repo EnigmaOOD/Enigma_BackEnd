@@ -32,13 +32,17 @@ class GetGroupBuys(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
     def post(self, request):
-
-        perch = buy.objects.filter(groupID=request.data['groupID'])
-        if 'sort' in request.data:
-            perch = perch.order_by('cost')
-        perchase = BuySerializer(perch, many=True)
-        return Response(perchase.data)
-
+        try:
+            perch = buy.objects.filter(groupID=request.data['groupID'])
+            if 'sort' in request.data:
+                perch = perch.order_by('cost')
+            perchase = BuySerializer(perch, many=True)
+            logger.info('Group buys retrieved successfully. Group ID: {}. Number of buys: {}'.format(request.data['groupID'], len(perchase.data)))
+            return Response(perchase.data)
+        except Exception as e:
+            logger.error('An error occurred while retrieving group buys. Group ID: {}'.format(request.data['groupID']))
+            logger.error('Error: {}'.format(str(e)))
+            return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class UserGroupBuys(APIView):
     def post(self, request):
