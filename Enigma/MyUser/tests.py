@@ -200,6 +200,8 @@ class UserInfoTestCase(APITestCase):
         # Check that the view returns a 500 error response with the expected error message
         self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(response.data['error'], 'Something went wrong')
+
+
 class EditProfileTest(APITestCase):
 
     def setUp(self):

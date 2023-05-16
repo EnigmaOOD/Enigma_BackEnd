@@ -1,5 +1,8 @@
+from asyncio.log import logger
 from asyncio.windows_events import NULL
-from queue import Empty
+from datetime import date
+from shutil import ExecError
+from unicodedata import name
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
@@ -10,7 +13,9 @@ from buy.models import buyer, consumer
 from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from MyUser.models import MyUser
 from .permissions import IsGroupUser
+import logging, traceback
 
+logger = logging.getLogger('django')
 
 class CreateGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -121,14 +126,18 @@ class GroupInfo(APIView):
             group = Group.objects.get(id=group_id)
 
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
+                logger.warning('User is not a member of the group. Group ID: {}, User email : {}'.format(group_id, request.user.email))
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
 
             serializer = GroupSerializer(group)
+            logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Group.DoesNotExist:
+            logger.error('Group not found. Group ID: {}'.format(group_id))
             return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
         except:
+            logger.error('An error occurred while retrieving group info. Group ID: {}'.format(group_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
@@ -143,8 +152,11 @@ class DeleteGroup(APIView):
             group_id = request.data.get('groupID')
             group = Group.objects.get(id=group_id)
             group.delete()
+            logger.info('Group deleted successfully. Group ID: {}'.format(group_id))
+            logger.info(request.user.email + " delete the group")
             return Response({'message': 'Group deleted successfully.'}, status=status.HTTP_200_OK)
-        except:
+        except Exception as e :
+            logger.error('An error occurred: {}'.format(str(e)))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
 
