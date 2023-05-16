@@ -931,3 +931,17 @@ WARNING 2023-05-16 14:08:28,612 log 8668 13348 Not Found: /auth/UserInfo/
 WARNING 2023-05-16 14:08:28,613 log 8668 13348 Method Not Allowed: /auth/UserInfo/
 WARNING 2023-05-16 14:08:28,616 log 8668 13348 Unauthorized: /auth/UserInfo/
 WARNING 2023-05-16 14:08:28,624 log 8668 13348 Bad Request: /auth/verify-email/
+INFO 2023-05-16 17:22:53,728 autoreload 7632 10804 Watching for file changes with StatReloader
+INFO 2023-05-16 17:23:30,844 autoreload 7632 10804 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:23:32,480 autoreload 16484 1456 Watching for file changes with StatReloader
+INFO 2023-05-16 17:23:48,397 autoreload 16484 1456 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:23:50,071 autoreload 13788 10108 Watching for file changes with StatReloader
+INFO 2023-05-16 17:24:00,286 autoreload 13788 10108 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:24:02,142 autoreload 11192 10504 Watching for file changes with StatReloader
+INFO 2023-05-16 17:24:20,964 autoreload 13048 8032 Watching for file changes with StatReloader
+INFO 2023-05-16 17:24:37,983 autoreload 13048 8032 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:24:39,724 autoreload 6332 13556 Watching for file changes with StatReloader
+INFO 2023-05-16 17:24:51,116 autoreload 6332 13556 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:24:52,740 autoreload 9252 692 Watching for file changes with StatReloader
+INFO 2023-05-16 17:24:57,834 autoreload 9252 692 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
+INFO 2023-05-16 17:25:00,124 autoreload 8488 7672 Watching for file changes with StatReloader
