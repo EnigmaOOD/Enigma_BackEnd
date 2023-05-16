@@ -2,6 +2,7 @@ from asyncio.log import logger
 from asyncio.windows_events import NULL
 from datetime import date
 from shutil import ExecError
+from time import strftime
 from unicodedata import name
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
@@ -104,15 +105,17 @@ class ShowMembers(APIView):
                 member_id = member.userID.user_id
 
                  # Call dobet function to get cost for this member
-
-
                 cost.append(DebtandCredit(member_id)) 
             serializer = ShowMemberSerializer(members, many=True)
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
-
+           
+            logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
+            logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
+            logger.error('Error: {}'.format(str(e)))
+
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
