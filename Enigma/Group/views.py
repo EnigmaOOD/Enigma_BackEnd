@@ -86,11 +86,16 @@ class ShowGroups(APIView):
             if groups_count>0:
                 group_list = [{'id': group.id, 'name': group.name,
                            'currency': group.currency} for group in groups]
-
+               
+                logger.info('Groups retrieved successfully for User ID : {}'.format(self.request.user.user_id))
                 return Response({'groups': group_list})
             else:
+                
+                logger.warning('User does not belong to any groups. User ID: {}'.format(self.request.user.user_id))
                 return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
+            
+            logger.error('An error occurred while retrieving groups for User ID: {}'.format(self.request.user.user_id))
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
@@ -114,6 +119,7 @@ class ShowMembers(APIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
             logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
+            logger.error('Error:'+  str(e))
             logger.error('Error: {}'.format(str(e)))
 
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
