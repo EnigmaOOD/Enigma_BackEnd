@@ -1,7 +1,5 @@
 from asyncio.log import logger
-from asyncio.windows_events import NULL
-from shutil import ExecError
-from time import strftime
+
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
@@ -129,6 +127,7 @@ class ShowMembers(APIView):
     def post(self, request):
         try:
             cost=[]
+            group_id=request.data['groupID']
             members = Members.objects.filter(groupID=request.data['groupID'])
             logger.debug('Number of members retrieved: {}'.format(len(members)))
 
@@ -136,7 +135,7 @@ class ShowMembers(APIView):
                 member_id = member.userID.user_id
 
                  # Call dobet function to get cost for this member
-                cost.append(DebtandCredit(member_id)) 
+                cost.append(DebtandCreditforMemberinGroup(self.request.user, group_id)) 
             serializer = ShowMemberSerializer(members, many=True)
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
@@ -195,17 +194,41 @@ class DeleteGroup(APIView):
     
 
 
-def DebtandCredit(member_id):
-    list_buyer = buyer.objects.filter(userID=member_id)
-    list_consumer = consumer.objects.filter(userID=member_id)
-    sum = 0
-    for buy in list_buyer:
-        sum += buy.percent
-    for buy in list_consumer:
-        sum -= buy.percent
-    return (sum)
+def DebtandCreditforMemberinGroup(user_id, group_id):
+    try:
+        try:
+            Group.objects.get(groupID = group_id)
+        except Group.DoesNotExist:
+            logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
+            return 'Group not found.'
+        try:
+            Members.objects.get(groupID = group_id, userID=user_id)
+        except:
+            logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
+            return 'User not found.'
+        
+        list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
+        sum = 0
+        for buy in list_buyer:
+            sum += buy.percent
+        for buy in list_consumer:
+            sum -= buy.percent
+        return sum
+    except Exception as e:
+        logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
+        return str(e)
 
 
+
+
+
+
+
+
+
+
+#############################################################################################################################
 
 class AmountofDebtandCredit(APIView):
     permission_classes = [permissions.IsAuthenticated]
