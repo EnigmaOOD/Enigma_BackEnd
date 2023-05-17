@@ -27,15 +27,17 @@ class RegisterUser(generics.GenericAPIView):
     serializer_class = MyUserSerializer
 
     def post(self, request):
+        logger.info("Request received: POST auth/register")
+
         user = request.data 
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
         serializer.save()
+        logger.info("User register successfully.")
+
         user_data = serializer.data
         user = MyUser.objects.get(email=user_data['email'])
-
         token, created = Token.objects.get_or_create(user=user)
-
 
         current_site = get_current_site(request).domain
         relativeLink=reverse('verify-email')
@@ -43,7 +45,10 @@ class RegisterUser(generics.GenericAPIView):
         absurl = 'http://' + current_site + relativeLink+"?token="+str(token)
         email_body ='Hi '+user.name+' Use link below to verify your email \n'+absurl
         data = {'email_body':email_body, 'email_subject':'Verify your email', 'to_email':[user.email]}
+        logger.info(f"Sending verification email to the user.(email_body:{email_body})")
         Util.send_email(data)
+
+        logger.info(f"User registration completed.(email:{user.email}, name:{user.name})")
         return Response(user_data, status=status.HTTP_201_CREATED)  
 
 class VerifyEmail(generics.GenericAPIView):
@@ -131,7 +136,7 @@ class LeaveGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
-        logger.info("Request received to leave group.: PUT auth/LeaveGroup")
+        logger.info("Request received to leave group.: POST auth/LeaveGroup")
         logger.info("User is authenticated.")
 
         try:

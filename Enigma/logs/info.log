@@ -2535,3 +2535,135 @@ INFO 2023-05-17 10:15:24,340 views 13832 14724 User is authenticated.
 ERROR 2023-05-17 10:15:24,341 views 13832 14724 Error: Internal Server Error
 ERROR 2023-05-17 10:15:24,341 log 13832 14724 Internal Server Error: /auth/LeaveGroup/
 WARNING 2023-05-17 10:15:50,436 log 8260 9920 Unauthorized: /auth/LeaveGroup/
+INFO 2023-05-17 10:31:55,440 views 8908 7164 Request received: POST auth/register
+INFO 2023-05-17 10:31:55,714 views 8908 7164 User register successfully.
+INFO 2023-05-17 10:31:55,745 views 8908 7164 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=8c9b8aaea2be03bea48c4740e286b04b426e7256)
+INFO 2023-05-17 10:31:55,756 views 8908 7164 User registration completed.(email:u@u.com)
+WARNING 2023-05-17 10:31:55,997 log 8908 7164 Bad Request: /auth/token/
+INFO 2023-05-17 10:32:27,195 views 13276 6544 Request received: POST auth/register
+WARNING 2023-05-17 10:32:27,197 log 13276 6544 Bad Request: /auth/register/
+INFO 2023-05-17 10:36:25,625 views 14944 15888 Request received: POST auth/register
+WARNING 2023-05-17 10:36:25,627 log 14944 15888 Bad Request: /auth/register/
+INFO 2023-05-17 10:39:10,376 views 7392 14876 Request received: POST auth/register
+WARNING 2023-05-17 10:39:10,379 log 7392 14876 Bad Request: /auth/register/
+INFO 2023-05-17 10:39:59,618 views 11636 1304 Request received: POST auth/register
+WARNING 2023-05-17 10:39:59,621 log 11636 1304 Bad Request: /auth/register/
+INFO 2023-05-17 10:40:22,771 views 8164 16332 Request received: POST auth/register
+WARNING 2023-05-17 10:40:22,773 log 8164 16332 Bad Request: /auth/register/
+INFO 2023-05-17 10:41:08,714 views 9760 15488 Request received: POST auth/register
+INFO 2023-05-17 10:41:08,977 views 9760 15488 User register successfully.
+INFO 2023-05-17 10:41:09,008 views 9760 15488 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=0bddff559ef3631ebfeb233418a00d2540a84692)
+INFO 2023-05-17 10:41:09,017 views 9760 15488 User registration completed.(email:u@u.com)
+INFO 2023-05-17 10:41:52,025 views 16864 1852 Request received: POST auth/register
+INFO 2023-05-17 10:41:52,280 views 16864 1852 User register successfully.
+INFO 2023-05-17 10:41:52,287 views 16864 1852 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=bb1179c24cbafd2e334713010562cf8905e02a14)
+INFO 2023-05-17 10:41:52,322 views 16864 1852 User registration completed.(email:u@u.com)
+WARNING 2023-05-17 10:41:52,561 log 16864 1852 Bad Request: /auth/token/
+INFO 2023-05-17 10:42:20,604 views 12680 13756 Request received: POST auth/register
+INFO 2023-05-17 10:42:20,862 views 12680 13756 User register successfully.
+INFO 2023-05-17 10:42:20,891 views 12680 13756 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=a48ee3d91bf3f198f408b87c59fa578782325928)
+INFO 2023-05-17 10:42:20,904 views 12680 13756 User registration completed.(email:u@u.com)
+WARNING 2023-05-17 10:42:21,144 log 12680 13756 Bad Request: /auth/token/
+INFO 2023-05-17 10:43:04,861 views 4264 14796 Request received: POST auth/register
+INFO 2023-05-17 10:43:05,119 views 4264 14796 User register successfully.
+INFO 2023-05-17 10:43:05,148 views 4264 14796 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=6e2c5dd6f508f685a50b4c4e428c11027542bf45)
+INFO 2023-05-17 10:43:05,157 views 4264 14796 User registration completed.(email:u@u.com)
+WARNING 2023-05-17 10:43:05,396 log 4264 14796 Bad Request: /auth/token/
+INFO 2023-05-17 10:43:17,941 views 6044 5476 Request received: POST auth/register
+INFO 2023-05-17 10:43:18,198 views 6044 5476 User register successfully.
+INFO 2023-05-17 10:43:18,227 views 6044 5476 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=cb47949e7f01db46548769bd0502f7b29601b113)
+INFO 2023-05-17 10:43:18,241 views 6044 5476 User registration completed.(email:u@u.com)
+WARNING 2023-05-17 10:43:18,482 log 6044 5476 Bad Request: /auth/token/
+INFO 2023-05-17 10:46:43,995 views 8212 10872 Request received: POST auth/register
+INFO 2023-05-17 10:46:44,255 views 8212 10872 User register successfully.
+INFO 2023-05-17 10:46:44,285 views 8212 10872 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=9d543c21ea6170101e90e8583222ed94f4b10d6a)
+INFO 2023-05-17 10:46:44,300 views 8212 10872 User registration completed.(email:u@u.com, name:Uali), password:pbkdf2_sha256$390000$9FxkycBjChdrAJRFolElww$LQQ21UR1xUjIojnFCSE7tTB0jCMYQlJj0avdfdMSxvs=
+WARNING 2023-05-17 10:46:44,537 log 8212 10872 Bad Request: /auth/token/
+INFO 2023-05-17 10:46:44,539 views 8212 10872 Request received: POST auth/register
+INFO 2023-05-17 10:46:44,783 views 8212 10872 User register successfully.
+INFO 2023-05-17 10:46:44,785 views 8212 10872 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=055dd20e4956ced8642ef03bdbcec70ff7170de3)
+INFO 2023-05-17 10:46:44,785 views 8212 10872 User registration completed.(email:u@u.com, name:Uali), password:pbkdf2_sha256$390000$UehyACZNuuxdlqJor8j9yl$Zmb0CsIRd2G/WVT3XSqKaI9dOR35DzUdPvzSgb/uuXs=
+WARNING 2023-05-17 10:46:45,023 log 8212 10872 Bad Request: /auth/token/
+INFO 2023-05-17 10:46:45,025 views 8212 10872 Request received: POST auth/register
+INFO 2023-05-17 10:46:45,270 views 8212 10872 User register successfully.
+INFO 2023-05-17 10:46:45,271 views 8212 10872 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=183b5cbafe32d1ba681a711796a87a3683a4fbdf)
+INFO 2023-05-17 10:46:45,272 views 8212 10872 User registration completed.(email:u@u.com, name:Uali), password:pbkdf2_sha256$390000$Ri6fqdfrYORYXMzbvPo7Ow$SKl8AI40zrEqROvXvwOroRzK0pXnzT8c4Slpxc+hW7s=
+WARNING 2023-05-17 10:46:45,510 log 8212 10872 Bad Request: /auth/token/
+INFO 2023-05-17 10:46:45,512 views 8212 10872 Request received: POST auth/register
+WARNING 2023-05-17 10:46:45,513 log 8212 10872 Bad Request: /auth/register/
+INFO 2023-05-17 10:46:45,514 views 8212 10872 Request received: POST auth/register
+WARNING 2023-05-17 10:46:45,515 log 8212 10872 Bad Request: /auth/register/
+INFO 2023-05-17 10:46:45,516 views 8212 10872 Request received: POST auth/register
+INFO 2023-05-17 10:46:45,760 views 8212 10872 User register successfully.
+INFO 2023-05-17 10:46:45,762 views 8212 10872 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=1de7fdbdc08d2b4bf359ae78f9d8581edaa8af2c)
+INFO 2023-05-17 10:46:45,762 views 8212 10872 User registration completed.(email:u@u.com, name:Uali), password:pbkdf2_sha256$390000$ogT8ChI2pvriEVeEAGAL2b$iIdURe3KdjDft4TOlt8C8NSo8JEThrcgF3TENATk9yU=
+INFO 2023-05-17 10:47:17,496 views 12816 9088 Request received: POST auth/register
+INFO 2023-05-17 10:47:17,768 views 12816 9088 User register successfully.
+INFO 2023-05-17 10:47:17,798 views 12816 9088 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=715c9d4a58a6f2e82c9c3c9d152cfe5c67f0399d)
+INFO 2023-05-17 10:47:17,807 views 12816 9088 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:47:18,046 log 12816 9088 Bad Request: /auth/token/
+INFO 2023-05-17 10:47:18,047 views 12816 9088 Request received: POST auth/register
+INFO 2023-05-17 10:47:18,293 views 12816 9088 User register successfully.
+INFO 2023-05-17 10:47:18,295 views 12816 9088 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=72b3e7b90ea62da898bda811aaf57b8773629fb9)
+INFO 2023-05-17 10:47:18,295 views 12816 9088 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:47:18,536 log 12816 9088 Bad Request: /auth/token/
+INFO 2023-05-17 10:47:18,538 views 12816 9088 Request received: POST auth/register
+INFO 2023-05-17 10:47:18,780 views 12816 9088 User register successfully.
+INFO 2023-05-17 10:47:18,781 views 12816 9088 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=5a71da725eb587a6196915dcaaf7df39fa4673db)
+INFO 2023-05-17 10:47:18,781 views 12816 9088 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:47:19,018 log 12816 9088 Bad Request: /auth/token/
+INFO 2023-05-17 10:47:19,019 views 12816 9088 Request received: POST auth/register
+WARNING 2023-05-17 10:47:19,020 log 12816 9088 Bad Request: /auth/register/
+INFO 2023-05-17 10:47:19,021 views 12816 9088 Request received: POST auth/register
+WARNING 2023-05-17 10:47:19,022 log 12816 9088 Bad Request: /auth/register/
+INFO 2023-05-17 10:47:19,024 views 12816 9088 Request received: POST auth/register
+INFO 2023-05-17 10:47:19,266 views 12816 9088 User register successfully.
+INFO 2023-05-17 10:47:19,267 views 12816 9088 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=60319d61a21ea59e5b8ec233ea62bc04530e0c0b)
+INFO 2023-05-17 10:47:19,268 views 12816 9088 User registration completed.(email:u@u.com, name:Uali)
+INFO 2023-05-17 10:53:13,653 views 3256 9884 Request received: POST auth/register
+INFO 2023-05-17 10:53:13,908 views 3256 9884 User register successfully.
+INFO 2023-05-17 10:53:13,938 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=0e259dd6f797f00be7b0f935e84332f0ac2c9003)
+INFO 2023-05-17 10:53:13,951 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:53:14,194 log 3256 9884 Bad Request: /auth/token/
+INFO 2023-05-17 10:53:14,195 views 3256 9884 Request received: POST auth/register
+INFO 2023-05-17 10:53:14,441 views 3256 9884 User register successfully.
+INFO 2023-05-17 10:53:14,443 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=86aa612ec0217611cfd8f426812cb155e9da0f5e)
+INFO 2023-05-17 10:53:14,443 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:53:14,681 log 3256 9884 Bad Request: /auth/token/
+INFO 2023-05-17 10:53:14,682 views 3256 9884 Request received: POST auth/register
+INFO 2023-05-17 10:53:14,926 views 3256 9884 User register successfully.
+INFO 2023-05-17 10:53:14,927 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=53f0d63843f7109c85dc6dde367226bbd22fd379)
+INFO 2023-05-17 10:53:14,927 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:53:15,165 log 3256 9884 Bad Request: /auth/token/
+INFO 2023-05-17 10:53:15,166 views 3256 9884 Request received: POST auth/register
+INFO 2023-05-17 10:53:15,410 views 3256 9884 User register successfully.
+INFO 2023-05-17 10:53:15,411 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=696536483b908980ce968be74c775a4ee52fb92d)
+INFO 2023-05-17 10:53:15,411 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-17 10:53:15,651 log 3256 9884 Bad Request: /auth/token/
+INFO 2023-05-17 10:53:15,652 views 3256 9884 Request received: POST auth/register
+WARNING 2023-05-17 10:53:15,653 log 3256 9884 Bad Request: /auth/register/
+INFO 2023-05-17 10:53:15,654 views 3256 9884 Request received: POST auth/register
+WARNING 2023-05-17 10:53:15,655 log 3256 9884 Bad Request: /auth/register/
+INFO 2023-05-17 10:53:15,656 views 3256 9884 Request received: POST auth/register
+INFO 2023-05-17 10:53:15,900 views 3256 9884 User register successfully.
+INFO 2023-05-17 10:53:15,901 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=1537676cd62ae8eed726bcee915522fd3ec30809)
+INFO 2023-05-17 10:53:15,901 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)

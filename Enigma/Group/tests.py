@@ -110,8 +110,7 @@ class GroupInfoTest(APITestCase):
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
-class ShowGroupsTestCase(APITestCase):
-    
+class ShowGroupsTestCase(APITestCase):    
     def setUp(self):
         self.user = MyUser.objects.create(email='testuser@test.local', password='testpass',  name='test', picture_id=4)
         self.url = '/group/ShowGroups/'
@@ -243,7 +242,6 @@ class ShowMembersTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
 class CreateGroupTest(TestCase):
-
     def setUp(self):
         self.user1 = MyUser.objects.create(email='test1@example.com', password='test1', name='test1', picture_id=1)
         self.user2 = MyUser.objects.create(email='test2@example.com', password='test2', name='test2', picture_id=2)
