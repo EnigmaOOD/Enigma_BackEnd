@@ -231,7 +231,7 @@ class ShowMembersTests(APITestCase):
 
     def test_show_members_exception(self):
         self.client.force_authenticate(user=self.user1)
-        with mock.patch('Group.views.DebtandCredit', side_effect=Exception('Test Exception')):
+        with mock.patch('Group.views.DebtandCreditforMemberinGroup', side_effect=Exception('Test Exception')):
             response = self.client.post(self.url, {'groupID': self.group.id})
             self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
             self.assertEqual(response.data, {'Error': 'Test Exception'})
