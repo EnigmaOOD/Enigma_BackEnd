@@ -2674,3 +2674,64 @@ INFO 2023-05-17 11:06:52,553 views 4044 17152 Request received: GET auth/verify-
 INFO 2023-05-17 11:06:52,553 views 4044 17152 Token parameter found: Wrong
 WARNING 2023-05-17 11:06:52,554 views 4044 17152 Invalid token: Wrong
 WARNING 2023-05-17 11:06:52,555 log 4044 17152 Bad Request: /auth/verify-email/
+INFO 2023-05-17 11:21:22,849 autoreload 4668 12520 Watching for file changes with StatReloader
+WARNING 2023-05-17 11:21:27,299 log 4668 15996 Unauthorized: /buy/CreateBuyView/
+WARNING 2023-05-17 11:21:27,299 basehttp 4668 15996 "POST /buy/CreateBuyView/ HTTP/1.1" 401 27
+WARNING 2023-05-17 11:21:42,661 log 4668 15996 Bad Request: /auth/token/
+WARNING 2023-05-17 11:21:42,662 basehttp 4668 15996 "POST /auth/token/ HTTP/1.1" 400 68
+INFO 2023-05-17 11:21:54,933 views 4668 15996 Request received: POST auth/register
+INFO 2023-05-17 11:21:55,271 views 4668 15996 User register successfully.
+INFO 2023-05-17 11:21:55,285 views 4668 15996 Sending verification email to the user.(email_body:Hi Maryam Use link below to verify your email 
+http://127.0.0.1:8000/auth/verify-email/?token=a6c42d0138ac8965bc280030df3df3bac024adca)
+ERROR 2023-05-17 11:22:16,573 log 4668 15996 Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 49, in post
+    Util.send_email(data)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\utils.py", line 8, in send_email
+    email.send()
+  File "C:\Python311\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR 2023-05-17 11:22:16,578 basehttp 4668 15996 "POST /auth/register/ HTTP/1.1" 500 134130

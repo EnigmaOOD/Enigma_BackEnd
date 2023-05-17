@@ -16,14 +16,21 @@ class CreateBuyView(CreateAPIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
     def perform_create(self, serializer):
-
+        logger.info("Perfoming create")
         return serializer.save(added_by=self.request.user)
 
     def create(self, request, *args, **kwargs):
+        logger.info("Request received: POST buy/CreateBuy")
+        logger.info("User is authenticated.")
+        
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+        logger.info("Serializer data is valid.")
+
         instance = self.perform_create(serializer)
         instance_serializer = BuyListSerializer(instance)
+
+        logger.info("Created buy instance data. {}".format(instance_serializer.data))
         return Response(instance_serializer.data)
 
 
