@@ -268,7 +268,7 @@ class EditProfileTest(APITestCase):
         self.assertNotEqual(data['name'], self.user.name)
         self.assertNotEqual(data['picture_id'], self.user.picture_id)
     
-    def test_edit_profile_with_email_that_is_not_permission(self):
+    def test_edit_profile_with_email(self):
         data = {'email': 'test1@example.com'}
         response = self.client.put(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
@@ -285,7 +285,7 @@ class EditProfileTest(APITestCase):
         self.assertFalse(serializer.is_valid())
         self.assertEqual(set(serializer.errors.keys()), {'non_field_errors'})
 
-class LeaveGroup(APITestCase):
+class LeaveGroupTest(APITestCase):
     def setUp(self):
         self.client = APIClient()
         self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')

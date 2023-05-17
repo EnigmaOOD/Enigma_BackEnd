@@ -945,3 +945,1593 @@ INFO 2023-05-16 17:24:51,116 autoreload 6332 13556 E:\uni\8\OOD\Enigma_BackEnd\E
 INFO 2023-05-16 17:24:52,740 autoreload 9252 692 Watching for file changes with StatReloader
 INFO 2023-05-16 17:24:57,834 autoreload 9252 692 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\urls.py changed, reloading.
 INFO 2023-05-16 17:25:00,124 autoreload 8488 7672 Watching for file changes with StatReloader
+INFO 2023-05-16 21:12:29,618 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,618 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,619 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,620 views 14576 16536 Sending request to add users to the group.
+INFO 2023-05-16 21:12:29,629 views 14576 16536 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:29,635 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,635 views 14576 16536 User is authenticated.
+ERROR 2023-05-16 21:12:29,636 views 14576 16536 Invalid group data.
+WARNING 2023-05-16 21:12:29,636 log 14576 16536 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,639 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,639 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,639 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,640 views 14576 16536 Sending request to add users to the group.
+INFO 2023-05-16 21:12:29,650 views 14576 16536 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:29,653 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,653 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,654 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,654 views 14576 16536 Sending request to add users to the group.
+ERROR 2023-05-16 21:12:29,660 views 14576 16536 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:12:29,663 log 14576 16536 Not Found: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,666 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,666 views 14576 16536 User is authenticated.
+ERROR 2023-05-16 21:12:29,667 views 14576 16536 Invalid group data.
+WARNING 2023-05-16 21:12:29,668 log 14576 16536 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,700 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,700 views 14576 16536 User is authenticated.
+ERROR 2023-05-16 21:12:29,700 views 14576 16536 Invalid group data.
+WARNING 2023-05-16 21:12:29,701 log 14576 16536 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,703 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,703 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,704 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,704 views 14576 16536 Sending request to add users to the group.
+INFO 2023-05-16 21:12:29,707 views 14576 16536 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:29,712 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,712 views 14576 16536 User is authenticated.
+ERROR 2023-05-16 21:12:29,713 views 14576 16536 Invalid group data.
+WARNING 2023-05-16 21:12:29,713 log 14576 16536 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,716 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,716 views 14576 16536 User is authenticated.
+ERROR 2023-05-16 21:12:29,716 views 14576 16536 Invalid group data.
+WARNING 2023-05-16 21:12:29,716 log 14576 16536 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:29,719 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,719 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,719 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,719 views 14576 16536 Sending request to add users to the group.
+INFO 2023-05-16 21:12:29,728 views 14576 16536 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:29,731 views 14576 16536 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:29,731 views 14576 16536 User is authenticated.
+INFO 2023-05-16 21:12:29,732 views 14576 16536 Validating group data.
+INFO 2023-05-16 21:12:29,732 views 14576 16536 Sending request to add users to the group.
+ERROR 2023-05-16 21:12:29,736 views 14576 16536 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:12:29,737 log 14576 16536 Not Found: /group/CreateGroup/
+WARNING 2023-05-16 21:12:29,740 log 14576 16536 Unauthorized: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,783 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,783 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,784 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,784 views 16964 9204 Sending request to add users to the group.
+INFO 2023-05-16 21:12:41,791 views 16964 9204 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:41,796 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,796 views 16964 9204 User is authenticated.
+ERROR 2023-05-16 21:12:41,796 views 16964 9204 Invalid group data.
+WARNING 2023-05-16 21:12:41,797 log 16964 9204 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,799 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,799 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,800 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,801 views 16964 9204 Sending request to add users to the group.
+INFO 2023-05-16 21:12:41,811 views 16964 9204 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:41,814 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,814 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,815 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,816 views 16964 9204 Sending request to add users to the group.
+ERROR 2023-05-16 21:12:41,820 views 16964 9204 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:12:41,822 log 16964 9204 Not Found: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,824 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,824 views 16964 9204 User is authenticated.
+ERROR 2023-05-16 21:12:41,824 views 16964 9204 Invalid group data.
+WARNING 2023-05-16 21:12:41,825 log 16964 9204 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,857 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,857 views 16964 9204 User is authenticated.
+ERROR 2023-05-16 21:12:41,858 views 16964 9204 Invalid group data.
+WARNING 2023-05-16 21:12:41,858 log 16964 9204 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,861 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,861 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,862 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,862 views 16964 9204 Sending request to add users to the group.
+INFO 2023-05-16 21:12:41,866 views 16964 9204 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:41,870 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,870 views 16964 9204 User is authenticated.
+ERROR 2023-05-16 21:12:41,871 views 16964 9204 Invalid group data.
+WARNING 2023-05-16 21:12:41,871 log 16964 9204 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,873 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,873 views 16964 9204 User is authenticated.
+ERROR 2023-05-16 21:12:41,873 views 16964 9204 Invalid group data.
+WARNING 2023-05-16 21:12:41,874 log 16964 9204 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:12:41,876 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,876 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,877 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,877 views 16964 9204 Sending request to add users to the group.
+INFO 2023-05-16 21:12:41,886 views 16964 9204 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:12:41,889 views 16964 9204 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:12:41,889 views 16964 9204 User is authenticated.
+INFO 2023-05-16 21:12:41,889 views 16964 9204 Validating group data.
+INFO 2023-05-16 21:12:41,890 views 16964 9204 Sending request to add users to the group.
+ERROR 2023-05-16 21:12:41,894 views 16964 9204 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:12:41,896 log 16964 9204 Not Found: /group/CreateGroup/
+WARNING 2023-05-16 21:12:41,900 log 16964 9204 Unauthorized: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,097 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,097 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,097 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,098 views 3276 7524 Sending request to add users to the group.
+INFO 2023-05-16 21:17:37,105 views 3276 7524 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:17:37,112 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,112 views 3276 7524 User is authenticated.
+ERROR 2023-05-16 21:17:37,113 views 3276 7524 Invalid group data.
+WARNING 2023-05-16 21:17:37,113 log 3276 7524 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,116 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,116 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,117 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,118 views 3276 7524 Sending request to add users to the group.
+INFO 2023-05-16 21:17:37,127 views 3276 7524 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:17:37,129 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,130 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,130 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,130 views 3276 7524 Sending request to add users to the group.
+ERROR 2023-05-16 21:17:37,134 views 3276 7524 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:17:37,136 log 3276 7524 Not Found: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,140 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,140 views 3276 7524 User is authenticated.
+ERROR 2023-05-16 21:17:37,141 views 3276 7524 Invalid group data.
+WARNING 2023-05-16 21:17:37,142 log 3276 7524 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,174 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,175 views 3276 7524 User is authenticated.
+ERROR 2023-05-16 21:17:37,175 views 3276 7524 Invalid group data.
+WARNING 2023-05-16 21:17:37,176 log 3276 7524 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,178 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,178 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,179 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,179 views 3276 7524 Sending request to add users to the group.
+INFO 2023-05-16 21:17:37,182 views 3276 7524 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:17:37,187 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,187 views 3276 7524 User is authenticated.
+ERROR 2023-05-16 21:17:37,188 views 3276 7524 Invalid group data.
+WARNING 2023-05-16 21:17:37,188 log 3276 7524 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,190 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,190 views 3276 7524 User is authenticated.
+ERROR 2023-05-16 21:17:37,191 views 3276 7524 Invalid group data.
+WARNING 2023-05-16 21:17:37,191 log 3276 7524 Bad Request: /group/CreateGroup/
+INFO 2023-05-16 21:17:37,193 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,193 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,194 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,194 views 3276 7524 Sending request to add users to the group.
+INFO 2023-05-16 21:17:37,200 views 3276 7524 Group create successfully. Group ID: 1
+INFO 2023-05-16 21:17:37,204 views 3276 7524 Request recieved: POST group/CreateGroup
+INFO 2023-05-16 21:17:37,204 views 3276 7524 User is authenticated.
+INFO 2023-05-16 21:17:37,205 views 3276 7524 Validating group data.
+INFO 2023-05-16 21:17:37,205 views 3276 7524 Sending request to add users to the group.
+ERROR 2023-05-16 21:17:37,210 views 3276 7524 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-16 21:17:37,212 log 3276 7524 Not Found: /group/CreateGroup/
+WARNING 2023-05-16 21:17:37,215 log 3276 7524 Unauthorized: /group/CreateGroup/
+INFO 2023-05-16 23:52:31,142 views 11800 5124 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:52:31,142 views 11800 5124 User is authenticated.
+INFO 2023-05-16 23:52:31,142 views 11800 5124 Validating group data.
+INFO 2023-05-16 23:52:31,143 views 11800 5124 Found group with ID:1
+INFO 2023-05-16 23:52:31,144 views 11800 5124 Add user with email:test2@example.com to the group:1
+INFO 2023-05-16 23:52:31,144 views 11800 5124 User with email:test3.example.com not found.
+WARNING 2023-05-16 23:52:31,145 log 11800 5124 Not Found: /group/AddUserGroup/
+ERROR 2023-05-16 23:52:31,149 views 11800 5124 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-16 23:52:31,149 log 11800 5124 Forbidden: /group/AddUserGroup/
+ERROR 2023-05-16 23:52:31,151 views 11800 5124 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-16 23:52:31,151 log 11800 5124 Forbidden: /group/AddUserGroup/
+INFO 2023-05-16 23:52:31,153 views 11800 5124 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:52:31,153 views 11800 5124 User is authenticated.
+INFO 2023-05-16 23:52:31,153 views 11800 5124 Validating group data.
+INFO 2023-05-16 23:52:31,154 views 11800 5124 Found group with ID:1
+INFO 2023-05-16 23:52:31,154 views 11800 5124 Users added to group:1 successfully.
+INFO 2023-05-16 23:52:31,157 views 11800 5124 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:52:31,158 views 11800 5124 User is authenticated.
+INFO 2023-05-16 23:52:31,158 views 11800 5124 Validating group data.
+INFO 2023-05-16 23:52:31,158 views 11800 5124 Found group with ID:1
+INFO 2023-05-16 23:52:31,160 views 11800 5124 Add user with email:test2@example.com to the group:1
+INFO 2023-05-16 23:52:31,161 views 11800 5124 Add user with email:test3@example.com to the group:1
+INFO 2023-05-16 23:52:31,161 views 11800 5124 Users added to group:1 successfully.
+INFO 2023-05-16 23:52:31,168 views 11800 5124 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:52:31,168 views 11800 5124 User is authenticated.
+INFO 2023-05-16 23:52:31,168 views 11800 5124 Validating group data.
+INFO 2023-05-16 23:52:31,169 views 11800 5124 Found group with ID:1
+INFO 2023-05-16 23:52:31,169 views 11800 5124 Add user with email:test1@example.com to the group:1
+INFO 2023-05-16 23:52:31,169 views 11800 5124 Users added to group:1 successfully.
+INFO 2023-05-16 23:52:31,172 views 11800 5124 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:52:31,173 views 11800 5124 User is authenticated.
+INFO 2023-05-16 23:52:31,173 views 11800 5124 Validating group data.
+INFO 2023-05-16 23:52:31,173 views 11800 5124 Found group with ID:1
+INFO 2023-05-16 23:52:31,175 views 11800 5124 Add user with email:test1@example.com to the group:1
+INFO 2023-05-16 23:52:31,176 views 11800 5124 User with email:miss_ramazani@yahoo.com not found.
+WARNING 2023-05-16 23:52:31,176 log 11800 5124 Not Found: /group/AddUserGroup/
+INFO 2023-05-16 23:58:26,011 views 6564 2892 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:58:26,011 views 6564 2892 User is authenticated.
+INFO 2023-05-16 23:58:26,011 views 6564 2892 Validating group data.
+INFO 2023-05-16 23:58:26,012 views 6564 2892 Found group with ID:1
+INFO 2023-05-16 23:58:26,013 views 6564 2892 Add user with email:test2@example.com to the group:1
+INFO 2023-05-16 23:58:26,014 views 6564 2892 Add user with email:test3@example.com to the group:1
+INFO 2023-05-16 23:58:26,014 views 6564 2892 Users added to group:1 successfully.
+INFO 2023-05-16 23:59:35,721 views 17460 15432 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-16 23:59:35,721 views 17460 15432 User is authenticated.
+INFO 2023-05-16 23:59:35,722 views 17460 15432 Validating group data.
+INFO 2023-05-16 23:59:35,722 views 17460 15432 Found group with ID:1
+INFO 2023-05-16 23:59:35,723 views 17460 15432 Add user with email:test2@example.com to the group:1
+INFO 2023-05-16 23:59:35,724 views 17460 15432 User with email:test3.example.com not found.
+WARNING 2023-05-16 23:59:35,724 log 17460 15432 Not Found: /group/AddUserGroup/
+INFO 2023-05-17 00:01:45,233 views 8920 4176 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:01:45,233 views 8920 4176 User is authenticated.
+INFO 2023-05-17 00:01:45,233 views 8920 4176 Validating group data.
+INFO 2023-05-17 00:01:45,234 views 8920 4176 Found group with ID:1
+INFO 2023-05-17 00:01:45,236 views 8920 4176 Add user with email:test2@example.com to the group:1
+ERROR 2023-05-17 00:01:45,236 views 8920 4176 User with email:test3.example.com not found.
+WARNING 2023-05-17 00:01:45,237 log 8920 4176 Not Found: /group/AddUserGroup/
+INFO 2023-05-17 00:04:50,831 views 2568 7468 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:04:50,831 views 2568 7468 User is authenticated.
+INFO 2023-05-17 00:04:50,831 views 2568 7468 Validating group data.
+INFO 2023-05-17 00:04:50,832 views 2568 7468 Found group with ID:1
+INFO 2023-05-17 00:04:50,832 views 2568 7468 Users added to group:1 successfully.
+INFO 2023-05-17 00:08:00,772 views 6416 15532 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:08:00,772 views 6416 15532 User is authenticated.
+INFO 2023-05-17 00:08:00,773 views 6416 15532 Validating group data.
+INFO 2023-05-17 00:08:00,773 views 6416 15532 Found group with ID:1
+INFO 2023-05-17 00:08:00,775 views 6416 15532 Add user with email:test1@example.com to the group:1
+ERROR 2023-05-17 00:08:00,775 views 6416 15532 User with email:miss_ramazani@yahoo.com not found.
+WARNING 2023-05-17 00:08:00,776 log 6416 15532 Not Found: /group/AddUserGroup/
+INFO 2023-05-17 00:09:10,606 views 6296 12808 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:09:10,606 views 6296 12808 User is authenticated.
+INFO 2023-05-17 00:09:10,606 views 6296 12808 Validating group data.
+INFO 2023-05-17 00:09:10,607 views 6296 12808 Found group with ID:1
+INFO 2023-05-17 00:09:10,608 views 6296 12808 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:09:10,608 views 6296 12808 Users added to group:1 successfully.
+ERROR 2023-05-17 00:11:36,450 views 7968 10116 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-17 00:11:36,451 log 7968 10116 Forbidden: /group/AddUserGroup/
+ERROR 2023-05-17 00:14:23,708 views 6960 6580 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-17 00:14:23,708 log 6960 6580 Forbidden: /group/AddUserGroup/
+WARNING 2023-05-17 00:16:04,821 log 16948 2856 Unauthorized: /group/CreateGroup/
+INFO 2023-05-17 00:17:08,644 views 8724 6372 Request received: POST group/CreateGroup
+INFO 2023-05-17 00:17:08,645 views 8724 6372 User is authenticated.
+INFO 2023-05-17 00:17:08,645 views 8724 6372 Validating group data.
+INFO 2023-05-17 00:17:08,646 views 8724 6372 Sending request to add users to the group.
+INFO 2023-05-17 00:17:08,646 views 8724 6372 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:17:08,646 views 8724 6372 User is authenticated.
+INFO 2023-05-17 00:17:08,647 views 8724 6372 Validating group data.
+INFO 2023-05-17 00:17:08,648 views 8724 6372 Found group with ID:1
+INFO 2023-05-17 00:17:08,649 views 8724 6372 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:17:08,650 views 8724 6372 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:17:08,651 views 8724 6372 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:17:08,651 views 8724 6372 Users added to group:1 successfully.
+INFO 2023-05-17 00:17:08,652 views 8724 6372 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:17:08,652 views 8724 6372 User is authenticated.
+INFO 2023-05-17 00:17:08,652 views 8724 6372 Validating group data.
+INFO 2023-05-17 00:17:08,652 views 8724 6372 Found group with ID:1
+INFO 2023-05-17 00:17:08,653 views 8724 6372 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:17:08,654 views 8724 6372 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:17:08,655 views 8724 6372 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:17:08,655 views 8724 6372 Users added to group:1 successfully.
+INFO 2023-05-17 00:17:08,655 views 8724 6372 Group create successfully. Group ID: 1
+INFO 2023-05-17 00:18:43,419 views 16688 7396 Request received: POST group/CreateGroup
+INFO 2023-05-17 00:18:43,419 views 16688 7396 User is authenticated.
+INFO 2023-05-17 00:18:43,420 views 16688 7396 Validating group data.
+INFO 2023-05-17 00:18:43,421 views 16688 7396 Sending request to add users to the group.
+INFO 2023-05-17 00:18:43,421 views 16688 7396 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:18:43,421 views 16688 7396 User is authenticated.
+INFO 2023-05-17 00:18:43,422 views 16688 7396 Validating group data.
+INFO 2023-05-17 00:18:43,422 views 16688 7396 Found group with ID:1
+INFO 2023-05-17 00:18:43,424 views 16688 7396 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:18:43,425 views 16688 7396 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:18:43,426 views 16688 7396 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:18:43,426 views 16688 7396 Users added to group:1 successfully.
+INFO 2023-05-17 00:18:43,426 views 16688 7396 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:18:43,426 views 16688 7396 User is authenticated.
+INFO 2023-05-17 00:18:43,427 views 16688 7396 Validating group data.
+INFO 2023-05-17 00:18:43,427 views 16688 7396 Found group with ID:1
+INFO 2023-05-17 00:18:43,428 views 16688 7396 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:18:43,429 views 16688 7396 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:18:43,429 views 16688 7396 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:18:43,429 views 16688 7396 Users added to group:1 successfully.
+INFO 2023-05-17 00:18:43,429 views 16688 7396 Group create successfully. Group ID: 1
+INFO 2023-05-17 00:20:04,226 views 6768 12860 Request received: POST group/CreateGroup
+INFO 2023-05-17 00:20:04,226 views 6768 12860 User is authenticated.
+ERROR 2023-05-17 00:20:04,227 views 6768 12860 Invalid group data.
+WARNING 2023-05-17 00:20:04,228 log 6768 12860 Bad Request: /group/CreateGroup/
+INFO 2023-05-17 00:22:37,761 views 3300 3100 Request received: POST group/CreateGroup
+INFO 2023-05-17 00:22:37,761 views 3300 3100 User is authenticated.
+ERROR 2023-05-17 00:22:37,762 views 3300 3100 Invalid group data.
+WARNING 2023-05-17 00:22:37,762 log 3300 3100 Bad Request: /group/CreateGroup/
+INFO 2023-05-17 00:23:15,990 views 17052 7900 Request received: POST group/CreateGroup
+INFO 2023-05-17 00:23:15,990 views 17052 7900 User is authenticated.
+INFO 2023-05-17 00:23:15,991 views 17052 7900 Validating group data.
+INFO 2023-05-17 00:23:15,992 views 17052 7900 Sending request to add users to the group.
+INFO 2023-05-17 00:23:15,992 views 17052 7900 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:23:15,992 views 17052 7900 User is authenticated.
+INFO 2023-05-17 00:23:15,993 views 17052 7900 Validating group data.
+INFO 2023-05-17 00:23:15,994 views 17052 7900 Found group with ID:1
+INFO 2023-05-17 00:23:15,996 views 17052 7900 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:23:15,998 views 17052 7900 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:23:15,999 views 17052 7900 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:23:15,999 views 17052 7900 Users added to group:1 successfully.
+INFO 2023-05-17 00:23:15,999 views 17052 7900 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-17 00:23:15,999 views 17052 7900 User is authenticated.
+INFO 2023-05-17 00:23:16,000 views 17052 7900 Validating group data.
+INFO 2023-05-17 00:23:16,000 views 17052 7900 Found group with ID:1
+INFO 2023-05-17 00:23:16,001 views 17052 7900 Add user with email:test2@example.com to the group:1
+INFO 2023-05-17 00:23:16,002 views 17052 7900 Add user with email:test3@example.com to the group:1
+INFO 2023-05-17 00:23:16,003 views 17052 7900 Add user with email:test1@example.com to the group:1
+INFO 2023-05-17 00:23:16,003 views 17052 7900 Users added to group:1 successfully.
+INFO 2023-05-17 00:23:16,003 views 17052 7900 Group create successfully. Group ID: 1
+INFO 2023-05-17 08:57:39,151 views 13220 9248 Retrieving user object.
+WARNING 2023-05-17 08:57:39,153 log 13220 9248 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 08:57:39,155 views 13220 9248 Retrieving user object.
+WARNING 2023-05-17 08:57:39,155 log 13220 9248 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 08:57:39,157 log 13220 9248 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 08:57:39,159 views 13220 9248 Retrieving user object.
+INFO 2023-05-17 08:57:39,159 views 13220 9248 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 08:57:39,159 views 13220 9248 User is authenticated.
+ERROR 2023-05-17 08:57:39,169 log 13220 9248 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 08:57:39,204 views 13220 9248 Retrieving user object.
+INFO 2023-05-17 08:57:39,205 views 13220 9248 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 08:57:39,205 views 13220 9248 User is authenticated.
+ERROR 2023-05-17 08:57:39,205 log 13220 9248 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 08:57:39,208 views 13220 9248 Retrieving user object.
+WARNING 2023-05-17 08:57:39,209 log 13220 9248 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 08:57:39,210 views 13220 9248 Retrieving user object.
+WARNING 2023-05-17 08:57:39,240 log 13220 9248 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 08:57:39,242 views 13220 9248 Retrieving user object.
+WARNING 2023-05-17 08:57:39,242 log 13220 9248 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 08:57:39,244 views 13220 9248 Retrieving user object.
+INFO 2023-05-17 08:57:39,244 views 13220 9248 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 08:57:39,244 views 13220 9248 User is authenticated.
+ERROR 2023-05-17 08:57:39,245 log 13220 9248 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+WARNING 2023-05-17 08:58:11,168 log 16172 7776 Method Not Allowed: /auth/EditProfile/
+WARNING 2023-05-17 09:00:19,677 log 14632 2732 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:01:37,176 views 7804 9768 Retrieving user object.
+INFO 2023-05-17 09:01:37,177 views 7804 9768 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:01:37,177 views 7804 9768 User is authenticated.
+ERROR 2023-05-17 09:01:37,182 log 7804 9768 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:01:56,169 views 8756 2424 Retrieving user object.
+INFO 2023-05-17 09:01:56,170 views 8756 2424 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:01:56,170 views 8756 2424 User is authenticated.
+ERROR 2023-05-17 09:01:56,175 log 8756 2424 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:03:03,979 views 11180 12152 Retrieving user object.
+WARNING 2023-05-17 09:03:03,980 log 11180 12152 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:03:03,981 views 11180 12152 Retrieving user object.
+WARNING 2023-05-17 09:03:03,982 log 11180 12152 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:03:03,983 log 11180 12152 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:03:03,985 views 11180 12152 Retrieving user object.
+INFO 2023-05-17 09:03:03,985 views 11180 12152 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:03:03,986 views 11180 12152 User is authenticated.
+ERROR 2023-05-17 09:03:03,991 log 11180 12152 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:03:03,997 views 11180 12152 Retrieving user object.
+INFO 2023-05-17 09:03:03,997 views 11180 12152 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:03:03,997 views 11180 12152 User is authenticated.
+ERROR 2023-05-17 09:03:03,998 log 11180 12152 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:03:04,001 views 11180 12152 Retrieving user object.
+WARNING 2023-05-17 09:03:04,001 log 11180 12152 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:03:04,002 views 11180 12152 Retrieving user object.
+WARNING 2023-05-17 09:03:04,028 log 11180 12152 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:03:04,030 views 11180 12152 Retrieving user object.
+WARNING 2023-05-17 09:03:04,031 log 11180 12152 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:03:04,032 views 11180 12152 Retrieving user object.
+INFO 2023-05-17 09:03:04,032 views 11180 12152 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:03:04,032 views 11180 12152 User is authenticated.
+ERROR 2023-05-17 09:03:04,033 log 11180 12152 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:04:12,660 views 15860 7208 Retrieving user object.
+WARNING 2023-05-17 09:04:12,661 log 15860 7208 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:12,662 views 15860 7208 Retrieving user object.
+WARNING 2023-05-17 09:04:12,663 log 15860 7208 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:04:12,664 log 15860 7208 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:04:12,666 views 15860 7208 Retrieving user object.
+INFO 2023-05-17 09:04:12,667 views 15860 7208 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:12,667 views 15860 7208 User is authenticated.
+ERROR 2023-05-17 09:04:12,673 log 15860 7208 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user + "_________________________________________")
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'MyUser' and 'str'
+INFO 2023-05-17 09:04:12,680 views 15860 7208 Retrieving user object.
+INFO 2023-05-17 09:04:12,680 views 15860 7208 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:12,680 views 15860 7208 User is authenticated.
+ERROR 2023-05-17 09:04:12,681 log 15860 7208 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user + "_________________________________________")
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'MyUser' and 'str'
+INFO 2023-05-17 09:04:12,684 views 15860 7208 Retrieving user object.
+WARNING 2023-05-17 09:04:12,685 log 15860 7208 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:12,686 views 15860 7208 Retrieving user object.
+WARNING 2023-05-17 09:04:12,715 log 15860 7208 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:12,716 views 15860 7208 Retrieving user object.
+WARNING 2023-05-17 09:04:12,716 log 15860 7208 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:12,718 views 15860 7208 Retrieving user object.
+INFO 2023-05-17 09:04:12,718 views 15860 7208 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:12,718 views 15860 7208 User is authenticated.
+ERROR 2023-05-17 09:04:12,719 log 15860 7208 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user + "_________________________________________")
+          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'MyUser' and 'str'
+INFO 2023-05-17 09:04:46,516 views 3004 15204 Retrieving user object.
+WARNING 2023-05-17 09:04:46,517 log 3004 15204 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:46,518 views 3004 15204 Retrieving user object.
+WARNING 2023-05-17 09:04:46,519 log 3004 15204 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:04:46,520 log 3004 15204 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:04:46,523 views 3004 15204 Retrieving user object.
+INFO 2023-05-17 09:04:46,523 views 3004 15204 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:46,523 views 3004 15204 User is authenticated.
+ERROR 2023-05-17 09:04:46,530 log 3004 15204 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:04:46,536 views 3004 15204 Retrieving user object.
+INFO 2023-05-17 09:04:46,537 views 3004 15204 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:46,537 views 3004 15204 User is authenticated.
+ERROR 2023-05-17 09:04:46,538 log 3004 15204 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:04:46,541 views 3004 15204 Retrieving user object.
+WARNING 2023-05-17 09:04:46,542 log 3004 15204 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:46,544 views 3004 15204 Retrieving user object.
+WARNING 2023-05-17 09:04:46,569 log 3004 15204 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:46,571 views 3004 15204 Retrieving user object.
+WARNING 2023-05-17 09:04:46,572 log 3004 15204 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:04:46,574 views 3004 15204 Retrieving user object.
+INFO 2023-05-17 09:04:46,574 views 3004 15204 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:04:46,574 views 3004 15204 User is authenticated.
+ERROR 2023-05-17 09:04:46,575 log 3004 15204 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:19,236 views 16632 11284 Retrieving user object.
+WARNING 2023-05-17 09:06:19,237 log 16632 11284 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:19,238 views 16632 11284 Retrieving user object.
+WARNING 2023-05-17 09:06:19,239 log 16632 11284 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:06:19,240 log 16632 11284 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:06:19,242 views 16632 11284 Retrieving user object.
+INFO 2023-05-17 09:06:19,243 views 16632 11284 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:19,243 views 16632 11284 User is authenticated.
+ERROR 2023-05-17 09:06:19,248 log 16632 11284 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user.id , "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:19,254 views 16632 11284 Retrieving user object.
+INFO 2023-05-17 09:06:19,254 views 16632 11284 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:19,254 views 16632 11284 User is authenticated.
+ERROR 2023-05-17 09:06:19,255 log 16632 11284 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user.id , "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:19,259 views 16632 11284 Retrieving user object.
+WARNING 2023-05-17 09:06:19,259 log 16632 11284 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:19,261 views 16632 11284 Retrieving user object.
+WARNING 2023-05-17 09:06:19,291 log 16632 11284 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:19,292 views 16632 11284 Retrieving user object.
+WARNING 2023-05-17 09:06:19,293 log 16632 11284 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:19,294 views 16632 11284 Retrieving user object.
+INFO 2023-05-17 09:06:19,295 views 16632 11284 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:19,295 views 16632 11284 User is authenticated.
+ERROR 2023-05-17 09:06:19,296 log 16632 11284 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 95, in perform_update
+    print(self.request.user.id , "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:48,129 views 14528 11780 Retrieving user object.
+WARNING 2023-05-17 09:06:48,130 log 14528 11780 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:48,132 views 14528 11780 Retrieving user object.
+WARNING 2023-05-17 09:06:48,132 log 14528 11780 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:06:48,134 log 14528 11780 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:06:48,136 views 14528 11780 Retrieving user object.
+INFO 2023-05-17 09:06:48,136 views 14528 11780 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:48,136 views 14528 11780 User is authenticated.
+ERROR 2023-05-17 09:06:48,142 log 14528 11780 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:48,148 views 14528 11780 Retrieving user object.
+INFO 2023-05-17 09:06:48,149 views 14528 11780 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:48,149 views 14528 11780 User is authenticated.
+ERROR 2023-05-17 09:06:48,150 log 14528 11780 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:06:48,153 views 14528 11780 Retrieving user object.
+WARNING 2023-05-17 09:06:48,154 log 14528 11780 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:48,156 views 14528 11780 Retrieving user object.
+WARNING 2023-05-17 09:06:48,181 log 14528 11780 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:48,183 views 14528 11780 Retrieving user object.
+WARNING 2023-05-17 09:06:48,184 log 14528 11780 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:06:48,186 views 14528 11780 Retrieving user object.
+INFO 2023-05-17 09:06:48,187 views 14528 11780 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:06:48,187 views 14528 11780 User is authenticated.
+ERROR 2023-05-17 09:06:48,188 log 14528 11780 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:08:04,597 views 16888 9628 Retrieving user object.
+WARNING 2023-05-17 09:08:04,598 log 16888 9628 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:04,599 views 16888 9628 Retrieving user object.
+WARNING 2023-05-17 09:08:04,599 log 16888 9628 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:08:04,601 log 16888 9628 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:08:04,603 views 16888 9628 Retrieving user object.
+INFO 2023-05-17 09:08:04,604 views 16888 9628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:04,604 views 16888 9628 User is authenticated.
+ERROR 2023-05-17 09:08:04,610 log 16888 9628 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:08:04,616 views 16888 9628 Retrieving user object.
+INFO 2023-05-17 09:08:04,617 views 16888 9628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:04,617 views 16888 9628 User is authenticated.
+ERROR 2023-05-17 09:08:04,618 log 16888 9628 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:08:04,621 views 16888 9628 Retrieving user object.
+WARNING 2023-05-17 09:08:04,622 log 16888 9628 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:04,623 views 16888 9628 Retrieving user object.
+WARNING 2023-05-17 09:08:04,650 log 16888 9628 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:04,652 views 16888 9628 Retrieving user object.
+WARNING 2023-05-17 09:08:04,652 log 16888 9628 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:04,654 views 16888 9628 Retrieving user object.
+INFO 2023-05-17 09:08:04,654 views 16888 9628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:04,654 views 16888 9628 User is authenticated.
+ERROR 2023-05-17 09:08:04,655 log 16888 9628 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:08:37,741 views 5816 17428 Retrieving user object.
+WARNING 2023-05-17 09:08:37,742 log 5816 17428 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:37,743 views 5816 17428 Retrieving user object.
+WARNING 2023-05-17 09:08:37,744 log 5816 17428 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:08:37,745 log 5816 17428 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:08:37,747 views 5816 17428 Retrieving user object.
+INFO 2023-05-17 09:08:37,747 views 5816 17428 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:37,748 views 5816 17428 User is authenticated.
+ERROR 2023-05-17 09:08:37,753 log 5816 17428 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    print(self.request.user.userID, "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'userID'
+INFO 2023-05-17 09:08:37,758 views 5816 17428 Retrieving user object.
+INFO 2023-05-17 09:08:37,759 views 5816 17428 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:37,759 views 5816 17428 User is authenticated.
+ERROR 2023-05-17 09:08:37,759 log 5816 17428 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    print(self.request.user.userID, "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'userID'
+INFO 2023-05-17 09:08:37,763 views 5816 17428 Retrieving user object.
+WARNING 2023-05-17 09:08:37,764 log 5816 17428 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:37,765 views 5816 17428 Retrieving user object.
+WARNING 2023-05-17 09:08:37,792 log 5816 17428 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:37,794 views 5816 17428 Retrieving user object.
+WARNING 2023-05-17 09:08:37,795 log 5816 17428 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:08:37,796 views 5816 17428 Retrieving user object.
+INFO 2023-05-17 09:08:37,796 views 5816 17428 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:08:37,796 views 5816 17428 User is authenticated.
+ERROR 2023-05-17 09:08:37,797 log 5816 17428 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 96, in perform_update
+    print(self.request.user.userID, "_________________________________________")
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'userID'
+INFO 2023-05-17 09:09:23,310 views 13936 12716 Retrieving user object.
+WARNING 2023-05-17 09:09:23,311 log 13936 12716 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:09:23,313 views 13936 12716 Retrieving user object.
+WARNING 2023-05-17 09:09:23,313 log 13936 12716 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:09:23,315 log 13936 12716 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:09:23,317 views 13936 12716 Retrieving user object.
+INFO 2023-05-17 09:09:23,317 views 13936 12716 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:09:23,317 views 13936 12716 User is authenticated.
+ERROR 2023-05-17 09:09:23,323 log 13936 12716 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:09:23,329 views 13936 12716 Retrieving user object.
+INFO 2023-05-17 09:09:23,329 views 13936 12716 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:09:23,329 views 13936 12716 User is authenticated.
+ERROR 2023-05-17 09:09:23,330 log 13936 12716 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:09:23,334 views 13936 12716 Retrieving user object.
+WARNING 2023-05-17 09:09:23,334 log 13936 12716 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:09:23,336 views 13936 12716 Retrieving user object.
+WARNING 2023-05-17 09:09:23,363 log 13936 12716 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:09:23,365 views 13936 12716 Retrieving user object.
+WARNING 2023-05-17 09:09:23,365 log 13936 12716 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:09:23,367 views 13936 12716 Retrieving user object.
+INFO 2023-05-17 09:09:23,367 views 13936 12716 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:09:23,367 views 13936 12716 User is authenticated.
+ERROR 2023-05-17 09:09:23,368 log 13936 12716 Internal Server Error: /auth/EditProfile/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\generics.py", line 226, in put
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 97, in perform_update
+    logger.info(f"User:{self.request.user.id} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyUser' object has no attribute 'id'
+INFO 2023-05-17 09:10:02,107 views 11120 4904 Retrieving user object.
+WARNING 2023-05-17 09:10:02,109 log 11120 4904 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:02,110 views 11120 4904 Retrieving user object.
+WARNING 2023-05-17 09:10:02,111 log 11120 4904 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:10:02,112 log 11120 4904 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:10:02,114 views 11120 4904 Retrieving user object.
+INFO 2023-05-17 09:10:02,115 views 11120 4904 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:02,115 views 11120 4904 User is authenticated.
+INFO 2023-05-17 09:10:02,117 views 11120 4904 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-17 09:10:02,118 views 11120 4904 Retrieving user object.
+INFO 2023-05-17 09:10:02,118 views 11120 4904 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:02,118 views 11120 4904 User is authenticated.
+INFO 2023-05-17 09:10:02,119 views 11120 4904 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-17 09:10:02,121 views 11120 4904 Retrieving user object.
+WARNING 2023-05-17 09:10:02,122 log 11120 4904 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:02,123 views 11120 4904 Retrieving user object.
+WARNING 2023-05-17 09:10:02,123 log 11120 4904 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:02,124 views 11120 4904 Retrieving user object.
+WARNING 2023-05-17 09:10:02,124 log 11120 4904 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:02,154 views 11120 4904 Retrieving user object.
+INFO 2023-05-17 09:10:02,155 views 11120 4904 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:02,155 views 11120 4904 User is authenticated.
+INFO 2023-05-17 09:10:02,155 views 11120 4904 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-17 09:10:55,880 views 17840 17464 Retrieving user object.
+WARNING 2023-05-17 09:10:55,881 log 17840 17464 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:55,882 views 17840 17464 Retrieving user object.
+WARNING 2023-05-17 09:10:55,883 log 17840 17464 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:10:55,884 log 17840 17464 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:10:55,886 views 17840 17464 Retrieving user object.
+INFO 2023-05-17 09:10:55,887 views 17840 17464 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:55,887 views 17840 17464 User is authenticated.
+INFO 2023-05-17 09:10:55,888 views 17840 17464 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-17 09:10:55,890 views 17840 17464 Retrieving user object.
+INFO 2023-05-17 09:10:55,890 views 17840 17464 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:55,890 views 17840 17464 User is authenticated.
+INFO 2023-05-17 09:10:55,891 views 17840 17464 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-17 09:10:55,892 views 17840 17464 Retrieving user object.
+WARNING 2023-05-17 09:10:55,893 log 17840 17464 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:55,894 views 17840 17464 Retrieving user object.
+WARNING 2023-05-17 09:10:55,894 log 17840 17464 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:55,896 views 17840 17464 Retrieving user object.
+WARNING 2023-05-17 09:10:55,896 log 17840 17464 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:10:55,924 views 17840 17464 Retrieving user object.
+INFO 2023-05-17 09:10:55,925 views 17840 17464 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:10:55,925 views 17840 17464 User is authenticated.
+INFO 2023-05-17 09:10:55,926 views 17840 17464 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-17 09:11:06,535 views 16612 14964 Retrieving user object.
+WARNING 2023-05-17 09:11:06,536 log 16612 14964 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:11:06,537 views 16612 14964 Retrieving user object.
+WARNING 2023-05-17 09:11:06,538 log 16612 14964 Bad Request: /auth/EditProfile/
+WARNING 2023-05-17 09:11:06,539 log 16612 14964 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-17 09:11:06,542 views 16612 14964 Retrieving user object.
+INFO 2023-05-17 09:11:06,542 views 16612 14964 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:11:06,542 views 16612 14964 User is authenticated.
+INFO 2023-05-17 09:11:06,544 views 16612 14964 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-17 09:11:06,546 views 16612 14964 Retrieving user object.
+INFO 2023-05-17 09:11:06,547 views 16612 14964 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:11:06,547 views 16612 14964 User is authenticated.
+INFO 2023-05-17 09:11:06,547 views 16612 14964 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-17 09:11:06,549 views 16612 14964 Retrieving user object.
+WARNING 2023-05-17 09:11:06,550 log 16612 14964 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:11:06,551 views 16612 14964 Retrieving user object.
+WARNING 2023-05-17 09:11:06,552 log 16612 14964 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:11:06,553 views 16612 14964 Retrieving user object.
+WARNING 2023-05-17 09:11:06,554 log 16612 14964 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:11:06,583 views 16612 14964 Retrieving user object.
+INFO 2023-05-17 09:11:06,583 views 16612 14964 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:11:06,583 views 16612 14964 User is authenticated.
+INFO 2023-05-17 09:11:06,584 views 16612 14964 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-17 09:11:32,543 views 4736 12020 Retrieving user object.
+INFO 2023-05-17 09:11:32,544 views 4736 12020 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:11:32,544 views 4736 12020 User is authenticated.
+INFO 2023-05-17 09:11:32,545 views 4736 12020 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-17 09:12:09,811 views 6492 11192 Retrieving user object.
+INFO 2023-05-17 09:12:09,812 views 6492 11192 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:12:09,812 views 6492 11192 User is authenticated.
+INFO 2023-05-17 09:12:09,812 views 6492 11192 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-17 09:13:19,457 views 8816 13764 Retrieving user object.
+WARNING 2023-05-17 09:13:19,458 log 8816 13764 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:15:24,329 views 14108 16724 Retrieving user object.
+WARNING 2023-05-17 09:15:24,330 log 14108 16724 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:17:48,562 views 13180 13760 Retrieving user object.
+WARNING 2023-05-17 09:17:48,563 log 13180 13760 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:19:26,214 views 5048 840 Retrieving user object.
+INFO 2023-05-17 09:19:26,215 views 5048 840 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:19:26,215 views 5048 840 User is authenticated.
+INFO 2023-05-17 09:19:26,215 views 5048 840 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-17 09:20:20,351 views 14688 10412 Retrieving user object.
+INFO 2023-05-17 09:20:20,351 views 14688 10412 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-17 09:20:20,351 views 14688 10412 User is authenticated.
+INFO 2023-05-17 09:20:20,352 views 14688 10412 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-17 09:20:47,071 views 12528 6256 Retrieving user object.
+WARNING 2023-05-17 09:20:47,073 log 12528 6256 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:22:55,191 views 10988 11472 Retrieving user object.
+WARNING 2023-05-17 09:22:55,192 log 10988 11472 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:23:21,253 views 4000 12432 Retrieving user object.
+WARNING 2023-05-17 09:23:21,254 log 4000 12432 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:23:50,044 views 5840 1964 Retrieving user object.
+WARNING 2023-05-17 09:23:50,045 log 5840 1964 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 09:24:53,948 views 14528 14936 Retrieving user object.
+WARNING 2023-05-17 09:24:53,949 log 14528 14936 Bad Request: /auth/EditProfile/
+INFO 2023-05-17 10:09:53,302 views 14716 1956 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:09:53,302 views 14716 1956 User is authenticated.
+INFO 2023-05-17 10:09:53,308 views 14716 1956 User deleted successfully. (userID:test2, groupID:1)
+INFO 2023-05-17 10:10:36,480 views 14132 4812 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:10:36,481 views 14132 4812 User is authenticated.
+INFO 2023-05-17 10:10:36,487 views 14132 4812 User deleted successfully. (userID:test1, groupID:2)
+INFO 2023-05-17 10:11:02,150 views 13980 13576 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:11:02,150 views 13980 13576 User is authenticated.
+WARNING 2023-05-17 10:11:02,153 views 13980 13576 Settlement not completed. (userID:test1, groupID:1)
+WARNING 2023-05-17 10:11:02,153 log 13980 13576 Payment Required: /auth/LeaveGroup/
+INFO 2023-05-17 10:11:31,202 views 16904 5716 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:11:31,203 views 16904 5716 User is authenticated.
+WARNING 2023-05-17 10:11:31,206 views 16904 5716 Settlement not completed. (userID:test3, groupID:1)
+WARNING 2023-05-17 10:11:31,206 log 16904 5716 Payment Required: /auth/LeaveGroup/
+INFO 2023-05-17 10:12:21,014 views 5156 4440 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:12:21,014 views 5156 4440 User is authenticated.
+WARNING 2023-05-17 10:12:21,016 views 5156 4440 User not found.(userID:test4)
+ERROR 2023-05-17 10:12:21,016 views 5156 4440 Error: User not found.
+WARNING 2023-05-17 10:12:21,017 log 5156 4440 Not Found: /auth/LeaveGroup/
+INFO 2023-05-17 10:13:19,552 views 10412 11596 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:13:19,552 views 10412 11596 User is authenticated.
+WARNING 2023-05-17 10:13:19,554 views 10412 11596 Group not found.(groupID:10)
+ERROR 2023-05-17 10:13:19,554 views 10412 11596 Error: Group not found.
+WARNING 2023-05-17 10:13:19,555 log 10412 11596 Not Found: /auth/LeaveGroup/
+INFO 2023-05-17 10:14:43,795 views 17116 15568 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:14:43,795 views 17116 15568 User is authenticated.
+WARNING 2023-05-17 10:14:43,797 views 17116 15568 DebtandCreditforMemberinGroup_Group not found.(groupID:10)
+ERROR 2023-05-17 10:14:43,797 views 17116 15568 Error: Group not found.
+WARNING 2023-05-17 10:14:43,797 log 17116 15568 Not Found: /auth/LeaveGroup/
+INFO 2023-05-17 10:15:24,340 views 13832 14724 Request received to leave group.: PUT auth/LeaveGroup
+INFO 2023-05-17 10:15:24,340 views 13832 14724 User is authenticated.
+ERROR 2023-05-17 10:15:24,341 views 13832 14724 Error: Internal Server Error
+ERROR 2023-05-17 10:15:24,341 log 13832 14724 Internal Server Error: /auth/LeaveGroup/
+WARNING 2023-05-17 10:15:50,436 log 8260 9920 Unauthorized: /auth/LeaveGroup/

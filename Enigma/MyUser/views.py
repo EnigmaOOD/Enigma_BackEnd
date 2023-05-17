@@ -80,14 +80,21 @@ class EditProfile(UpdateAPIView):
     serializer_class = UpdateUserSerializer
 
     def get_object(self):
+        logger.info("Retrieving user object.")
         return self.request.user
 
     def perform_update(self, serializer):
+        logger.info("Request received to edit profile.: PUT auth/EditProfile")
+        logger.info("User is authenticated.")
+
         try:
             serializer.is_valid(raise_exception=True)
             serializer.save(user=self.request.user)
         except ValidationError as e:
+            logger.warning(f"Validation error occurred: {str(e)}")
             return Response({'message': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
+        logger.info(f"User:{self.request.user.pk} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
         return Response(serializer.data, status=status.HTTP_200_OK)
     
 
@@ -124,29 +131,47 @@ class LeaveGroup(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
+        logger.info("Request received to leave group.: PUT auth/LeaveGroup")
+        logger.info("User is authenticated.")
+
         try:
             group_id = request.data['groupID']
+            logger.debug(f"Group ID:{group_id} for leave group")
+
             result = DebtandCreditforMemberinGroup(self.request.user, group_id)
             if isinstance(result, str):
                 if result == 'Group not found.':
-                     return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
+                     logger.error(f"Error: {result}")
+                     return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)       
                 if result == 'User not found.':
+                     logger.error(f"Error: {result}")
                      return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
                 else:
+                     logger.error(f"Error: {result}")
                      return Response({'message': result}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
                 
             if result == 0:
                 Members.objects.get(groupID=group_id, userID=self.request.user).delete()
                 if Members.objects.filter(groupID=group_id).count() == 0:
+                    logger.info(f" No more members in the group. Deleting the group. (groupID: {group_id})")
                     Group.objects.get(groupID=group_id).delete()
+
+                logger.info(f"User deleted successfully. (userID:{self.request.user}, groupID:{group_id})")
                 return Response({'message': 'User deleted successfully.'}, status=status.HTTP_200_OK)
             else:
+                logger.warning(f"Settlement not completed. (userID:{self.request.user}, groupID:{group_id})")
                 return Response({'message': 'The settlement has not been completed'}, status=status.HTTP_402_PAYMENT_REQUIRED)
+            
         except MyUser.DoesNotExist:
+            logger.error(f"Error: User not found.")
             return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
+        
         except Group.DoesNotExist:
+            logger.error(f"Error: Group not found.")
             return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
+        
         except Exception as e:
+            logger.error(f"Error: {str(e)}")
             return Response({'message': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 def DebtandCreditforMemberinGroup(user_id, group_id):
@@ -154,10 +179,12 @@ def DebtandCreditforMemberinGroup(user_id, group_id):
         try:
             Group.objects.get(groupID = group_id)
         except Group.DoesNotExist:
+            logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
             return 'Group not found.'
         try:
             Members.objects.get(groupID = group_id, userID=user_id)
         except:
+            logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
             return 'User not found.'
         
         list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
@@ -169,4 +196,5 @@ def DebtandCreditforMemberinGroup(user_id, group_id):
             sum -= buy.percent
         return sum
     except Exception as e:
+        logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
         return str(e)
