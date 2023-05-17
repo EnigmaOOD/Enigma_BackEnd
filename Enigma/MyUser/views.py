@@ -55,16 +55,22 @@ class VerifyEmail(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
 
     def get(self, request):
+        logger.info("Request received: GET auth/verify-email")
         token = request.query_params.get('token')
         if token:
+            logger.info(f"Token parameter found: {token}")
             try:
                 user = Token.objects.get(key=token).user
                 user.is_active = True
                 user.save()
+                logger.info(f"Email verified successfully for user: {user.email}")
                 return Response({'message': 'Email verified successfully.'}, status=status.HTTP_200_OK)
+            
             except Token.DoesNotExist:
+                logger.warning(f"Invalid token: {token}")
                 return Response({'error': 'Invalid token.'}, status=status.HTTP_400_BAD_REQUEST)
         else:
+            logger.info(f"Token parameter is missing: {token}")
             return Response({'error': 'Token parameter is missing.'}, status=status.HTTP_400_BAD_REQUEST)
 
 

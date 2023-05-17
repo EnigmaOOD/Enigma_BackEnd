@@ -2667,3 +2667,10 @@ INFO 2023-05-17 10:53:15,900 views 3256 9884 User register successfully.
 INFO 2023-05-17 10:53:15,901 views 3256 9884 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
 http://testserver/auth/verify-email/?token=1537676cd62ae8eed726bcee915522fd3ec30809)
 INFO 2023-05-17 10:53:15,901 views 3256 9884 User registration completed.(email:u@u.com, name:Uali)
+INFO 2023-05-17 11:06:02,528 views 16416 15220 Request received: GET auth/verify-email
+INFO 2023-05-17 11:06:02,528 views 16416 15220 Token parameter found: 66467bc3ae8a350985953b5a66ab13831cbc5c60
+INFO 2023-05-17 11:06:02,529 views 16416 15220 Email verified successfully for user: testuser@test.local
+INFO 2023-05-17 11:06:52,553 views 4044 17152 Request received: GET auth/verify-email
+INFO 2023-05-17 11:06:52,553 views 4044 17152 Token parameter found: Wrong
+WARNING 2023-05-17 11:06:52,554 views 4044 17152 Invalid token: Wrong
+WARNING 2023-05-17 11:06:52,555 log 4044 17152 Bad Request: /auth/verify-email/
