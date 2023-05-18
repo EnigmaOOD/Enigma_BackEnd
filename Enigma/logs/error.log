@@ -222,3 +222,19 @@ ERROR 2023-05-16 14:06:11,940 log 15432 16688 Internal Server Error: /auth/UserI
 ERROR 2023-05-16 14:07:58,019 log 16172 16836 Internal Server Error: /auth/UserInfo/
 ERROR 2023-05-16 14:08:26,996 log 8668 13348 Internal Server Error: /auth/LeaveGroup/
 ERROR 2023-05-16 14:08:28,602 log 8668 13348 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-18 11:58:13,987 views 12992 3780 Error: Group not found.
+ERROR 2023-05-18 11:58:25,271 views 12992 3780 Error: Group not found.
+ERROR 2023-05-18 11:59:10,702 views 12992 3780 Error: 'groupID'
+ERROR 2023-05-18 11:59:10,702 log 12992 3780 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-18 11:59:10,703 basehttp 12992 3780 "POST /auth/LeaveGroup/ HTTP/1.1" 500 23
+ERROR 2023-05-18 11:59:20,660 views 12992 3780 Error: Group not found.
+ERROR 2023-05-18 12:01:16,171 views 11236 12216 Error: Group not found.
+ERROR 2023-05-18 12:02:19,596 views 11716 10796 Error: Group not found.
+ERROR 2023-05-18 12:03:29,239 views 7640 17216 Error: Group not found.
+ERROR 2023-05-18 12:03:30,550 views 7640 17216 Error: Group not found.
+ERROR 2023-05-18 12:03:44,725 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 12:03:45,668 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 12:03:45,854 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 12:03:46,023 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 12:03:46,162 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 12:03:46,307 views 16088 15432 Error: Group not found.

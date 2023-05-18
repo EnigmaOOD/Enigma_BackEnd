@@ -153,7 +153,7 @@ class LeaveGroup(APIView):
             if isinstance(result, str):
                 if result == 'Group not found.':
                      logger.error(f"Error: {result}")
-                     return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)       
+                     return Response({'message': 'Group not found. please provide accurate information'}, status=status.HTTP_404_NOT_FOUND)       
                 if result == 'User not found.':
                      logger.error(f"Error: {result}")
                      return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
@@ -187,8 +187,9 @@ class LeaveGroup(APIView):
         
 def DebtandCreditforMemberinGroup(user_id, group_id):
     try:
-        if not Group.objects.filter(groupID = group_id).exists():
+        if not (Group.objects.filter(id = group_id).exists()):
             logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
+            print("first")
             return 'Group not found.'
 
         if not Members.objects.filter(groupID = group_id, userID=user_id).exists():

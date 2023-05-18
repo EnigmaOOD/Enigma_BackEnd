@@ -1002,3 +1002,206 @@ INFO 2023-05-18 11:41:16,962 views 12992 18892 Sending verification email to the
 http://127.0.0.1:8000/auth/verify-email/?token=b3fced410330144a30d067732051828ea5d24d71)
 INFO 2023-05-18 11:41:21,102 views 12992 18892 User registration completed.(email:ardestanifateme0@gmail.com, name:AB)
 INFO 2023-05-18 11:41:21,103 basehttp 12992 18892 "POST /auth/register/ HTTP/1.1" 201 78
+INFO 2023-05-18 11:49:26,123 basehttp 12992 10804 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8821
+INFO 2023-05-18 11:49:26,184 basehttp 12992 692 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-05-18 11:50:11,757 log 12992 18632 Bad Request: /auth/token/
+WARNING 2023-05-18 11:50:11,758 basehttp 12992 18632 "POST /auth/token/ HTTP/1.1" 400 68
+WARNING 2023-05-18 11:50:23,500 log 12992 18632 Bad Request: /auth/token/
+WARNING 2023-05-18 11:50:23,504 basehttp 12992 18632 "POST /auth/token/ HTTP/1.1" 400 68
+INFO 2023-05-18 11:50:26,818 basehttp 12992 10804 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8821
+INFO 2023-05-18 11:50:26,867 basehttp 12992 692 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 11:50:28,941 basehttp 12992 10804 "GET /admin/MyUser/myuser/25/change/ HTTP/1.1" 200 11847
+INFO 2023-05-18 11:50:28,993 basehttp 12992 692 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 11:50:29,068 basehttp 12992 692 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2023-05-18 11:50:29,069 basehttp 12992 10804 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2023-05-18 11:50:38,349 basehttp 12992 10804 "GET /admin/MyUser/myuser/25/delete/ HTTP/1.1" 200 7477
+INFO 2023-05-18 11:50:40,407 basehttp 12992 10804 "POST /admin/MyUser/myuser/25/delete/ HTTP/1.1" 302 0
+INFO 2023-05-18 11:50:40,423 basehttp 12992 10804 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8768
+INFO 2023-05-18 11:50:40,453 basehttp 12992 692 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 11:51:17,633 views 12992 18632 Request received: POST auth/register
+INFO 2023-05-18 11:51:18,063 views 12992 18632 User register successfully.
+INFO 2023-05-18 11:51:18,123 views 12992 18632 Sending verification email to the user.(email_body:Hi FatemeArdestani Use link below to verify your email 
+http://127.0.0.1:8000/auth/verify-email/?token=6fd4655de67be3492eb13d00dc20f1efcf297db1)
+INFO 2023-05-18 11:51:22,238 views 12992 18632 User registration completed.(email:ardestanifateme0@gmail.com, name:FatemeArdestani)
+INFO 2023-05-18 11:51:22,238 basehttp 12992 18632 "POST /auth/register/ HTTP/1.1" 201 91
+INFO 2023-05-18 11:51:31,847 views 12992 2272 Request received: GET auth/verify-email
+INFO 2023-05-18 11:51:31,847 views 12992 2272 Token parameter found: 6fd4655de67be3492eb13d00dc20f1efcf297db1
+INFO 2023-05-18 11:51:31,927 views 12992 2272 Email verified successfully for user: ardestanifateme0@gmail.com
+INFO 2023-05-18 11:51:31,946 basehttp 12992 2272 "GET /auth/verify-email/?token=6fd4655de67be3492eb13d00dc20f1efcf297db1 HTTP/1.1" 200 5537
+INFO 2023-05-18 11:51:52,279 views 12992 18632 Request received: POST auth/register
+WARNING 2023-05-18 11:51:52,280 log 12992 18632 Bad Request: /auth/register/
+WARNING 2023-05-18 11:51:52,280 basehttp 12992 18632 "POST /auth/register/ HTTP/1.1" 400 113
+INFO 2023-05-18 11:53:11,332 basehttp 12992 18632 "POST /auth/token/ HTTP/1.1" 200 52
+INFO 2023-05-18 11:54:38,259 basehttp 12992 16108 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-18 11:54:38,303 basehttp 12992 11136 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 11:54:39,847 basehttp 12992 16108 "GET /admin/MyUser/myuser/11/change/ HTTP/1.1" 200 11880
+INFO 2023-05-18 11:54:39,879 basehttp 12992 11136 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 11:54:47,977 views 12992 18632 Request received: POST group/CreateGroup
+INFO 2023-05-18 11:54:47,977 views 12992 18632 User is authenticated.
+INFO 2023-05-18 11:54:47,977 views 12992 18632 Validating group data.
+INFO 2023-05-18 11:54:48,031 views 12992 18632 Sending request to add users to the group.
+INFO 2023-05-18 11:54:48,031 views 12992 18632 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 11:54:48,031 views 12992 18632 User is authenticated.
+INFO 2023-05-18 11:54:48,032 views 12992 18632 Validating group data.
+INFO 2023-05-18 11:54:48,033 views 12992 18632 Found group with ID:13
+INFO 2023-05-18 11:54:48,082 views 12992 18632 Add user with email:a@a.com to the group:13
+INFO 2023-05-18 11:54:48,133 views 12992 18632 Add user with email:ardestanifateme0@gmail.com to the group:13
+INFO 2023-05-18 11:54:48,133 views 12992 18632 Users added to group:13 successfully.
+INFO 2023-05-18 11:54:48,133 views 12992 18632 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 11:54:48,133 views 12992 18632 User is authenticated.
+INFO 2023-05-18 11:54:48,134 views 12992 18632 Validating group data.
+INFO 2023-05-18 11:54:48,135 views 12992 18632 Found group with ID:13
+INFO 2023-05-18 11:54:48,137 views 12992 18632 Add user with email:a@a.com to the group:13
+INFO 2023-05-18 11:54:48,141 views 12992 18632 Add user with email:ardestanifateme0@gmail.com to the group:13
+INFO 2023-05-18 11:54:48,141 views 12992 18632 Users added to group:13 successfully.
+INFO 2023-05-18 11:54:48,141 views 12992 18632 Group create successfully. Group ID: 13
+INFO 2023-05-18 11:54:48,142 basehttp 12992 18632 "POST /group/CreateGroup/ HTTP/1.1" 201 0
+WARNING 2023-05-18 11:57:30,431 log 12992 3780 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-18 11:57:30,433 basehttp 12992 3780 "GET /group/ShowGroups/ HTTP/1.1" 401 74
+WARNING 2023-05-18 11:57:36,172 log 12992 3780 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-18 11:57:36,172 basehttp 12992 3780 "GET /group/ShowGroups/ HTTP/1.1" 405 40
+INFO 2023-05-18 11:57:48,742 views 12992 3780 Groups retrieved successfully for User ID : 26
+INFO 2023-05-18 11:57:48,743 basehttp 12992 3780 "POST /group/ShowGroups/ HTTP/1.1" 200 58
+INFO 2023-05-18 11:58:13,986 views 12992 3780 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 11:58:13,986 views 12992 3780 User is authenticated.
+INFO 2023-05-18 11:58:13,986 views 12992 3780 Group ID:13 for leave group
+WARNING 2023-05-18 11:58:13,987 views 12992 3780 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 11:58:13,987 views 12992 3780 Error: Group not found.
+WARNING 2023-05-18 11:58:13,988 log 12992 3780 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 11:58:13,988 basehttp 12992 3780 "POST /auth/LeaveGroup/ HTTP/1.1" 404 30
+INFO 2023-05-18 11:58:25,270 views 12992 3780 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 11:58:25,270 views 12992 3780 User is authenticated.
+INFO 2023-05-18 11:58:25,270 views 12992 3780 Group ID:13 for leave group
+WARNING 2023-05-18 11:58:25,271 views 12992 3780 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 11:58:25,271 views 12992 3780 Error: Group not found.
+WARNING 2023-05-18 11:58:25,272 log 12992 3780 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 11:58:25,273 basehttp 12992 3780 "POST /auth/LeaveGroup/ HTTP/1.1" 404 30
+WARNING 2023-05-18 11:58:38,001 log 12992 3780 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-18 11:58:38,002 basehttp 12992 3780 "GET /group/ShowGroups/ HTTP/1.1" 405 40
+INFO 2023-05-18 11:58:44,189 views 12992 3780 Groups retrieved successfully for User ID : 26
+INFO 2023-05-18 11:58:44,190 basehttp 12992 3780 "POST /group/ShowGroups/ HTTP/1.1" 200 58
+INFO 2023-05-18 11:59:10,702 views 12992 3780 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 11:59:10,702 views 12992 3780 User is authenticated.
+ERROR 2023-05-18 11:59:10,702 views 12992 3780 Error: 'groupID'
+ERROR 2023-05-18 11:59:10,702 log 12992 3780 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-18 11:59:10,703 basehttp 12992 3780 "POST /auth/LeaveGroup/ HTTP/1.1" 500 23
+INFO 2023-05-18 11:59:20,659 views 12992 3780 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 11:59:20,659 views 12992 3780 User is authenticated.
+INFO 2023-05-18 11:59:20,659 views 12992 3780 Group ID:13 for leave group
+WARNING 2023-05-18 11:59:20,660 views 12992 3780 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 11:59:20,660 views 12992 3780 Error: Group not found.
+WARNING 2023-05-18 11:59:20,660 log 12992 3780 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 11:59:20,660 basehttp 12992 3780 "POST /auth/LeaveGroup/ HTTP/1.1" 404 30
+INFO 2023-05-18 12:01:10,140 autoreload 12992 10780 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:01:11,435 autoreload 11236 15912 Watching for file changes with StatReloader
+INFO 2023-05-18 12:01:16,170 views 11236 12216 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:01:16,170 views 11236 12216 User is authenticated.
+INFO 2023-05-18 12:01:16,170 views 11236 12216 Group ID:13 for leave group
+WARNING 2023-05-18 12:01:16,171 views 11236 12216 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:01:16,171 views 11236 12216 Error: Group not found.
+WARNING 2023-05-18 12:01:16,172 log 11236 12216 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:01:16,172 basehttp 11236 12216 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:02:17,266 autoreload 11236 15912 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:02:18,526 autoreload 11716 15968 Watching for file changes with StatReloader
+INFO 2023-05-18 12:02:19,591 views 11716 10796 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:02:19,592 views 11716 10796 User is authenticated.
+INFO 2023-05-18 12:02:19,593 views 11716 10796 Group ID:13 for leave group
+WARNING 2023-05-18 12:02:19,595 views 11716 10796 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:02:19,596 views 11716 10796 Error: Group not found.
+WARNING 2023-05-18 12:02:19,596 log 11716 10796 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:02:19,597 basehttp 11716 10796 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:26,520 autoreload 11716 15968 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:03:27,642 autoreload 7640 432 Watching for file changes with StatReloader
+INFO 2023-05-18 12:03:29,237 views 7640 17216 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:29,238 views 7640 17216 User is authenticated.
+INFO 2023-05-18 12:03:29,238 views 7640 17216 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:29,239 views 7640 17216 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:29,239 views 7640 17216 Error: Group not found.
+WARNING 2023-05-18 12:03:29,239 log 7640 17216 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:29,241 basehttp 7640 17216 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:30,546 views 7640 17216 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:30,546 views 7640 17216 User is authenticated.
+INFO 2023-05-18 12:03:30,546 views 7640 17216 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:30,548 views 7640 17216 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:30,550 views 7640 17216 Error: Group not found.
+WARNING 2023-05-18 12:03:30,551 log 7640 17216 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:30,551 basehttp 7640 17216 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:42,283 autoreload 16088 3372 Watching for file changes with StatReloader
+INFO 2023-05-18 12:03:44,723 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:44,723 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:44,723 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:44,724 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:44,725 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:44,725 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:44,726 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:45,666 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:45,667 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:45,667 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:45,668 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:45,668 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:45,669 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:45,669 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:45,851 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:45,851 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:45,851 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:45,854 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:45,854 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:45,854 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:45,855 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:46,020 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:46,021 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:46,021 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:46,022 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:46,023 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:46,024 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:46,024 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:46,160 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:46,160 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:46,160 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:46,161 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:46,162 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:46,162 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:46,163 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:03:46,303 views 16088 15432 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:03:46,304 views 16088 15432 User is authenticated.
+INFO 2023-05-18 12:03:46,304 views 16088 15432 Group ID:13 for leave group
+WARNING 2023-05-18 12:03:46,306 views 16088 15432 DebtandCreditforMemberinGroup_Group not found.(groupID:13)
+ERROR 2023-05-18 12:03:46,307 views 16088 15432 Error: Group not found.
+WARNING 2023-05-18 12:03:46,307 log 16088 15432 Not Found: /auth/LeaveGroup/
+WARNING 2023-05-18 12:03:46,308 basehttp 16088 15432 "POST /auth/LeaveGroup/ HTTP/1.1" 404 66
+INFO 2023-05-18 12:04:12,047 autoreload 16088 3372 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:04:13,074 autoreload 9928 3664 Watching for file changes with StatReloader
+INFO 2023-05-18 12:04:20,124 autoreload 7368 2676 Watching for file changes with StatReloader
+INFO 2023-05-18 12:04:20,702 views 7368 2180 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 12:04:20,703 views 7368 2180 User is authenticated.
+INFO 2023-05-18 12:04:20,703 views 7368 2180 Group ID:13 for leave group
+INFO 2023-05-18 12:04:21,290 views 7368 2180 User deleted successfully. (userID:FatemeArdestani, groupID:13)
+INFO 2023-05-18 12:04:21,292 basehttp 7368 2180 "POST /auth/LeaveGroup/ HTTP/1.1" 200 40
+INFO 2023-05-18 12:04:48,786 views 7368 2180 Request received: POST auth/register
+WARNING 2023-05-18 12:04:48,788 log 7368 2180 Bad Request: /auth/register/
+WARNING 2023-05-18 12:04:48,788 basehttp 7368 2180 "POST /auth/register/ HTTP/1.1" 400 113
+INFO 2023-05-18 12:05:11,568 views 7368 2180 Request received: POST auth/register
+WARNING 2023-05-18 12:05:11,570 log 7368 2180 Bad Request: /auth/register/
+WARNING 2023-05-18 12:05:11,570 basehttp 7368 2180 "POST /auth/register/ HTTP/1.1" 400 113
+INFO 2023-05-18 12:05:17,738 basehttp 7368 13476 "GET /admin/MyUser/myuser/11/change/ HTTP/1.1" 200 11880
+INFO 2023-05-18 12:05:17,779 basehttp 7368 15976 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 12:05:20,657 basehttp 7368 13476 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-18 12:05:20,700 basehttp 7368 15976 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 12:05:24,991 basehttp 7368 13476 "GET /admin/MyUser/myuser/26/change/ HTTP/1.1" 200 11907
+INFO 2023-05-18 12:05:25,028 basehttp 7368 15976 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 12:05:45,294 views 7368 2180 Request received: POST auth/register
+WARNING 2023-05-18 12:05:45,296 log 7368 2180 Bad Request: /auth/register/
+WARNING 2023-05-18 12:05:45,296 basehttp 7368 2180 "POST /auth/register/ HTTP/1.1" 400 113
+INFO 2023-05-18 12:05:57,901 basehttp 7368 2180 "POST /auth/token/ HTTP/1.1" 200 52
+WARNING 2023-05-18 12:06:17,263 views 7368 2180 User is not a member of the group. Group ID: 13, User email : ardestanifateme0@gmail.com
+WARNING 2023-05-18 12:06:17,263 log 7368 2180 Forbidden: /group/GroupInfo/
+WARNING 2023-05-18 12:06:17,263 basehttp 7368 2180 "POST /group/GroupInfo/ HTTP/1.1" 403 46
+INFO 2023-05-18 12:06:35,762 basehttp 7368 2180 "POST /auth/token/ HTTP/1.1" 200 52
+INFO 2023-05-18 12:06:56,015 basehttp 7368 2180 "POST /auth/token/ HTTP/1.1" 200 52
+INFO 2023-05-18 12:07:40,018 basehttp 7368 5008 "GET /admin/MyUser/myuser/ HTTP/1.1" 200 8834
+INFO 2023-05-18 12:07:41,768 basehttp 7368 5008 "GET /admin/MyUser/myuser/11/change/ HTTP/1.1" 200 11880
+INFO 2023-05-18 12:07:41,816 basehttp 7368 5008 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 12:07:52,736 basehttp 7368 5008 "GET /admin/MyUser/myuser/11/change/ HTTP/1.1" 200 11880
+INFO 2023-05-18 12:07:52,779 basehttp 7368 5008 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-05-18 12:08:15,601 views 7368 2180 Group info retrieved successfully. Group ID: 13. Group name:  ” 
+INFO 2023-05-18 12:08:15,602 basehttp 7368 2180 "POST /group/GroupInfo/ HTTP/1.1" 200 79
