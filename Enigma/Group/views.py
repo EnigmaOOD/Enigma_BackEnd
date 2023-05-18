@@ -194,14 +194,11 @@ class DeleteGroup(APIView):
 
 def DebtandCreditforMemberinGroup(user_id, group_id):
     try:
-        try:
-            Group.objects.get(groupID = group_id)
-        except Group.DoesNotExist:
+        if not (Group.objects.filter(id = group_id).exists()):
             logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
             return 'Group not found.'
-        try:
-            Members.objects.get(groupID = group_id, userID=user_id)
-        except:
+
+        if not Members.objects.filter(groupID = group_id, userID=user_id).exists():
             logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
             return 'User not found.'
         
@@ -214,49 +211,6 @@ def DebtandCreditforMemberinGroup(user_id, group_id):
             sum -= buy.percent
         return sum
     except Exception as e:
+
         logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
         return str(e)
-
-
-
-
-
-
-
-
-
-
-#############################################################################################################################
-
-class AmountofDebtandCredit(APIView):
-    permission_classes = [permissions.IsAuthenticated]
-
-    def post(self, data):
-        if not isinstance(data, dict):
-            data = data.data
-        serializer_data = AmountDebtandCreditMemberSerializer(data=data)
-        # print(serializer_data)
-        if serializer_data.is_valid():
-            list_buyer = buyer.objects.filter(userID=data['userID'])
-            list_consumer = consumer.objects.filter(userID=data['userID'])
-
-            sum = 0
-            for buy in list_buyer:
-                sum += buy.percent
-
-            for buy in list_consumer:
-                sum -= buy.percent
-
-            return Response(sum)
-        return Response(serializer_data.errors)
-
-# {
-#   "name":"گروه دوستان",
-#   "description":"دوستان دانشگاهی",
-#   "currency":"تومان"
-# }
-
-
-# {
-#   "emails":["maryam.shafizadegan.8098@gmail.com", "flowerfatmi5@gmail.com"]
-# }

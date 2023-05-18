@@ -1205,3 +1205,17 @@ INFO 2023-05-18 12:07:52,736 basehttp 7368 5008 "GET /admin/MyUser/myuser/11/cha
 INFO 2023-05-18 12:07:52,779 basehttp 7368 5008 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2023-05-18 12:08:15,601 views 7368 2180 Group info retrieved successfully. Group ID: 13. Group name:  ” 
 INFO 2023-05-18 12:08:15,602 basehttp 7368 2180 "POST /group/GroupInfo/ HTTP/1.1" 200 79
+INFO 2023-05-18 12:09:02,922 autoreload 7368 2676 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:09:04,331 autoreload 17952 14132 Watching for file changes with StatReloader
+INFO 2023-05-18 12:09:09,962 autoreload 17952 14132 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py changed, reloading.
+INFO 2023-05-18 12:09:11,165 autoreload 14964 7492 Watching for file changes with StatReloader
+INFO 2023-05-18 12:09:53,694 autoreload 14964 7492 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py changed, reloading.
+INFO 2023-05-18 12:09:54,771 autoreload 6768 15080 Watching for file changes with StatReloader
+INFO 2023-05-18 12:10:21,564 autoreload 6768 15080 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py changed, reloading.
+INFO 2023-05-18 12:10:22,635 autoreload 12364 8672 Watching for file changes with StatReloader
+INFO 2023-05-18 12:11:31,768 autoreload 12364 8672 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\serializers.py changed, reloading.
+INFO 2023-05-18 12:11:32,940 autoreload 17092 16568 Watching for file changes with StatReloader
+INFO 2023-05-18 12:11:52,034 autoreload 17092 16568 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py changed, reloading.
+INFO 2023-05-18 12:11:53,199 autoreload 9172 3108 Watching for file changes with StatReloader
+INFO 2023-05-18 12:12:20,024 autoreload 9172 3108 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py changed, reloading.
+INFO 2023-05-18 12:12:21,248 autoreload 12260 16136 Watching for file changes with StatReloader

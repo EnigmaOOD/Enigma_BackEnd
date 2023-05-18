@@ -1,6 +1,6 @@
 from django.urls import path
 from django.urls import path, re_path
-from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, AmountofDebtandCredit, ShowMembers, ShowGroups
+from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups
 #just simple comment
 app_name = 'Group'
 urlpatterns = [
@@ -11,7 +11,6 @@ urlpatterns = [
     path('ShowGroups/', ShowGroups.as_view(), name='ShowGroups'),
     path('CreateGroup/', CreateGroup.as_view(), name='CreateGroup'),
     path('AddUserGroup/', AddUserGroup.as_view(), name='AddUserGroup'),
-    path('AmountofDebtandCredit/', AmountofDebtandCredit.as_view(), name='AmountofDebtandCredit'),
 
 
 ]
