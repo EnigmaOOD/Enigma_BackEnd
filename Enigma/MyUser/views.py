@@ -147,9 +147,9 @@ class LeaveGroup(APIView):
 
         try:
             group_id = request.data['groupID']
-            logger.debug(f"Group ID:{group_id} for leave group")
-
+            logger.info(f"Group ID:{group_id} for leave group")
             result = DebtandCreditforMemberinGroup(self.request.user, group_id)
+            # logger.info(result)
             if isinstance(result, str):
                 if result == 'Group not found.':
                      logger.error(f"Error: {result}")
@@ -187,14 +187,11 @@ class LeaveGroup(APIView):
         
 def DebtandCreditforMemberinGroup(user_id, group_id):
     try:
-        try:
-            Group.objects.get(groupID = group_id)
-        except Group.DoesNotExist:
+        if not Group.objects.filter(groupID = group_id).exists():
             logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
             return 'Group not found.'
-        try:
-            Members.objects.get(groupID = group_id, userID=user_id)
-        except:
+
+        if not Members.objects.filter(groupID = group_id, userID=user_id).exists():
             logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
             return 'User not found.'
         

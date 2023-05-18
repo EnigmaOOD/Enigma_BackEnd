@@ -102,8 +102,6 @@ class ShowGroups(APIView):
 
     def post(self, request):
         try:
-
-
             user_groups = Members.objects.filter(
                 userID=self.request.user.user_id).values_list('groupID', flat=True)
             groups = Group.objects.filter(pk__in=user_groups)
