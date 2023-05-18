@@ -37,14 +37,22 @@ class RegisterAndAuthenticateTest(APITestCase):
         
     def test_should_not_register_invalid_password(self):
         user_info = {
-        "email":"uu.com",
+        "email":"u@u.com",
         "password":"",
         "name":"Uali",
         "picture_id" :10}
         
         response = self.client.post(('/auth/register/'),user_info)
         self.assertEqual(response.status_code, 400)
-
+    def test_should_not_register_invalid_picture_id(self):
+        user_info = {
+        "email":"u@u.com",
+        "password":"1",
+        "name":"Uali",
+        "picture_id" :15}
+        
+        response = self.client.post(('/auth/register/'),user_info)
+        self.assertEqual(response.status_code, 400)
     def test_should_register(self):
         user_info = {
         "email":"u@u.com",

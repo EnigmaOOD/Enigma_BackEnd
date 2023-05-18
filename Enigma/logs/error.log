@@ -272,3 +272,43 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^
 AssertionError: .validate() should return the validated data
 ERROR 2023-05-18 13:15:42,140 basehttp 16864 8248 "POST /auth/register/ HTTP/1.1" 500 107247
+ERROR 2023-05-18 13:19:33,273 views 5064 10440 User with email:test3.example.com not found.
+ERROR 2023-05-18 13:19:33,273 views 5064 10440 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-18 13:19:33,273 views 5064 10440 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-18 13:19:33,305 views 5064 10440 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:19:33,305 views 5064 10440 Invalid group data.
+ERROR 2023-05-18 13:19:33,338 views 5064 10440 User with email:miss_ramazani not found.
+ERROR 2023-05-18 13:19:33,354 views 5064 10440 User with email:miss_ramazani not found.
+ERROR 2023-05-18 13:19:33,354 views 5064 10440 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-18 13:19:33,358 views 5064 10440 Invalid group data.
+ERROR 2023-05-18 13:19:33,358 views 5064 10440 Invalid group data.
+ERROR 2023-05-18 13:19:33,358 views 5064 10440 Invalid group data.
+ERROR 2023-05-18 13:19:33,376 views 5064 10440 Invalid group data.
+ERROR 2023-05-18 13:19:33,403 views 5064 10440 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:19:33,403 views 5064 10440 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:19:33,403 views 5064 10440 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-18 13:19:33,419 views 5064 10440 An error occurred: Something went wrong
+ERROR 2023-05-18 13:19:33,419 log 5064 10440 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-18 13:19:33,430 views 5064 10440 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-18 13:19:33,430 log 5064 10440 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:19:33,430 views 5064 10440 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-18 13:19:33,430 log 5064 10440 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:19:33,430 views 5064 10440 Group not found. Group ID: 999
+ERROR 2023-05-18 13:19:33,430 views 5064 10440 Group not found. Group ID: None
+ERROR 2023-05-18 13:19:33,447 log 5064 10440 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-18 13:19:33,458 views 5064 10440 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-18 13:19:33,458 views 5064 10440 Error: Test Exception
+ERROR 2023-05-18 13:19:33,458 log 5064 10440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-18 13:19:33,546 views 5064 10440 Error: Internal Server Error
+ERROR 2023-05-18 13:19:33,546 log 5064 10440 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-18 13:19:33,558 views 5064 10440 Error: Group not found.
+ERROR 2023-05-18 13:19:33,574 views 5064 10440 Error: User not found.
+ERROR 2023-05-18 13:19:36,410 views 5064 10440 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:19:36,410 views 5064 10440 Error: Something went wrong
+ERROR 2023-05-18 13:19:36,410 log 5064 10440 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-18 13:19:36,410 views 5064 10440 User not found. User ID: None
+ERROR 2023-05-18 13:19:36,610 views 5064 10440 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-18 13:19:36,610 views 5064 10440 Error: Test Exception
+ERROR 2023-05-18 13:19:36,610 log 5064 10440 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-18 13:19:36,625 views 5064 10440 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-18 13:19:36,625 log 5064 10440 Internal Server Error: /buy/UserGroupBuys/
