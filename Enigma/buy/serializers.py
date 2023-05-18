@@ -101,16 +101,16 @@ class CreateBuySerializer(serializers.ModelSerializer):
         return buy_instance
 
     def validate(self, data):
-        print(self.initial_data)
+        logger.info(self.initial_data)
         buyers_data = self.initial_data.get('buyers')
         consumers_data = self.initial_data.get('consumers')
         group_id = self.initial_data.get('groupID')
         total_buy = 0
         total_consume = 0
         for buyer in buyers_data:
-            print(buyer)
+            logger.info(buyer)
             user_id = buyer['userID']
-            print(user_id)
+            logger.info(user_id)
             member = Members.objects.filter(
                 groupID_id=group_id, userID_id=user_id).exists()
             if not member:

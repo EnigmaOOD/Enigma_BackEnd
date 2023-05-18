@@ -238,3 +238,37 @@ ERROR 2023-05-18 12:03:45,854 views 16088 15432 Error: Group not found.
 ERROR 2023-05-18 12:03:46,023 views 16088 15432 Error: Group not found.
 ERROR 2023-05-18 12:03:46,162 views 16088 15432 Error: Group not found.
 ERROR 2023-05-18 12:03:46,307 views 16088 15432 Error: Group not found.
+ERROR 2023-05-18 13:15:42,140 log 16864 8248 Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py", line 34, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 430, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+           ^^^^^^^^^^^^^^^^^
+AssertionError: .validate() should return the validated data
+ERROR 2023-05-18 13:15:42,140 basehttp 16864 8248 "POST /auth/register/ HTTP/1.1" 500 107247

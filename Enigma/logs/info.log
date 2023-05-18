@@ -1219,3 +1219,52 @@ INFO 2023-05-18 12:11:52,034 autoreload 17092 16568 E:\uni\8\OOD\Enigma_BackEnd\
 INFO 2023-05-18 12:11:53,199 autoreload 9172 3108 Watching for file changes with StatReloader
 INFO 2023-05-18 12:12:20,024 autoreload 9172 3108 E:\uni\8\OOD\Enigma_BackEnd\Enigma\Group\views.py changed, reloading.
 INFO 2023-05-18 12:12:21,248 autoreload 12260 16136 Watching for file changes with StatReloader
+INFO 2023-05-18 13:15:19,703 autoreload 16864 17124 Watching for file changes with StatReloader
+INFO 2023-05-18 13:15:42,071 views 16864 8248 Request received: POST auth/register
+ERROR 2023-05-18 13:15:42,140 log 16864 8248 Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\views.py", line 34, in post
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\serializers.py", line 430, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+           ^^^^^^^^^^^^^^^^^
+AssertionError: .validate() should return the validated data
+ERROR 2023-05-18 13:15:42,140 basehttp 16864 8248 "POST /auth/register/ HTTP/1.1" 500 107247
+INFO 2023-05-18 13:16:02,537 autoreload 16864 17124 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\serializers.py changed, reloading.
+INFO 2023-05-18 13:16:03,470 autoreload 10104 12108 Watching for file changes with StatReloader
+INFO 2023-05-18 13:16:06,732 views 10104 4588 Request received: POST auth/register
+INFO 2023-05-18 13:16:07,367 views 10104 4588 User register successfully.
+INFO 2023-05-18 13:16:08,253 views 10104 4588 Sending verification email to the user.(email_body:Hi AB Use link below to verify your email 
+http://127.0.0.1:8000/auth/verify-email/?token=bb411275e16d006c58522f0ffd51474e380d6e02)
+INFO 2023-05-18 13:16:13,182 views 10104 4588 User registration completed.(email:a@b.com, name:AB)
+INFO 2023-05-18 13:16:13,184 basehttp 10104 4588 "POST /auth/register/ HTTP/1.1" 201 60
+INFO 2023-05-18 13:16:29,406 autoreload 10104 12108 E:\uni\8\OOD\Enigma_BackEnd\Enigma\MyUser\serializers.py changed, reloading.
+INFO 2023-05-18 13:16:30,321 autoreload 12316 13052 Watching for file changes with StatReloader
+INFO 2023-05-18 13:16:38,914 views 12316 5376 Request received: POST auth/register
+WARNING 2023-05-18 13:16:38,931 log 12316 5376 Bad Request: /auth/register/
+WARNING 2023-05-18 13:16:38,931 basehttp 12316 5376 "POST /auth/register/ HTTP/1.1" 400 58

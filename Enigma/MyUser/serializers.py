@@ -22,7 +22,11 @@ class MyUserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = get_user_model().objects.create_user(**validated_data)
         return user
-
+    def validate(self, data):
+        if data['picture_id'] > 12:
+                raise serializers.ValidationError(
+                    f"picture_id should be less than 12")
+        return data
     def validate_email(self, value):
         if get_user_model().objects.filter(email=value.lower()).exists():
             raise serializers.ValidationError("email exists.")
