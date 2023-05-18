@@ -1612,3 +1612,1032 @@ INFO 2023-05-18 13:19:36,678 views 5064 10440 Group buys retrieved successfully 
 INFO 2023-05-18 13:19:36,694 views 5064 10440 Group buys retrieved successfully for Group ID: 1, User ID: 3
 WARNING 2023-05-18 13:19:36,694 views 5064 10440 User is not a member of the group. Group ID: 1, User ID: 3
 WARNING 2023-05-18 13:19:36,694 log 5064 10440 Forbidden: /buy/UserGroupBuys/
+INFO 2023-05-18 13:47:30,959 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:30,960 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:30,960 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:30,961 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:30,963 views 15676 12628 Add user with email:test2@example.com to the group:1
+ERROR 2023-05-18 13:47:30,964 views 15676 12628 User with email:test3.example.com not found.
+WARNING 2023-05-18 13:47:30,965 log 15676 12628 Not Found: /group/AddUserGroup/
+ERROR 2023-05-18 13:47:30,972 views 15676 12628 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:47:30,973 log 15676 12628 Forbidden: /group/AddUserGroup/
+ERROR 2023-05-18 13:47:30,977 views 15676 12628 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:47:30,977 log 15676 12628 Forbidden: /group/AddUserGroup/
+INFO 2023-05-18 13:47:30,981 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:30,982 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:30,982 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:30,983 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:30,983 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:30,989 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:30,989 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:30,990 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:30,990 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:30,992 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:30,994 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:30,994 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,002 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,002 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,002 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,003 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,005 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,005 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,011 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,011 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,011 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,012 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,014 views 15676 12628 Add user with email:test1@example.com to the group:1
+ERROR 2023-05-18 13:47:31,014 views 15676 12628 User with email:miss_ramazani@yahoo.com not found.
+WARNING 2023-05-18 13:47:31,015 log 15676 12628 Not Found: /group/AddUserGroup/
+INFO 2023-05-18 13:47:31,018 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,018 views 15676 12628 User is authenticated.
+ERROR 2023-05-18 13:47:31,019 views 15676 12628 Invalid group data.
+WARNING 2023-05-18 13:47:31,019 log 15676 12628 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,023 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,023 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,024 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,025 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,025 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,025 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,025 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,026 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,028 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,029 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,031 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,031 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,031 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,031 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,032 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,032 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,034 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,035 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,037 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,037 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,037 views 15676 12628 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:47:31,041 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,041 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,042 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,043 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,043 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,043 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,043 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,044 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,046 views 15676 12628 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:47:31,047 views 15676 12628 User with email:miss_ramazani not found.
+INFO 2023-05-18 13:47:31,047 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,047 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,047 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,048 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,050 views 15676 12628 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:47:31,051 views 15676 12628 User with email:miss_ramazani not found.
+ERROR 2023-05-18 13:47:31,051 views 15676 12628 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:47:31,054 log 15676 12628 Not Found: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,057 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,057 views 15676 12628 User is authenticated.
+ERROR 2023-05-18 13:47:31,058 views 15676 12628 Invalid group data.
+WARNING 2023-05-18 13:47:31,058 log 15676 12628 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,062 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,062 views 15676 12628 User is authenticated.
+ERROR 2023-05-18 13:47:31,063 views 15676 12628 Invalid group data.
+WARNING 2023-05-18 13:47:31,063 log 15676 12628 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,067 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,067 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,068 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,068 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,068 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,068 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,069 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,069 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,072 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,072 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,072 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,072 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,073 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,073 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,074 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,075 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,075 views 15676 12628 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:47:31,080 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,081 views 15676 12628 User is authenticated.
+ERROR 2023-05-18 13:47:31,081 views 15676 12628 Invalid group data.
+WARNING 2023-05-18 13:47:31,082 log 15676 12628 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,085 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,086 views 15676 12628 User is authenticated.
+ERROR 2023-05-18 13:47:31,086 views 15676 12628 Invalid group data.
+WARNING 2023-05-18 13:47:31,087 log 15676 12628 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:47:31,091 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,091 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,092 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,093 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,093 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,093 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,093 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,094 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,096 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,098 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,100 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,100 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,100 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,100 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,100 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,101 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,103 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,104 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,106 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,106 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,106 views 15676 12628 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:47:31,110 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,110 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,111 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,111 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,111 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,111 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,112 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,112 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,114 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,116 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,117 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,117 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,118 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,118 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,118 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,119 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,120 views 15676 12628 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:47:31,122 views 15676 12628 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:47:31,123 views 15676 12628 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:47:31,123 views 15676 12628 Users added to group:1 successfully.
+INFO 2023-05-18 13:47:31,123 views 15676 12628 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:47:31,131 views 15676 12628 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:47:31,131 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,132 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,133 views 15676 12628 Sending request to add users to the group.
+INFO 2023-05-18 13:47:31,133 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,133 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,133 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,134 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,136 views 15676 12628 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:47:31,136 views 15676 12628 User with email:miss_ramazani@yahoo.com not found.
+INFO 2023-05-18 13:47:31,137 views 15676 12628 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:47:31,137 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,138 views 15676 12628 Validating group data.
+INFO 2023-05-18 13:47:31,138 views 15676 12628 Found group with ID:1
+INFO 2023-05-18 13:47:31,140 views 15676 12628 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:47:31,140 views 15676 12628 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:47:31,140 views 15676 12628 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:47:31,143 log 15676 12628 Not Found: /group/CreateGroup/
+WARNING 2023-05-18 13:47:31,147 log 15676 12628 Unauthorized: /group/CreateGroup/
+WARNING 2023-05-18 13:47:31,150 log 15676 12628 Forbidden: /group/DeleteGroup/
+INFO 2023-05-18 13:47:31,157 views 15676 12628 Group deleted successfully. Group ID: 1
+INFO 2023-05-18 13:47:31,157 views 15676 12628 testuser@test.local delete the group
+WARNING 2023-05-18 13:47:31,163 log 15676 12628 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-18 13:47:31,169 views 15676 12628 An error occurred: Something went wrong
+ERROR 2023-05-18 13:47:31,169 log 15676 12628 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-18 13:47:31,175 log 15676 12628 Forbidden: /group/DeleteGroup/
+WARNING 2023-05-18 13:47:31,178 log 15676 12628 Method Not Allowed: /group/GroupInfo/
+ERROR 2023-05-18 13:47:31,183 views 15676 12628 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-18 13:47:31,183 log 15676 12628 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:47:31,187 views 15676 12628 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-18 13:47:31,187 log 15676 12628 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:47:31,192 views 15676 12628 Group not found. Group ID: 999
+WARNING 2023-05-18 13:47:31,192 log 15676 12628 Not Found: /group/GroupInfo/
+INFO 2023-05-18 13:47:31,198 views 15676 12628 Group info retrieved successfully. Group ID: 1. Group name: Test Group
+WARNING 2023-05-18 13:47:31,201 log 15676 12628 Unauthorized: /group/GroupInfo/
+ERROR 2023-05-18 13:47:31,206 views 15676 12628 Group not found. Group ID: None
+WARNING 2023-05-18 13:47:31,207 log 15676 12628 Not Found: /group/GroupInfo/
+WARNING 2023-05-18 13:47:31,212 views 15676 12628 User is not a member of the group. Group ID: 1, User email : user2@test.com
+WARNING 2023-05-18 13:47:31,212 log 15676 12628 Forbidden: /group/GroupInfo/
+ERROR 2023-05-18 13:47:31,216 log 15676 12628 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-18 13:47:31,219 log 15676 12628 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-18 13:47:31,223 log 15676 12628 Not Found: /group/ShowGroups/
+WARNING 2023-05-18 13:47:31,226 log 15676 12628 Method Not Allowed: /group/ShowGroups/
+INFO 2023-05-18 13:47:31,230 views 15676 12628 Groups retrieved successfully for User ID : 1
+WARNING 2023-05-18 13:47:31,233 log 15676 12628 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-18 13:47:31,237 log 15676 12628 Not Found: /group/ShowGroups/
+INFO 2023-05-18 13:47:31,244 views 15676 12628 Groups retrieved successfully for User ID : 1
+ERROR 2023-05-18 13:47:31,251 views 15676 12628 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-18 13:47:31,252 views 15676 12628 Error: Test Exception
+ERROR 2023-05-18 13:47:31,252 log 15676 12628 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-18 13:47:31,258 log 15676 12628 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:47:31,264 log 15676 12628 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:47:31,269 log 15676 12628 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:47:31,282 views 15676 12628 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+INFO 2023-05-18 13:47:31,295 views 15676 12628 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+WARNING 2023-05-18 13:47:31,301 log 15676 12628 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:47:31,305 views 15676 12628 Retrieving user object.
+WARNING 2023-05-18 13:47:31,306 log 15676 12628 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:47:31,308 views 15676 12628 Retrieving user object.
+WARNING 2023-05-18 13:47:31,309 log 15676 12628 Bad Request: /auth/EditProfile/
+WARNING 2023-05-18 13:47:31,312 log 15676 12628 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-18 13:47:31,316 views 15676 12628 Retrieving user object.
+INFO 2023-05-18 13:47:31,317 views 15676 12628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:47:31,317 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,318 views 15676 12628 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-18 13:47:31,321 views 15676 12628 Retrieving user object.
+INFO 2023-05-18 13:47:31,322 views 15676 12628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:47:31,322 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,323 views 15676 12628 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-18 13:47:31,326 views 15676 12628 Retrieving user object.
+WARNING 2023-05-18 13:47:31,327 log 15676 12628 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:47:31,328 views 15676 12628 Retrieving user object.
+WARNING 2023-05-18 13:47:31,330 log 15676 12628 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:47:31,332 views 15676 12628 Retrieving user object.
+WARNING 2023-05-18 13:47:31,333 log 15676 12628 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:47:31,337 views 15676 12628 Retrieving user object.
+INFO 2023-05-18 13:47:31,338 views 15676 12628 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:47:31,338 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,339 views 15676 12628 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-18 13:47:31,353 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,353 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,354 views 15676 12628 Group ID:1 for leave group
+ERROR 2023-05-18 13:47:31,354 views 15676 12628 Error: Internal Server Error
+ERROR 2023-05-18 13:47:31,355 log 15676 12628 Internal Server Error: /auth/LeaveGroup/
+INFO 2023-05-18 13:47:31,369 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,369 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,370 views 15676 12628 Group ID:10 for leave group
+WARNING 2023-05-18 13:47:31,371 views 15676 12628 DebtandCreditforMemberinGroup_Group not found.(groupID:10)
+ERROR 2023-05-18 13:47:31,371 views 15676 12628 Error: Group not found.
+WARNING 2023-05-18 13:47:31,371 log 15676 12628 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:47:31,389 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,389 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,390 views 15676 12628 Group ID:2 for leave group
+WARNING 2023-05-18 13:47:31,391 views 15676 12628 DebtandCreditforMemberinGroup_User not found.(userID:test4)
+ERROR 2023-05-18 13:47:31,392 views 15676 12628 Error: User not found.
+WARNING 2023-05-18 13:47:31,392 log 15676 12628 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:47:31,410 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,411 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,411 views 15676 12628 Group ID:1 for leave group
+INFO 2023-05-18 13:47:31,416 views 15676 12628 User deleted successfully. (userID:test2, groupID:1)
+INFO 2023-05-18 13:47:31,434 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,434 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,434 views 15676 12628 Group ID:2 for leave group
+INFO 2023-05-18 13:47:31,440 views 15676 12628 User deleted successfully. (userID:test1, groupID:2)
+INFO 2023-05-18 13:47:31,458 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,458 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,459 views 15676 12628 Group ID:1 for leave group
+WARNING 2023-05-18 13:47:31,462 views 15676 12628 Settlement not completed. (userID:test1, groupID:1)
+WARNING 2023-05-18 13:47:31,462 log 15676 12628 Payment Required: /auth/LeaveGroup/
+INFO 2023-05-18 13:47:31,480 views 15676 12628 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:47:31,480 views 15676 12628 User is authenticated.
+INFO 2023-05-18 13:47:31,480 views 15676 12628 Group ID:1 for leave group
+WARNING 2023-05-18 13:47:31,483 views 15676 12628 Settlement not completed. (userID:test3, groupID:1)
+WARNING 2023-05-18 13:47:31,483 log 15676 12628 Payment Required: /auth/LeaveGroup/
+WARNING 2023-05-18 13:47:31,507 log 15676 12628 Unauthorized: /auth/LeaveGroup/
+INFO 2023-05-18 13:47:31,510 views 15676 12628 Request received: POST auth/register
+INFO 2023-05-18 13:47:31,831 views 15676 12628 User register successfully.
+INFO 2023-05-18 13:47:31,848 views 15676 12628 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=4f855183fc99f0a9506884deee5483ea487c5697)
+INFO 2023-05-18 13:47:32,780 views 15676 12628 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:47:33,076 log 15676 12628 Bad Request: /auth/token/
+INFO 2023-05-18 13:47:33,078 views 15676 12628 Request received: POST auth/register
+INFO 2023-05-18 13:47:33,320 views 15676 12628 User register successfully.
+INFO 2023-05-18 13:47:33,322 views 15676 12628 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=077daa3c4f2d6ed29f916eb2cd6e19c8d304d8dc)
+INFO 2023-05-18 13:47:33,323 views 15676 12628 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:47:33,565 log 15676 12628 Bad Request: /auth/token/
+INFO 2023-05-18 13:47:33,567 views 15676 12628 Request received: POST auth/register
+INFO 2023-05-18 13:47:33,810 views 15676 12628 User register successfully.
+INFO 2023-05-18 13:47:33,812 views 15676 12628 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=11660f86e2b7f6fef2074145b34151327f7c1378)
+INFO 2023-05-18 13:47:33,813 views 15676 12628 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:47:34,055 log 15676 12628 Bad Request: /auth/token/
+INFO 2023-05-18 13:47:34,057 views 15676 12628 Request received: POST auth/register
+WARNING 2023-05-18 13:47:34,060 log 15676 12628 Bad Request: /auth/register/
+INFO 2023-05-18 13:47:34,062 views 15676 12628 Request received: POST auth/register
+WARNING 2023-05-18 13:47:34,064 log 15676 12628 Bad Request: /auth/register/
+INFO 2023-05-18 13:47:34,066 views 15676 12628 Request received: POST auth/register
+WARNING 2023-05-18 13:47:34,069 log 15676 12628 Bad Request: /auth/register/
+INFO 2023-05-18 13:47:34,070 views 15676 12628 Request received: POST auth/register
+INFO 2023-05-18 13:47:34,315 views 15676 12628 User register successfully.
+INFO 2023-05-18 13:47:34,317 views 15676 12628 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=850fc0601b4d4d5ce67db0f89671b42f3cba937c)
+INFO 2023-05-18 13:47:34,317 views 15676 12628 User registration completed.(email:u@u.com, name:Uali)
+ERROR 2023-05-18 13:47:34,321 views 15676 12628 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:47:34,321 views 15676 12628 Error: Something went wrong
+ERROR 2023-05-18 13:47:34,322 log 15676 12628 Internal Server Error: /auth/UserInfo/
+INFO 2023-05-18 13:47:34,325 views 15676 12628 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:47:34,328 views 15676 12628 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:47:34,332 views 15676 12628 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:47:34,341 views 15676 12628 User not found. User ID: None
+WARNING 2023-05-18 13:47:34,341 log 15676 12628 Not Found: /auth/UserInfo/
+WARNING 2023-05-18 13:47:34,344 log 15676 12628 Method Not Allowed: /auth/UserInfo/
+INFO 2023-05-18 13:47:34,347 views 15676 12628 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+WARNING 2023-05-18 13:47:34,350 log 15676 12628 Unauthorized: /auth/UserInfo/
+INFO 2023-05-18 13:47:34,354 views 15676 12628 Request received: GET auth/verify-email
+INFO 2023-05-18 13:47:34,354 views 15676 12628 Token parameter found: eca0abada3751351ef30a22dc76984f56093faf8
+INFO 2023-05-18 13:47:34,356 views 15676 12628 Email verified successfully for user: testuser@test.local
+INFO 2023-05-18 13:47:34,361 views 15676 12628 Request received: GET auth/verify-email
+INFO 2023-05-18 13:47:34,361 views 15676 12628 Token parameter found: Wrong
+WARNING 2023-05-18 13:47:34,362 views 15676 12628 Invalid token: Wrong
+WARNING 2023-05-18 13:47:34,362 log 15676 12628 Bad Request: /auth/verify-email/
+INFO 2023-05-18 13:47:34,388 views 15676 12628 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:47:34,394 log 15676 12628 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:47:34,624 views 15676 12628 Group buys retrieved successfully. Group ID: 2. Number of buys: 100
+WARNING 2023-05-18 13:47:34,630 log 15676 12628 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:47:34,636 views 15676 12628 Group buys retrieved successfully. Group ID: 2. Number of buys: 0
+WARNING 2023-05-18 13:47:34,643 log 15676 12628 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:47:34,655 views 15676 12628 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:47:34,669 views 15676 12628 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:47:34,682 views 15676 12628 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:47:34,689 log 15676 12628 Forbidden: /buy/GetGroupBuys/
+ERROR 2023-05-18 13:47:34,694 views 15676 12628 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-18 13:47:34,695 views 15676 12628 Error: Test Exception
+ERROR 2023-05-18 13:47:34,695 log 15676 12628 Internal Server Error: /buy/GetGroupBuys/
+INFO 2023-05-18 13:47:34,708 views 15676 12628 Group buys retrieved successfully for Group ID: 2, User ID: 3
+WARNING 2023-05-18 13:47:34,715 views 15676 12628 Group ID not provided. GroupID:9999
+WARNING 2023-05-18 13:47:34,715 log 15676 12628 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-18 13:47:34,724 views 15676 12628 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-18 13:47:34,724 log 15676 12628 Internal Server Error: /buy/UserGroupBuys/
+INFO 2023-05-18 13:47:34,752 views 15676 12628 Group buys retrieved successfully for Group ID: 1, User ID: 1
+WARNING 2023-05-18 13:47:34,760 views 15676 12628 Group ID not provided. GroupID:None
+WARNING 2023-05-18 13:47:34,761 log 15676 12628 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-18 13:47:34,767 log 15676 12628 Unauthorized: /buy/UserGroupBuys/
+INFO 2023-05-18 13:47:34,802 views 15676 12628 Group buys retrieved successfully for Group ID: 1, User ID: 1
+INFO 2023-05-18 13:47:34,818 views 15676 12628 Group buys retrieved successfully for Group ID: 1, User ID: 3
+INFO 2023-05-18 13:47:34,834 views 15676 12628 Group buys retrieved successfully for Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:47:34,843 views 15676 12628 User is not a member of the group. Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:47:34,843 log 15676 12628 Forbidden: /buy/UserGroupBuys/
+INFO 2023-05-18 13:48:32,208 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,209 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,209 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,211 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,213 views 15712 3612 Add user with email:test2@example.com to the group:1
+ERROR 2023-05-18 13:48:32,214 views 15712 3612 User with email:test3.example.com not found.
+WARNING 2023-05-18 13:48:32,214 log 15712 3612 Not Found: /group/AddUserGroup/
+ERROR 2023-05-18 13:48:32,222 views 15712 3612 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:48:32,223 log 15712 3612 Forbidden: /group/AddUserGroup/
+ERROR 2023-05-18 13:48:32,227 views 15712 3612 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:48:32,227 log 15712 3612 Forbidden: /group/AddUserGroup/
+INFO 2023-05-18 13:48:32,232 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,232 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,232 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,233 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,233 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,238 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,238 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,238 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,239 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,241 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,243 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,243 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,251 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,251 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,251 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,252 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,254 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,254 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,260 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,260 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,261 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,262 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,265 views 15712 3612 Add user with email:test1@example.com to the group:1
+ERROR 2023-05-18 13:48:32,266 views 15712 3612 User with email:miss_ramazani@yahoo.com not found.
+WARNING 2023-05-18 13:48:32,266 log 15712 3612 Not Found: /group/AddUserGroup/
+INFO 2023-05-18 13:48:32,271 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,271 views 15712 3612 User is authenticated.
+ERROR 2023-05-18 13:48:32,272 views 15712 3612 Invalid group data.
+WARNING 2023-05-18 13:48:32,272 log 15712 3612 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,276 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,276 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,277 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,278 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,278 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,278 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,278 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,279 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,281 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,282 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,284 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,284 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,284 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,284 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,284 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,285 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,287 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,289 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,290 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,290 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,290 views 15712 3612 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:48:32,294 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,294 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,295 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,296 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,296 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,296 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,296 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,297 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,299 views 15712 3612 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:48:32,299 views 15712 3612 User with email:miss_ramazani not found.
+INFO 2023-05-18 13:48:32,300 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,300 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,300 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,301 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,302 views 15712 3612 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:48:32,303 views 15712 3612 User with email:miss_ramazani not found.
+ERROR 2023-05-18 13:48:32,303 views 15712 3612 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:48:32,306 log 15712 3612 Not Found: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,309 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,309 views 15712 3612 User is authenticated.
+ERROR 2023-05-18 13:48:32,310 views 15712 3612 Invalid group data.
+WARNING 2023-05-18 13:48:32,310 log 15712 3612 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,314 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,314 views 15712 3612 User is authenticated.
+ERROR 2023-05-18 13:48:32,315 views 15712 3612 Invalid group data.
+WARNING 2023-05-18 13:48:32,315 log 15712 3612 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,318 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,318 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,320 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,320 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,320 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,321 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,321 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,322 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,323 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,323 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,324 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,324 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,324 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,325 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,326 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,326 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,326 views 15712 3612 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:48:32,332 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,332 views 15712 3612 User is authenticated.
+ERROR 2023-05-18 13:48:32,333 views 15712 3612 Invalid group data.
+WARNING 2023-05-18 13:48:32,333 log 15712 3612 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,337 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,337 views 15712 3612 User is authenticated.
+ERROR 2023-05-18 13:48:32,338 views 15712 3612 Invalid group data.
+WARNING 2023-05-18 13:48:32,339 log 15712 3612 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:48:32,342 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,342 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,343 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,343 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,344 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,344 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,344 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,345 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,346 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,348 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,350 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,350 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,350 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,350 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,351 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,351 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,353 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,355 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,356 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,356 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,356 views 15712 3612 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:48:32,359 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,359 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,360 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,361 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,361 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,361 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,361 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,362 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,364 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,365 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,367 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,367 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,367 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,367 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,368 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,368 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,370 views 15712 3612 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:48:32,371 views 15712 3612 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:48:32,373 views 15712 3612 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:48:32,373 views 15712 3612 Users added to group:1 successfully.
+INFO 2023-05-18 13:48:32,373 views 15712 3612 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:48:32,382 views 15712 3612 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:48:32,382 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,384 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,384 views 15712 3612 Sending request to add users to the group.
+INFO 2023-05-18 13:48:32,384 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,384 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,384 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,385 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,387 views 15712 3612 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:48:32,388 views 15712 3612 User with email:miss_ramazani@yahoo.com not found.
+INFO 2023-05-18 13:48:32,388 views 15712 3612 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:48:32,388 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,389 views 15712 3612 Validating group data.
+INFO 2023-05-18 13:48:32,389 views 15712 3612 Found group with ID:1
+INFO 2023-05-18 13:48:32,391 views 15712 3612 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:48:32,391 views 15712 3612 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:48:32,391 views 15712 3612 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:48:32,394 log 15712 3612 Not Found: /group/CreateGroup/
+WARNING 2023-05-18 13:48:32,398 log 15712 3612 Unauthorized: /group/CreateGroup/
+WARNING 2023-05-18 13:48:32,402 log 15712 3612 Forbidden: /group/DeleteGroup/
+INFO 2023-05-18 13:48:32,409 views 15712 3612 Group deleted successfully. Group ID: 1
+INFO 2023-05-18 13:48:32,409 views 15712 3612 testuser@test.local delete the group
+WARNING 2023-05-18 13:48:32,415 log 15712 3612 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-18 13:48:32,421 views 15712 3612 An error occurred: Something went wrong
+ERROR 2023-05-18 13:48:32,422 log 15712 3612 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-18 13:48:32,427 log 15712 3612 Forbidden: /group/DeleteGroup/
+WARNING 2023-05-18 13:48:32,431 log 15712 3612 Method Not Allowed: /group/GroupInfo/
+ERROR 2023-05-18 13:48:32,435 views 15712 3612 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-18 13:48:32,435 log 15712 3612 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:48:32,439 views 15712 3612 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-18 13:48:32,440 log 15712 3612 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:48:32,443 views 15712 3612 Group not found. Group ID: 999
+WARNING 2023-05-18 13:48:32,444 log 15712 3612 Not Found: /group/GroupInfo/
+INFO 2023-05-18 13:48:32,450 views 15712 3612 Group info retrieved successfully. Group ID: 1. Group name: Test Group
+WARNING 2023-05-18 13:48:32,455 log 15712 3612 Unauthorized: /group/GroupInfo/
+ERROR 2023-05-18 13:48:32,459 views 15712 3612 Group not found. Group ID: None
+WARNING 2023-05-18 13:48:32,459 log 15712 3612 Not Found: /group/GroupInfo/
+WARNING 2023-05-18 13:48:32,465 views 15712 3612 User is not a member of the group. Group ID: 1, User email : user2@test.com
+WARNING 2023-05-18 13:48:32,465 log 15712 3612 Forbidden: /group/GroupInfo/
+ERROR 2023-05-18 13:48:32,469 log 15712 3612 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-18 13:48:32,472 log 15712 3612 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-18 13:48:32,476 log 15712 3612 Not Found: /group/ShowGroups/
+WARNING 2023-05-18 13:48:32,479 log 15712 3612 Method Not Allowed: /group/ShowGroups/
+INFO 2023-05-18 13:48:32,483 views 15712 3612 Groups retrieved successfully for User ID : 1
+WARNING 2023-05-18 13:48:32,486 log 15712 3612 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-18 13:48:32,490 log 15712 3612 Not Found: /group/ShowGroups/
+INFO 2023-05-18 13:48:32,496 views 15712 3612 Groups retrieved successfully for User ID : 1
+ERROR 2023-05-18 13:48:32,504 views 15712 3612 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-18 13:48:32,504 views 15712 3612 Error: Test Exception
+ERROR 2023-05-18 13:48:32,505 log 15712 3612 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-18 13:48:32,511 log 15712 3612 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:48:32,517 log 15712 3612 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:48:32,521 log 15712 3612 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:48:32,534 views 15712 3612 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+INFO 2023-05-18 13:48:32,548 views 15712 3612 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+WARNING 2023-05-18 13:48:32,555 log 15712 3612 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:48:32,559 views 15712 3612 Retrieving user object.
+WARNING 2023-05-18 13:48:32,561 log 15712 3612 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:48:32,563 views 15712 3612 Retrieving user object.
+WARNING 2023-05-18 13:48:32,565 log 15712 3612 Bad Request: /auth/EditProfile/
+WARNING 2023-05-18 13:48:32,568 log 15712 3612 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-18 13:48:32,573 views 15712 3612 Retrieving user object.
+INFO 2023-05-18 13:48:32,574 views 15712 3612 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:48:32,574 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,575 views 15712 3612 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-18 13:48:32,577 views 15712 3612 Retrieving user object.
+INFO 2023-05-18 13:48:32,578 views 15712 3612 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:48:32,578 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,579 views 15712 3612 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-18 13:48:32,581 views 15712 3612 Retrieving user object.
+WARNING 2023-05-18 13:48:32,582 log 15712 3612 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:48:32,585 views 15712 3612 Retrieving user object.
+WARNING 2023-05-18 13:48:32,586 log 15712 3612 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:48:32,588 views 15712 3612 Retrieving user object.
+WARNING 2023-05-18 13:48:32,589 log 15712 3612 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:48:32,592 views 15712 3612 Retrieving user object.
+INFO 2023-05-18 13:48:32,592 views 15712 3612 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:48:32,593 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,593 views 15712 3612 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-18 13:48:32,609 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,609 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,609 views 15712 3612 Group ID:1 for leave group
+ERROR 2023-05-18 13:48:32,610 views 15712 3612 Error: Internal Server Error
+ERROR 2023-05-18 13:48:32,610 log 15712 3612 Internal Server Error: /auth/LeaveGroup/
+INFO 2023-05-18 13:48:32,624 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,624 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,625 views 15712 3612 Group ID:10 for leave group
+WARNING 2023-05-18 13:48:32,625 views 15712 3612 DebtandCreditforMemberinGroup_Group not found.(groupID:10)
+ERROR 2023-05-18 13:48:32,626 views 15712 3612 Error: Group not found.
+WARNING 2023-05-18 13:48:32,626 log 15712 3612 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:48:32,645 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,645 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,646 views 15712 3612 Group ID:2 for leave group
+WARNING 2023-05-18 13:48:32,647 views 15712 3612 DebtandCreditforMemberinGroup_User not found.(userID:test4)
+ERROR 2023-05-18 13:48:32,647 views 15712 3612 Error: User not found.
+WARNING 2023-05-18 13:48:32,648 log 15712 3612 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:48:32,666 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,666 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,666 views 15712 3612 Group ID:1 for leave group
+INFO 2023-05-18 13:48:32,672 views 15712 3612 User deleted successfully. (userID:test2, groupID:1)
+INFO 2023-05-18 13:48:32,690 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,690 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,690 views 15712 3612 Group ID:2 for leave group
+INFO 2023-05-18 13:48:32,695 views 15712 3612 User deleted successfully. (userID:test1, groupID:2)
+INFO 2023-05-18 13:48:32,714 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,715 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,715 views 15712 3612 Group ID:1 for leave group
+WARNING 2023-05-18 13:48:32,718 views 15712 3612 Settlement not completed. (userID:test1, groupID:1)
+WARNING 2023-05-18 13:48:32,718 log 15712 3612 Payment Required: /auth/LeaveGroup/
+INFO 2023-05-18 13:48:32,742 views 15712 3612 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:48:32,743 views 15712 3612 User is authenticated.
+INFO 2023-05-18 13:48:32,743 views 15712 3612 Group ID:1 for leave group
+WARNING 2023-05-18 13:48:32,746 views 15712 3612 Settlement not completed. (userID:test3, groupID:1)
+WARNING 2023-05-18 13:48:32,746 log 15712 3612 Payment Required: /auth/LeaveGroup/
+WARNING 2023-05-18 13:48:32,773 log 15712 3612 Unauthorized: /auth/LeaveGroup/
+INFO 2023-05-18 13:48:32,775 views 15712 3612 Request received: POST auth/register
+INFO 2023-05-18 13:48:33,041 views 15712 3612 User register successfully.
+INFO 2023-05-18 13:48:33,055 views 15712 3612 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=019e371cc94a381fc0e3d9d7eaf2bbcee74ad614)
+INFO 2023-05-18 13:48:33,938 views 15712 3612 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:48:34,218 log 15712 3612 Bad Request: /auth/token/
+INFO 2023-05-18 13:48:34,220 views 15712 3612 Request received: POST auth/register
+INFO 2023-05-18 13:48:34,466 views 15712 3612 User register successfully.
+INFO 2023-05-18 13:48:34,468 views 15712 3612 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=397a411a04a0148e7266496b6ebfec36440958be)
+INFO 2023-05-18 13:48:34,468 views 15712 3612 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:48:34,714 log 15712 3612 Bad Request: /auth/token/
+INFO 2023-05-18 13:48:34,717 views 15712 3612 Request received: POST auth/register
+INFO 2023-05-18 13:48:34,963 views 15712 3612 User register successfully.
+INFO 2023-05-18 13:48:34,965 views 15712 3612 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=0ea5855cd5b3bf3d04948bffa987d3213b8f0dda)
+INFO 2023-05-18 13:48:34,965 views 15712 3612 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:48:35,215 log 15712 3612 Bad Request: /auth/token/
+INFO 2023-05-18 13:48:35,217 views 15712 3612 Request received: POST auth/register
+WARNING 2023-05-18 13:48:35,219 log 15712 3612 Bad Request: /auth/register/
+INFO 2023-05-18 13:48:35,222 views 15712 3612 Request received: POST auth/register
+WARNING 2023-05-18 13:48:35,225 log 15712 3612 Bad Request: /auth/register/
+INFO 2023-05-18 13:48:35,227 views 15712 3612 Request received: POST auth/register
+WARNING 2023-05-18 13:48:35,229 log 15712 3612 Bad Request: /auth/register/
+INFO 2023-05-18 13:48:35,231 views 15712 3612 Request received: POST auth/register
+INFO 2023-05-18 13:48:35,476 views 15712 3612 User register successfully.
+INFO 2023-05-18 13:48:35,478 views 15712 3612 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=22a1abab89a679612ae4642902caebb310d68122)
+INFO 2023-05-18 13:48:35,478 views 15712 3612 User registration completed.(email:u@u.com, name:Uali)
+ERROR 2023-05-18 13:48:35,481 views 15712 3612 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:48:35,481 views 15712 3612 Error: Something went wrong
+ERROR 2023-05-18 13:48:35,482 log 15712 3612 Internal Server Error: /auth/UserInfo/
+INFO 2023-05-18 13:48:35,485 views 15712 3612 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:48:35,488 views 15712 3612 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:48:35,491 views 15712 3612 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:48:35,500 views 15712 3612 User not found. User ID: None
+WARNING 2023-05-18 13:48:35,501 log 15712 3612 Not Found: /auth/UserInfo/
+WARNING 2023-05-18 13:48:35,503 log 15712 3612 Method Not Allowed: /auth/UserInfo/
+INFO 2023-05-18 13:48:35,507 views 15712 3612 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+WARNING 2023-05-18 13:48:35,510 log 15712 3612 Unauthorized: /auth/UserInfo/
+INFO 2023-05-18 13:48:35,514 views 15712 3612 Request received: GET auth/verify-email
+INFO 2023-05-18 13:48:35,514 views 15712 3612 Token parameter found: 44bdb2404c55efbab537936266e3085cd186ef2f
+INFO 2023-05-18 13:48:35,516 views 15712 3612 Email verified successfully for user: testuser@test.local
+INFO 2023-05-18 13:48:35,520 views 15712 3612 Request received: GET auth/verify-email
+INFO 2023-05-18 13:48:35,520 views 15712 3612 Token parameter found: Wrong
+WARNING 2023-05-18 13:48:35,521 views 15712 3612 Invalid token: Wrong
+WARNING 2023-05-18 13:48:35,522 log 15712 3612 Bad Request: /auth/verify-email/
+INFO 2023-05-18 13:48:35,541 views 15712 3612 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:48:35,547 log 15712 3612 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:48:35,775 views 15712 3612 Group buys retrieved successfully. Group ID: 2. Number of buys: 100
+WARNING 2023-05-18 13:48:35,781 log 15712 3612 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:48:35,789 views 15712 3612 Group buys retrieved successfully. Group ID: 2. Number of buys: 0
+WARNING 2023-05-18 13:48:35,796 log 15712 3612 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:48:35,809 views 15712 3612 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:48:35,822 views 15712 3612 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:48:35,836 views 15712 3612 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:48:35,842 log 15712 3612 Forbidden: /buy/GetGroupBuys/
+ERROR 2023-05-18 13:48:35,848 views 15712 3612 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-18 13:48:35,848 views 15712 3612 Error: Test Exception
+ERROR 2023-05-18 13:48:35,848 log 15712 3612 Internal Server Error: /buy/GetGroupBuys/
+INFO 2023-05-18 13:48:35,862 views 15712 3612 Group buys retrieved successfully for Group ID: 2, User ID: 3
+WARNING 2023-05-18 13:48:35,868 views 15712 3612 Group ID not provided. GroupID:9999
+WARNING 2023-05-18 13:48:35,869 log 15712 3612 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-18 13:48:35,877 views 15712 3612 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-18 13:48:35,878 log 15712 3612 Internal Server Error: /buy/UserGroupBuys/
+INFO 2023-05-18 13:48:35,906 views 15712 3612 Group buys retrieved successfully for Group ID: 1, User ID: 1
+WARNING 2023-05-18 13:48:35,913 views 15712 3612 Group ID not provided. GroupID:None
+WARNING 2023-05-18 13:48:35,913 log 15712 3612 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-18 13:48:35,919 log 15712 3612 Unauthorized: /buy/UserGroupBuys/
+INFO 2023-05-18 13:48:35,946 views 15712 3612 Group buys retrieved successfully for Group ID: 1, User ID: 1
+INFO 2023-05-18 13:48:35,965 views 15712 3612 Group buys retrieved successfully for Group ID: 1, User ID: 3
+INFO 2023-05-18 13:48:35,982 views 15712 3612 Group buys retrieved successfully for Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:48:35,991 views 15712 3612 User is not a member of the group. Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:48:35,991 log 15712 3612 Forbidden: /buy/UserGroupBuys/
+INFO 2023-05-18 13:49:18,467 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,467 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,467 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,467 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,467 views 17812 13748 Add user with email:test2@example.com to the group:1
+ERROR 2023-05-18 13:49:18,467 views 17812 13748 User with email:test3.example.com not found.
+WARNING 2023-05-18 13:49:18,467 log 17812 13748 Not Found: /group/AddUserGroup/
+ERROR 2023-05-18 13:49:18,483 views 17812 13748 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:49:18,483 log 17812 13748 Forbidden: /group/AddUserGroup/
+ERROR 2023-05-18 13:49:18,483 views 17812 13748 Permission deneid: You do not have permission to perform this action.
+WARNING 2023-05-18 13:49:18,483 log 17812 13748 Forbidden: /group/AddUserGroup/
+INFO 2023-05-18 13:49:18,483 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,483 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,499 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,499 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,516 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,516 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,516 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,516 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,521 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Add user with email:test1@example.com to the group:1
+ERROR 2023-05-18 13:49:18,521 views 17812 13748 User with email:miss_ramazani@yahoo.com not found.
+WARNING 2023-05-18 13:49:18,521 log 17812 13748 Not Found: /group/AddUserGroup/
+INFO 2023-05-18 13:49:18,521 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,521 views 17812 13748 User is authenticated.
+ERROR 2023-05-18 13:49:18,521 views 17812 13748 Invalid group data.
+WARNING 2023-05-18 13:49:18,521 log 17812 13748 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,537 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,537 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,537 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,537 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,552 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,552 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:49:18,552 views 17812 13748 User with email:miss_ramazani not found.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,552 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,552 views 17812 13748 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:49:18,552 views 17812 13748 User with email:miss_ramazani not found.
+ERROR 2023-05-18 13:49:18,552 views 17812 13748 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:49:18,568 log 17812 13748 Not Found: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,568 views 17812 13748 User is authenticated.
+ERROR 2023-05-18 13:49:18,568 views 17812 13748 Invalid group data.
+WARNING 2023-05-18 13:49:18,568 log 17812 13748 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,568 views 17812 13748 User is authenticated.
+ERROR 2023-05-18 13:49:18,568 views 17812 13748 Invalid group data.
+WARNING 2023-05-18 13:49:18,568 log 17812 13748 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,568 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,568 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,568 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,584 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:49:18,584 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,584 views 17812 13748 User is authenticated.
+ERROR 2023-05-18 13:49:18,599 views 17812 13748 Invalid group data.
+WARNING 2023-05-18 13:49:18,599 log 17812 13748 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,602 views 17812 13748 User is authenticated.
+ERROR 2023-05-18 13:49:18,602 views 17812 13748 Invalid group data.
+WARNING 2023-05-18 13:49:18,602 log 17812 13748 Bad Request: /group/CreateGroup/
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,602 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,602 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,602 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,602 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,618 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,618 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,618 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,620 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,620 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,620 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,620 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Add user with email:test2@example.com to the group:1
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Add user with email:test3@example.com to the group:1
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Add user with email:test1@example.com to the group:1
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Users added to group:1 successfully.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Group create successfully. Group ID: 1
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Request received: POST group/CreateGroup
+INFO 2023-05-18 13:49:18,637 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Sending request to add users to the group.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,637 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,637 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,652 views 17812 13748 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:49:18,652 views 17812 13748 User with email:miss_ramazani@yahoo.com not found.
+INFO 2023-05-18 13:49:18,652 views 17812 13748 Request received to add users to a group.: POST group/AddUserGroup
+INFO 2023-05-18 13:49:18,652 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,652 views 17812 13748 Validating group data.
+INFO 2023-05-18 13:49:18,652 views 17812 13748 Found group with ID:1
+INFO 2023-05-18 13:49:18,652 views 17812 13748 Add user with email:test3@example.com to the group:1
+ERROR 2023-05-18 13:49:18,652 views 17812 13748 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-18 13:49:18,652 views 17812 13748 User not found.Removing the newly created group. Group ID: 1
+WARNING 2023-05-18 13:49:18,652 log 17812 13748 Not Found: /group/CreateGroup/
+WARNING 2023-05-18 13:49:18,652 log 17812 13748 Unauthorized: /group/CreateGroup/
+WARNING 2023-05-18 13:49:18,652 log 17812 13748 Forbidden: /group/DeleteGroup/
+INFO 2023-05-18 13:49:18,668 views 17812 13748 Group deleted successfully. Group ID: 1
+INFO 2023-05-18 13:49:18,668 views 17812 13748 testuser@test.local delete the group
+WARNING 2023-05-18 13:49:18,668 log 17812 13748 Forbidden: /group/DeleteGroup/
+ERROR 2023-05-18 13:49:18,684 views 17812 13748 An error occurred: Something went wrong
+ERROR 2023-05-18 13:49:18,684 log 17812 13748 Internal Server Error: /group/DeleteGroup/
+WARNING 2023-05-18 13:49:18,684 log 17812 13748 Forbidden: /group/DeleteGroup/
+WARNING 2023-05-18 13:49:18,684 log 17812 13748 Method Not Allowed: /group/GroupInfo/
+ERROR 2023-05-18 13:49:18,684 views 17812 13748 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-18 13:49:18,699 log 17812 13748 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:49:18,699 views 17812 13748 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-18 13:49:18,699 log 17812 13748 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-18 13:49:18,699 views 17812 13748 Group not found. Group ID: 999
+WARNING 2023-05-18 13:49:18,699 log 17812 13748 Not Found: /group/GroupInfo/
+INFO 2023-05-18 13:49:18,699 views 17812 13748 Group info retrieved successfully. Group ID: 1. Group name: Test Group
+WARNING 2023-05-18 13:49:18,715 log 17812 13748 Unauthorized: /group/GroupInfo/
+ERROR 2023-05-18 13:49:18,720 views 17812 13748 Group not found. Group ID: None
+WARNING 2023-05-18 13:49:18,720 log 17812 13748 Not Found: /group/GroupInfo/
+WARNING 2023-05-18 13:49:18,720 views 17812 13748 User is not a member of the group. Group ID: 1, User email : user2@test.com
+WARNING 2023-05-18 13:49:18,720 log 17812 13748 Forbidden: /group/GroupInfo/
+ERROR 2023-05-18 13:49:18,720 log 17812 13748 Internal Server Error: /group/ShowGroups/
+WARNING 2023-05-18 13:49:18,736 log 17812 13748 Method Not Allowed: /group/ShowGroups/
+WARNING 2023-05-18 13:49:18,737 log 17812 13748 Not Found: /group/ShowGroups/
+WARNING 2023-05-18 13:49:18,737 log 17812 13748 Method Not Allowed: /group/ShowGroups/
+INFO 2023-05-18 13:49:18,737 views 17812 13748 Groups retrieved successfully for User ID : 1
+WARNING 2023-05-18 13:49:18,737 log 17812 13748 Unauthorized: /group/ShowGroups/
+WARNING 2023-05-18 13:49:18,752 log 17812 13748 Not Found: /group/ShowGroups/
+INFO 2023-05-18 13:49:18,752 views 17812 13748 Groups retrieved successfully for User ID : 1
+ERROR 2023-05-18 13:49:18,768 views 17812 13748 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-18 13:49:18,768 views 17812 13748 Error: Test Exception
+ERROR 2023-05-18 13:49:18,768 log 17812 13748 Internal Server Error: /group/ShowMembers/
+WARNING 2023-05-18 13:49:18,768 log 17812 13748 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:49:18,768 log 17812 13748 Forbidden: /group/ShowMembers/
+WARNING 2023-05-18 13:49:18,784 log 17812 13748 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:49:18,784 views 17812 13748 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+INFO 2023-05-18 13:49:18,799 views 17812 13748 Members retrieved successfully for Group ID: 1, Group Members: [OrderedDict([('id', 1), ('userID', OrderedDict([('user_id', 1), ('email', 'test1@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)]), OrderedDict([('id', 2), ('userID', OrderedDict([('user_id', 2), ('email', 'test2@test.com'), ('name', ''), ('picture_id', 0)])), ('cost', 0)])]
+WARNING 2023-05-18 13:49:18,815 log 17812 13748 Forbidden: /group/ShowMembers/
+INFO 2023-05-18 13:49:18,820 views 17812 13748 Retrieving user object.
+WARNING 2023-05-18 13:49:18,820 log 17812 13748 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:49:18,820 views 17812 13748 Retrieving user object.
+WARNING 2023-05-18 13:49:18,820 log 17812 13748 Bad Request: /auth/EditProfile/
+WARNING 2023-05-18 13:49:18,820 log 17812 13748 Method Not Allowed: /auth/EditProfile/
+INFO 2023-05-18 13:49:18,820 views 17812 13748 Retrieving user object.
+INFO 2023-05-18 13:49:18,820 views 17812 13748 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:49:18,820 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,820 views 17812 13748 User:1 data updated successfully.(name:new name, picture_id:15)
+INFO 2023-05-18 13:49:18,837 views 17812 13748 Retrieving user object.
+INFO 2023-05-18 13:49:18,837 views 17812 13748 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:49:18,837 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,837 views 17812 13748 User:1 data updated successfully.(name:test, picture_id:10)
+INFO 2023-05-18 13:49:18,837 views 17812 13748 Retrieving user object.
+WARNING 2023-05-18 13:49:18,837 log 17812 13748 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:49:18,837 views 17812 13748 Retrieving user object.
+WARNING 2023-05-18 13:49:18,837 log 17812 13748 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:49:18,837 views 17812 13748 Retrieving user object.
+WARNING 2023-05-18 13:49:18,837 log 17812 13748 Bad Request: /auth/EditProfile/
+INFO 2023-05-18 13:49:18,853 views 17812 13748 Retrieving user object.
+INFO 2023-05-18 13:49:18,853 views 17812 13748 Request received to edit profile.: PUT auth/EditProfile
+INFO 2023-05-18 13:49:18,853 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,853 views 17812 13748 User:1 data updated successfully.(name:new name, picture_id:1)
+INFO 2023-05-18 13:49:18,868 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,868 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,868 views 17812 13748 Group ID:1 for leave group
+ERROR 2023-05-18 13:49:18,868 views 17812 13748 Error: Internal Server Error
+ERROR 2023-05-18 13:49:18,868 log 17812 13748 Internal Server Error: /auth/LeaveGroup/
+INFO 2023-05-18 13:49:18,884 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,884 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,884 views 17812 13748 Group ID:10 for leave group
+WARNING 2023-05-18 13:49:18,884 views 17812 13748 DebtandCreditforMemberinGroup_Group not found.(groupID:10)
+ERROR 2023-05-18 13:49:18,884 views 17812 13748 Error: Group not found.
+WARNING 2023-05-18 13:49:18,884 log 17812 13748 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:49:18,901 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,901 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,901 views 17812 13748 Group ID:2 for leave group
+WARNING 2023-05-18 13:49:18,901 views 17812 13748 DebtandCreditforMemberinGroup_User not found.(userID:test4)
+ERROR 2023-05-18 13:49:18,901 views 17812 13748 Error: User not found.
+WARNING 2023-05-18 13:49:18,901 log 17812 13748 Not Found: /auth/LeaveGroup/
+INFO 2023-05-18 13:49:18,920 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,920 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,920 views 17812 13748 Group ID:1 for leave group
+INFO 2023-05-18 13:49:18,920 views 17812 13748 User deleted successfully. (userID:test2, groupID:1)
+INFO 2023-05-18 13:49:18,952 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,952 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,953 views 17812 13748 Group ID:2 for leave group
+INFO 2023-05-18 13:49:18,953 views 17812 13748 User deleted successfully. (userID:test1, groupID:2)
+INFO 2023-05-18 13:49:18,969 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,969 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,969 views 17812 13748 Group ID:1 for leave group
+WARNING 2023-05-18 13:49:18,969 views 17812 13748 Settlement not completed. (userID:test1, groupID:1)
+WARNING 2023-05-18 13:49:18,969 log 17812 13748 Payment Required: /auth/LeaveGroup/
+INFO 2023-05-18 13:49:18,984 views 17812 13748 Request received to leave group.: POST auth/LeaveGroup
+INFO 2023-05-18 13:49:18,984 views 17812 13748 User is authenticated.
+INFO 2023-05-18 13:49:18,984 views 17812 13748 Group ID:1 for leave group
+WARNING 2023-05-18 13:49:19,000 views 17812 13748 Settlement not completed. (userID:test3, groupID:1)
+WARNING 2023-05-18 13:49:19,000 log 17812 13748 Payment Required: /auth/LeaveGroup/
+WARNING 2023-05-18 13:49:19,021 log 17812 13748 Unauthorized: /auth/LeaveGroup/
+INFO 2023-05-18 13:49:19,021 views 17812 13748 Request received: POST auth/register
+INFO 2023-05-18 13:49:19,284 views 17812 13748 User register successfully.
+INFO 2023-05-18 13:49:19,284 views 17812 13748 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=a658a8f532ddaba04b8b2fb17ebbd8a8d56cc398)
+INFO 2023-05-18 13:49:20,194 views 17812 13748 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:49:20,456 log 17812 13748 Bad Request: /auth/token/
+INFO 2023-05-18 13:49:20,472 views 17812 13748 Request received: POST auth/register
+INFO 2023-05-18 13:49:20,715 views 17812 13748 User register successfully.
+INFO 2023-05-18 13:49:20,715 views 17812 13748 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=f729d795d5d51ec9a3e2dc81077752baa0809d54)
+INFO 2023-05-18 13:49:20,715 views 17812 13748 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:49:20,956 log 17812 13748 Bad Request: /auth/token/
+INFO 2023-05-18 13:49:20,956 views 17812 13748 Request received: POST auth/register
+INFO 2023-05-18 13:49:21,206 views 17812 13748 User register successfully.
+INFO 2023-05-18 13:49:21,206 views 17812 13748 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=4b813ae6bbc56a68a7ba232a05aaea7dad2c7a8b)
+INFO 2023-05-18 13:49:21,206 views 17812 13748 User registration completed.(email:u@u.com, name:Uali)
+WARNING 2023-05-18 13:49:21,440 log 17812 13748 Bad Request: /auth/token/
+INFO 2023-05-18 13:49:21,457 views 17812 13748 Request received: POST auth/register
+WARNING 2023-05-18 13:49:21,457 log 17812 13748 Bad Request: /auth/register/
+INFO 2023-05-18 13:49:21,457 views 17812 13748 Request received: POST auth/register
+WARNING 2023-05-18 13:49:21,457 log 17812 13748 Bad Request: /auth/register/
+INFO 2023-05-18 13:49:21,457 views 17812 13748 Request received: POST auth/register
+WARNING 2023-05-18 13:49:21,457 log 17812 13748 Bad Request: /auth/register/
+INFO 2023-05-18 13:49:21,457 views 17812 13748 Request received: POST auth/register
+INFO 2023-05-18 13:49:21,705 views 17812 13748 User register successfully.
+INFO 2023-05-18 13:49:21,705 views 17812 13748 Sending verification email to the user.(email_body:Hi Uali Use link below to verify your email 
+http://testserver/auth/verify-email/?token=c8046c74f5c3713263c2b73f5554871fdf34c3d9)
+INFO 2023-05-18 13:49:21,705 views 17812 13748 User registration completed.(email:u@u.com, name:Uali)
+ERROR 2023-05-18 13:49:21,705 views 17812 13748 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:49:21,705 views 17812 13748 Error: Something went wrong
+ERROR 2023-05-18 13:49:21,705 log 17812 13748 Internal Server Error: /auth/UserInfo/
+INFO 2023-05-18 13:49:21,721 views 17812 13748 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:49:21,725 views 17812 13748 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+INFO 2023-05-18 13:49:21,725 views 17812 13748 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-18 13:49:21,725 views 17812 13748 User not found. User ID: None
+WARNING 2023-05-18 13:49:21,725 log 17812 13748 Not Found: /auth/UserInfo/
+WARNING 2023-05-18 13:49:21,741 log 17812 13748 Method Not Allowed: /auth/UserInfo/
+INFO 2023-05-18 13:49:21,741 views 17812 13748 User information retrieved successfully. User ID: 1, Email: testuser@example.com
+WARNING 2023-05-18 13:49:21,741 log 17812 13748 Unauthorized: /auth/UserInfo/
+INFO 2023-05-18 13:49:21,741 views 17812 13748 Request received: GET auth/verify-email
+INFO 2023-05-18 13:49:21,741 views 17812 13748 Token parameter found: 0413aec743434d5c2b6d4b4c426caefdc45c1dc2
+INFO 2023-05-18 13:49:21,741 views 17812 13748 Email verified successfully for user: testuser@test.local
+INFO 2023-05-18 13:49:21,757 views 17812 13748 Request received: GET auth/verify-email
+INFO 2023-05-18 13:49:21,757 views 17812 13748 Token parameter found: Wrong
+WARNING 2023-05-18 13:49:21,757 views 17812 13748 Invalid token: Wrong
+WARNING 2023-05-18 13:49:21,757 log 17812 13748 Bad Request: /auth/verify-email/
+INFO 2023-05-18 13:49:21,772 views 17812 13748 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:49:21,772 log 17812 13748 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:49:22,002 views 17812 13748 Group buys retrieved successfully. Group ID: 2. Number of buys: 100
+WARNING 2023-05-18 13:49:22,002 log 17812 13748 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:49:22,017 views 17812 13748 Group buys retrieved successfully. Group ID: 2. Number of buys: 0
+WARNING 2023-05-18 13:49:22,025 log 17812 13748 Forbidden: /buy/GetGroupBuys/
+INFO 2023-05-18 13:49:22,041 views 17812 13748 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:49:22,053 views 17812 13748 Group buys retrieved successfully. Group ID: 2. Number of buys: 2
+INFO 2023-05-18 13:49:22,067 views 17812 13748 Group buys retrieved successfully. Group ID: 1. Number of buys: 3
+WARNING 2023-05-18 13:49:22,067 log 17812 13748 Forbidden: /buy/GetGroupBuys/
+ERROR 2023-05-18 13:49:22,067 views 17812 13748 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-18 13:49:22,067 views 17812 13748 Error: Test Exception
+ERROR 2023-05-18 13:49:22,067 log 17812 13748 Internal Server Error: /buy/GetGroupBuys/
+INFO 2023-05-18 13:49:22,083 views 17812 13748 Group buys retrieved successfully for Group ID: 2, User ID: 3
+WARNING 2023-05-18 13:49:22,098 views 17812 13748 Group ID not provided. GroupID:9999
+WARNING 2023-05-18 13:49:22,098 log 17812 13748 Bad Request: /buy/UserGroupBuys/
+ERROR 2023-05-18 13:49:22,098 views 17812 13748 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-18 13:49:22,098 log 17812 13748 Internal Server Error: /buy/UserGroupBuys/
+INFO 2023-05-18 13:49:22,139 views 17812 13748 Group buys retrieved successfully for Group ID: 1, User ID: 1
+WARNING 2023-05-18 13:49:22,139 views 17812 13748 Group ID not provided. GroupID:None
+WARNING 2023-05-18 13:49:22,139 log 17812 13748 Bad Request: /buy/UserGroupBuys/
+WARNING 2023-05-18 13:49:22,156 log 17812 13748 Unauthorized: /buy/UserGroupBuys/
+INFO 2023-05-18 13:49:22,180 views 17812 13748 Group buys retrieved successfully for Group ID: 1, User ID: 1
+INFO 2023-05-18 13:49:22,196 views 17812 13748 Group buys retrieved successfully for Group ID: 1, User ID: 3
+INFO 2023-05-18 13:49:22,211 views 17812 13748 Group buys retrieved successfully for Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:49:22,225 views 17812 13748 User is not a member of the group. Group ID: 1, User ID: 3
+WARNING 2023-05-18 13:49:22,225 log 17812 13748 Forbidden: /buy/UserGroupBuys/
