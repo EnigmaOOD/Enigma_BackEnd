@@ -1,129 +1,143 @@
 import json
-from django.urls import reverse
 from django.test import TestCase
 from rest_framework.test import APITestCase, APIClient
-from rest_framework import status, permissions
+from rest_framework import status
 from unittest import mock
 from unittest.mock import patch
 from Group.models import Group, Members
 from MyUser.models import MyUser
-from Group.serializers import GroupSerializer, MemberSerializer
+from Group.serializers import GroupSerializer
 from .views import AddUserGroup
+
 
 class DeleteGroupTests(APITestCase):
     def setUp(self):
         self.client = APIClient()
-        self.user = MyUser.objects.create(email='testuser@test.local', password='testpass',  name='test', picture_id=4)
+        self.user = MyUser.objects.create(
+            email='testuser@test.local', password='testpass',  name='test', picture_id=4)
         self.group = Group.objects.create(name='Test Group')
         Members.objects.create(userID=self.user, groupID=self.group)
         self.url = "/group/DeleteGroup/"
 
-    def test_delete_group_success(self):
+    def test_DeleteGroup_should_success(self):
         self.client.force_authenticate(user=self.user)
         data = {'groupID': self.group.id}
         response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data, {'message': 'Group deleted successfully.'})
+        self.assertEqual(
+            response.data, {'message': 'Group deleted successfully.'})
 
-    def test_group_is_not_exist(self):
+    def test_DeleteGroup_should_Error_when_group_not_exist(self):
         self.client.force_authenticate(user=self.user)
-        data = {'groupID': 9999} # invalid group ID
+        data = {'groupID': 9999}  # invalid group ID
         response = self.client.post(self.url, data)
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)  #permission
+        self.assertEqual(response.status_code,
+                         status.HTTP_403_FORBIDDEN)  # permission
         self.assertTrue(Group.objects.filter(id=self.group.id).exists())
 
-    def test_user_is_not_member_of_group(self):
-        user2 = MyUser.objects.create(email='user2@test.com', password='testpass', name='test')
+    def test_DeleteGroup_should_Error_when_user_not_member_of_group(self):
+        user2 = MyUser.objects.create(
+            email='user2@test.com', password='testpass', name='test')
         self.client.force_authenticate(user=user2)
         data = {'groupID': self.group.id}
         response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_post_with_exception(self):
+    def test_DeleteGroup_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user)
         data = {'groupID': self.group.id}
         with mock.patch('Group.models.Group.objects.get') as mock_get:
             mock_get.side_effect = Exception('Something went wrong')
             response = self.client.post(self.url, data)
-            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(response.status_code,
+                             status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    def test_delete_group_put_method(self):
+    def test_DeleteGroup_should_Error_with_put_method(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+
 class GroupInfoTest(APITestCase):
     def setUp(self):
-        self.user1 = MyUser.objects.create(email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
+        self.user1 = MyUser.objects.create(
+            email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
         self.client = APIClient()
-        self.group = Group.objects.create(name='Test Group', description= "Family", currency="تومان", picture_id=2)
+        self.group = Group.objects.create(
+            name='Test Group', description="Family", currency="تومان", picture_id=2)
         Members.objects.create(userID=self.user1, groupID=self.group)
         self.valid_payload = {'groupID': self.group.id}
         self.invalid_payload = {'groupID': 999}
         self.url = '/group/GroupInfo/'
 
-    def test_post_with_valid_payload(self):
+    def test_GroupInfo_should_success_with_valid_GroupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, self.valid_payload)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         serializer = GroupSerializer(self.group)
         self.assertEqual(response.data, serializer.data)
-    
-    def test_post_with_invalid_payload(self):
+
+    def test_GroupInfo_should_Error_with_invalid_GroupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, self.invalid_payload)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertEqual(response.data, {'message': 'Group not found.'})
 
-
-    def test_post_without_authentication(self):
+    def test_GroupInfo_should_Error_without_authentication(self):
         response = self.client.post(self.url, self.valid_payload)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_post_with_exception(self):
+    def test_GroupInfo_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user1)
         with mock.patch('Group.models.Group.objects.get') as mock_get:
             mock_get.side_effect = Exception('Something went wrong')
             response = self.client.post(self.url, self.valid_payload)
-            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
-    
-    def test_post_without_group_id(self):
+            self.assertEqual(response.status_code,
+                             status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def test_GroupInfo_should_Error_without_groupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertEqual(response.data, {'message': 'Group not found.'})
 
-    def test_user_is_not_member_of_group(self):
-        user2 = MyUser.objects.create(email='user2@test.com', password='testpass', name='test')
+    def test_GroupInfo_should_Error_when_user_not_member_of_group(self):
+        user2 = MyUser.objects.create(
+            email='user2@test.com', password='testpass', name='test')
         self.client.force_authenticate(user=user2)
         data = {'groupID': self.group.id}
         response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_post_with_invalid_data_type_for_group_id(self):
+    def test_GroupInfo_should_Error_when_invalid_dataType_groupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, {'groupID': 'invalid'})
-        self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+        self.assertEqual(response.status_code,
+                         status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    def test_group_info_put_method(self):
+    def test_GroupInfo_should_Error_with_put_method(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.put(self.url)
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+        self.assertEqual(response.status_code,
+                         status.HTTP_405_METHOD_NOT_ALLOWED)
 
-class ShowGroupsTestCase(APITestCase):    
+
+class ShowGroupsTestCase(APITestCase):
     def setUp(self):
-        self.user = MyUser.objects.create(email='testuser@test.local', password='testpass',  name='test', picture_id=4)
+        self.user = MyUser.objects.create(
+            email='testuser@test.local', password='testpass',  name='test', picture_id=4)
         self.url = '/group/ShowGroups/'
 
-    def test_show_groups_success(self):
+    def test_ShowGroups_should_success(self):
         self.client.force_authenticate(user=self.user)
         group = Group.objects.create(name='Test Group', currency='USD')
         Members.objects.create(userID=self.user, groupID=group)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['groups'], [{'id': group.id, 'name': group.name, 'currency': group.currency}])
+        self.assertEqual(response.data['groups'], [
+                         {'id': group.id, 'name': group.name, 'currency': group.currency}])
 
-    def test_show_user_groups_multiple_success(self):
+    def test_ShowGroups_should_success_for_multiple_groups(self):
         self.client.force_authenticate(user=self.user)
         group1 = Group.objects.create(name='Test Group 1', currency='USD')
         group2 = Group.objects.create(name='Test Group 2', currency='$')
@@ -147,117 +161,125 @@ class ShowGroupsTestCase(APITestCase):
         self.assertEqual(response.data['groups'][3]['name'], 'Test Group 4')
         self.assertEqual(response.data['groups'][3]['currency'], 'ریال')
 
-
-    def test_show_groups_no_groups(self):
+    def test_ShowGroups_should_Error_when_no_groups(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(response.data, {'Error': 'User does not belong to any groups'})
-   
-    def test_show_groups_unauthenticated(self):
+        self.assertEqual(
+            response.data, {'Error': 'User does not belong to any groups'})
+
+    def test_ShowGroups_should_Error_when_unauthenticated(self):
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_show_groups_invalid_method(self):
-        self.client.force_authenticate(user=self.user)
-        response = self.client.get(self.url)
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
-    
-    def test_show_groups_exception(self):
+    def test_ShowGroups_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user)
         with mock.patch('Group.views.Members.objects.filter') as mock_filter:
             mock_filter.side_effect = Exception('test exception')
             response = self.client.post(self.url)
-        self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+        self.assertEqual(response.status_code,
+                         status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(response.data, {'Error': 'test exception'})
 
-    def test_show_groups_with_empty_DB(self):
+    def test_ShowGroups_should_Error_with_empty_DB(self):
         self.client.force_authenticate(user=self.user)
         Members.objects.all().delete()
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertIn('Error', response.data)
 
-    def test_show_groups_put_method(self):
+    def test_ShowGroups_should_Error_when_put_method(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.put(self.url)
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+        self.assertEqual(response.status_code,
+                         status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_ShowGroups_should_Error_when_get_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code,
+                         status.HTTP_405_METHOD_NOT_ALLOWED)
+
 
 class ShowMembersTests(APITestCase):
     def setUp(self):
         self.group = Group.objects.create(name='Test Group', currency='USD')
-        self.user1 = MyUser.objects.create(email='test1@test.com', password='testpass')
-        self.user2 = MyUser.objects.create(email='test2@test.com', password='testpass')
-        self.user3 = MyUser.objects.create(email='test3@test.com', password='testpass')
+        self.user1 = MyUser.objects.create(
+            email='test1@test.com', password='testpass')
+        self.user2 = MyUser.objects.create(
+            email='test2@test.com', password='testpass')
+        self.user3 = MyUser.objects.create(
+            email='test3@test.com', password='testpass')
 
         Members.objects.create(userID=self.user1, groupID=self.group)
         Members.objects.create(userID=self.user2, groupID=self.group)
 
         self.url = '/group/ShowMembers/'
 
-    def test_show_members_successful(self):
+    def test_ShowMembers_should_success(self):
         self.client.force_authenticate(user=self.user1)
         data = {'groupID': self.group.id}
         response = self.client.post(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 2)
 
-    def test_show_members_with_valid_group_id(self):
+    def test_ShowMembers_should_success_when_valid_groupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, data={'groupID': self.group.id})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 2)
-        self.assertEqual(response.data[0]['userID']['user_id'], self.user1.user_id)
-        self.assertEqual(response.data[1]['userID']['user_id'], self.user2.user_id)
+        self.assertEqual(response.data[0]['userID']
+                         ['user_id'], self.user1.user_id)
+        self.assertEqual(response.data[1]['userID']
+                         ['user_id'], self.user2.user_id)
         self.assertEqual(response.data[0]['userID']['email'], self.user1.email)
         self.assertEqual(response.data[1]['userID']['email'], self.user2.email)
 
-    def test_show_members_invalid_group(self):
+    def test_ShowMembers_should_Error_when_invalid_groupID(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, {'groupID': self.group.id+1})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_show_members_wrong_user(self):
+    def test_ShowMembers_should_Error_when_wrong_user(self):
         self.client.force_authenticate(user=self.user3)
         response = self.client.post(self.url, {'groupID': self.group.id})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_show_members_no_members(self):
+    def test_ShowMembers_should_Error_when_no_members(self):
         self.client.force_authenticate(user=self.user1)
         group = Group.objects.create(name='Empty Group', currency='USD')
         response = self.client.post(self.url, {'groupID': group.id})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-
-    def test_show_members_exception(self):
+    def test_ShowMembers_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user1)
         with mock.patch('Group.views.DebtandCreditforMemberinGroup', side_effect=Exception('Test Exception')):
             response = self.client.post(self.url, {'groupID': self.group.id})
-            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(response.status_code,
+                             status.HTTP_500_INTERNAL_SERVER_ERROR)
             self.assertEqual(response.data, {'Error': 'Test Exception'})
 
-    def test_show_members_put_method(self):
+    def test_ShowMembers_should_Error_with_put_method(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+    def test_ShowMembers_should_Error_with_get_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+
 class CreateGroupTest(TestCase):
     def setUp(self):
-        self.user1 = MyUser.objects.create(email='test1@example.com', password='test1', name='test1', picture_id=1)
-        self.user2 = MyUser.objects.create(email='test2@example.com', password='test2', name='test2', picture_id=2)
-        self.user3 = MyUser.objects.create(email='test3@example.com', password='test3', name='test3', picture_id=3)
+        self.user1 = MyUser.objects.create(
+            email='test1@example.com', password='test1', name='test1', picture_id=1)
+        self.user2 = MyUser.objects.create(
+            email='test2@example.com', password='test2', name='test2', picture_id=2)
+        self.user3 = MyUser.objects.create(
+            email='test3@example.com', password='test3', name='test3', picture_id=3)
 
-    def test_post_without_authentication(self):
-        data = {
-            'name': 'Test Group',
-            'currency': 'تومان',
-            'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
-        }
-        response = self.client.post('/group/CreateGroup/', data)
-        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
-
-    def test_create_group_successfully(self):
+    def test_CreateGroup_should_success(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -265,9 +287,10 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, 201)
         self.assertEqual(Group.objects.count(), 1)
@@ -282,7 +305,17 @@ class CreateGroupTest(TestCase):
         self.assertEqual(members.last().userID, self.user1)
         self.assertTrue(members.get(userID=self.user3))
 
-    def test_create_group_name_is_null(self):
+    def test_CreateGroup_should_Error_without_authentication(self):
+        data = {
+            'name': 'Test Group',
+            'currency': 'تومان',
+            'picture_id': 1,
+            'emails': ["test2@example.com", "test3@example.com"]
+        }
+        response = self.client.post('/group/CreateGroup/', data)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+    def test_CreateGroup_should_Error_when_name_null(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -290,15 +323,17 @@ class CreateGroupTest(TestCase):
             'name': '',
             'currency': 'تومان',
             'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"name":["This field may not be blank."]})
+        self.assertEqual(json.loads(response.content), {
+                         "name": ["This field may not be blank."]})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_name_is_space(self):
+    def test_CreateGroup_should_Error_when_name_space(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -306,15 +341,17 @@ class CreateGroupTest(TestCase):
             'name': '         ',
             'currency': 'تومان',
             'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"name":["This field may not be blank."]})
+        self.assertEqual(json.loads(response.content), {
+                         "name": ["This field may not be blank."]})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_description_is_null(self):
+    def test_CreateGroup_should_success_when_description_null(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -322,14 +359,15 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Group.objects.count(), 1)
 
-    def test_create_group_currency_is_null(self):
+    def test_CreateGroup_should_Error_when_currency_null(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -337,29 +375,32 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': '',
             'picture_id': 1,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"currency":["This field may not be blank."]})
+        self.assertEqual(json.loads(response.content), {
+                         "currency": ["This field may not be blank."]})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_pictureID_is_null(self):
+    def test_CreateGroup_should_success_when_pictureID_null(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
 
         data = {
             'name': 'Test Group',
             'currency': 'تومان',
-            'emails': ["test1@example.com","test3@example.com"]
+            'emails': ["test1@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Group.objects.count(), 1)
 
-    def test_create_group_pictureID_is_nagative(self):
+    def test_CreateGroup_should_Error_when_pictureID_nagative(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
 
@@ -367,15 +408,17 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': -1,
-            'emails': ["test1@example.com","test3@example.com"]
+            'emails': ["test1@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"picture_id":["Ensure this value is greater than or equal to 0."]})
+        self.assertEqual(json.loads(response.content), {"picture_id": [
+                         "Ensure this value is greater than or equal to 0."]})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_pictureID_is_more_than_values(self):
+    def test_CreateGroup_should_Error_when_pictureID_more_than_values(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -383,15 +426,17 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': 4,
-            'emails': ["test2@example.com","test3@example.com"]
+            'emails': ["test2@example.com", "test3@example.com"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"picture_id":["Ensure this value is less than or equal to 3."]})
+        self.assertEqual(json.loads(response.content), {"picture_id": [
+                         "Ensure this value is less than or equal to 3."]})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_not_email(self):
+    def test_CreateGroup_should_succes_with_no_email(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
 
@@ -400,7 +445,8 @@ class CreateGroupTest(TestCase):
             'currency': 'تومان',
             'picture_id': 3,
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Group.objects.count(), 1)
@@ -409,7 +455,7 @@ class CreateGroupTest(TestCase):
         self.assertEqual(members.count(), 1)
         self.assertEqual(members.first().userID, self.user2)
 
-    def test_create_group_valid_email_but_is_not_register(self):
+    def test_CreateGroup_should_Error_when_valid_email_but_not_register(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
 
@@ -417,15 +463,17 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': 3,
-            "emails": ["test3@example.com","miss_ramazani@yahoo.com","nourieh110@gmail"]
+            "emails": ["test3@example.com", "miss_ramazani@yahoo.com", "nourieh110@gmail"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(json.loads(response.content), {"message":"user not found."})
+        self.assertEqual(json.loads(response.content), {
+                         "message": "user not found."})
         self.assertEqual(Group.objects.count(), 0)
 
-    def test_create_group_invalid_email(self):
+    def test_CreateGroup_should_Error_when_invalid_email(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
 
@@ -433,36 +481,42 @@ class CreateGroupTest(TestCase):
             'name': 'Test Group',
             'currency': 'تومان',
             'picture_id': 3,
-            "emails": ["test3@example.com","miss_ramazani","nourieh110gmail"]
+            "emails": ["test3@example.com", "miss_ramazani", "nourieh110gmail"]
         }
-        response = self.client.post('/group/CreateGroup/', data=data, format='json')
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(json.loads(response.content), {"message":"user not found."})
+        self.assertEqual(json.loads(response.content), {
+                         "message": "user not found."})
         self.assertEqual(Group.objects.count(), 0)
 
     # اگر می خواین ارور ایمیل نامعتبر تغییر کند بگویید
+
 
 class AddUserGroupTest(TestCase):
 
     def setUp(self):
         self.client = APIClient()
-        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
-        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
-        self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
+        self.user1 = MyUser.objects.create(
+            email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(
+            email='test2@example.com', name='test2', password='test2')
+        self.user3 = MyUser.objects.create(
+            email='test3@example.com', name='test3', password='test3')
         self.url = '/group/AddUserGroup/'
         self.group = Group.objects.create(name='Test Group', currency='تومان')
         self.view = AddUserGroup.as_view()
 
-    def test_add_user_group_with_valid_data(self):
+    def test_AddUserGroup_should_success_with_valid_data(self):
         self.client.force_authenticate(user=self.user1)
         Members.objects.create(userID=self.user1, groupID=self.group)
         data = {
-            "groupID": self.group.id, 
+            "groupID": self.group.id,
             "emails": ["test2@example.com", "test3@example.com"]
         }
         response = self.client.post(self.url, data=data, format='json')
-        
+
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(Group.objects.count(), 1)
         self.assertEqual(Members.objects.count(), 3)
@@ -470,44 +524,46 @@ class AddUserGroupTest(TestCase):
         self.assertEqual(Members.objects.last().userID, self.user3)
         self.assertTrue(Members.objects.get(userID=self.user2))
 
-    def test_add_user_group_with_invalid_email(self):
-        self.client.force_authenticate(user=self.user1)
-        Members.objects.create(userID=self.user1, groupID=self.group)
-        data = {
-            "groupID": self.group.id, 
-            "emails": ["test2@example.com", "test3.example.com", "test3@example.com"]
-        }
-        response = self.client.post(self.url, data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(json.loads(response.content), {"message":"user not found."})
-        self.assertEqual(Members.objects.count(), 2)
-        self.assertEqual(Members.objects.first().userID, self.user1)
-        self.assertEqual(Members.objects.last().userID, self.user2)
-
-    def test_add_user_group_with_not_email(self):
+    def test_AddUserGroup_should_success_with_no_email(self):
         self.client.force_authenticate(user=self.user2)
         Members.objects.create(userID=self.user2, groupID=self.group)
         data = {
-            "groupID": self.group.id, 
+            "groupID": self.group.id,
         }
         response = self.client.post(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(Members.objects.count(), 1)
 
-    def test_add_user_group_with_valid_email_but_is_not_register(self):
+    def test_AddUserGroup_should_Error_with_invalid_email(self):
+        self.client.force_authenticate(user=self.user1)
+        Members.objects.create(userID=self.user1, groupID=self.group)
+        data = {
+            "groupID": self.group.id,
+            "emails": ["test2@example.com", "test3.example.com", "test3@example.com"]
+        }
+        response = self.client.post(self.url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(json.loads(response.content), {
+                         "message": "user not found."})
+        self.assertEqual(Members.objects.count(), 2)
+        self.assertEqual(Members.objects.first().userID, self.user1)
+        self.assertEqual(Members.objects.last().userID, self.user2)
+
+    def test_AddUserGroup_should_Error_with_valid_email_but_not_register(self):
         self.client.force_authenticate(user=self.user3)
         Members.objects.create(userID=self.user3, groupID=self.group)
         data = {
             'groupID': self.group.id,
-            "emails": ["test1@example.com","miss_ramazani@yahoo.com","test2@example.com"]
+            "emails": ["test1@example.com", "miss_ramazani@yahoo.com", "test2@example.com"]
         }
         response = self.client.post(self.url, data=data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(json.loads(response.content), {"message":"user not found."})
+        self.assertEqual(json.loads(response.content), {
+                         "message": "user not found."})
         self.assertEqual(Members.objects.count(), 2)
 
-    def test_add_user_group_with_valid_email_but_is_duplicate(self):
+    def test_AddUserGroup_should_success_with_valid_email_but_duplicate(self):
         self.client.force_authenticate(user=self.user1)
         Members.objects.create(userID=self.user1, groupID=self.group)
         data = {
@@ -519,18 +575,18 @@ class AddUserGroupTest(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(Members.objects.count(), 1)
 
-    def test_add_user_group_with_invalid_user(self):
+    def test_AddUserGroup_should_Error_with_invalid_user(self):
         self.client.force_authenticate(user=self.user2)
         Members.objects.create(userID=self.user1, groupID=self.group)
         data = {
             'groupID': self.group.id,
-            "emails": ["test1@example.com","miss_ramazani@yahoo.com","test2@example.com"]
+            "emails": ["test1@example.com", "miss_ramazani@yahoo.com", "test2@example.com"]
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_add_user_group_with_non_data(self):
+    def test_AddUserGroup_should_Error_with_with_non_data(self):
         response = self.client.post(self.url, {}, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-        self.assertEqual(json.loads(response.content), {"message":"You do not have permission to perform this action."})
-
+        self.assertEqual(json.loads(response.content), {
+                         "message": "You do not have permission to perform this action."})
