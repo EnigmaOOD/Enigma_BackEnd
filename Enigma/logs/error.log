@@ -534,3 +534,51 @@ Traceback (most recent call last):
   File "C:\Python311\Lib\site-packages\rest_framework\fields.py", line 1252, in to_representation
     assert not isinstance(value, datetime.datetime), (
 AssertionError: Expected a `date`, but got a `datetime`. Refusing to coerce, as this may mean losing timezone information. Use a custom read-only field and deal with timezone issues explicitly.
+ERROR 2023-05-21 06:59:10,650 views 15384 12912 Error: Group not found.
+ERROR 2023-05-21 06:59:10,663 views 15384 12912 Error: User not found.
+ERROR 2023-05-21 06:59:10,725 views 15384 12912 Error: Internal Server Error
+ERROR 2023-05-21 06:59:10,725 log 15384 12912 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-21 06:59:12,535 views 15384 12912 User not found. User ID: None
+ERROR 2023-05-21 06:59:12,540 views 15384 12912 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-21 06:59:12,540 views 15384 12912 Error: Something went wrong
+ERROR 2023-05-21 06:59:12,540 log 15384 12912 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-21 07:03:46,405 views 6440 15636 User with email:test3.example.com not found.
+ERROR 2023-05-21 07:03:46,410 views 6440 15636 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-21 07:03:46,417 views 6440 15636 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-21 07:03:46,421 views 6440 15636 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-21 07:03:46,481 views 6440 15636 Invalid group data.
+ERROR 2023-05-21 07:03:46,487 views 6440 15636 User with email:miss_ramazani not found.
+ERROR 2023-05-21 07:03:46,489 views 6440 15636 User with email:miss_ramazani not found.
+ERROR 2023-05-21 07:03:46,489 views 6440 15636 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-21 07:03:46,493 views 6440 15636 Invalid group data.
+ERROR 2023-05-21 07:03:46,496 views 6440 15636 Invalid group data.
+ERROR 2023-05-21 07:03:46,499 views 6440 15636 Invalid group data.
+ERROR 2023-05-21 07:03:46,501 views 6440 15636 Invalid group data.
+ERROR 2023-05-21 07:03:46,509 views 6440 15636 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-21 07:03:46,513 views 6440 15636 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-21 07:03:46,513 views 6440 15636 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-21 07:03:46,585 views 6440 15636 An error occurred: Something went wrong
+ERROR 2023-05-21 07:03:46,585 log 6440 15636 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-21 07:03:46,594 views 6440 15636 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-21 07:03:46,595 log 6440 15636 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-21 07:03:46,603 views 6440 15636 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-21 07:03:46,603 log 6440 15636 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-21 07:03:46,606 views 6440 15636 Group not found. Group ID: 999
+ERROR 2023-05-21 07:03:46,614 views 6440 15636 Group not found. Group ID: None
+ERROR 2023-05-21 07:03:46,635 log 6440 15636 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-21 07:03:46,660 views 6440 15636 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-21 07:03:46,661 views 6440 15636 Error: Test Exception
+ERROR 2023-05-21 07:03:46,661 log 6440 15636 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-21 07:03:46,735 views 6440 15636 Error: Group not found.
+ERROR 2023-05-21 07:03:46,751 views 6440 15636 Error: User not found.
+ERROR 2023-05-21 07:03:46,810 views 6440 15636 Error: Internal Server Error
+ERROR 2023-05-21 07:03:46,810 log 6440 15636 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-21 07:03:48,611 views 6440 15636 User not found. User ID: None
+ERROR 2023-05-21 07:03:48,616 views 6440 15636 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-21 07:03:48,616 views 6440 15636 Error: Something went wrong
+ERROR 2023-05-21 07:03:48,616 log 6440 15636 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-21 07:03:48,780 views 6440 15636 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-21 07:03:48,780 views 6440 15636 Error: Test Exception
+ERROR 2023-05-21 07:03:48,781 log 6440 15636 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-21 07:03:48,994 views 6440 15636 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-21 07:03:48,994 log 6440 15636 Internal Server Error: /buy/UserGroupBuys/

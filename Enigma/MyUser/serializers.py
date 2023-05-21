@@ -23,7 +23,7 @@ class MyUserSerializer(serializers.ModelSerializer):
         user = get_user_model().objects.create_user(**validated_data)
         return user
     def validate(self, data):
-        if data['picture_id'] > 12:
+        if data['picture_id'] > 21:
                 raise serializers.ValidationError(
                     f"picture_id should be less than 12")
         return data

@@ -49,20 +49,18 @@ class RegisterAndAuthenticateTest(APITestCase):
         "email":"u@u.com",
         "password":"1",
         "name":"Uali",
-        "picture_id" :15}
-        
+        "picture_id" :22}
         response = self.client.post(('/auth/register/'),user_info)
         self.assertEqual(response.status_code, 400)
+
     def test_should_register(self):
         user_info = {
         "email":"u@u.com",
         "password":"usER!@123",
         "name":"Uali",
         "picture_id" :10}
-        
         response = self.client.post(('/auth/register/'),user_info)
         self.assertEqual(response.status_code, 201)
-
 
     def test_should_not_get_token_email_not_verified(self):
         user_info = {
@@ -70,7 +68,6 @@ class RegisterAndAuthenticateTest(APITestCase):
         "password":"usER!@123",
         "name":"Uali",
         "picture_id" :10}
-        
         self.client.post(('/auth/register/'),user_info)
         response = self.client.post(('/auth/token/'), {"username":"u@u.com",
                                                        "password":'usER!@123'})

@@ -724,3 +724,64 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(json.loads(response.content), {'non_field_errors': ['Consumer with group ID 1 and user ID 4 is not a member of ''the group']})
         self.assertEqual(buy.objects.count(), 0)
+
+    # def test_CreateBuyView_should_Error_when_sum_percent_of_buyers_different_with_cost(self):
+    #     self.client.force_authenticate(user=self.user1)
+
+    #     data = {
+    #         "buyers": [
+    #             {
+    #                 "userID": 1,
+    #                 "percent": 5000
+    #             }
+    #         ],
+    #         "consumers": [
+    #             {
+    #                 "userID": 1,
+    #                 "percent": 45000
+    #             },
+    #             {
+    #                 "userID": 3,
+    #                 "percent": 40000
+    #             }
+    #         ],
+    #         "description": "Test Buy",
+    #         "cost": 85000,
+    #         "date": "2023-02-7",
+    #         "picture_id": 1,
+    #         "groupID": 1
+    #     }
+    #     response = self.client.post(self.url, data=data, format='json')
+    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    #     self.assertEqual(buy.objects.count(), 0)
+
+    # def test_CreateBuyView_should_Error_when_sum_percent_of_consumers_different_with_cost(self):
+    #     self.client.force_authenticate(user=self.user1)
+
+    #     data = {
+    #         "buyers": [
+    #             {
+    #                 "userID": 1,
+    #                 "percent": 85000
+    #             }
+    #         ],
+    #         "consumers": [
+    #             {
+    #                 "userID": 1,
+    #                 "percent": 45000
+    #             },
+    #             {
+    #                 "userID": 3,
+    #                 "percent": 40000
+    #             }
+    #         ],
+    #         "description": "Test Buy",
+    #         "cost": 85000,
+    #         "date": "2023-02-7",
+    #         "picture_id": 1,
+    #         "groupID": 1
+    #     }
+    #     response = self.client.post(self.url, data=data, format='json')
+    #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+    #     self.assertEqual(buy.objects.count(), 0)
+
