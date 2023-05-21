@@ -145,7 +145,7 @@ class UserInfoTestCase(APITestCase):
         self.user = MyUser.objects.create(email='testuser@example.com', password='testpass', name='Test User')
         self.url = '/auth/UserInfo/'
         
-    def test_user_info(self):
+    def test_UserInfo_should_success_when_valid_data(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -159,14 +159,14 @@ class UserInfoTestCase(APITestCase):
     
 
 
-    def test_user_info_admin_user(self):
+    def test_UserInfo_should_success_when_admin_user(self):
         self.user.is_admin = True
         self.user.save()
         self.client.force_authenticate(user=self.user)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    def test_user_info_staff_user(self):
+    def test_UserInfo_should_success_when_staff_user(self):
         self.user.is_staff = True
         self.user.save()
         self.client.force_authenticate(user=self.user)
@@ -174,7 +174,7 @@ class UserInfoTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     
-    def test_user_info_extra_fields(self):
+    def test_UserInfo_should_success_when_extra_fields(self):
         self.client.force_authenticate(user=self.user)
         # Add an extra field to the request data
         response = self.client.post(self.url, data={'extra_field': 'extra_value'})
@@ -182,7 +182,7 @@ class UserInfoTestCase(APITestCase):
         # Check that the extra field is not present in the response
         self.assertFalse('extra_field' in response.data['user_info'])
     
-    def test_user_info_nonexistent_user(self):
+    def test_UserInfo_should_Error_when_nonexistent_user(self):
         # Test that a nonexistent user returns a 404 Not Found error
         self.client.force_authenticate(user=self.user)
         self.user.delete()
@@ -190,16 +190,16 @@ class UserInfoTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
 
-    def test_user_info_unauthenticated(self):
+    def test_UserInfo_should_Error_when_unauthenticated(self):
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_user_info_put_method(self):
+    def test_UserInfo_should_Error_when_put_method(self):
         self.client.force_authenticate(user=self.user)
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
-    def test_post_exception(self):
+    def test_UserInfo_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user)
         with patch('MyUser.views.MyUser.objects.filter') as mock_filter:
             mock_filter.side_effect = Exception('Something went wrong')
@@ -208,6 +208,16 @@ class UserInfoTestCase(APITestCase):
         # Check that the view returns a 500 error response with the expected error message
         self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(response.data['error'], 'Something went wrong')
+
+    def test_UserInfo_should_Error_with_put_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_UserInfo_should_Error_with_get_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
 class EditProfileTest(APITestCase):
@@ -221,11 +231,7 @@ class EditProfileTest(APITestCase):
             'picture_id': 15,
         }
     
-    def test_post_without_authentication(self):
-        response = self.client.post(self.url, self.valid_payload)
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
-
-    def test_update_profile_successfully(self):
+    def test_EditProfile_should_successfully(self):
         data = {
             'name': 'new name',
             'picture_id': 1
@@ -235,26 +241,31 @@ class EditProfileTest(APITestCase):
         self.assertEqual(response.data['name'], data['name'])
         self.assertEqual(response.data['picture_id'], data['picture_id'])
     
-    def test_update_profile_non_data(self):
+    def test_EditProfile_should_Error_without_authentication(self):
+        response = self.client.post(self.url, self.valid_payload)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    
+    def test_EditProfile_should_Error_with_non_data(self):
         response = self.client.put(self.url, data={}, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(json.loads(response.content), {"non_field_errors":["Either name or picture_id must be provided"]})
 
-    def test_update_profile_just_name(self):
+    def test_EditProfile_should_success_with_change_name(self):
         data = {'name': 'new name'}
         response = self.client.put(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['name'], data['name'])
         self.assertEqual(response.data['picture_id'], self.user.picture_id)
 
-    def test_update_profile_just_pictureID(self):
+    def test_EditProfile_should_success_with_change_pictureID(self):
         data = {'picture_id': 10}
         response = self.client.put(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['name'], self.user.name)
         self.assertEqual(response.data['picture_id'], data['picture_id'])
 
-    def test_update_profile_pictureID_is_nagative(self):
+    def test_EditProfile_should_Error_when_pictureID_nagative(self):
         data = {
             'name': 'new name',
             'picture_id': -1
@@ -265,7 +276,7 @@ class EditProfileTest(APITestCase):
         self.assertNotEqual(data['name'], self.user.name)
         self.assertNotEqual(data['picture_id'], self.user.picture_id)
 
-    def test_update_profile_pictureID_is_more_than_values(self):
+    def test_EditProfile_should_Error_with_pictureID_more_than_values(self):
         data = {
             'name': 'new name',
             'picture_id': 22,
@@ -276,13 +287,13 @@ class EditProfileTest(APITestCase):
         self.assertNotEqual(data['name'], self.user.name)
         self.assertNotEqual(data['picture_id'], self.user.picture_id)
     
-    def test_edit_profile_with_email(self):
+    def test_EditProfile_should_Error_with_email(self):
         data = {'email': 'test1@example.com'}
         response = self.client.put(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(json.loads(response.content), {"non_field_errors":["Either name or picture_id must be provided"]})
 
-    def test_edit_profile_with_password(self):
+    def test_EditProfile_should_Error_with_password(self):
         data = {'password': 'new'}
         response = self.client.put(self.url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
@@ -292,6 +303,14 @@ class EditProfileTest(APITestCase):
         serializer = UpdateUserSerializer(data={})
         self.assertFalse(serializer.is_valid())
         self.assertEqual(set(serializer.errors.keys()), {'non_field_errors'})
+
+    def test_EditProfile_should_Error_with_post_method(self):
+        response = self.client.post(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_EditProfile_should_Error_with_get_method(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 class LeaveGroupTest(APITestCase):
     def setUp(self):
@@ -348,7 +367,7 @@ class LeaveGroupTest(APITestCase):
 
         self.url = '/auth/LeaveGroup/'
 
-    def test_leave_user_from_group1_successfully(self):
+    def test_LeaveGroup_should_successfully_for_user2_in_group1(self):
         self.client.force_authenticate(user=self.user2)
         response = self.client.post(self.url, data={'groupID':self.group1.id})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -357,7 +376,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).first().userID, self.user1)
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
 
-    def test_leave_user_from_group2_successfully(self):
+    def test_LeaveGroup_should_successfully_for_user1_in_group2(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, data={'groupID':self.group2.id})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -366,7 +385,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group2.id).first().userID, self.user2)
         self.assertEqual(Members.objects.filter(groupID = self.group2.id).last().userID, self.user3)
 
-    def test_leave_user_from_group_with_creditor(self):
+    def test_LeaveGroup_should_Error_with_creditor(self):
         self.client.force_authenticate(user=self.user1)
         response = self.client.post(self.url, data={'groupID':self.group1.id})
         self.assertEqual(response.status_code, status.HTTP_402_PAYMENT_REQUIRED)
@@ -376,7 +395,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
         self.assertTrue(Members.objects.get(groupID = self.group1.id, userID = self.user1))
 
-    def test_leave_user_from_group_with_debtor(self):
+    def test_LeaveGroup_should_Error_with_debtor(self):
         self.client.force_authenticate(user=self.user3)
         response = self.client.post(self.url, data={'groupID':self.group1.id})
         self.assertEqual(response.status_code, status.HTTP_402_PAYMENT_REQUIRED)
@@ -386,7 +405,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
         self.assertTrue(Members.objects.get(groupID = self.group1.id, userID = self.user1))
 
-    def test_leave_group_user_not_found(self):
+    def test_LeaveGroup_should_Error_when_user_not_found(self):
         self.client.force_authenticate(user=self.user4)
         response = self.client.post(self.url, data={'groupID':self.group2.id})
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
@@ -396,7 +415,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
         self.assertTrue(Members.objects.get(groupID = self.group1.id, userID = self.user1))
 
-    def test_leave_group_not_found(self):
+    def test_LeaveGroup_should_Error_when_invalid_groupID(self):
         self.client.force_authenticate(user=self.user2)
         response = self.client.post(self.url, data={'groupID':10})
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
@@ -406,7 +425,7 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group1.id).last().userID, self.user3)
         self.assertTrue(Members.objects.get(groupID = self.group1.id, userID = self.user1))
 
-    def test_leave_group_internal_server_error(self):
+    def test_LeaveGroup_should_Error_with_internal_server_error(self):
         # Mock the DebtandCreditforMemberinGroup function to raise an exception
         with patch('MyUser.views.DebtandCreditforMemberinGroup') as mock_function:
             mock_function.side_effect = Exception('Internal Server Error')
@@ -415,7 +434,17 @@ class LeaveGroupTest(APITestCase):
             self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
             self.assertEqual(json.loads(response.content), {'message': 'Internal Server Error'})
 
-    def test_post_without_authentication(self):
+    def test_LeaveGroup_should_Error_without_authentication(self):
         self.client.force_authenticate(user=None)
         response = self.client.post(self.url, data={'groupID': 1})
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+    def test_LeaveGroup_should_Error_with_put_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_LeaveGroup_should_Error_with_get_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
