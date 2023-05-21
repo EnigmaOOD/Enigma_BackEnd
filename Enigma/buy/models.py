@@ -1,6 +1,7 @@
 from operator import mod
 from statistics import mode
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 from Group.models import Group
 from MyUser.models import MyUser
 import datetime
@@ -15,7 +16,7 @@ class buy(models.Model):
     description = models.TextField(null=True, blank=True, max_length=100)
     cost = models.BigIntegerField()
     date = models.DateField(null=True, blank=True, default=timezone.now)
-    picture_id = models.IntegerField(blank=False, default=0)
+    picture_id = models.IntegerField(blank=False, default=0, validators=[MinValueValidator(0), MaxValueValidator(35)])
     added_by =  models.ForeignKey(MyUser, on_delete=models.CASCADE, blank=True)
 
 
