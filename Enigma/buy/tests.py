@@ -414,8 +414,8 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(list_consumer.first().percent, 45000)
         self.assertEqual(list_consumer.last().userID, self.user3)
         self.assertEqual(list_consumer.last().percent, 40000)
-
-    def test_CreateBuyView_should_success_when_no_cost(self):
+    
+    def test_CreateBuyView_should_Error_when_date_null(self):
         self.client.force_authenticate(user=self.user1)
 
         data = {
@@ -435,7 +435,38 @@ class CreateBuyViewTest(APITestCase):
                     "percent": 40000
                 }
             ],
-            "description": "",
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "",
+            "picture_id": 1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"date": ['Date has wrong format. Use one of these formats instead: ''YYYY-MM-DD.']})
+        self.assertEqual(buy.objects.count(), 0)
+
+    def test_CreateBuyView_should_Error_when_no_cost(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
             "date": "2023-02-7",
             "picture_id": 1,
             "groupID": 1
@@ -444,6 +475,147 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(buy.objects.count(), 0)
         self.assertEqual(json.loads(response.content), {"cost":["This field is required."]})
+
+    def test_CreateBuyView_should_success_when_pictureID_null(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(buy.objects.count(), 1)
+
+        buy1 = buy.objects.first()
+        self.assertEqual(buy1.description, 'Test Buy')
+        self.assertEqual(str(buy1.date), '2023-02-07')
+        self.assertEqual(buy1.cost, 85000)
+        self.assertEqual(buy1.picture_id, 0)
+        self.assertEqual(buy1.groupID.id, 1)
+
+        list_buyer = buyer.objects.filter(buy=buy1)
+        self.assertEqual(list_buyer.count(), 1)
+        self.assertEqual(list_buyer.first().userID, self.user1)
+        self.assertEqual(list_buyer.first().percent, 85000)
+        
+        list_consumer = consumer.objects.filter(buy=buy1)
+        self.assertEqual(list_consumer.count(), 2)
+        self.assertEqual(list_consumer.first().userID, self.user1)
+        self.assertEqual(list_consumer.first().percent, 45000)
+        self.assertEqual(list_consumer.last().userID, self.user3)
+        self.assertEqual(list_consumer.last().percent, 40000)
+    
+    def test_CreateBuyView_should_Error_when_pictureID_nagative(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": -1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"picture_id": ["Ensure this value is greater than or equal to 0."]})
+        self.assertEqual(buy.objects.count(), 0)
+
+    def test_CreateBuyView_should_Error_when_pictureID_more_than_values(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 36,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {"picture_id": ["Ensure this value is less than or equal to 35."]})
+        self.assertEqual(buy.objects.count(), 0)
+    
+    def test_CreateBuyView_should_ErrorPermission_when_user_no_memebers_of_group(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 2
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(json.loads(response.content), {"detail":"You do not have permission to perform this action."})
+        self.assertEqual(buy.objects.count(), 0)
 
     # def test_create_buy_with_valid_payload(self):
     #     self.client.force_authenticate(user=self.user1)
