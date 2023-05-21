@@ -57,6 +57,11 @@ class DeleteGroupTests(APITestCase):
         response = self.client.put(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+    def test_DeleteGroup_should_Error_with_get_method(self):
+        self.client.force_authenticate(user=self.user)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
 
 class GroupInfoTest(APITestCase):
     def setUp(self):
@@ -121,6 +126,10 @@ class GroupInfoTest(APITestCase):
         self.assertEqual(response.status_code,
                          status.HTTP_405_METHOD_NOT_ALLOWED)
 
+    def test_GroupInfo_should_Error_with_get_method(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 class ShowGroupsTestCase(APITestCase):
     def setUp(self):
@@ -493,6 +502,19 @@ class CreateGroupTest(TestCase):
 
     # اگر می خواین ارور ایمیل نامعتبر تغییر کند بگویید
 
+    def test_CreateGroup_should_Error_with_put_method(self):
+        self.client = APIClient()
+        self.client.force_authenticate(user=self.user2)
+
+        response = self.client.put( '/group/CreateGroup/')
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def test_CreateGroup_should_Error_with_get_method(self):
+        self.client = APIClient()
+        self.client.force_authenticate(user=self.user2)
+
+        response = self.client.get( '/group/CreateGroup/')
+        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 class AddUserGroupTest(TestCase):
     def setUp(self):
@@ -589,3 +611,11 @@ class AddUserGroupTest(TestCase):
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
         self.assertEqual(json.loads(response.content), {
                          "message": "You do not have permission to perform this action."})
+    
+    def test_AddUserGroup_should_Error_with_put_method(self):
+        response = self.client.put(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+    def test_AddUserGroup_should_Error_with_get_method(self):
+        response = self.client.get(self.url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
