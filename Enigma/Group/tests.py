@@ -279,7 +279,7 @@ class CreateGroupTest(TestCase):
         self.user3 = MyUser.objects.create(
             email='test3@example.com', password='test3', name='test3', picture_id=3)
 
-    def test_CreateGroup_should_success(self):
+    def test_CreateGroup_should_success_with_valid_data(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 

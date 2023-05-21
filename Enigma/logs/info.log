@@ -2818,3 +2818,345 @@ WARNING 2023-05-21 05:18:12,616 log 3208 3112 Forbidden: /buy/CreateBuyView/
 WARNING 2023-05-21 05:18:56,423 log 13512 1936 Forbidden: /buy/CreateBuyView/
 WARNING 2023-05-21 05:20:12,794 log 6576 15704 Forbidden: /buy/CreateBuyView/
 WARNING 2023-05-21 05:20:12,800 log 6576 15704 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:37:19,144 log 13344 10784 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:37:19,149 log 13344 10784 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:37:47,782 log 12480 15604 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:37:47,787 log 12480 15604 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:38:11,524 log 8504 15560 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:38:11,528 log 8504 15560 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:38:30,771 log 5804 14940 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:38:30,775 log 5804 14940 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:40:46,825 log 6212 15860 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:40:46,828 log 6212 15860 Forbidden: /buy/CreateBuyView/
+WARNING 2023-05-21 05:43:52,044 log 10816 6484 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:43:52,048 views 10816 6484 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:43:52,048 views 10816 6484 User is authenticated.
+INFO 2023-05-21 05:43:52,050 serializers 10816 6484 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:43:52,051 serializers 10816 6484 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:43:52,051 serializers 10816 6484 1
+INFO 2023-05-21 05:43:52,052 views 10816 6484 Serializer data is valid.
+INFO 2023-05-21 05:43:52,052 views 10816 6484 Perfoming create
+INFO 2023-05-21 05:43:52,055 views 10816 6484 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:45:40,361 log 11972 7060 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:45:40,364 views 11972 7060 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:45:40,364 views 11972 7060 User is authenticated.
+INFO 2023-05-21 05:45:40,367 serializers 11972 7060 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:45:40,367 serializers 11972 7060 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:45:40,367 serializers 11972 7060 1
+INFO 2023-05-21 05:45:40,368 views 11972 7060 Serializer data is valid.
+INFO 2023-05-21 05:45:40,368 views 11972 7060 Perfoming create
+INFO 2023-05-21 05:45:40,371 views 11972 7060 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:46:38,251 log 16148 3568 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:46:38,255 views 16148 3568 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:46:38,255 views 16148 3568 User is authenticated.
+INFO 2023-05-21 05:46:38,257 serializers 16148 3568 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:46:38,257 serializers 16148 3568 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:46:38,257 serializers 16148 3568 1
+INFO 2023-05-21 05:46:38,258 views 16148 3568 Serializer data is valid.
+INFO 2023-05-21 05:46:38,258 views 16148 3568 Perfoming create
+INFO 2023-05-21 05:46:38,261 views 16148 3568 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:48:02,231 log 1304 13768 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:48:02,235 views 1304 13768 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:48:02,235 views 1304 13768 User is authenticated.
+INFO 2023-05-21 05:48:02,237 serializers 1304 13768 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:48:02,238 serializers 1304 13768 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:48:02,238 serializers 1304 13768 1
+INFO 2023-05-21 05:48:02,238 views 1304 13768 Serializer data is valid.
+INFO 2023-05-21 05:48:02,239 views 1304 13768 Perfoming create
+INFO 2023-05-21 05:48:02,241 views 1304 13768 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:48:39,564 log 11952 6792 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:48:39,567 views 11952 6792 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:48:39,567 views 11952 6792 User is authenticated.
+INFO 2023-05-21 05:48:39,569 serializers 11952 6792 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:48:39,569 serializers 11952 6792 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:48:39,570 serializers 11952 6792 1
+INFO 2023-05-21 05:48:39,570 views 11952 6792 Serializer data is valid.
+INFO 2023-05-21 05:48:39,570 views 11952 6792 Perfoming create
+INFO 2023-05-21 05:48:39,573 views 11952 6792 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:49:18,808 log 3876 2164 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:49:18,812 views 3876 2164 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:49:18,812 views 3876 2164 User is authenticated.
+INFO 2023-05-21 05:49:18,814 serializers 3876 2164 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:49:18,814 serializers 3876 2164 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:49:18,814 serializers 3876 2164 1
+INFO 2023-05-21 05:49:18,815 views 3876 2164 Serializer data is valid.
+INFO 2023-05-21 05:49:18,815 views 3876 2164 Perfoming create
+INFO 2023-05-21 05:49:18,818 views 3876 2164 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:49:31,617 log 12120 2076 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:49:31,621 views 12120 2076 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:49:31,621 views 12120 2076 User is authenticated.
+INFO 2023-05-21 05:49:31,624 serializers 12120 2076 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:49:31,624 serializers 12120 2076 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:49:31,624 serializers 12120 2076 1
+INFO 2023-05-21 05:49:31,625 views 12120 2076 Serializer data is valid.
+INFO 2023-05-21 05:49:31,625 views 12120 2076 Perfoming create
+INFO 2023-05-21 05:49:31,627 views 12120 2076 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:49:42,504 log 7756 15084 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:49:42,508 views 7756 15084 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:49:42,508 views 7756 15084 User is authenticated.
+INFO 2023-05-21 05:49:42,510 serializers 7756 15084 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:49:42,510 serializers 7756 15084 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:49:42,510 serializers 7756 15084 1
+INFO 2023-05-21 05:49:42,511 views 7756 15084 Serializer data is valid.
+INFO 2023-05-21 05:49:42,512 views 7756 15084 Perfoming create
+INFO 2023-05-21 05:49:42,514 views 7756 15084 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:49:54,257 log 2636 2008 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:49:54,260 views 2636 2008 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:49:54,260 views 2636 2008 User is authenticated.
+INFO 2023-05-21 05:49:54,263 serializers 2636 2008 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:49:54,263 serializers 2636 2008 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:49:54,263 serializers 2636 2008 1
+INFO 2023-05-21 05:49:54,264 views 2636 2008 Serializer data is valid.
+INFO 2023-05-21 05:49:54,264 views 2636 2008 Perfoming create
+INFO 2023-05-21 05:49:54,266 views 2636 2008 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:50:03,015 log 5076 13528 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:50:03,019 views 5076 13528 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:50:03,019 views 5076 13528 User is authenticated.
+INFO 2023-05-21 05:50:03,021 serializers 5076 13528 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:50:03,021 serializers 5076 13528 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:50:03,021 serializers 5076 13528 1
+INFO 2023-05-21 05:50:03,022 views 5076 13528 Serializer data is valid.
+INFO 2023-05-21 05:50:03,023 views 5076 13528 Perfoming create
+INFO 2023-05-21 05:50:03,026 views 5076 13528 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:50:12,241 log 9980 14652 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:50:12,245 views 9980 14652 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:50:12,245 views 9980 14652 User is authenticated.
+INFO 2023-05-21 05:50:12,248 serializers 9980 14652 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:50:12,248 serializers 9980 14652 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:50:12,248 serializers 9980 14652 1
+INFO 2023-05-21 05:50:12,249 views 9980 14652 Serializer data is valid.
+INFO 2023-05-21 05:50:12,249 views 9980 14652 Perfoming create
+INFO 2023-05-21 05:50:12,252 views 9980 14652 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:50:25,836 log 11924 5464 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:50:25,840 views 11924 5464 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:50:25,840 views 11924 5464 User is authenticated.
+INFO 2023-05-21 05:50:25,842 serializers 11924 5464 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:50:25,843 serializers 11924 5464 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:50:25,843 serializers 11924 5464 1
+INFO 2023-05-21 05:50:25,844 views 11924 5464 Serializer data is valid.
+INFO 2023-05-21 05:50:25,844 views 11924 5464 Perfoming create
+INFO 2023-05-21 05:50:25,846 views 11924 5464 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:50:43,811 log 11212 3272 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:50:43,815 views 11212 3272 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:50:43,815 views 11212 3272 User is authenticated.
+INFO 2023-05-21 05:50:43,818 serializers 11212 3272 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:50:43,818 serializers 11212 3272 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:50:43,818 serializers 11212 3272 1
+INFO 2023-05-21 05:50:43,819 views 11212 3272 Serializer data is valid.
+INFO 2023-05-21 05:50:43,820 views 11212 3272 Perfoming create
+INFO 2023-05-21 05:50:43,822 views 11212 3272 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 125000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:53:44,296 log 6056 12408 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:53:44,300 views 6056 12408 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:53:44,300 views 6056 12408 User is authenticated.
+INFO 2023-05-21 05:53:44,303 serializers 6056 12408 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:53:44,303 serializers 6056 12408 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:53:44,303 serializers 6056 12408 1
+INFO 2023-05-21 05:53:44,304 views 6056 12408 Serializer data is valid.
+INFO 2023-05-21 05:53:44,305 views 6056 12408 Perfoming create
+INFO 2023-05-21 05:53:44,307 views 6056 12408 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:54:40,606 log 12252 5864 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:54:40,609 views 12252 5864 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:54:40,609 views 12252 5864 User is authenticated.
+INFO 2023-05-21 05:54:40,612 serializers 12252 5864 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:54:40,612 serializers 12252 5864 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:54:40,612 serializers 12252 5864 1
+INFO 2023-05-21 05:54:40,613 views 12252 5864 Serializer data is valid.
+INFO 2023-05-21 05:54:40,613 views 12252 5864 Perfoming create
+INFO 2023-05-21 05:54:40,616 views 12252 5864 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:55:17,353 log 9676 13152 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:55:17,356 views 9676 13152 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:55:17,356 views 9676 13152 User is authenticated.
+INFO 2023-05-21 05:55:17,358 serializers 9676 13152 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:55:17,358 serializers 9676 13152 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:55:17,358 serializers 9676 13152 1
+INFO 2023-05-21 05:55:17,360 views 9676 13152 Serializer data is valid.
+INFO 2023-05-21 05:55:17,360 views 9676 13152 Perfoming create
+INFO 2023-05-21 05:55:17,362 views 9676 13152 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:56:35,544 log 4676 5268 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:56:35,548 views 4676 5268 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:56:35,548 views 4676 5268 User is authenticated.
+INFO 2023-05-21 05:56:35,551 serializers 4676 5268 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:56:35,551 serializers 4676 5268 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:56:35,551 serializers 4676 5268 1
+INFO 2023-05-21 05:56:35,553 views 4676 5268 Serializer data is valid.
+INFO 2023-05-21 05:56:35,553 views 4676 5268 Perfoming create
+INFO 2023-05-21 05:56:35,555 views 4676 5268 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:56:51,153 log 14920 14748 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:56:51,158 views 14920 14748 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:56:51,158 views 14920 14748 User is authenticated.
+INFO 2023-05-21 05:56:51,161 serializers 14920 14748 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:56:51,161 serializers 14920 14748 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:56:51,161 serializers 14920 14748 1
+INFO 2023-05-21 05:56:51,162 views 14920 14748 Serializer data is valid.
+INFO 2023-05-21 05:56:51,162 views 14920 14748 Perfoming create
+INFO 2023-05-21 05:56:51,164 views 14920 14748 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:57:21,487 log 9576 12308 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:57:21,491 views 9576 12308 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:57:21,492 views 9576 12308 User is authenticated.
+INFO 2023-05-21 05:57:21,494 serializers 9576 12308 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:57:21,494 serializers 9576 12308 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:57:21,494 serializers 9576 12308 1
+INFO 2023-05-21 05:57:21,496 views 9576 12308 Serializer data is valid.
+INFO 2023-05-21 05:57:21,496 views 9576 12308 Perfoming create
+INFO 2023-05-21 05:57:21,498 views 9576 12308 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 05:58:08,857 log 1948 1124 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 05:58:08,861 views 1948 1124 Request received: POST buy/CreateBuy
+INFO 2023-05-21 05:58:08,862 views 1948 1124 User is authenticated.
+INFO 2023-05-21 05:58:08,864 serializers 1948 1124 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 05:58:08,864 serializers 1948 1124 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 05:58:08,864 serializers 1948 1124 1
+INFO 2023-05-21 05:58:08,866 views 1948 1124 Serializer data is valid.
+INFO 2023-05-21 05:58:08,866 views 1948 1124 Perfoming create
+INFO 2023-05-21 05:58:08,868 views 1948 1124 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:00:41,972 log 6532 8960 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:00:41,976 views 6532 8960 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:00:41,976 views 6532 8960 User is authenticated.
+INFO 2023-05-21 06:00:41,979 serializers 6532 8960 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:00:41,979 serializers 6532 8960 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:00:41,979 serializers 6532 8960 1
+INFO 2023-05-21 06:00:41,980 views 6532 8960 Serializer data is valid.
+INFO 2023-05-21 06:00:41,980 views 6532 8960 Perfoming create
+INFO 2023-05-21 06:00:41,983 views 6532 8960 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:01:11,732 log 10212 2808 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:01:11,736 views 10212 2808 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:01:11,736 views 10212 2808 User is authenticated.
+INFO 2023-05-21 06:01:11,739 serializers 10212 2808 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:01:11,739 serializers 10212 2808 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:01:11,739 serializers 10212 2808 1
+INFO 2023-05-21 06:01:11,740 views 10212 2808 Serializer data is valid.
+INFO 2023-05-21 06:01:11,741 views 10212 2808 Perfoming create
+INFO 2023-05-21 06:01:11,743 views 10212 2808 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:06:43,587 log 14300 2640 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:06:43,590 views 14300 2640 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:06:43,590 views 14300 2640 User is authenticated.
+INFO 2023-05-21 06:06:43,593 serializers 14300 2640 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:06:43,593 serializers 14300 2640 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:06:43,593 serializers 14300 2640 1
+INFO 2023-05-21 06:06:43,595 views 14300 2640 Serializer data is valid.
+INFO 2023-05-21 06:06:43,595 views 14300 2640 Perfoming create
+INFO 2023-05-21 06:06:43,597 views 14300 2640 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:06:43,602 views 14300 2640 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:06:43,602 views 14300 2640 User is authenticated.
+INFO 2023-05-21 06:06:43,605 serializers 14300 2640 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:06:43,605 serializers 14300 2640 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:06:43,605 serializers 14300 2640 1
+INFO 2023-05-21 06:06:43,606 views 14300 2640 Serializer data is valid.
+INFO 2023-05-21 06:06:43,606 views 14300 2640 Perfoming create
+INFO 2023-05-21 06:06:43,608 views 14300 2640 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:06:59,042 log 14380 6688 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:06:59,046 views 14380 6688 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:06:59,046 views 14380 6688 User is authenticated.
+INFO 2023-05-21 06:06:59,048 serializers 14380 6688 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:06:59,048 serializers 14380 6688 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:06:59,048 serializers 14380 6688 1
+INFO 2023-05-21 06:06:59,050 views 14380 6688 Serializer data is valid.
+INFO 2023-05-21 06:06:59,050 views 14380 6688 Perfoming create
+INFO 2023-05-21 06:06:59,052 views 14380 6688 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:06:59,060 views 14380 6688 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:06:59,060 views 14380 6688 User is authenticated.
+INFO 2023-05-21 06:06:59,063 serializers 14380 6688 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:06:59,063 serializers 14380 6688 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:06:59,063 serializers 14380 6688 1
+INFO 2023-05-21 06:06:59,064 views 14380 6688 Serializer data is valid.
+INFO 2023-05-21 06:06:59,064 views 14380 6688 Perfoming create
+INFO 2023-05-21 06:06:59,066 views 14380 6688 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:09:33,840 log 5652 8124 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:09:33,844 views 5652 8124 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:09:33,844 views 5652 8124 User is authenticated.
+INFO 2023-05-21 06:09:33,846 serializers 5652 8124 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:09:33,846 serializers 5652 8124 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:09:33,846 serializers 5652 8124 1
+INFO 2023-05-21 06:09:33,848 views 5652 8124 Serializer data is valid.
+INFO 2023-05-21 06:09:33,848 views 5652 8124 Perfoming create
+INFO 2023-05-21 06:09:33,851 views 5652 8124 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:09:33,859 views 5652 8124 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:09:33,859 views 5652 8124 User is authenticated.
+WARNING 2023-05-21 06:09:33,861 log 5652 8124 Bad Request: /buy/CreateBuyView/
+INFO 2023-05-21 06:09:33,866 views 5652 8124 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:09:33,866 views 5652 8124 User is authenticated.
+INFO 2023-05-21 06:09:33,869 serializers 5652 8124 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:09:33,869 serializers 5652 8124 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:09:33,870 serializers 5652 8124 1
+INFO 2023-05-21 06:09:33,871 views 5652 8124 Serializer data is valid.
+INFO 2023-05-21 06:09:33,871 views 5652 8124 Perfoming create
+INFO 2023-05-21 06:09:33,873 views 5652 8124 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:10:07,832 log 3252 4408 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:10:07,836 views 3252 4408 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:07,836 views 3252 4408 User is authenticated.
+INFO 2023-05-21 06:10:07,839 serializers 3252 4408 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:10:07,839 serializers 3252 4408 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:10:07,839 serializers 3252 4408 1
+INFO 2023-05-21 06:10:07,840 views 3252 4408 Serializer data is valid.
+INFO 2023-05-21 06:10:07,840 views 3252 4408 Perfoming create
+INFO 2023-05-21 06:10:07,842 views 3252 4408 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:10:07,850 views 3252 4408 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:07,850 views 3252 4408 User is authenticated.
+WARNING 2023-05-21 06:10:07,854 log 3252 4408 Bad Request: /buy/CreateBuyView/
+INFO 2023-05-21 06:10:07,857 views 3252 4408 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:07,857 views 3252 4408 User is authenticated.
+INFO 2023-05-21 06:10:07,860 serializers 3252 4408 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:10:07,860 serializers 3252 4408 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:10:07,860 serializers 3252 4408 1
+INFO 2023-05-21 06:10:07,861 views 3252 4408 Serializer data is valid.
+INFO 2023-05-21 06:10:07,861 views 3252 4408 Perfoming create
+INFO 2023-05-21 06:10:07,863 views 3252 4408 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:10:35,440 log 4724 15548 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:10:35,444 views 4724 15548 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:35,444 views 4724 15548 User is authenticated.
+INFO 2023-05-21 06:10:35,446 serializers 4724 15548 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:10:35,446 serializers 4724 15548 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:10:35,446 serializers 4724 15548 1
+INFO 2023-05-21 06:10:35,448 views 4724 15548 Serializer data is valid.
+INFO 2023-05-21 06:10:35,448 views 4724 15548 Perfoming create
+INFO 2023-05-21 06:10:35,450 views 4724 15548 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:10:35,459 views 4724 15548 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:35,459 views 4724 15548 User is authenticated.
+WARNING 2023-05-21 06:10:35,461 log 4724 15548 Bad Request: /buy/CreateBuyView/
+INFO 2023-05-21 06:10:35,465 views 4724 15548 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:10:35,465 views 4724 15548 User is authenticated.
+INFO 2023-05-21 06:10:35,468 serializers 4724 15548 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:10:35,468 serializers 4724 15548 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:10:35,468 serializers 4724 15548 1
+INFO 2023-05-21 06:10:35,469 views 4724 15548 Serializer data is valid.
+INFO 2023-05-21 06:10:35,469 views 4724 15548 Perfoming create
+INFO 2023-05-21 06:10:35,472 views 4724 15548 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:12:06,665 log 5392 11476 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:12:06,668 views 5392 11476 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:06,668 views 5392 11476 User is authenticated.
+INFO 2023-05-21 06:12:06,671 serializers 5392 11476 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:12:06,671 serializers 5392 11476 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:12:06,671 serializers 5392 11476 1
+INFO 2023-05-21 06:12:06,673 views 5392 11476 Serializer data is valid.
+INFO 2023-05-21 06:12:06,673 views 5392 11476 Perfoming create
+INFO 2023-05-21 06:12:06,675 views 5392 11476 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:12:06,683 views 5392 11476 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:06,683 views 5392 11476 User is authenticated.
+WARNING 2023-05-21 06:12:06,686 log 5392 11476 Bad Request: /buy/CreateBuyView/
+INFO 2023-05-21 06:12:06,690 views 5392 11476 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:06,690 views 5392 11476 User is authenticated.
+INFO 2023-05-21 06:12:06,693 serializers 5392 11476 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:12:06,693 serializers 5392 11476 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:12:06,693 serializers 5392 11476 1
+INFO 2023-05-21 06:12:06,694 views 5392 11476 Serializer data is valid.
+INFO 2023-05-21 06:12:06,694 views 5392 11476 Perfoming create
+INFO 2023-05-21 06:12:06,696 views 5392 11476 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+WARNING 2023-05-21 06:12:13,899 log 10732 10384 Forbidden: /buy/CreateBuyView/
+INFO 2023-05-21 06:12:13,903 views 10732 10384 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:13,903 views 10732 10384 User is authenticated.
+INFO 2023-05-21 06:12:13,906 serializers 10732 10384 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': '', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:12:13,906 serializers 10732 10384 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:12:13,906 serializers 10732 10384 1
+INFO 2023-05-21 06:12:13,908 views 10732 10384 Serializer data is valid.
+INFO 2023-05-21 06:12:13,908 views 10732 10384 Perfoming create
+INFO 2023-05-21 06:12:13,911 views 10732 10384 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': '', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
+INFO 2023-05-21 06:12:13,919 views 10732 10384 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:13,919 views 10732 10384 User is authenticated.
+WARNING 2023-05-21 06:12:13,923 log 10732 10384 Bad Request: /buy/CreateBuyView/
+INFO 2023-05-21 06:12:13,927 views 10732 10384 Request received: POST buy/CreateBuy
+INFO 2023-05-21 06:12:13,927 views 10732 10384 User is authenticated.
+INFO 2023-05-21 06:12:13,929 serializers 10732 10384 {'buyers': [{'userID': 1, 'percent': 85000}], 'consumers': [{'userID': 1, 'percent': 45000}, {'userID': 3, 'percent': 40000}], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-7', 'picture_id': 1, 'groupID': 1}
+INFO 2023-05-21 06:12:13,929 serializers 10732 10384 {'userID': 1, 'percent': 85000}
+INFO 2023-05-21 06:12:13,929 serializers 10732 10384 1
+INFO 2023-05-21 06:12:13,930 views 10732 10384 Serializer data is valid.
+INFO 2023-05-21 06:12:13,930 views 10732 10384 Perfoming create
+INFO 2023-05-21 06:12:13,932 views 10732 10384 Created buy instance data. {'id': 1, 'consumers': [OrderedDict([('userID', 1), ('percent', 45000.0)]), OrderedDict([('userID', 3), ('percent', 40000.0)])], 'description': 'Test Buy', 'cost': 85000, 'date': '2023-02-07', 'picture_id': 1, 'groupID': 1, 'added_by': 1}
