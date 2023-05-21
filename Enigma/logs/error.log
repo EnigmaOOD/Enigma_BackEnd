@@ -432,3 +432,63 @@ ERROR 2023-05-18 13:49:22,067 views 17812 13748 Error: Test Exception
 ERROR 2023-05-18 13:49:22,067 log 17812 13748 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-18 13:49:22,098 views 17812 13748 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-18 13:49:22,098 log 17812 13748 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-18 17:06:04,402 log 8364 8588 Internal Server Error: /auth/register/
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 49, in post
+    Util.send_email(data)
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\utils.py", line 8, in send_email
+    email.send()
+  File "C:\Python311\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+ERROR 2023-05-18 17:06:04,407 basehttp 8364 8588 "POST /auth/register/ HTTP/1.1" 500 135950
+ERROR 2023-05-21 05:12:27,873 views 12280 11096 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-21 05:12:27,875 views 12280 11096 Error: Test Exception
+ERROR 2023-05-21 05:12:27,875 log 12280 11096 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-21 05:12:27,904 views 12280 11096 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-21 05:12:27,905 log 12280 11096 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-21 05:14:21,197 views 11520 16120 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-21 05:14:21,197 views 11520 16120 Error: Test Exception
+ERROR 2023-05-21 05:14:21,197 log 11520 16120 Internal Server Error: /buy/GetGroupBuys/

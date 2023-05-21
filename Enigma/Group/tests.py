@@ -444,7 +444,6 @@ class CreateGroupTest(TestCase):
     # اگر می خواین ارور ایمیل نامعتبر تغییر کند بگویید
 
 class AddUserGroupTest(TestCase):
-
     def setUp(self):
         self.client = APIClient()
         self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')

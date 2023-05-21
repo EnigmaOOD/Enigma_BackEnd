@@ -2,7 +2,9 @@ from rest_framework import serializers
 from Group.models import Group, Members
 from MyUser.models import MyUser
 from .models import buy, buyer, consumer
+import logging
 
+logger = logging.getLogger('django')
 
 class buyerSerializer(serializers.ModelSerializer):
     class Meta:

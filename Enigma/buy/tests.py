@@ -226,35 +226,89 @@ class GetGroupBuysTestCase(APITestCase):
         self.assertEqual(response.data['message'], 'An error occurred.')
 
 
-"""  
+
 class CreateBuyViewTest(APITestCase):
     def setUp(self):
-        self.user1 = MyUser.objects.create(email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
-        self.user2 = MyUser.objects.create(email='maryam2@test.local', name='maryam2', password='maryam2', picture_id=3)
-        self.user3 = MyUser.objects.create(email='maryam3@test.local', name='maryam3', password='maryam3', picture_id=4)
         self.client = APIClient()
-        self.group = Group.objects.create(name='Test Group', description="Family", currency="تومان", picture_id=2)
-        Members.objects.create(userID=self.user1, groupID=self.group)
-        Members.objects.create(userID=self.user2, groupID=self.group)
-        Members.objects.create(userID=self.user3, groupID=self.group)
-        self.valid_payload = {
-            'groupID': self.group.id,
-            'description': "2 pizza",
-            'cost': 200000,
-            'date': '2023-5-13',
-            'added_by': self.user1.user_id,
-            'picture_id': 5,
-            'buyers': [{
-                'userID': self.user2.user_id,
-                'percent': 200000
-            }],
-            'consumers': [
-                {'userID': self.user3.user_id, "percent": 100000},
-                {'userID': self.user2.user_id, "percent": 100000}
-            ]
+        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
+        self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
+        self.user4 = MyUser.objects.create(email='test4@example.com', name='test4', password='test4')
+
+        self.group1 = Group.objects.create(name='Test Group1', currency='تومان')
+        self.group2 = Group.objects.create(name='Test Group2', currency='تومان')
+
+        self.group1_member1 = Members.objects.create(userID = self.user1, groupID=self.group1)
+        self.group1_member2 = Members.objects.create(userID = self.user2, groupID=self.group1)
+        self.group1_member3 = Members.objects.create(userID = self.user3, groupID=self.group1)
+
+        self.url = '/buy/CreateBuyView/'
+
+    def test_should_invalid_when_without_authentication(self):
+        data = {
+            "buyers": [
+                {
+                "userID": 1,
+                "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                "userID": 3,
+                "percent": 40000
+                }
+            ],
+            "description": "Buy Test",
+            "cost": 125000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 2
         }
-        print(self.valid_payload)
-        self.invalid_payload = {'groupID': 999}
+        response = self.client.post(self.url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
+
+    def test_should_successfully_when_data_is_correct(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                "userID": 1,
+                "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                "userID": 3,
+                "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 125000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 2
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(buy.objects.count(), 1)
+
+        buy = buy.objects.first()
+        self.assertEqual(buy.description, 'Test Buy')
+        self.assertEqual(buy.data, '2023-02-7')
+        self.assertEqual(buy.cost, 1250000)
+        self.assertEqual(buy.picture_id, 1)
+        self.assertEqual(buy.groupID, 2)
+
+        list_buyer = buyer.objects.filter(buy=buy)
+        list_consumer = buyer.objects.filter(buy=buy)
+        self.assertEqual(list_buyer.count(), 1)
+        self.assertEqual(list_consumer.count(), 2)
+        print(list_buyer)
+        print("________________________________")
+        print(list_consumer)
+        # self.assertEqual(members.last().userID, self.user1)
+        # self.assertTrue(members.get(userID=self.user3))
 
     # def test_create_buy_with_valid_payload(self):
     #     self.client.force_authenticate(user=self.user1)
@@ -265,4 +319,3 @@ class CreateBuyViewTest(APITestCase):
     #     self.assertEqual(response.data['description'], self.valid_payload['description'])
     #     self.assertEqual(response.data['cost'], self.valid_payload['cost'])
     #     self.assertEqual(response.data['added_by'], self.valid_payload['added_by'])
-"""
