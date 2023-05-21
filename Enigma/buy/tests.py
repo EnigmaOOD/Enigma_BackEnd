@@ -617,13 +617,110 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(json.loads(response.content), {"detail":"You do not have permission to perform this action."})
         self.assertEqual(buy.objects.count(), 0)
 
-    # def test_create_buy_with_valid_payload(self):
-    #     self.client.force_authenticate(user=self.user1)
-    #     response = self.client.post('/buy/CreateBuyView/', self.valid_payload)
-    #     print(response.json())
-    #     self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-    #     self.assertEqual(response.data['groupID'], self.valid_payload['groupID'])
-    #     self.assertEqual(response.data['description'], self.valid_payload['description'])
-    #     self.assertEqual(response.data['cost'], self.valid_payload['cost'])
-    #     self.assertEqual(response.data['added_by'], self.valid_payload['added_by'])
-    #     self.assertEqual(response.data['added_by'], self.valid_payload['added_by'])
+    def test_CreateBuyView_should_Error_when_buyers_null(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {'buyers':['This field is required.']})
+        self.assertEqual(buy.objects.count(), 0)
+
+    def test_CreateBuyView_should_Error_when_consumers_null(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {'consumers':['This field is required.']})
+        self.assertEqual(buy.objects.count(), 0)
+
+    def test_CreateBuyView_should_Error_when_userID_in_buyers_is_not_a_memeber_of_group(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 4,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 1,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Buyer with group ID 1 and user ID 4 is not a member of ''the group']})
+        self.assertEqual(buy.objects.count(), 0)
+
+    def test_CreateBuyView_should_Error_when_userID_in_consumers_is_not_a_memeber_of_group(self):
+        self.client.force_authenticate(user=self.user1)
+
+        data = {
+            "buyers": [
+                {
+                    "userID": 1,
+                    "percent": 85000
+                }
+            ],
+            "consumers": [
+                {
+                    "userID": 4,
+                    "percent": 45000
+                },
+                {
+                    "userID": 3,
+                    "percent": 40000
+                }
+            ],
+            "description": "Test Buy",
+            "cost": 85000,
+            "date": "2023-02-7",
+            "picture_id": 1,
+            "groupID": 1
+        }
+        response = self.client.post(self.url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Consumer with group ID 1 and user ID 4 is not a member of ''the group']})
+        self.assertEqual(buy.objects.count(), 0)
