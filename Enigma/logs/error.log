@@ -1626,3 +1626,915 @@ ERROR 2023-05-23 15:40:59,496 views 18880 19636 Error: Test Exception
 ERROR 2023-05-23 15:40:59,497 log 18880 19636 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-23 15:40:59,917 views 18880 19636 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-23 15:40:59,918 log 18880 19636 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 09:13:50,492 views 15004 2140 Invalid group data.
+ERROR 2023-05-24 09:13:50,500 views 15004 2140 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:13:50,503 views 15004 2140 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:13:50,503 views 15004 2140 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:13:50,510 views 15004 2140 Invalid group data.
+ERROR 2023-05-24 09:13:50,514 views 15004 2140 Invalid group data.
+ERROR 2023-05-24 09:13:50,519 views 15004 2140 Invalid group data.
+ERROR 2023-05-24 09:13:50,525 views 15004 2140 Invalid group data.
+ERROR 2023-05-24 09:13:50,532 views 15004 2140 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:13:50,564 views 15004 2140 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:13:50,564 views 15004 2140 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:15:08,427 views 10540 13280 Invalid group data.
+ERROR 2023-05-24 09:15:08,437 views 10540 13280 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:15:08,440 views 10540 13280 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:15:08,440 views 10540 13280 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:15:08,447 views 10540 13280 Invalid group data.
+ERROR 2023-05-24 09:15:08,450 views 10540 13280 Invalid group data.
+ERROR 2023-05-24 09:15:08,453 views 10540 13280 Invalid group data.
+ERROR 2023-05-24 09:15:08,462 views 10540 13280 Invalid group data.
+ERROR 2023-05-24 09:15:08,473 views 10540 13280 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:15:08,514 views 10540 13280 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:15:08,515 views 10540 13280 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:15:36,557 views 7468 11408 Invalid group data.
+ERROR 2023-05-24 09:15:36,565 views 7468 11408 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:15:36,567 views 7468 11408 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:15:36,568 views 7468 11408 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:15:36,573 views 7468 11408 Invalid group data.
+ERROR 2023-05-24 09:15:36,576 views 7468 11408 Invalid group data.
+ERROR 2023-05-24 09:15:36,581 views 7468 11408 Invalid group data.
+ERROR 2023-05-24 09:15:36,587 views 7468 11408 Invalid group data.
+ERROR 2023-05-24 09:15:36,595 views 7468 11408 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:15:36,631 views 7468 11408 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:15:36,631 views 7468 11408 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:18:16,979 views 10116 11364 Invalid group data.
+ERROR 2023-05-24 09:18:16,990 views 10116 11364 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:18:16,993 views 10116 11364 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:18:16,993 views 10116 11364 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:18:16,999 views 10116 11364 Invalid group data.
+ERROR 2023-05-24 09:18:17,003 views 10116 11364 Invalid group data.
+ERROR 2023-05-24 09:18:17,008 views 10116 11364 Invalid group data.
+ERROR 2023-05-24 09:18:17,014 views 10116 11364 Invalid group data.
+ERROR 2023-05-24 09:18:17,021 views 10116 11364 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:18:17,073 views 10116 11364 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:18:17,074 views 10116 11364 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:18:44,632 views 2076 600 Invalid group data.
+ERROR 2023-05-24 09:18:44,640 views 2076 600 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:18:44,643 views 2076 600 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:18:44,643 views 2076 600 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:18:44,649 views 2076 600 Invalid group data.
+ERROR 2023-05-24 09:18:44,652 views 2076 600 Invalid group data.
+ERROR 2023-05-24 09:18:44,655 views 2076 600 Invalid group data.
+ERROR 2023-05-24 09:18:44,661 views 2076 600 Invalid group data.
+ERROR 2023-05-24 09:18:44,669 views 2076 600 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:18:44,703 views 2076 600 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:18:44,704 views 2076 600 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:29:56,998 views 9212 13376 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:29:57,005 views 9212 13376 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:29:57,012 views 9212 13376 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:29:57,017 views 9212 13376 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:29:57,026 views 9212 13376 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:29:57,031 views 9212 13376 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:36:30,038 views 5436 7388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:36:30,043 views 5436 7388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:36:30,051 views 5436 7388 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:36:30,058 views 5436 7388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:36:30,061 views 5436 7388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:36:30,070 views 5436 7388 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:36:30,074 views 5436 7388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,571 views 13056 7916 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,575 views 13056 7916 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,583 views 13056 7916 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:41:15,589 views 13056 7916 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,591 views 13056 7916 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,593 views 13056 7916 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:41:15,601 views 13056 7916 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:43:00,284 views 5584 5448 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:43:00,288 views 5584 5448 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:43:00,303 views 5584 5448 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:43:00,315 views 5584 5448 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:43:00,321 views 5584 5448 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:43:00,329 views 5584 5448 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:43:00,344 views 5584 5448 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:43:00,393 views 5584 5448 Invalid group data.
+ERROR 2023-05-24 09:43:00,408 views 5584 5448 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:43:00,413 views 5584 5448 User with email:miss_ramazani not found.
+ERROR 2023-05-24 09:43:00,414 views 5584 5448 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:43:00,428 views 5584 5448 Invalid group data.
+ERROR 2023-05-24 09:43:00,436 views 5584 5448 Invalid group data.
+ERROR 2023-05-24 09:43:00,444 views 5584 5448 Invalid group data.
+ERROR 2023-05-24 09:43:00,452 views 5584 5448 Invalid group data.
+ERROR 2023-05-24 09:43:00,466 views 5584 5448 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:43:00,471 views 5584 5448 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:43:00,471 views 5584 5448 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 09:43:00,624 views 5584 5448 An error occurred: Something went wrong
+ERROR 2023-05-24 09:43:00,625 log 5584 5448 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 09:43:00,668 views 5584 5448 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 09:43:00,670 log 5584 5448 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 09:43:00,694 views 5584 5448 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 09:43:00,694 log 5584 5448 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 09:43:00,708 views 5584 5448 Group not found. Group ID: 999
+ERROR 2023-05-24 09:43:00,727 views 5584 5448 Group not found. Group ID: None
+ERROR 2023-05-24 09:43:00,782 log 5584 5448 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 09:43:00,851 views 5584 5448 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 09:43:00,851 views 5584 5448 Error: Test Exception
+ERROR 2023-05-24 09:43:00,851 log 5584 5448 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 09:43:01,038 views 5584 5448 Error: Group not found.
+ERROR 2023-05-24 09:43:01,064 views 5584 5448 Error: User not found.
+ERROR 2023-05-24 09:43:01,212 views 5584 5448 Error: Internal Server Error
+ERROR 2023-05-24 09:43:01,213 log 5584 5448 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 09:43:03,567 views 5584 5448 User not found. User ID: None
+ERROR 2023-05-24 09:43:03,576 views 5584 5448 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 09:43:03,576 views 5584 5448 Error: Something went wrong
+ERROR 2023-05-24 09:43:03,576 log 5584 5448 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 09:43:03,975 views 5584 5448 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 09:43:03,975 views 5584 5448 Error: Test Exception
+ERROR 2023-05-24 09:43:03,976 log 5584 5448 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 09:43:04,404 views 5584 5448 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 09:43:04,405 log 5584 5448 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 09:45:43,106 views 7468 7808 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:45:43,113 views 7468 7808 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:45:43,122 views 7468 7808 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:45:43,124 views 7468 7808 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:45:43,127 views 7468 7808 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:45:43,137 views 7468 7808 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:47:42,934 views 5244 9056 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:47:42,942 views 5244 9056 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:47:42,948 views 5244 9056 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:47:42,953 views 5244 9056 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:47:42,957 views 5244 9056 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:47:42,964 views 5244 9056 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:52:46,888 views 3412 8024 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:52:46,895 views 3412 8024 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:52:46,902 views 3412 8024 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:52:46,905 views 3412 8024 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:52:46,908 views 3412 8024 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:52:46,918 views 3412 8024 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:53:04,178 views 2536 6012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:53:04,187 views 2536 6012 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:53:04,192 views 2536 6012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:53:04,195 views 2536 6012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:53:04,199 views 2536 6012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:53:04,209 views 2536 6012 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:57:38,553 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:57:38,562 views 11248 12532 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:57:38,568 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:57:38,571 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:57:38,573 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:57:38,582 views 11248 12532 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:57:38,612 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:57:38,617 views 11248 12532 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,669 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,679 views 9428 15172 User with email:test3.example.com not found.
+ERROR 2023-05-24 09:58:32,684 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,689 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,693 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,701 views 9428 15172 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 09:58:32,732 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 09:58:32,735 views 9428 15172 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,279 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,287 views 6540 13972 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:00:28,293 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,297 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,299 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,307 views 6540 13972 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:00:28,368 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:00:28,372 views 6540 13972 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,297 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,306 views 1768 10960 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:01:02,314 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,318 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,321 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,330 views 1768 10960 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:01:02,360 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:01:02,365 views 1768 10960 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:38:13,762 views 9800 8544 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:38:13,767 views 9800 8544 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:38:13,772 views 9800 8544 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:38:13,774 views 9800 8544 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:38:13,776 views 9800 8544 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:38:13,781 views 9800 8544 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:38:13,804 views 9800 8544 User with email:t not found.
+ERROR 2023-05-24 10:39:03,167 views 5884 14480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:03,173 views 5884 14480 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:39:03,178 views 5884 14480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:03,181 views 5884 14480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:03,183 views 5884 14480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:03,188 views 5884 14480 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:39:03,213 views 5884 14480 User with email:t not found.
+ERROR 2023-05-24 10:39:03,217 views 5884 14480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:10,469 views 11424 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:10,475 views 11424 12340 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:39:10,479 views 11424 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:10,481 views 11424 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:10,483 views 11424 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:39:10,488 views 11424 12340 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:39:10,511 views 11424 12340 User with email:t not found.
+ERROR 2023-05-24 10:39:10,515 views 11424 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:40:28,775 views 15640 15400 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:40:28,780 views 15640 15400 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:40:28,786 views 15640 15400 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:40:28,790 views 15640 15400 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:40:28,793 views 15640 15400 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:40:28,798 views 15640 15400 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:40:28,822 views 15640 15400 User with email:t not found.
+ERROR 2023-05-24 10:40:28,828 views 15640 15400 User with email:t not found.
+ERROR 2023-05-24 10:41:33,152 views 1444 4700 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:41:33,158 views 1444 4700 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:41:33,163 views 1444 4700 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:41:33,165 views 1444 4700 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:41:33,167 views 1444 4700 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:41:33,172 views 1444 4700 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:41:33,195 views 1444 4700 User with email:t not found.
+ERROR 2023-05-24 10:41:33,201 views 1444 4700 User with email:t not found.
+ERROR 2023-05-24 10:43:46,706 views 3020 5316 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:43:46,715 views 3020 5316 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:43:46,721 views 3020 5316 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:43:46,723 views 3020 5316 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:43:46,725 views 3020 5316 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:43:46,733 views 3020 5316 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:43:46,776 views 3020 5316 User with email:t not found.
+ERROR 2023-05-24 10:44:01,159 views 14432 1152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:44:01,166 views 14432 1152 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:44:01,173 views 14432 1152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:44:01,176 views 14432 1152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:44:01,178 views 14432 1152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:44:01,186 views 14432 1152 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:44:01,227 views 14432 1152 User with email:t not found.
+ERROR 2023-05-24 10:45:01,550 views 3408 1564 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:01,559 views 3408 1564 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:45:01,565 views 3408 1564 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:01,568 views 3408 1564 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:01,570 views 3408 1564 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:01,579 views 3408 1564 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:45:01,623 views 3408 1564 User with email:t not found.
+ERROR 2023-05-24 10:45:28,080 views 16244 14252 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:28,087 views 16244 14252 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:45:28,095 views 16244 14252 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:28,100 views 16244 14252 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:28,103 views 16244 14252 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:45:28,110 views 16244 14252 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:45:28,143 views 16244 14252 User with email:t not found.
+ERROR 2023-05-24 10:45:28,155 views 16244 14252 User with email:t not found.
+ERROR 2023-05-24 10:46:24,508 views 13084 15692 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:46:24,517 views 13084 15692 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:46:24,523 views 13084 15692 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:46:24,526 views 13084 15692 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:46:24,530 views 13084 15692 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:46:24,538 views 13084 15692 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:46:24,579 views 13084 15692 User with email:t not found.
+ERROR 2023-05-24 10:47:32,173 views 7388 15572 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:47:32,180 views 7388 15572 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:47:32,188 views 7388 15572 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:47:32,192 views 7388 15572 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:47:32,197 views 7388 15572 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:47:32,205 views 7388 15572 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:47:32,237 views 7388 15572 User with email:t not found.
+ERROR 2023-05-24 10:47:32,247 views 7388 15572 User with email:t not found.
+ERROR 2023-05-24 10:48:08,740 views 7500 1528 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:08,747 views 7500 1528 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:48:08,751 views 7500 1528 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:08,754 views 7500 1528 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:08,756 views 7500 1528 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:08,764 views 7500 1528 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:48:08,809 views 7500 1528 User with email:t not found.
+ERROR 2023-05-24 10:48:29,017 views 1632 13388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:29,024 views 1632 13388 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:48:29,032 views 1632 13388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:29,036 views 1632 13388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:29,040 views 1632 13388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:48:29,047 views 1632 13388 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:48:29,092 views 1632 13388 User with email:t not found.
+ERROR 2023-05-24 10:49:11,761 views 14680 15164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:49:11,769 views 14680 15164 User with email:test3.example.com not found.
+ERROR 2023-05-24 10:49:11,778 views 14680 15164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:49:11,783 views 14680 15164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:49:11,786 views 14680 15164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 10:49:11,793 views 14680 15164 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 10:49:11,840 views 14680 15164 User with email:t not found.
+ERROR 2023-05-24 11:13:56,171 views 14932 1760 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:13:56,177 views 14932 1760 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:13:56,181 views 14932 1760 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:13:56,183 views 14932 1760 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:13:56,185 views 14932 1760 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:13:56,190 views 14932 1760 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:13:56,223 views 14932 1760 User with email:t not found.
+ERROR 2023-05-24 11:14:26,426 views 14252 15632 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:14:26,433 views 14252 15632 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:14:26,438 views 14252 15632 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:14:26,440 views 14252 15632 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:14:26,442 views 14252 15632 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:14:26,447 views 14252 15632 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:14:26,478 views 14252 15632 User with email:t not found.
+ERROR 2023-05-24 11:15:29,227 views 15784 12904 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:15:29,233 views 15784 12904 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:15:29,237 views 15784 12904 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:15:29,240 views 15784 12904 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:15:29,242 views 15784 12904 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:15:29,248 views 15784 12904 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:15:29,280 views 15784 12904 User with email:t not found.
+ERROR 2023-05-24 11:18:39,982 views 15272 15108 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:18:39,988 views 15272 15108 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:18:39,992 views 15272 15108 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:18:39,994 views 15272 15108 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:18:39,997 views 15272 15108 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:18:40,003 views 15272 15108 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:21:04,073 views 7624 15768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:21:04,079 views 7624 15768 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:21:04,083 views 7624 15768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:21:04,086 views 7624 15768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:21:04,088 views 7624 15768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:21:04,095 views 7624 15768 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:23:15,927 views 1776 1156 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:15,937 views 1776 1156 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:23:15,944 views 1776 1156 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:15,948 views 1776 1156 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:15,954 views 1776 1156 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:15,966 views 1776 1156 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:23:40,366 views 2748 3340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:40,373 views 2748 3340 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:23:40,378 views 2748 3340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:40,382 views 2748 3340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:40,386 views 2748 3340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:23:40,394 views 2748 3340 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:27:02,523 views 8016 6336 User with email:t not found.
+ERROR 2023-05-24 11:27:25,553 views 3380 6788 User with email:t not found.
+ERROR 2023-05-24 11:28:43,918 views 12868 13284 User with email:t not found.
+ERROR 2023-05-24 11:30:35,831 views 16256 8832 User with email:t not found.
+ERROR 2023-05-24 11:31:16,094 views 14648 9660 User with email:t not found.
+ERROR 2023-05-24 11:32:06,418 views 5492 13456 User with email:t not found.
+ERROR 2023-05-24 11:32:55,359 views 15156 4552 User with email:t not found.
+ERROR 2023-05-24 11:34:11,870 views 10116 16336 User with email:t not found.
+ERROR 2023-05-24 11:34:40,386 views 9600 15384 User with email:t not found.
+ERROR 2023-05-24 11:39:07,324 views 8948 8228 User with email:t not found.
+ERROR 2023-05-24 11:41:39,870 views 14416 9720 User with email:t not found.
+ERROR 2023-05-24 11:45:33,053 views 15140 15224 User with email:t not found.
+ERROR 2023-05-24 11:45:59,234 views 15284 9804 User with email:t not found.
+ERROR 2023-05-24 11:46:24,628 views 12676 2460 User with email:t not found.
+ERROR 2023-05-24 11:46:44,526 views 9544 2908 User with email:t not found.
+ERROR 2023-05-24 11:48:24,873 views 16308 12452 User with email:t not found.
+ERROR 2023-05-24 11:52:02,399 views 16036 16200 Error: Group not found.
+ERROR 2023-05-24 11:52:02,421 views 16036 16200 Error: User not found.
+ERROR 2023-05-24 11:52:02,494 views 16036 16200 Error: Internal Server Error
+ERROR 2023-05-24 11:52:02,494 log 16036 16200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 11:52:04,417 views 16036 16200 User not found. User ID: None
+ERROR 2023-05-24 11:52:04,424 views 16036 16200 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 11:52:04,425 views 16036 16200 Error: Something went wrong
+ERROR 2023-05-24 11:52:04,425 log 16036 16200 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 11:52:04,637 views 16036 16200 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 11:52:04,637 views 16036 16200 Error: Test Exception
+ERROR 2023-05-24 11:52:04,637 log 16036 16200 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 11:52:04,880 views 16036 16200 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 11:52:04,880 log 16036 16200 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 11:52:30,484 views 16216 15972 Error: Group not found.
+ERROR 2023-05-24 11:52:30,505 views 16216 15972 Error: User not found.
+ERROR 2023-05-24 11:52:30,575 views 16216 15972 Error: Internal Server Error
+ERROR 2023-05-24 11:52:30,575 log 16216 15972 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 11:52:32,510 views 16216 15972 User not found. User ID: None
+ERROR 2023-05-24 11:52:32,517 views 16216 15972 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 11:52:32,517 views 16216 15972 Error: Something went wrong
+ERROR 2023-05-24 11:52:32,517 log 16216 15972 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 11:52:32,723 views 16216 15972 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 11:52:32,723 views 16216 15972 Error: Test Exception
+ERROR 2023-05-24 11:52:32,724 log 16216 15972 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 11:52:32,955 views 16216 15972 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 11:52:32,956 log 16216 15972 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 11:53:01,776 views 2884 8480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:01,785 views 2884 8480 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:53:01,792 views 2884 8480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:01,795 views 2884 8480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:01,798 views 2884 8480 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:01,807 views 2884 8480 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:01,864 views 2884 8480 Invalid group data.
+ERROR 2023-05-24 11:53:01,871 views 2884 8480 User with email:miss_ramazani not found.
+ERROR 2023-05-24 11:53:01,873 views 2884 8480 User with email:miss_ramazani not found.
+ERROR 2023-05-24 11:53:01,873 views 2884 8480 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 11:53:01,877 views 2884 8480 Invalid group data.
+ERROR 2023-05-24 11:53:01,880 views 2884 8480 Invalid group data.
+ERROR 2023-05-24 11:53:01,885 views 2884 8480 Invalid group data.
+ERROR 2023-05-24 11:53:01,890 views 2884 8480 Invalid group data.
+ERROR 2023-05-24 11:53:01,897 views 2884 8480 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:01,900 views 2884 8480 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:01,901 views 2884 8480 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 11:53:01,999 views 2884 8480 An error occurred: Something went wrong
+ERROR 2023-05-24 11:53:01,999 log 2884 8480 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 11:53:02,018 views 2884 8480 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 11:53:02,019 log 2884 8480 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 11:53:02,029 views 2884 8480 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 11:53:02,030 log 2884 8480 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 11:53:02,037 views 2884 8480 Group not found. Group ID: 999
+ERROR 2023-05-24 11:53:02,050 views 2884 8480 Group not found. Group ID: None
+ERROR 2023-05-24 11:53:02,077 log 2884 8480 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 11:53:02,112 views 2884 8480 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 11:53:02,112 views 2884 8480 Error: Test Exception
+ERROR 2023-05-24 11:53:02,112 log 2884 8480 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 11:53:02,205 views 2884 8480 Error: Group not found.
+ERROR 2023-05-24 11:53:02,226 views 2884 8480 Error: User not found.
+ERROR 2023-05-24 11:53:02,301 views 2884 8480 Error: Internal Server Error
+ERROR 2023-05-24 11:53:02,302 log 2884 8480 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 11:53:04,224 views 2884 8480 User not found. User ID: None
+ERROR 2023-05-24 11:53:04,229 views 2884 8480 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 11:53:04,229 views 2884 8480 Error: Something went wrong
+ERROR 2023-05-24 11:53:04,230 log 2884 8480 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 11:53:04,440 views 2884 8480 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 11:53:04,440 views 2884 8480 Error: Test Exception
+ERROR 2023-05-24 11:53:04,442 log 2884 8480 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 11:53:04,689 views 2884 8480 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 11:53:04,689 log 2884 8480 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 11:53:51,360 views 15832 152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:51,366 views 15832 152 User with email:test3.example.com not found.
+ERROR 2023-05-24 11:53:51,372 views 15832 152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:51,376 views 15832 152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:51,380 views 15832 152 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 11:53:51,390 views 15832 152 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:51,452 views 15832 152 Invalid group data.
+ERROR 2023-05-24 11:53:51,459 views 15832 152 User with email:miss_ramazani not found.
+ERROR 2023-05-24 11:53:51,461 views 15832 152 User with email:miss_ramazani not found.
+ERROR 2023-05-24 11:53:51,461 views 15832 152 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 11:53:51,466 views 15832 152 Invalid group data.
+ERROR 2023-05-24 11:53:51,471 views 15832 152 Invalid group data.
+ERROR 2023-05-24 11:53:51,475 views 15832 152 Invalid group data.
+ERROR 2023-05-24 11:53:51,479 views 15832 152 Invalid group data.
+ERROR 2023-05-24 11:53:51,487 views 15832 152 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:51,491 views 15832 152 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 11:53:51,491 views 15832 152 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 11:53:51,580 views 15832 152 An error occurred: Something went wrong
+ERROR 2023-05-24 11:53:51,580 log 15832 152 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 11:53:51,596 views 15832 152 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 11:53:51,596 log 15832 152 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 11:53:51,605 views 15832 152 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 11:53:51,606 log 15832 152 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 11:53:51,612 views 15832 152 Group not found. Group ID: 999
+ERROR 2023-05-24 11:53:51,622 views 15832 152 Group not found. Group ID: None
+ERROR 2023-05-24 11:53:51,646 log 15832 152 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 11:53:51,677 views 15832 152 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 11:53:51,677 views 15832 152 Error: Test Exception
+ERROR 2023-05-24 11:53:51,678 log 15832 152 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 11:53:51,769 views 15832 152 Error: Group not found.
+ERROR 2023-05-24 11:53:51,787 views 15832 152 Error: User not found.
+ERROR 2023-05-24 11:53:51,857 views 15832 152 Error: Internal Server Error
+ERROR 2023-05-24 11:53:51,858 log 15832 152 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 11:53:53,793 views 15832 152 User not found. User ID: None
+ERROR 2023-05-24 11:53:53,798 views 15832 152 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 11:53:53,798 views 15832 152 Error: Something went wrong
+ERROR 2023-05-24 11:53:53,798 log 15832 152 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 11:53:54,007 views 15832 152 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 11:53:54,007 views 15832 152 Error: Test Exception
+ERROR 2023-05-24 11:53:54,008 log 15832 152 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 11:53:54,249 views 15832 152 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 11:53:54,250 log 15832 152 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 16:11:57,018 views 15840 14228 Invalid group data.
+ERROR 2023-05-24 16:11:57,025 views 15840 14228 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:11:57,027 views 15840 14228 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:11:57,027 views 15840 14228 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:11:57,032 views 15840 14228 Invalid group data.
+ERROR 2023-05-24 16:11:57,036 views 15840 14228 Invalid group data.
+ERROR 2023-05-24 16:11:57,038 views 15840 14228 Invalid group data.
+ERROR 2023-05-24 16:11:57,041 views 15840 14228 Invalid group data.
+ERROR 2023-05-24 16:11:57,047 views 15840 14228 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:11:57,049 views 15840 14228 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:11:57,050 views 15840 14228 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:12:11,120 views 14840 5584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:12:11,130 views 14840 5584 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:12:11,138 views 14840 5584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:12:11,142 views 14840 5584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:12:11,145 views 14840 5584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:12:11,154 views 14840 5584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:12:11,187 views 14840 5584 Invalid group data.
+ERROR 2023-05-24 16:12:11,196 views 14840 5584 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:12:11,200 views 14840 5584 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:12:11,200 views 14840 5584 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:12:11,208 views 14840 5584 Invalid group data.
+ERROR 2023-05-24 16:12:11,213 views 14840 5584 Invalid group data.
+ERROR 2023-05-24 16:12:11,217 views 14840 5584 Invalid group data.
+ERROR 2023-05-24 16:12:11,222 views 14840 5584 Invalid group data.
+ERROR 2023-05-24 16:12:11,231 views 14840 5584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:12:11,235 views 14840 5584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:12:11,235 views 14840 5584 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:12:11,349 views 14840 5584 An error occurred: Something went wrong
+ERROR 2023-05-24 16:12:11,349 log 14840 5584 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 16:12:11,369 views 14840 5584 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 16:12:11,369 log 14840 5584 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 16:12:11,380 views 14840 5584 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 16:12:11,380 log 14840 5584 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 16:12:11,387 views 14840 5584 Group not found. Group ID: 999
+ERROR 2023-05-24 16:12:11,398 views 14840 5584 Group not found. Group ID: None
+ERROR 2023-05-24 16:12:11,424 log 14840 5584 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 16:12:11,459 views 14840 5584 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 16:12:11,461 views 14840 5584 Error: Test Exception
+ERROR 2023-05-24 16:12:11,461 log 14840 5584 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 16:12:11,557 views 14840 5584 Error: Group not found.
+ERROR 2023-05-24 16:12:11,579 views 14840 5584 Error: User not found.
+ERROR 2023-05-24 16:12:11,661 views 14840 5584 Error: Internal Server Error
+ERROR 2023-05-24 16:12:11,661 log 14840 5584 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 16:12:13,498 views 14840 5584 User not found. User ID: None
+ERROR 2023-05-24 16:12:13,508 views 14840 5584 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 16:12:13,508 views 14840 5584 Error: Something went wrong
+ERROR 2023-05-24 16:12:13,509 log 14840 5584 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 16:12:13,760 views 14840 5584 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 16:12:13,760 views 14840 5584 Error: Test Exception
+ERROR 2023-05-24 16:12:13,760 log 14840 5584 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 16:12:14,092 views 14840 5584 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 16:12:14,092 log 14840 5584 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 16:17:52,149 views 13972 12992 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:17:52,154 views 13972 12992 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:17:52,158 views 13972 12992 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:17:52,162 views 13972 12992 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:17:52,165 views 13972 12992 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:17:52,168 views 13972 12992 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:17:52,173 views 13972 12992 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:18:12,806 views 6860 14640 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:18:12,813 views 6860 14640 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:18:12,817 views 6860 14640 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:18:12,820 views 6860 14640 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:18:12,822 views 6860 14640 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:18:12,825 views 6860 14640 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:18:12,830 views 6860 14640 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:20:22,908 views 10072 9432 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:22,916 views 10072 9432 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:20:22,920 views 10072 9432 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:22,924 views 10072 9432 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:22,926 views 10072 9432 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:22,929 views 10072 9432 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:22,935 views 10072 9432 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:20:43,672 views 16288 16312 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:43,679 views 16288 16312 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:20:43,683 views 16288 16312 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:43,687 views 16288 16312 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:43,689 views 16288 16312 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:43,693 views 16288 16312 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:20:43,698 views 16288 16312 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:21:30,620 views 14316 16048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:30,626 views 14316 16048 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:21:30,630 views 14316 16048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:30,634 views 14316 16048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:30,636 views 14316 16048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:30,639 views 14316 16048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:30,645 views 14316 16048 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:21:47,677 views 5444 14044 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:47,683 views 5444 14044 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:21:47,688 views 5444 14044 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:47,692 views 5444 14044 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:47,694 views 5444 14044 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:47,698 views 5444 14044 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:21:47,703 views 5444 14044 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:25:43,439 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:25:43,445 views 7396 1768 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:25:43,449 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:25:43,453 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:25:43,455 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:25:43,458 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:25:43,463 views 7396 1768 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:25:43,484 views 7396 1768 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,867 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,875 views 1092 1704 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:26:11,880 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,884 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,887 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,889 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:11,894 views 1092 1704 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:26:11,917 views 1092 1704 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,255 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,269 views 3840 12340 User with email:test3.example.com not found.
+ERROR 2023-05-24 16:26:19,278 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,284 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,288 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,292 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,300 views 3840 12340 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:26:19,333 views 3840 12340 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 16:26:19,339 views 3840 12340 Invalid group data.
+ERROR 2023-05-24 16:26:19,348 views 3840 12340 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:26:19,351 views 3840 12340 User with email:miss_ramazani not found.
+ERROR 2023-05-24 16:26:19,351 views 3840 12340 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:26:19,359 views 3840 12340 Invalid group data.
+ERROR 2023-05-24 16:26:19,364 views 3840 12340 Invalid group data.
+ERROR 2023-05-24 16:26:19,369 views 3840 12340 Invalid group data.
+ERROR 2023-05-24 16:26:19,374 views 3840 12340 Invalid group data.
+ERROR 2023-05-24 16:26:19,383 views 3840 12340 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:26:19,387 views 3840 12340 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 16:26:19,387 views 3840 12340 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 16:26:19,503 views 3840 12340 An error occurred: Something went wrong
+ERROR 2023-05-24 16:26:19,504 log 3840 12340 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 16:26:19,520 views 3840 12340 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 16:26:19,520 log 3840 12340 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 16:26:19,532 views 3840 12340 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 16:26:19,532 log 3840 12340 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 16:26:19,539 views 3840 12340 Group not found. Group ID: 999
+ERROR 2023-05-24 16:26:19,550 views 3840 12340 Group not found. Group ID: None
+ERROR 2023-05-24 16:26:19,576 log 3840 12340 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 16:26:19,612 views 3840 12340 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 16:26:19,612 views 3840 12340 Error: Test Exception
+ERROR 2023-05-24 16:26:19,613 log 3840 12340 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 16:26:19,710 views 3840 12340 Error: Group not found.
+ERROR 2023-05-24 16:26:19,732 views 3840 12340 Error: User not found.
+ERROR 2023-05-24 16:26:19,815 views 3840 12340 Error: Internal Server Error
+ERROR 2023-05-24 16:26:19,816 log 3840 12340 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 16:26:21,540 views 3840 12340 User not found. User ID: None
+ERROR 2023-05-24 16:26:21,548 views 3840 12340 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 16:26:21,548 views 3840 12340 Error: Something went wrong
+ERROR 2023-05-24 16:26:21,548 log 3840 12340 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 16:26:21,780 views 3840 12340 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 16:26:21,780 views 3840 12340 Error: Test Exception
+ERROR 2023-05-24 16:26:21,780 log 3840 12340 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 16:26:22,107 views 3840 12340 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 16:26:22,108 log 3840 12340 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 17:06:18,477 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,498 views 15668 15000 User with email:test3.example.com not found.
+ERROR 2023-05-24 17:06:18,515 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,528 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,534 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,543 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,562 views 15668 15000 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:06:18,628 views 15668 15000 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:06:18,641 views 15668 15000 Invalid group data.
+ERROR 2023-05-24 17:06:18,663 views 15668 15000 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:06:18,673 views 15668 15000 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:06:18,674 views 15668 15000 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:06:18,690 views 15668 15000 Invalid group data.
+ERROR 2023-05-24 17:06:18,700 views 15668 15000 Invalid group data.
+ERROR 2023-05-24 17:06:18,709 views 15668 15000 Invalid group data.
+ERROR 2023-05-24 17:06:18,720 views 15668 15000 Invalid group data.
+ERROR 2023-05-24 17:06:18,736 views 15668 15000 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:06:18,741 views 15668 15000 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:06:18,741 views 15668 15000 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:06:19,001 views 15668 15000 An error occurred: Something went wrong
+ERROR 2023-05-24 17:06:19,002 log 15668 15000 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 17:06:19,030 views 15668 15000 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 17:06:19,031 log 15668 15000 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:06:19,044 views 15668 15000 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 17:06:19,045 log 15668 15000 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:06:19,056 views 15668 15000 Group not found. Group ID: 999
+ERROR 2023-05-24 17:06:19,073 views 15668 15000 Group not found. Group ID: None
+ERROR 2023-05-24 17:06:19,123 log 15668 15000 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 17:06:19,186 views 15668 15000 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 17:06:19,186 views 15668 15000 Error: Test Exception
+ERROR 2023-05-24 17:06:19,186 log 15668 15000 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 17:06:19,346 views 15668 15000 Error: Group not found.
+ERROR 2023-05-24 17:06:19,380 views 15668 15000 Error: User not found.
+ERROR 2023-05-24 17:06:19,517 views 15668 15000 Error: Internal Server Error
+ERROR 2023-05-24 17:06:19,518 log 15668 15000 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 17:06:21,569 views 15668 15000 User not found. User ID: None
+ERROR 2023-05-24 17:06:21,577 views 15668 15000 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 17:06:21,578 views 15668 15000 Error: Something went wrong
+ERROR 2023-05-24 17:06:21,578 log 15668 15000 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 17:06:21,913 views 15668 15000 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 17:06:21,913 views 15668 15000 Error: Test Exception
+ERROR 2023-05-24 17:06:21,914 log 15668 15000 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 17:06:22,313 views 15668 15000 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 17:06:22,314 log 15668 15000 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 17:30:42,697 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,715 views 15948 12996 User with email:test3.example.com not found.
+ERROR 2023-05-24 17:30:42,726 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,737 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,743 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,749 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,762 views 15948 12996 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:30:42,811 views 15948 12996 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:30:42,819 views 15948 12996 Invalid group data.
+ERROR 2023-05-24 17:30:42,832 views 15948 12996 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:30:42,837 views 15948 12996 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:30:42,837 views 15948 12996 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:30:42,849 views 15948 12996 Invalid group data.
+ERROR 2023-05-24 17:30:42,856 views 15948 12996 Invalid group data.
+ERROR 2023-05-24 17:30:42,865 views 15948 12996 Invalid group data.
+ERROR 2023-05-24 17:30:42,871 views 15948 12996 Invalid group data.
+ERROR 2023-05-24 17:30:42,885 views 15948 12996 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:30:42,889 views 15948 12996 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:30:42,890 views 15948 12996 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:30:43,083 views 15948 12996 An error occurred: Something went wrong
+ERROR 2023-05-24 17:30:43,083 log 15948 12996 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 17:30:43,108 views 15948 12996 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 17:30:43,108 log 15948 12996 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:30:43,125 views 15948 12996 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 17:30:43,125 log 15948 12996 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:30:43,137 views 15948 12996 Group not found. Group ID: 999
+ERROR 2023-05-24 17:30:43,152 views 15948 12996 Group not found. Group ID: None
+ERROR 2023-05-24 17:30:43,191 log 15948 12996 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 17:30:43,246 views 15948 12996 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 17:30:43,246 views 15948 12996 Error: Test Exception
+ERROR 2023-05-24 17:30:43,247 log 15948 12996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 17:30:43,388 views 15948 12996 Error: Group not found.
+ERROR 2023-05-24 17:30:43,416 views 15948 12996 Error: User not found.
+ERROR 2023-05-24 17:30:43,533 views 15948 12996 Error: Internal Server Error
+ERROR 2023-05-24 17:30:43,534 log 15948 12996 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 17:30:45,575 views 15948 12996 User not found. User ID: None
+ERROR 2023-05-24 17:30:45,583 views 15948 12996 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 17:30:45,583 views 15948 12996 Error: Something went wrong
+ERROR 2023-05-24 17:30:45,584 log 15948 12996 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 17:30:45,915 views 15948 12996 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 17:30:45,915 views 15948 12996 Error: Test Exception
+ERROR 2023-05-24 17:30:45,916 log 15948 12996 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 17:30:46,336 views 15948 12996 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 17:30:46,337 log 15948 12996 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 17:31:44,673 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,692 views 4428 9204 User with email:test3.example.com not found.
+ERROR 2023-05-24 17:31:44,703 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,712 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,718 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,723 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,733 views 4428 9204 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:31:44,783 views 4428 9204 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:31:44,791 views 4428 9204 Invalid group data.
+ERROR 2023-05-24 17:31:44,807 views 4428 9204 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:31:44,813 views 4428 9204 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:31:44,813 views 4428 9204 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:31:44,824 views 4428 9204 Invalid group data.
+ERROR 2023-05-24 17:31:44,831 views 4428 9204 Invalid group data.
+ERROR 2023-05-24 17:31:44,839 views 4428 9204 Invalid group data.
+ERROR 2023-05-24 17:31:44,845 views 4428 9204 Invalid group data.
+ERROR 2023-05-24 17:31:44,860 views 4428 9204 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:31:44,866 views 4428 9204 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:31:44,866 views 4428 9204 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:31:45,057 views 4428 9204 An error occurred: Something went wrong
+ERROR 2023-05-24 17:31:45,058 log 4428 9204 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 17:31:45,082 views 4428 9204 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 17:31:45,083 log 4428 9204 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:31:45,098 views 4428 9204 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 17:31:45,099 log 4428 9204 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:31:45,109 views 4428 9204 Group not found. Group ID: 999
+ERROR 2023-05-24 17:31:45,124 views 4428 9204 Group not found. Group ID: None
+ERROR 2023-05-24 17:31:45,165 log 4428 9204 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 17:31:45,220 views 4428 9204 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 17:31:45,220 views 4428 9204 Error: Test Exception
+ERROR 2023-05-24 17:31:45,221 log 4428 9204 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 17:31:45,389 views 4428 9204 Error: Group not found.
+ERROR 2023-05-24 17:31:45,419 views 4428 9204 Error: User not found.
+ERROR 2023-05-24 17:31:45,537 views 4428 9204 Error: Internal Server Error
+ERROR 2023-05-24 17:31:45,537 log 4428 9204 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 17:31:47,636 views 4428 9204 User not found. User ID: None
+ERROR 2023-05-24 17:31:47,654 views 4428 9204 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 17:31:47,654 views 4428 9204 Error: Something went wrong
+ERROR 2023-05-24 17:31:47,654 log 4428 9204 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 17:31:47,987 views 4428 9204 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 17:31:47,988 views 4428 9204 Error: Test Exception
+ERROR 2023-05-24 17:31:47,988 log 4428 9204 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 17:31:48,420 views 4428 9204 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 17:31:48,421 log 4428 9204 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 17:33:43,957 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:43,974 views 8788 348 User with email:test3.example.com not found.
+ERROR 2023-05-24 17:33:43,987 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:43,995 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:44,002 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:44,009 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:44,023 views 8788 348 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:33:44,072 views 8788 348 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:33:44,077 views 8788 348 Invalid group data.
+ERROR 2023-05-24 17:33:44,094 views 8788 348 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:33:44,100 views 8788 348 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:33:44,100 views 8788 348 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:33:44,111 views 8788 348 Invalid group data.
+ERROR 2023-05-24 17:33:44,117 views 8788 348 Invalid group data.
+ERROR 2023-05-24 17:33:44,124 views 8788 348 Invalid group data.
+ERROR 2023-05-24 17:33:44,129 views 8788 348 Invalid group data.
+ERROR 2023-05-24 17:33:44,140 views 8788 348 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:33:44,144 views 8788 348 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:33:44,144 views 8788 348 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:33:44,327 views 8788 348 An error occurred: Something went wrong
+ERROR 2023-05-24 17:33:44,328 log 8788 348 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 17:33:44,355 views 8788 348 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 17:33:44,355 log 8788 348 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:33:44,370 views 8788 348 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 17:33:44,371 log 8788 348 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:33:44,381 views 8788 348 Group not found. Group ID: 999
+ERROR 2023-05-24 17:33:44,397 views 8788 348 Group not found. Group ID: None
+ERROR 2023-05-24 17:33:44,438 log 8788 348 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 17:33:44,492 views 8788 348 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 17:33:44,493 views 8788 348 Error: Test Exception
+ERROR 2023-05-24 17:33:44,493 log 8788 348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 17:33:44,669 views 8788 348 Error: Group not found.
+ERROR 2023-05-24 17:33:44,698 views 8788 348 Error: User not found.
+ERROR 2023-05-24 17:33:44,809 views 8788 348 Error: Internal Server Error
+ERROR 2023-05-24 17:33:44,810 log 8788 348 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 17:33:46,869 views 8788 348 User not found. User ID: None
+ERROR 2023-05-24 17:33:46,879 views 8788 348 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 17:33:46,879 views 8788 348 Error: Something went wrong
+ERROR 2023-05-24 17:33:46,880 log 8788 348 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 17:33:47,207 views 8788 348 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 17:33:47,207 views 8788 348 Error: Test Exception
+ERROR 2023-05-24 17:33:47,207 log 8788 348 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 17:33:47,618 views 8788 348 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 17:33:47,618 log 8788 348 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 17:55:46,110 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,126 views 3440 1776 User with email:test3.example.com not found.
+ERROR 2023-05-24 17:55:46,137 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,145 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,150 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,156 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,168 views 3440 1776 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:55:46,218 views 3440 1776 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 17:55:46,226 views 3440 1776 Invalid group data.
+ERROR 2023-05-24 17:55:46,240 views 3440 1776 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:55:46,246 views 3440 1776 User with email:miss_ramazani not found.
+ERROR 2023-05-24 17:55:46,246 views 3440 1776 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:55:46,258 views 3440 1776 Invalid group data.
+ERROR 2023-05-24 17:55:46,265 views 3440 1776 Invalid group data.
+ERROR 2023-05-24 17:55:46,272 views 3440 1776 Invalid group data.
+ERROR 2023-05-24 17:55:46,279 views 3440 1776 Invalid group data.
+ERROR 2023-05-24 17:55:46,293 views 3440 1776 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:55:46,297 views 3440 1776 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 17:55:46,298 views 3440 1776 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 17:55:46,496 views 3440 1776 An error occurred: Something went wrong
+ERROR 2023-05-24 17:55:46,497 log 3440 1776 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 17:55:46,522 views 3440 1776 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 17:55:46,523 log 3440 1776 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:55:46,536 views 3440 1776 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 17:55:46,537 log 3440 1776 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 17:55:46,547 views 3440 1776 Group not found. Group ID: 999
+ERROR 2023-05-24 17:55:46,563 views 3440 1776 Group not found. Group ID: None
+ERROR 2023-05-24 17:55:46,600 log 3440 1776 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 17:55:46,657 views 3440 1776 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 17:55:46,657 views 3440 1776 Error: Test Exception
+ERROR 2023-05-24 17:55:46,658 log 3440 1776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 17:55:46,831 views 3440 1776 Error: Group not found.
+ERROR 2023-05-24 17:55:46,858 views 3440 1776 Error: User not found.
+ERROR 2023-05-24 17:55:46,977 views 3440 1776 Error: Internal Server Error
+ERROR 2023-05-24 17:55:46,978 log 3440 1776 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 17:55:49,036 views 3440 1776 User not found. User ID: None
+ERROR 2023-05-24 17:55:49,050 views 3440 1776 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 17:55:49,051 views 3440 1776 Error: Something went wrong
+ERROR 2023-05-24 17:55:49,051 log 3440 1776 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 17:55:49,377 views 3440 1776 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 17:55:49,378 views 3440 1776 Error: Test Exception
+ERROR 2023-05-24 17:55:49,378 log 3440 1776 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 17:55:49,784 views 3440 1776 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 17:55:49,785 log 3440 1776 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 18:01:02,378 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,384 views 10212 11932 User with email:test3.example.com not found.
+ERROR 2023-05-24 18:01:02,390 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,394 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,397 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,401 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,407 views 10212 11932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:02,464 views 10212 11932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:02,467 views 10212 11932 Invalid group data.
+ERROR 2023-05-24 18:01:02,474 views 10212 11932 User with email:miss_ramazani not found.
+ERROR 2023-05-24 18:01:02,477 views 10212 11932 User with email:miss_ramazani not found.
+ERROR 2023-05-24 18:01:02,477 views 10212 11932 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 18:01:02,482 views 10212 11932 Invalid group data.
+ERROR 2023-05-24 18:01:02,485 views 10212 11932 Invalid group data.
+ERROR 2023-05-24 18:01:02,490 views 10212 11932 Invalid group data.
+ERROR 2023-05-24 18:01:02,494 views 10212 11932 Invalid group data.
+ERROR 2023-05-24 18:01:02,502 views 10212 11932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:02,505 views 10212 11932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:02,506 views 10212 11932 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 18:01:02,622 views 10212 11932 An error occurred: Something went wrong
+ERROR 2023-05-24 18:01:02,622 log 10212 11932 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 18:01:02,641 views 10212 11932 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 18:01:02,641 log 10212 11932 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 18:01:02,649 views 10212 11932 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 18:01:02,649 log 10212 11932 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 18:01:02,655 views 10212 11932 Group not found. Group ID: 999
+ERROR 2023-05-24 18:01:02,664 views 10212 11932 Group not found. Group ID: None
+ERROR 2023-05-24 18:01:02,688 log 10212 11932 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 18:01:02,720 views 10212 11932 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 18:01:02,720 views 10212 11932 Error: Test Exception
+ERROR 2023-05-24 18:01:02,721 log 10212 11932 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 18:01:02,818 views 10212 11932 Error: Group not found.
+ERROR 2023-05-24 18:01:02,837 views 10212 11932 Error: User not found.
+ERROR 2023-05-24 18:01:02,903 views 10212 11932 Error: Internal Server Error
+ERROR 2023-05-24 18:01:02,903 log 10212 11932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 18:01:04,807 views 10212 11932 User not found. User ID: None
+ERROR 2023-05-24 18:01:04,812 views 10212 11932 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 18:01:04,812 views 10212 11932 Error: Something went wrong
+ERROR 2023-05-24 18:01:04,812 log 10212 11932 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 18:01:05,010 views 10212 11932 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 18:01:05,011 views 10212 11932 Error: Test Exception
+ERROR 2023-05-24 18:01:05,011 log 10212 11932 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 18:01:05,245 views 10212 11932 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 18:01:05,246 log 10212 11932 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 18:01:16,395 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,407 views 4984 2840 User with email:test3.example.com not found.
+ERROR 2023-05-24 18:01:16,418 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,428 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,433 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,436 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,448 views 4984 2840 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:16,497 views 4984 2840 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 18:01:16,505 views 4984 2840 Invalid group data.
+ERROR 2023-05-24 18:01:16,519 views 4984 2840 User with email:miss_ramazani not found.
+ERROR 2023-05-24 18:01:16,524 views 4984 2840 User with email:miss_ramazani not found.
+ERROR 2023-05-24 18:01:16,524 views 4984 2840 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 18:01:16,536 views 4984 2840 Invalid group data.
+ERROR 2023-05-24 18:01:16,542 views 4984 2840 Invalid group data.
+ERROR 2023-05-24 18:01:16,548 views 4984 2840 Invalid group data.
+ERROR 2023-05-24 18:01:16,554 views 4984 2840 Invalid group data.
+ERROR 2023-05-24 18:01:16,569 views 4984 2840 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:16,573 views 4984 2840 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 18:01:16,574 views 4984 2840 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 18:01:16,807 views 4984 2840 An error occurred: Something went wrong
+ERROR 2023-05-24 18:01:16,807 log 4984 2840 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 18:01:16,839 views 4984 2840 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 18:01:16,841 log 4984 2840 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 18:01:16,854 views 4984 2840 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 18:01:16,855 log 4984 2840 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 18:01:16,866 views 4984 2840 Group not found. Group ID: 999
+ERROR 2023-05-24 18:01:16,882 views 4984 2840 Group not found. Group ID: None
+ERROR 2023-05-24 18:01:16,920 log 4984 2840 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 18:01:16,970 views 4984 2840 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 18:01:16,970 views 4984 2840 Error: Test Exception
+ERROR 2023-05-24 18:01:16,970 log 4984 2840 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 18:01:17,141 views 4984 2840 Error: Group not found.
+ERROR 2023-05-24 18:01:17,166 views 4984 2840 Error: User not found.
+ERROR 2023-05-24 18:01:17,281 views 4984 2840 Error: Internal Server Error
+ERROR 2023-05-24 18:01:17,281 log 4984 2840 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 18:01:19,293 views 4984 2840 User not found. User ID: None
+ERROR 2023-05-24 18:01:19,300 views 4984 2840 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 18:01:19,300 views 4984 2840 Error: Something went wrong
+ERROR 2023-05-24 18:01:19,301 log 4984 2840 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 18:01:19,624 views 4984 2840 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 18:01:19,624 views 4984 2840 Error: Test Exception
+ERROR 2023-05-24 18:01:19,624 log 4984 2840 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 18:01:20,036 views 4984 2840 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 18:01:20,037 log 4984 2840 Internal Server Error: /buy/UserGroupBuys/

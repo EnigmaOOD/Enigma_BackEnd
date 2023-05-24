@@ -491,3 +491,35 @@ class LeaveGroupTest(APITestCase):
         self.client.force_authenticate(user=self.user1)
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+
+class DebtandCreditforMemberinGroupTest(APITestCase):
+    def setUp(self):
+        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
+
+        self.group = Group.objects.create(name='Test Group', currency='تومان')
+
+        self.group1_member1 = Members.objects.create(userID = self.user1, groupID=self.group)
+        self.group1_member2 = Members.objects.create(userID = self.user2, groupID=self.group)
+
+        self.buy = buy.objects.create(groupID= self.group, cost=85000, date= "2023-02-01", picture_id= 1, added_by=self.user1)
+        self.buyer = buyer.objects.create(buy=self.buy, userID=self.user1, percent=85000)
+        self.consumer1 = consumer.objects.create(buy=self.buy, userID=self.user1, percent=45000)
+        self.consumer2 = consumer.objects.create(buy=self.buy, userID=self.user2, percent=40000)
+
+    def test_DebtandCreditforMemberinGroupTest_should_success_with_member_in_group(self):
+        result = DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
+        self.assertEqual(result, 40000)
+
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_group_not_found(self):
+        result = DebtandCreditforMemberinGroup(self.user1.pk, 999)
+        self.assertEqual(result, 'Group not found.')
+
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_user_not_found(self):
+        result = DebtandCreditforMemberinGroup(999, self.group.pk)
+        self.assertEqual(result, 'User not found.')
+    
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_get_Exception(self):
+        with self.assertRaises(Exception) as e:
+            raise Exception('Your expected error message')
+        self.assertEqual(str(e.exception), 'Your expected error message')
