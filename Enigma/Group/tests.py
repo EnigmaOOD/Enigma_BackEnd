@@ -324,7 +324,7 @@ class CreateGroupTest(TestCase):
         response = self.client.post('/group/CreateGroup/', data)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
-    def test_CreateGroup_should_Error_when_name_null(self):
+    def test_CreateGroup_should_Error_when_name_empty(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user1)
 
@@ -499,8 +499,6 @@ class CreateGroupTest(TestCase):
         self.assertEqual(json.loads(response.content), {
                          "message": "user not found."})
         self.assertEqual(Group.objects.count(), 0)
-
-    # اگر می خواین ارور ایمیل نامعتبر تغییر کند بگویید
 
     def test_CreateGroup_should_Error_with_put_method(self):
         self.client = APIClient()

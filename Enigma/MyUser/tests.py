@@ -4,12 +4,12 @@ from rest_framework.authtoken.models import Token
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from unittest.mock import patch
-
+from MyUser.views import DebtandCreditforMemberinGroup, LeaveGroup
 from MyUser.models import MyUser
+from MyUser.serializers import UpdateUserSerializer
 from Group.models import Group, Members
 from buy.models import buy, buyer, consumer
 
-from MyUser.serializers import UpdateUserSerializer
 
 class RegisterAndAuthenticateTest(APITestCase):
 
@@ -44,7 +44,8 @@ class RegisterAndAuthenticateTest(APITestCase):
         
         response = self.client.post(('/auth/register/'),user_info)
         self.assertEqual(response.status_code, 400)
-    def test_should_not_register_invalid_picture_id(self):
+
+    def test_should_not_register_when_pictureID_is_more_than_value(self):
         user_info = {
         "email":"u@u.com",
         "password":"1",
@@ -52,6 +53,28 @@ class RegisterAndAuthenticateTest(APITestCase):
         "picture_id" :22}
         response = self.client.post(('/auth/register/'),user_info)
         self.assertEqual(response.status_code, 400)
+        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Invalid picture ID.']})
+
+    def test_should_not_register_when_pictureID_is_nagative(self):
+        user_info = {
+        "email":"u@u.com",
+        "password":"1",
+        "name":"Uali",
+        "picture_id":-1
+        }
+        response = self.client.post(('/auth/register/'),user_info)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Invalid picture ID.']})
+
+    def test_should_not_register_when_pictureID_is_null(self):
+        user_info = {
+        "email":"u@u.com",
+        "password":"1",
+        "name":"Uali",
+        }
+        response = self.client.post(('/auth/register/'),user_info)
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(json.loads(response.content), {'picture_id': ['This field is required.']})
 
     def test_should_register(self):
         user_info = {
@@ -130,10 +153,18 @@ class VerifyEmailTestCase(APITestCase):
         response = self.client.get(url)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.data['error'], 'Invalid token.')
         self.user.refresh_from_db()
         self.assertFalse(self.user.is_active)
 
+    @patch('MyUser.views.logger.info')
+    def test_missing_token(self, mock_logger_info):
+        # Make a GET request to the view without a token
+        response = self.client.get(reverse('verify-email'))
 
+        # Assert the response status code and error message
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(response.data['error'], 'Token parameter is missing.')
 
 
 class UserInfoTestCase(APITestCase):
@@ -239,8 +270,9 @@ class EditProfileTest(APITestCase):
         self.assertEqual(response.data['picture_id'], data['picture_id'])
     
     def test_EditProfile_should_Error_without_authentication(self):
-        response = self.client.post(self.url, self.valid_payload)
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+        self.client.force_authenticate(user=None)
+        response = self.client.put(self.url, self.valid_payload)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     
     def test_EditProfile_should_Error_with_non_data(self):
@@ -262,7 +294,7 @@ class EditProfileTest(APITestCase):
         self.assertEqual(response.data['name'], self.user.name)
         self.assertEqual(response.data['picture_id'], data['picture_id'])
 
-    def test_EditProfile_should_Error_when_pictureID_nagative(self):
+    def test_EditProfile_should_Error_when_nagative_pictureID(self):
         data = {
             'name': 'new name',
             'picture_id': -1
@@ -319,6 +351,7 @@ class LeaveGroupTest(APITestCase):
 
         self.group1 = Group.objects.create(name='Test Group1', currency='تومان')
         self.group2 = Group.objects.create(name='Test Group2', currency='تومان')
+        self.group3 = Group.objects.create(name='Test Group3', currency='تومان')
 
         self.group1_member1 = Members.objects.create(userID = self.user1, groupID=self.group1)
         self.group1_member2 = Members.objects.create(userID = self.user2, groupID=self.group1)
@@ -362,6 +395,12 @@ class LeaveGroupTest(APITestCase):
         self.group2_buy3_consumer1 = consumer.objects.create(buy=self.group2_buy3, userID=self.user1, percent=110000)
         self.group2_buy3_consumer2 = consumer.objects.create(buy=self.group2_buy3, userID=self.user3, percent=90000)
 
+        self.group3_member1 = Members.objects.create(userID = self.user1, groupID=self.group3)
+
+        self.group3_buy1 = buy.objects.create(groupID= self.group3, cost=85000, date= "2023-02-01", picture_id= 1, added_by=self.user1)
+        self.group3_buy1_buyer1 = buyer.objects.create(buy=self.group3_buy1, userID=self.user1, percent=85000)
+        self.group3_buy1_consumer1 = consumer.objects.create(buy=self.group3_buy1, userID=self.user1, percent=85000)
+
         self.url = '/auth/LeaveGroup/'
 
     def test_LeaveGroup_should_successfully_for_user2_in_group1(self):
@@ -381,6 +420,13 @@ class LeaveGroupTest(APITestCase):
         self.assertEqual(Members.objects.filter(groupID = self.group2.id).count(), 2)
         self.assertEqual(Members.objects.filter(groupID = self.group2.id).first().userID, self.user2)
         self.assertEqual(Members.objects.filter(groupID = self.group2.id).last().userID, self.user3)
+
+    def test_LeaveGroup_should_successfully_for_user1_in_group3_and_delete_group3(self):
+        self.client.force_authenticate(user=self.user1)
+        response = self.client.post(self.url, data={'groupID':self.group3.id})
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(json.loads(response.content), {"message":"User deleted successfully."})
+        self.assertEqual(Group.objects.count(), 2)
 
     def test_LeaveGroup_should_Error_with_creditor(self):
         self.client.force_authenticate(user=self.user1)

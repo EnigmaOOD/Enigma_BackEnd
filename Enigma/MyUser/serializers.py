@@ -11,7 +11,6 @@ class MyUserSerializer(serializers.ModelSerializer):
         model = get_user_model()
         fields = ("email", "password", "user_id","name", "picture_id")
     
-
     user_id = serializers.IntegerField(read_only=True)
     email = serializers.EmailField(max_length=255, required=True)
     password = serializers.CharField(write_only=True, required=True)
@@ -23,9 +22,11 @@ class MyUserSerializer(serializers.ModelSerializer):
         user = get_user_model().objects.create_user(**validated_data)
         return user
     def validate(self, data):
-        if data['picture_id'] > 21:
-                raise serializers.ValidationError(
-                    f"picture_id should be less than 12")
+        if  data['picture_id'] < 0 or  data['picture_id'] > 21:
+            raise serializers.ValidationError('Invalid picture ID.')
+        # if data['picture_id'] > 21:
+        #         raise serializers.ValidationError(
+        #             f"picture_id should be less than 22")
         return data
     def validate_email(self, value):
         if get_user_model().objects.filter(email=value.lower()).exists():

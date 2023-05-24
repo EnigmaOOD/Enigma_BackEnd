@@ -113,7 +113,6 @@ class UserInfo(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def post(self, request):
         try:
-            
             user = self.request.user
             if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
@@ -172,14 +171,6 @@ class LeaveGroup(APIView):
             else:
                 logger.warning(f"Settlement not completed. (userID:{self.request.user}, groupID:{group_id})")
                 return Response({'message': 'The settlement has not been completed'}, status=status.HTTP_402_PAYMENT_REQUIRED)
-            
-        except MyUser.DoesNotExist:
-            logger.error(f"Error: User not found.")
-            return Response({'message': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
-        
-        except Group.DoesNotExist:
-            logger.error(f"Error: Group not found.")
-            return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
         
         except Exception as e:
             logger.error(f"Error: {str(e)}")
