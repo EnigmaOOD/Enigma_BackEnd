@@ -1626,3 +1626,87 @@ ERROR 2023-05-23 15:40:59,496 views 18880 19636 Error: Test Exception
 ERROR 2023-05-23 15:40:59,497 log 18880 19636 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-23 15:40:59,917 views 18880 19636 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-23 15:40:59,918 log 18880 19636 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 15:58:56,206 views 13340 1036 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 15:58:56,213 views 13340 1036 User with email:test3.example.com not found.
+ERROR 2023-05-24 15:58:56,218 views 13340 1036 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 15:58:56,221 views 13340 1036 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 15:58:56,226 views 13340 1036 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 15:58:56,230 views 13340 1036 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 15:58:56,275 views 13340 1036 Invalid group data.
+ERROR 2023-05-24 15:58:56,280 views 13340 1036 User with email:miss_ramazani not found.
+ERROR 2023-05-24 15:58:56,282 views 13340 1036 User with email:miss_ramazani not found.
+ERROR 2023-05-24 15:58:56,282 views 13340 1036 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 15:58:56,288 views 13340 1036 Invalid group data.
+ERROR 2023-05-24 15:58:56,291 views 13340 1036 Invalid group data.
+ERROR 2023-05-24 15:58:56,294 views 13340 1036 Invalid group data.
+ERROR 2023-05-24 15:58:56,296 views 13340 1036 Invalid group data.
+ERROR 2023-05-24 15:58:56,302 views 13340 1036 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 15:58:56,305 views 13340 1036 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 15:58:56,305 views 13340 1036 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 15:58:56,368 views 13340 1036 An error occurred: Something went wrong
+ERROR 2023-05-24 15:58:56,368 log 13340 1036 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 15:58:56,379 views 13340 1036 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 15:58:56,379 log 13340 1036 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 15:58:56,385 views 13340 1036 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 15:58:56,385 log 13340 1036 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 15:58:56,391 views 13340 1036 Group not found. Group ID: 999
+ERROR 2023-05-24 15:58:56,396 views 13340 1036 Group not found. Group ID: None
+ERROR 2023-05-24 15:58:56,413 log 13340 1036 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 15:58:56,437 views 13340 1036 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 15:58:56,437 views 13340 1036 Error: Test Exception
+ERROR 2023-05-24 15:58:56,437 log 13340 1036 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 15:58:56,509 views 13340 1036 Error: Group not found.
+ERROR 2023-05-24 15:58:56,522 views 13340 1036 Error: User not found.
+ERROR 2023-05-24 15:58:56,573 views 13340 1036 Error: Internal Server Error
+ERROR 2023-05-24 15:58:56,573 log 13340 1036 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 15:58:59,346 views 13340 1036 User not found. User ID: None
+ERROR 2023-05-24 15:58:59,350 views 13340 1036 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 15:58:59,350 views 13340 1036 Error: Something went wrong
+ERROR 2023-05-24 15:58:59,350 log 13340 1036 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 15:58:59,493 views 13340 1036 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 15:58:59,494 views 13340 1036 Error: Test Exception
+ERROR 2023-05-24 15:58:59,494 log 13340 1036 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 15:58:59,694 views 13340 1036 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 15:58:59,695 log 13340 1036 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-24 19:28:11,318 views 10120 7716 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 19:28:11,351 views 10120 7716 User with email:test3.example.com not found.
+ERROR 2023-05-24 19:28:11,368 views 10120 7716 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 19:28:11,368 views 10120 7716 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 19:28:11,384 views 10120 7716 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 19:28:11,400 views 10120 7716 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-24 19:28:11,476 views 10120 7716 Invalid group data.
+ERROR 2023-05-24 19:28:11,533 views 10120 7716 User with email:miss_ramazani not found.
+ERROR 2023-05-24 19:28:11,533 views 10120 7716 User with email:miss_ramazani not found.
+ERROR 2023-05-24 19:28:11,533 views 10120 7716 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 19:28:11,566 views 10120 7716 Invalid group data.
+ERROR 2023-05-24 19:28:11,566 views 10120 7716 Invalid group data.
+ERROR 2023-05-24 19:28:11,582 views 10120 7716 Invalid group data.
+ERROR 2023-05-24 19:28:11,599 views 10120 7716 Invalid group data.
+ERROR 2023-05-24 19:28:11,627 views 10120 7716 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 19:28:11,627 views 10120 7716 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-24 19:28:11,627 views 10120 7716 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-24 19:28:11,850 views 10120 7716 An error occurred: Something went wrong
+ERROR 2023-05-24 19:28:11,850 log 10120 7716 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-24 19:28:11,899 views 10120 7716 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-24 19:28:11,899 log 10120 7716 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 19:28:11,918 views 10120 7716 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-24 19:28:11,918 log 10120 7716 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-24 19:28:11,935 views 10120 7716 Group not found. Group ID: 999
+ERROR 2023-05-24 19:28:11,951 views 10120 7716 Group not found. Group ID: None
+ERROR 2023-05-24 19:28:12,018 log 10120 7716 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-24 19:28:12,092 views 10120 7716 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-24 19:28:12,092 views 10120 7716 Error: Test Exception
+ERROR 2023-05-24 19:28:12,092 log 10120 7716 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-24 19:28:12,335 views 10120 7716 Error: Group not found.
+ERROR 2023-05-24 19:28:12,383 views 10120 7716 Error: User not found.
+ERROR 2023-05-24 19:28:12,592 views 10120 7716 Error: Internal Server Error
+ERROR 2023-05-24 19:28:12,592 log 10120 7716 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-24 19:28:17,085 views 10120 7716 User not found. User ID: None
+ERROR 2023-05-24 19:28:17,117 views 10120 7716 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-24 19:28:17,117 views 10120 7716 Error: Something went wrong
+ERROR 2023-05-24 19:28:17,117 log 10120 7716 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-24 19:28:17,653 views 10120 7716 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-24 19:28:17,653 views 10120 7716 Error: Test Exception
+ERROR 2023-05-24 19:28:17,653 log 10120 7716 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-24 19:28:18,670 views 10120 7716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-24 19:28:18,670 log 10120 7716 Internal Server Error: /buy/UserGroupBuys/
