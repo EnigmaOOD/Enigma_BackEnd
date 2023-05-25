@@ -617,6 +617,22 @@ class AddUserGroupTest(APITestCase):
         self.assertEqual(Members.objects.first().userID, self.user1)
 
 
+
+    def test_AddUserGroup_should_Error_with_not_exits_groupID(self):
+        self.client.force_authenticate(user=self.user1)
+        Members.objects.create(userID=self.user1, groupID=self.group)
+        data = {
+            "groupID": 1000000,
+            "emails": ["test2@example.com", "test3@example.com"]
+        }
+        response = self.client.post(self.url, data=data, format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(Group.objects.count(), 1)
+        self.assertEqual(Members.objects.count(), 1)
+        self.assertEqual(Members.objects.first().userID, self.user1)
+
+
     def test_AddUserGroup_should_success_with_no_email(self):
         self.client.force_authenticate(user=self.user2)
         Members.objects.create(userID=self.user2, groupID=self.group)

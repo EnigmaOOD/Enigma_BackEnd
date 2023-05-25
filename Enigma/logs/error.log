@@ -1798,3 +1798,866 @@ ERROR 2023-05-25 12:11:53,619 views 2812 5772 Error: Test Exception
 ERROR 2023-05-25 12:11:53,619 log 2812 5772 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-25 12:11:53,818 views 2812 5772 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-25 12:11:53,818 log 2812 5772 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-25 18:28:46,846 views 2100 14616 An error occurred while retrieving members for Group ID: 4536
+ERROR 2023-05-25 18:28:46,846 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:46,847 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:46,847 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:47,948 views 2100 4304 An error occurred while retrieving members for Group ID: 4369
+ERROR 2023-05-25 18:28:47,948 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:47,948 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:47,949 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:48,955 views 2100 9276 An error occurred while retrieving members for Group ID: 2300
+ERROR 2023-05-25 18:28:48,996 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:48,996 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:48,997 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:49,281 views 2100 14616 An error occurred while retrieving members for Group ID: 2387
+ERROR 2023-05-25 18:28:49,281 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:49,281 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:49,283 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:49,837 views 2100 10444 An error occurred while retrieving members for Group ID: 4169
+ERROR 2023-05-25 18:28:49,837 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:49,837 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:49,838 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:50,365 views 2100 4304 An error occurred while retrieving members for Group ID: 1446
+ERROR 2023-05-25 18:28:50,365 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:50,366 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:50,366 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:50,833 views 2100 13112 An error occurred while retrieving members for Group ID: 1155
+ERROR 2023-05-25 18:28:50,833 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:50,834 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:50,834 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:51,373 views 2100 9276 An error occurred while retrieving members for Group ID: 1763
+ERROR 2023-05-25 18:28:51,373 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:51,374 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:51,375 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:51,728 views 2100 14616 An error occurred while retrieving members for Group ID: 2252
+ERROR 2023-05-25 18:28:51,728 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:51,729 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:51,729 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:51,867 views 2100 13808 An error occurred while retrieving members for Group ID: 1192
+ERROR 2023-05-25 18:28:51,867 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:51,868 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:51,868 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:52,190 views 2100 10444 An error occurred while retrieving members for Group ID: 405
+ERROR 2023-05-25 18:28:52,190 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:52,191 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:52,191 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:52,825 views 2100 4304 An error occurred while retrieving members for Group ID: 1599
+ERROR 2023-05-25 18:28:52,825 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:52,825 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:52,825 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:52,933 views 2100 15760 An error occurred while retrieving members for Group ID: 1292
+ERROR 2023-05-25 18:28:52,933 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:52,934 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:52,935 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:53,210 views 2100 13112 An error occurred while retrieving members for Group ID: 3484
+ERROR 2023-05-25 18:28:53,210 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:53,212 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:53,212 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:53,811 views 2100 9276 An error occurred while retrieving members for Group ID: 3716
+ERROR 2023-05-25 18:28:53,811 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:53,811 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:53,812 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:53,983 views 2100 19640 An error occurred while retrieving members for Group ID: 565
+ERROR 2023-05-25 18:28:53,983 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:53,984 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:53,985 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:54,211 views 2100 14616 An error occurred while retrieving members for Group ID: 2705
+ERROR 2023-05-25 18:28:54,211 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:54,212 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:54,212 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:54,397 views 2100 13808 An error occurred while retrieving members for Group ID: 3946
+ERROR 2023-05-25 18:28:54,397 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:54,398 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:54,398 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:54,708 views 2100 10444 An error occurred while retrieving members for Group ID: 454
+ERROR 2023-05-25 18:28:54,708 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:54,709 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:54,710 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:54,956 views 2100 12452 An error occurred while retrieving members for Group ID: 2471
+ERROR 2023-05-25 18:28:54,956 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:54,957 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:54,958 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:55,344 views 2100 4304 An error occurred while retrieving members for Group ID: 4227
+ERROR 2023-05-25 18:28:55,344 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:55,345 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:55,345 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:55,451 views 2100 15760 An error occurred while retrieving members for Group ID: 661
+ERROR 2023-05-25 18:28:55,451 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:55,451 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:55,451 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:55,699 views 2100 13112 An error occurred while retrieving members for Group ID: 2329
+ERROR 2023-05-25 18:28:55,699 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:55,700 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:55,700 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:55,887 views 2100 16672 An error occurred while retrieving members for Group ID: 4972
+ERROR 2023-05-25 18:28:55,888 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:55,888 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:55,889 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:56,209 views 2100 9276 An error occurred while retrieving members for Group ID: 1265
+ERROR 2023-05-25 18:28:56,209 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:56,210 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:56,210 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:56,457 views 2100 19640 An error occurred while retrieving members for Group ID: 4116
+ERROR 2023-05-25 18:28:56,457 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:56,458 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:56,458 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:56,918 views 2100 14616 An error occurred while retrieving members for Group ID: 3498
+ERROR 2023-05-25 18:28:56,918 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:56,918 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:56,919 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:57,294 views 2100 5896 An error occurred while retrieving members for Group ID: 4157
+ERROR 2023-05-25 18:28:57,294 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:57,294 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:57,295 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:57,417 views 2100 10444 An error occurred while retrieving members for Group ID: 4215
+ERROR 2023-05-25 18:28:57,417 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:57,417 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:57,417 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:57,432 views 2100 13808 An error occurred while retrieving members for Group ID: 1554
+ERROR 2023-05-25 18:28:57,433 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:57,433 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:57,433 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:57,527 views 2100 12452 An error occurred while retrieving members for Group ID: 959
+ERROR 2023-05-25 18:28:57,528 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:57,529 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:57,530 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,010 views 2100 4304 An error occurred while retrieving members for Group ID: 2436
+ERROR 2023-05-25 18:28:58,010 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,011 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,011 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,212 views 2100 15760 An error occurred while retrieving members for Group ID: 544
+ERROR 2023-05-25 18:28:58,212 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,213 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,213 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,477 views 2100 13112 An error occurred while retrieving members for Group ID: 2528
+ERROR 2023-05-25 18:28:58,477 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,477 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,478 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,588 views 2100 16672 An error occurred while retrieving members for Group ID: 2261
+ERROR 2023-05-25 18:28:58,588 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,589 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,589 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,731 views 2100 2348 An error occurred while retrieving members for Group ID: 3190
+ERROR 2023-05-25 18:28:58,732 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,732 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,733 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:58,873 views 2100 9276 An error occurred while retrieving members for Group ID: 3276
+ERROR 2023-05-25 18:28:58,873 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:58,874 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:58,874 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:59,168 views 2100 14652 An error occurred while retrieving members for Group ID: 2293
+ERROR 2023-05-25 18:28:59,169 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:59,171 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:59,172 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:59,234 views 2100 19640 An error occurred while retrieving members for Group ID: 1158
+ERROR 2023-05-25 18:28:59,234 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:59,234 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:59,235 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:59,388 views 2100 14616 An error occurred while retrieving members for Group ID: 3187
+ERROR 2023-05-25 18:28:59,388 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:59,388 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:59,389 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:28:59,915 views 2100 5896 An error occurred while retrieving members for Group ID: 2568
+ERROR 2023-05-25 18:28:59,915 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:28:59,916 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:28:59,916 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:00,720 views 2100 10256 An error occurred while retrieving members for Group ID: 3193
+ERROR 2023-05-25 18:29:00,721 views 2100 10256 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:00,721 log 2100 10256 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:00,722 basehttp 2100 10256 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:00,783 views 2100 10444 An error occurred while retrieving members for Group ID: 3684
+ERROR 2023-05-25 18:29:00,783 views 2100 13808 An error occurred while retrieving members for Group ID: 1553
+ERROR 2023-05-25 18:29:00,784 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:00,784 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:00,784 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:00,785 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:00,786 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:00,787 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:00,830 views 2100 12452 An error occurred while retrieving members for Group ID: 1243
+ERROR 2023-05-25 18:29:00,830 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:00,832 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:00,832 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:01,326 views 2100 4304 An error occurred while retrieving members for Group ID: 3771
+ERROR 2023-05-25 18:29:01,326 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:01,326 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:01,327 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:01,389 views 2100 15760 An error occurred while retrieving members for Group ID: 956
+ERROR 2023-05-25 18:29:01,389 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:01,389 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:01,389 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:01,734 views 2100 13112 An error occurred while retrieving members for Group ID: 1110
+ERROR 2023-05-25 18:29:01,734 views 2100 15668 An error occurred while retrieving members for Group ID: 3659
+ERROR 2023-05-25 18:29:01,735 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:01,735 views 2100 15668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:01,736 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:01,737 log 2100 15668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:01,737 basehttp 2100 15668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:01,738 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,124 views 2100 16672 An error occurred while retrieving members for Group ID: 3146
+ERROR 2023-05-25 18:29:02,125 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,126 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,127 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,219 views 2100 2348 An error occurred while retrieving members for Group ID: 4425
+ERROR 2023-05-25 18:29:02,219 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,220 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,220 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,234 views 2100 9276 An error occurred while retrieving members for Group ID: 3293
+ERROR 2023-05-25 18:29:02,235 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,236 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,237 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,826 views 2100 14652 An error occurred while retrieving members for Group ID: 1111
+ERROR 2023-05-25 18:29:02,826 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,826 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,827 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,888 views 2100 14616 An error occurred while retrieving members for Group ID: 3419
+ERROR 2023-05-25 18:29:02,888 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,889 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,889 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,935 views 2100 19512 An error occurred while retrieving members for Group ID: 3147
+ERROR 2023-05-25 18:29:02,935 views 2100 19640 An error occurred while retrieving members for Group ID: 1284
+ERROR 2023-05-25 18:29:02,935 views 2100 5896 An error occurred while retrieving members for Group ID: 2495
+ERROR 2023-05-25 18:29:02,935 views 2100 19512 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,935 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,936 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:02,936 log 2100 19512 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,937 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,938 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:02,939 basehttp 2100 19512 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,939 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:02,939 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:04,231 views 2100 13808 An error occurred while retrieving members for Group ID: 102
+ERROR 2023-05-25 18:29:04,231 views 2100 10256 An error occurred while retrieving members for Group ID: 1513
+ERROR 2023-05-25 18:29:04,231 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:04,232 views 2100 10256 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:04,232 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:04,233 log 2100 10256 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:04,233 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:04,234 basehttp 2100 10256 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:04,282 views 2100 3776 An error occurred while retrieving members for Group ID: 1768
+ERROR 2023-05-25 18:29:04,282 views 2100 10444 An error occurred while retrieving members for Group ID: 2272
+ERROR 2023-05-25 18:29:04,282 views 2100 3776 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:04,283 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:04,284 log 2100 3776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:04,285 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:04,286 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:04,286 basehttp 2100 3776 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:04,874 views 2100 12452 An error occurred while retrieving members for Group ID: 359
+ERROR 2023-05-25 18:29:04,874 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:04,875 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:04,875 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:05,126 views 2100 4304 An error occurred while retrieving members for Group ID: 4452
+ERROR 2023-05-25 18:29:05,126 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:05,126 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:05,127 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:05,688 views 2100 15760 An error occurred while retrieving members for Group ID: 1494
+ERROR 2023-05-25 18:29:05,688 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:05,689 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:05,689 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,130 views 2100 16132 An error occurred while retrieving members for Group ID: 1196
+ERROR 2023-05-25 18:29:06,130 views 2100 13112 An error occurred while retrieving members for Group ID: 2050
+ERROR 2023-05-25 18:29:06,131 views 2100 16132 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,131 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,132 log 2100 16132 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,132 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,133 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,134 basehttp 2100 16132 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,222 views 2100 16672 An error occurred while retrieving members for Group ID: 1941
+ERROR 2023-05-25 18:29:06,222 views 2100 15668 An error occurred while retrieving members for Group ID: 2019
+ERROR 2023-05-25 18:29:06,223 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,223 views 2100 15668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,223 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,224 log 2100 15668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,225 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,226 basehttp 2100 15668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,424 views 2100 2348 An error occurred while retrieving members for Group ID: 2335
+ERROR 2023-05-25 18:29:06,424 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,425 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,425 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:06,533 views 2100 9276 An error occurred while retrieving members for Group ID: 452
+ERROR 2023-05-25 18:29:06,533 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:06,534 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:06,534 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:07,189 views 2100 14652 An error occurred while retrieving members for Group ID: 2727
+ERROR 2023-05-25 18:29:07,190 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:07,191 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:07,192 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:07,531 views 2100 11812 An error occurred while retrieving members for Group ID: 4233
+ERROR 2023-05-25 18:29:07,532 views 2100 11812 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:07,532 log 2100 11812 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:07,532 basehttp 2100 11812 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:07,877 views 2100 19512 An error occurred while retrieving members for Group ID: 4834
+ERROR 2023-05-25 18:29:07,877 views 2100 19512 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:07,878 log 2100 19512 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:07,879 basehttp 2100 19512 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:07,924 views 2100 5896 An error occurred while retrieving members for Group ID: 3877
+ERROR 2023-05-25 18:29:07,924 views 2100 19640 An error occurred while retrieving members for Group ID: 3102
+ERROR 2023-05-25 18:29:07,924 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:07,925 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:07,926 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:07,927 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:07,927 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:07,928 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,020 views 2100 14616 An error occurred while retrieving members for Group ID: 2410
+ERROR 2023-05-25 18:29:08,021 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,021 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,021 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,484 views 2100 16124 An error occurred while retrieving members for Group ID: 2732
+ERROR 2023-05-25 18:29:08,484 views 2100 16124 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,485 log 2100 16124 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,486 basehttp 2100 16124 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,530 views 2100 3776 An error occurred while retrieving members for Group ID: 3834
+ERROR 2023-05-25 18:29:08,530 views 2100 3776 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,531 log 2100 3776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,531 basehttp 2100 3776 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,739 views 2100 10256 An error occurred while retrieving members for Group ID: 100
+ERROR 2023-05-25 18:29:08,739 views 2100 13808 An error occurred while retrieving members for Group ID: 4030
+ERROR 2023-05-25 18:29:08,739 views 2100 10256 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,739 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,740 log 2100 10256 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,741 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,741 basehttp 2100 10256 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,742 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:08,888 views 2100 10444 An error occurred while retrieving members for Group ID: 1087
+ERROR 2023-05-25 18:29:08,888 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:08,889 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:08,890 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:09,031 views 2100 12452 An error occurred while retrieving members for Group ID: 3289
+ERROR 2023-05-25 18:29:09,032 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:09,032 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:09,032 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:09,533 views 2100 12064 An error occurred while retrieving members for Group ID: 1933
+ERROR 2023-05-25 18:29:09,533 views 2100 12064 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:09,535 log 2100 12064 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:09,535 basehttp 2100 12064 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:09,826 views 2100 4304 An error occurred while retrieving members for Group ID: 345
+ERROR 2023-05-25 18:29:09,826 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:09,827 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:09,827 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:10,026 views 2100 15760 An error occurred while retrieving members for Group ID: 294
+ERROR 2023-05-25 18:29:10,026 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:10,027 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:10,027 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,027 views 2100 16672 An error occurred while retrieving members for Group ID: 2361
+ERROR 2023-05-25 18:29:11,028 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,028 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,029 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,122 views 2100 15668 An error occurred while retrieving members for Group ID: 833
+ERROR 2023-05-25 18:29:11,122 views 2100 15668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,122 log 2100 15668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,123 basehttp 2100 15668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,185 views 2100 20476 An error occurred while retrieving members for Group ID: 1518
+ERROR 2023-05-25 18:29:11,186 views 2100 20476 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,186 log 2100 20476 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,186 basehttp 2100 20476 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,530 views 2100 16132 An error occurred while retrieving members for Group ID: 524
+ERROR 2023-05-25 18:29:11,531 views 2100 13112 An error occurred while retrieving members for Group ID: 302
+ERROR 2023-05-25 18:29:11,531 views 2100 16132 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,531 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,532 log 2100 16132 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,532 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,533 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,534 basehttp 2100 16132 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:11,985 views 2100 2348 An error occurred while retrieving members for Group ID: 872
+ERROR 2023-05-25 18:29:11,986 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:11,987 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:11,988 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,030 views 2100 14652 An error occurred while retrieving members for Group ID: 555
+ERROR 2023-05-25 18:29:12,030 views 2100 9276 An error occurred while retrieving members for Group ID: 63
+ERROR 2023-05-25 18:29:12,031 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,031 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,032 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,032 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,033 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,033 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,237 views 2100 11812 An error occurred while retrieving members for Group ID: 4279
+ERROR 2023-05-25 18:29:12,237 views 2100 11812 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,237 log 2100 11812 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,237 basehttp 2100 11812 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,515 views 2100 19512 An error occurred while retrieving members for Group ID: 2412
+ERROR 2023-05-25 18:29:12,515 views 2100 19512 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,515 log 2100 19512 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,516 basehttp 2100 19512 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,530 views 2100 2324 An error occurred while retrieving members for Group ID: 776
+ERROR 2023-05-25 18:29:12,530 views 2100 2324 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,531 log 2100 2324 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,531 basehttp 2100 2324 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,888 views 2100 19640 An error occurred while retrieving members for Group ID: 1016
+ERROR 2023-05-25 18:29:12,888 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,889 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,889 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:12,919 views 2100 5896 An error occurred while retrieving members for Group ID: 3442
+ERROR 2023-05-25 18:29:12,919 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:12,920 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:12,920 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:13,226 views 2100 14616 An error occurred while retrieving members for Group ID: 863
+ERROR 2023-05-25 18:29:13,226 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:13,227 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:13,227 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:13,415 views 2100 16124 An error occurred while retrieving members for Group ID: 2793
+ERROR 2023-05-25 18:29:13,415 views 2100 16124 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:13,415 log 2100 16124 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:13,415 basehttp 2100 16124 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:13,486 views 2100 3776 An error occurred while retrieving members for Group ID: 3964
+ERROR 2023-05-25 18:29:13,486 views 2100 3776 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:13,486 log 2100 3776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:13,488 basehttp 2100 3776 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:14,531 views 2100 13808 An error occurred while retrieving members for Group ID: 1445
+ERROR 2023-05-25 18:29:14,531 views 2100 12452 An error occurred while retrieving members for Group ID: 2608
+ERROR 2023-05-25 18:29:14,531 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:14,532 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:14,532 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:14,533 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:14,534 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:14,534 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:14,623 views 2100 10444 An error occurred while retrieving members for Group ID: 2705
+ERROR 2023-05-25 18:29:14,624 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:14,625 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:14,627 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:14,686 views 2100 10256 An error occurred while retrieving members for Group ID: 1120
+ERROR 2023-05-25 18:29:14,687 views 2100 10256 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:14,687 log 2100 10256 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:14,687 basehttp 2100 10256 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:14,889 views 2100 12064 An error occurred while retrieving members for Group ID: 2209
+ERROR 2023-05-25 18:29:14,889 views 2100 12064 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:14,890 log 2100 12064 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:14,890 basehttp 2100 12064 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:15,058 views 2100 4304 An error occurred while retrieving members for Group ID: 3228
+ERROR 2023-05-25 18:29:15,059 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:15,059 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:15,062 views 2100 9640 An error occurred while retrieving members for Group ID: 589
+ERROR 2023-05-25 18:29:15,062 views 2100 9640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:15,063 log 2100 9640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:15,063 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:15,065 basehttp 2100 9640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:15,921 views 2100 15760 An error occurred while retrieving members for Group ID: 3253
+ERROR 2023-05-25 18:29:15,922 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:15,923 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:15,923 views 2100 11668 An error occurred while retrieving members for Group ID: 2069
+ERROR 2023-05-25 18:29:15,924 views 2100 11668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:15,924 log 2100 11668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:15,924 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:15,925 basehttp 2100 11668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:16,420 views 2100 20476 An error occurred while retrieving members for Group ID: 668
+ERROR 2023-05-25 18:29:16,420 views 2100 20476 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:16,421 log 2100 20476 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:16,422 basehttp 2100 20476 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:16,513 views 2100 9384 An error occurred while retrieving members for Group ID: 194
+ERROR 2023-05-25 18:29:16,514 views 2100 9384 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:16,515 log 2100 9384 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:16,516 basehttp 2100 9384 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:16,528 views 2100 16672 An error occurred while retrieving members for Group ID: 4432
+ERROR 2023-05-25 18:29:16,528 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:16,528 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:16,528 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:16,577 views 2100 15668 An error occurred while retrieving members for Group ID: 4665
+ERROR 2023-05-25 18:29:16,578 views 2100 15668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:16,581 log 2100 15668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:16,582 basehttp 2100 15668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:17,424 views 2100 13112 An error occurred while retrieving members for Group ID: 603
+ERROR 2023-05-25 18:29:17,424 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:17,425 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:17,428 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:17,530 views 2100 16132 An error occurred while retrieving members for Group ID: 4378
+ERROR 2023-05-25 18:29:17,531 views 2100 16132 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:17,531 log 2100 16132 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:17,532 basehttp 2100 16132 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:17,932 views 2100 780 An error occurred while retrieving members for Group ID: 4702
+ERROR 2023-05-25 18:29:17,932 views 2100 2348 An error occurred while retrieving members for Group ID: 1193
+ERROR 2023-05-25 18:29:17,933 views 2100 780 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:17,933 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:17,933 log 2100 780 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:17,934 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:17,934 basehttp 2100 780 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:17,935 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,087 views 2100 14652 An error occurred while retrieving members for Group ID: 3094
+ERROR 2023-05-25 18:29:18,088 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,088 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,088 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,225 views 2100 9276 An error occurred while retrieving members for Group ID: 4890
+ERROR 2023-05-25 18:29:18,225 views 2100 11812 An error occurred while retrieving members for Group ID: 1544
+ERROR 2023-05-25 18:29:18,225 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,226 views 2100 11812 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,227 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,229 log 2100 11812 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,229 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,230 basehttp 2100 11812 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,796 views 2100 2324 An error occurred while retrieving members for Group ID: 4795
+ERROR 2023-05-25 18:29:18,797 views 2100 19640 An error occurred while retrieving members for Group ID: 2602
+ERROR 2023-05-25 18:29:18,797 views 2100 19512 An error occurred while retrieving members for Group ID: 1268
+ERROR 2023-05-25 18:29:18,797 views 2100 14616 An error occurred while retrieving members for Group ID: 996
+ERROR 2023-05-25 18:29:18,797 views 2100 2324 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,798 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,798 views 2100 19512 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,798 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,799 log 2100 2324 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,799 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,800 log 2100 19512 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,801 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,802 basehttp 2100 2324 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,802 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,803 basehttp 2100 19512 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,803 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,930 views 2100 3776 An error occurred while retrieving members for Group ID: 4084
+ERROR 2023-05-25 18:29:18,930 views 2100 5896 An error occurred while retrieving members for Group ID: 2044
+ERROR 2023-05-25 18:29:18,930 views 2100 3776 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,930 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:18,931 log 2100 3776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,931 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:18,932 basehttp 2100 3776 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:18,932 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:19,727 views 2100 16124 An error occurred while retrieving members for Group ID: 3519
+ERROR 2023-05-25 18:29:19,727 views 2100 16124 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:19,728 log 2100 16124 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:19,728 basehttp 2100 16124 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:20,412 views 2100 13808 An error occurred while retrieving members for Group ID: 1594
+ERROR 2023-05-25 18:29:20,413 views 2100 13808 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:20,414 log 2100 13808 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:20,414 views 2100 4712 An error occurred while retrieving members for Group ID: 801
+ERROR 2023-05-25 18:29:20,415 views 2100 4712 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:20,415 log 2100 4712 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:20,416 basehttp 2100 13808 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:20,417 basehttp 2100 4712 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:20,418 views 2100 12452 An error occurred while retrieving members for Group ID: 489
+ERROR 2023-05-25 18:29:20,418 views 2100 12452 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:20,419 log 2100 12452 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:20,419 basehttp 2100 12452 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:21,524 views 2100 12064 An error occurred while retrieving members for Group ID: 1965
+ERROR 2023-05-25 18:29:21,524 views 2100 4304 An error occurred while retrieving members for Group ID: 2843
+ERROR 2023-05-25 18:29:21,524 views 2100 12064 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:21,525 views 2100 4304 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:21,525 log 2100 12064 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:21,526 log 2100 4304 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:21,527 basehttp 2100 12064 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:21,527 basehttp 2100 4304 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:21,620 views 2100 9640 An error occurred while retrieving members for Group ID: 1252
+ERROR 2023-05-25 18:29:21,621 views 2100 10256 An error occurred while retrieving members for Group ID: 2618
+ERROR 2023-05-25 18:29:21,621 views 2100 9640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:21,621 views 2100 10256 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:21,622 log 2100 9640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:21,623 log 2100 10256 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:21,624 basehttp 2100 9640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:21,625 basehttp 2100 10256 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:22,637 views 2100 19392 An error occurred while retrieving members for Group ID: 2205
+ERROR 2023-05-25 18:29:22,644 views 2100 11668 An error occurred while retrieving members for Group ID: 2069
+ERROR 2023-05-25 18:29:22,647 views 2100 19392 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:22,648 views 2100 11668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:22,649 log 2100 19392 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:22,649 log 2100 11668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:22,654 basehttp 2100 19392 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:22,655 basehttp 2100 11668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:22,784 views 2100 15760 An error occurred while retrieving members for Group ID: 3088
+ERROR 2023-05-25 18:29:22,785 views 2100 10444 An error occurred while retrieving members for Group ID: 3324
+ERROR 2023-05-25 18:29:22,785 views 2100 15760 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:22,785 views 2100 10444 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:22,786 log 2100 15760 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:22,787 log 2100 10444 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:22,788 basehttp 2100 15760 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:22,789 basehttp 2100 10444 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,721 views 2100 16132 An error occurred while retrieving members for Group ID: 3755
+ERROR 2023-05-25 18:29:23,721 views 2100 16672 An error occurred while retrieving members for Group ID: 1393
+ERROR 2023-05-25 18:29:23,722 views 2100 16132 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,722 views 2100 16672 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,723 log 2100 16132 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,724 log 2100 16672 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,724 basehttp 2100 16132 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,725 basehttp 2100 16672 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,784 views 2100 20476 An error occurred while retrieving members for Group ID: 732
+ERROR 2023-05-25 18:29:23,784 views 2100 15668 An error occurred while retrieving members for Group ID: 4377
+ERROR 2023-05-25 18:29:23,784 views 2100 20476 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,785 views 2100 15668 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,785 log 2100 20476 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,786 log 2100 15668 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,787 basehttp 2100 15668 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,787 basehttp 2100 20476 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,830 views 2100 9384 An error occurred while retrieving members for Group ID: 159
+ERROR 2023-05-25 18:29:23,831 views 2100 13112 An error occurred while retrieving members for Group ID: 1066
+ERROR 2023-05-25 18:29:23,831 views 2100 9384 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,831 views 2100 13112 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,831 log 2100 9384 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,832 log 2100 13112 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,832 basehttp 2100 9384 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,833 basehttp 2100 13112 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:23,923 views 2100 1460 An error occurred while retrieving members for Group ID: 202
+ERROR 2023-05-25 18:29:23,923 views 2100 1460 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:23,923 log 2100 1460 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:23,924 basehttp 2100 1460 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:24,876 views 2100 2348 An error occurred while retrieving members for Group ID: 1888
+ERROR 2023-05-25 18:29:24,876 views 2100 2348 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:24,876 log 2100 2348 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:24,877 basehttp 2100 2348 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:24,925 views 2100 18844 An error occurred while retrieving members for Group ID: 916
+ERROR 2023-05-25 18:29:24,925 views 2100 11812 An error occurred while retrieving members for Group ID: 4224
+ERROR 2023-05-25 18:29:24,925 views 2100 18844 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:24,926 views 2100 11812 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:24,926 log 2100 18844 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:24,927 log 2100 11812 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:24,928 basehttp 2100 11812 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:24,928 basehttp 2100 18844 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,050 views 2100 780 An error occurred while retrieving members for Group ID: 1539
+ERROR 2023-05-25 18:29:25,068 views 2100 780 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,069 views 2100 9276 An error occurred while retrieving members for Group ID: 3527
+ERROR 2023-05-25 18:29:25,075 log 2100 780 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,077 views 2100 9276 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,079 basehttp 2100 780 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,084 log 2100 9276 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,085 basehttp 2100 9276 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,374 views 2100 14652 An error occurred while retrieving members for Group ID: 4581
+ERROR 2023-05-25 18:29:25,374 views 2100 14652 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,374 log 2100 14652 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,375 basehttp 2100 14652 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,889 views 2100 3776 An error occurred while retrieving members for Group ID: 1656
+ERROR 2023-05-25 18:29:25,889 views 2100 3776 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,890 log 2100 3776 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,891 basehttp 2100 3776 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,921 views 2100 19512 An error occurred while retrieving members for Group ID: 3488
+ERROR 2023-05-25 18:29:25,921 views 2100 2324 An error occurred while retrieving members for Group ID: 929
+ERROR 2023-05-25 18:29:25,922 views 2100 19512 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,922 views 2100 2324 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:25,923 log 2100 19512 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,923 log 2100 2324 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:25,924 basehttp 2100 2324 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:25,925 basehttp 2100 19512 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:26,013 views 2100 19640 An error occurred while retrieving members for Group ID: 3636
+ERROR 2023-05-25 18:29:26,013 views 2100 19640 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:26,014 log 2100 19640 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:26,014 basehttp 2100 19640 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:26,230 views 2100 5896 An error occurred while retrieving members for Group ID: 1465
+ERROR 2023-05-25 18:29:26,231 views 2100 5896 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:26,231 log 2100 5896 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:26,231 basehttp 2100 5896 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:29:26,325 views 2100 14616 An error occurred while retrieving members for Group ID: 4944
+ERROR 2023-05-25 18:29:26,325 views 2100 14616 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:29:26,326 log 2100 14616 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:29:26,327 basehttp 2100 14616 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:27,251 views 964 20400 An error occurred while retrieving members for Group ID: 1124
+ERROR 2023-05-25 18:30:27,251 views 964 20400 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:27,251 log 964 20400 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:37,192 views 964 18048 An error occurred while retrieving members for Group ID: 2017
+ERROR 2023-05-25 18:30:37,193 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:37,193 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:37,193 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:39,567 views 964 18048 An error occurred while retrieving members for Group ID: 1473
+ERROR 2023-05-25 18:30:39,567 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:39,568 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:39,569 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:41,921 views 964 18048 An error occurred while retrieving members for Group ID: 4501
+ERROR 2023-05-25 18:30:41,921 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:41,921 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:41,921 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:44,347 views 964 18048 An error occurred while retrieving members for Group ID: 1360
+ERROR 2023-05-25 18:30:44,347 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:44,348 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:44,348 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:46,735 views 964 18048 An error occurred while retrieving members for Group ID: 2532
+ERROR 2023-05-25 18:30:46,735 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:46,735 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:46,735 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:49,114 views 964 18048 An error occurred while retrieving members for Group ID: 1235
+ERROR 2023-05-25 18:30:49,114 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:49,114 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:49,114 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:51,528 views 964 18048 An error occurred while retrieving members for Group ID: 3536
+ERROR 2023-05-25 18:30:51,528 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:51,528 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:51,529 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:53,896 views 964 18048 An error occurred while retrieving members for Group ID: 4793
+ERROR 2023-05-25 18:30:53,896 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:53,896 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:53,897 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:56,327 views 964 18048 An error occurred while retrieving members for Group ID: 197
+ERROR 2023-05-25 18:30:56,327 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:56,327 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:56,328 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:30:58,771 views 964 18048 An error occurred while retrieving members for Group ID: 2671
+ERROR 2023-05-25 18:30:58,771 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:30:58,772 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:30:58,772 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:31:01,171 views 964 18048 An error occurred while retrieving members for Group ID: 4044
+ERROR 2023-05-25 18:31:01,172 views 964 18048 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:31:01,172 log 964 18048 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:31:01,173 basehttp 964 18048 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:40,696 views 12844 16632 An error occurred while retrieving members for Group ID: 129
+ERROR 2023-05-25 18:32:40,696 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:40,697 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:32:40,697 basehttp 12844 16632 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:43,086 views 12844 16632 An error occurred while retrieving members for Group ID: 4375
+ERROR 2023-05-25 18:32:43,086 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:43,086 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:32:43,087 basehttp 12844 16632 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:45,438 views 12844 16632 An error occurred while retrieving members for Group ID: 517
+ERROR 2023-05-25 18:32:45,438 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:45,438 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:32:45,439 basehttp 12844 16632 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:47,759 views 12844 16632 An error occurred while retrieving members for Group ID: 774
+ERROR 2023-05-25 18:32:47,759 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:47,760 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:32:47,761 basehttp 12844 16632 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:50,102 views 12844 16632 An error occurred while retrieving members for Group ID: 4913
+ERROR 2023-05-25 18:32:50,102 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:50,103 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:32:50,104 basehttp 12844 16632 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:32:52,524 views 12844 16632 An error occurred while retrieving members for Group ID: 1253
+ERROR 2023-05-25 18:32:52,524 views 12844 16632 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:32:52,524 log 12844 16632 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:00,731 views 508 16440 An error occurred while retrieving members for Group ID: 3679
+ERROR 2023-05-25 18:34:00,731 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:00,732 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:00,732 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:03,053 views 508 16440 An error occurred while retrieving members for Group ID: 1308
+ERROR 2023-05-25 18:34:03,054 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:03,054 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:03,054 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:05,450 views 508 16440 An error occurred while retrieving members for Group ID: 1814
+ERROR 2023-05-25 18:34:05,450 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:05,451 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:05,452 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:07,863 views 508 16440 An error occurred while retrieving members for Group ID: 1022
+ERROR 2023-05-25 18:34:07,863 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:07,864 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:07,864 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:10,242 views 508 16440 An error occurred while retrieving members for Group ID: 2924
+ERROR 2023-05-25 18:34:10,242 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:10,243 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:10,243 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:12,579 views 508 16440 An error occurred while retrieving members for Group ID: 744
+ERROR 2023-05-25 18:34:12,579 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:12,579 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:12,580 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:15,011 views 508 16440 An error occurred while retrieving members for Group ID: 524
+ERROR 2023-05-25 18:34:15,011 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:15,011 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:15,011 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:17,442 views 508 16440 An error occurred while retrieving members for Group ID: 3635
+ERROR 2023-05-25 18:34:17,442 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:17,443 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:17,443 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:19,902 views 508 16440 An error occurred while retrieving members for Group ID: 463
+ERROR 2023-05-25 18:34:19,902 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:19,902 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:19,903 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:22,258 views 508 16440 An error occurred while retrieving members for Group ID: 3856
+ERROR 2023-05-25 18:34:22,259 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:22,260 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:22,260 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:24,688 views 508 16440 An error occurred while retrieving members for Group ID: 948
+ERROR 2023-05-25 18:34:24,688 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:24,689 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:24,689 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:27,071 views 508 16440 An error occurred while retrieving members for Group ID: 2173
+ERROR 2023-05-25 18:34:27,071 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:27,072 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:27,072 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:29,413 views 508 16440 An error occurred while retrieving members for Group ID: 2748
+ERROR 2023-05-25 18:34:29,413 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:29,414 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:29,414 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:32,173 views 508 16440 An error occurred while retrieving members for Group ID: 2135
+ERROR 2023-05-25 18:34:32,173 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:32,173 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:32,174 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:34,549 views 508 16440 An error occurred while retrieving members for Group ID: 3767
+ERROR 2023-05-25 18:34:34,549 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:34,549 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:34:34,550 basehttp 508 16440 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:34:37,016 views 508 16440 An error occurred while retrieving members for Group ID: 2438
+ERROR 2023-05-25 18:34:37,016 views 508 16440 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:34:37,016 log 508 16440 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:41,930 views 17932 16192 An error occurred while retrieving members for Group ID: 3192
+ERROR 2023-05-25 18:36:41,930 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:41,931 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:41,931 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:44,379 views 17932 16192 An error occurred while retrieving members for Group ID: 2322
+ERROR 2023-05-25 18:36:44,379 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:44,379 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:44,380 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:46,768 views 17932 16192 An error occurred while retrieving members for Group ID: 2350
+ERROR 2023-05-25 18:36:46,768 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:46,770 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:46,770 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:49,117 views 17932 16192 An error occurred while retrieving members for Group ID: 2093
+ERROR 2023-05-25 18:36:49,117 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:49,118 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:49,118 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:51,469 views 17932 16192 An error occurred while retrieving members for Group ID: 2633
+ERROR 2023-05-25 18:36:51,469 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:51,469 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:51,470 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:53,959 views 17932 16192 An error occurred while retrieving members for Group ID: 2164
+ERROR 2023-05-25 18:36:53,959 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:53,959 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:53,960 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:56,330 views 17932 16192 An error occurred while retrieving members for Group ID: 2474
+ERROR 2023-05-25 18:36:56,330 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:56,330 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:56,331 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:36:58,726 views 17932 16192 An error occurred while retrieving members for Group ID: 4768
+ERROR 2023-05-25 18:36:58,727 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:36:58,727 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:36:58,727 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:37:01,104 views 17932 16192 An error occurred while retrieving members for Group ID: 1110
+ERROR 2023-05-25 18:37:01,104 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:37:01,104 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:37:01,105 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:37:03,425 views 17932 16192 An error occurred while retrieving members for Group ID: 2030
+ERROR 2023-05-25 18:37:03,425 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:37:03,425 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:37:03,426 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:37:05,798 views 17932 16192 An error occurred while retrieving members for Group ID: 4740
+ERROR 2023-05-25 18:37:05,798 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:37:05,798 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 18:37:05,799 basehttp 17932 16192 "POST /group/ShowMembers/ HTTP/1.1" 500 129
+ERROR 2023-05-25 18:37:15,193 views 17932 16192 An error occurred while retrieving members for Group ID: 3414
+ERROR 2023-05-25 18:37:15,194 views 17932 16192 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 18:37:15,194 log 17932 16192 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 19:15:18,441 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,455 views 6320 17388 User with email:test3.example.com not found.
+ERROR 2023-05-25 19:15:18,464 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,469 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,474 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,478 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,484 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,493 views 6320 17388 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 19:15:18,524 views 6320 17388 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 19:15:18,528 views 6320 17388 Invalid group data.
+ERROR 2023-05-25 19:15:18,535 views 6320 17388 User with email:miss_ramazani not found.
+ERROR 2023-05-25 19:15:18,538 views 6320 17388 User with email:miss_ramazani not found.
+ERROR 2023-05-25 19:15:18,538 views 6320 17388 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-25 19:15:18,544 views 6320 17388 Invalid group data.
+ERROR 2023-05-25 19:15:18,547 views 6320 17388 Invalid group data.
+ERROR 2023-05-25 19:15:18,553 views 6320 17388 Invalid group data.
+ERROR 2023-05-25 19:15:18,557 views 6320 17388 Invalid group data.
+ERROR 2023-05-25 19:15:18,563 views 6320 17388 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 19:15:18,565 views 6320 17388 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 19:15:18,565 views 6320 17388 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-25 19:15:18,697 views 6320 17388 An error occurred: Something went wrong
+ERROR 2023-05-25 19:15:18,697 log 6320 17388 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-25 19:15:18,716 views 6320 17388 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-25 19:15:18,716 log 6320 17388 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-25 19:15:18,725 views 6320 17388 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-25 19:15:18,725 log 6320 17388 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-25 19:15:18,734 views 6320 17388 Group not found. Group ID: 999
+ERROR 2023-05-25 19:15:18,745 views 6320 17388 Group not found. Group ID: None
+ERROR 2023-05-25 19:15:18,778 log 6320 17388 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-25 19:15:20,838 views 6320 17388 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-25 19:15:20,838 views 6320 17388 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 19:15:20,838 log 6320 17388 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 19:15:22,896 views 6320 17388 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-25 19:15:22,896 views 6320 17388 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 19:15:22,897 log 6320 17388 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 19:15:24,950 views 6320 17388 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-25 19:15:24,950 views 6320 17388 Error: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2023-05-25 19:15:24,950 log 6320 17388 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 19:15:25,030 views 6320 17388 Error: Group not found.
+ERROR 2023-05-25 19:15:25,051 views 6320 17388 Error: User not found.
+ERROR 2023-05-25 19:15:25,109 views 6320 17388 Error: Internal Server Error
+ERROR 2023-05-25 19:15:25,109 log 6320 17388 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-25 19:15:28,640 views 6320 17388 User not found. User ID: None
+ERROR 2023-05-25 19:15:28,646 views 6320 17388 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-25 19:15:28,646 views 6320 17388 Error: Something went wrong
+ERROR 2023-05-25 19:15:28,646 log 6320 17388 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-25 19:15:28,875 views 6320 17388 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-25 19:15:28,875 views 6320 17388 Error: Test Exception
+ERROR 2023-05-25 19:15:28,875 log 6320 17388 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-25 19:15:29,274 views 6320 17388 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-25 19:15:29,276 log 6320 17388 Internal Server Error: /buy/UserGroupBuys/

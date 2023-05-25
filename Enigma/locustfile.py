@@ -18,4 +18,4 @@ class ListPostUser(HttpUser):
         response = self.client.post('group/ShowMembers/', json=data, headers=headers)
         
         if response.status_code != 200:
-            print(f'Request failed with status code: {response.status_code}')
+            print(f'Request failed with status code: {response.text}')
