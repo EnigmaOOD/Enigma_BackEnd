@@ -119,8 +119,10 @@ class ShowGroups(APIView):
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+import redis
+import json
 
-from django_redis import cache as redis_cache
+from django_redis import get_redis_connection
 
 class ShowMembers(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
@@ -132,11 +134,13 @@ class ShowMembers(APIView):
 
             # Try to fetch the data from cache
             cache_key = f"show_members_{group_id}"
-            cached_data = redis_cache.get(cache_key)
+            redis_conn = get_redis_connection("default")
+            cached_data = redis_conn.get(cache_key)
 
             if cached_data:
                 # If data is found in cache, return it
                 logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
+                cached_data = json.loads(cached_data.decode())
                 return Response(cached_data, status=status.HTTP_200_OK)
 
 
@@ -154,8 +158,10 @@ class ShowMembers(APIView):
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
            
-            redis_cache.set(cache_key, serializer.data, timeout=3600)  # Cache for 1 hour (3600 seconds)
-
+            # Cache the data for future requests
+            serialized_data = json.dumps(serializer.data)
+            redis_conn.set(cache_key, serialized_data)
+            redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
