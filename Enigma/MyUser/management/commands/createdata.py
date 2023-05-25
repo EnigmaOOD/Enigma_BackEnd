@@ -118,26 +118,3 @@ class Command(BaseCommand):
                 consumer.objects.create(buy=Buy, userID=members_list[i].userID, percent=cost/consumer_number)
 
         return   
-            
-
-            
-
-
-        # for _ in range(15):
-        #     pt = fake.text(max_nb_chars=30)
-        #     cid = random.randint(1, 15)
-        #     ptid = random.randint(1, 15)
-        #     Product.objects.create(
-        #         product_type_id=ptid,
-        #         category_id=cid,
-        #         title=pt,
-        #         description=fake.text(max_nb_chars=100),
-        #         regular_price=(round(random.uniform(50.99, 99.99), 2)),
-        #         discount_price=(round(random.uniform(10.99, 49.99), 2)),
-        #     )
-
-        # for i in range(1, 16):
-        #     ProductImage.objects.create(product_id=i, alt_text=fake.text(max_nb_chars=30), is_feature=True)
-
-        # check_category = Category.objects.all().count()
-        # self.stdout.write(self.style.SUCCESS(f"Number of categories: {check_category}"))
