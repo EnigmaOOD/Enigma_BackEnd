@@ -119,6 +119,9 @@ class ShowGroups(APIView):
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
+
+from django_redis import cache as redis_cache
+
 class ShowMembers(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
@@ -126,6 +129,18 @@ class ShowMembers(APIView):
         try:
             cost=[]
             group_id=request.data['groupID']
+
+            # Try to fetch the data from cache
+            cache_key = f"show_members_{group_id}"
+            cached_data = redis_cache.get(cache_key)
+
+            if cached_data:
+                # If data is found in cache, return it
+                logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
+                return Response(cached_data, status=status.HTTP_200_OK)
+
+
+
             members = Members.objects.filter(groupID=request.data['groupID'])
             logger.debug('Number of members retrieved: {}'.format(len(members)))
 
@@ -133,11 +148,15 @@ class ShowMembers(APIView):
                 member_id = member.userID.user_id
 
                  # Call dobet function to get cost for this member
-                cost.append(DebtandCreditforMemberinGroup(self.request.user, group_id)) 
+                cost.append(DebtandCreditforMemberinGroup(member_id, group_id)) 
+
             serializer = ShowMemberSerializer(members, many=True)
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
            
+            redis_cache.set(cache_key, serializer.data, timeout=3600)  # Cache for 1 hour (3600 seconds)
+
+
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
@@ -146,8 +165,9 @@ class ShowMembers(APIView):
 
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-#from django.core.cache import cache
-#from django_redis import get_redis_connection
+
+
+
 
 class GroupInfo(APIView):
     permission_classes = [permissions.IsAuthenticated ]
@@ -157,24 +177,13 @@ class GroupInfo(APIView):
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
 
-            #cache_key = f"group_info:{group_id}"
-            #cached_data = cache.get(cache_key)
-            #if cached_data is not None:
-            #   logger.info('Group info retrieved from cache. Group ID: {}'.format(group_id))
-            #   return Response(cached_data, status=status.HTTP_200_OK)
-
-
             group = Group.objects.get(id=group_id)
 
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
                 logger.warning('User is not a member of the group. Group ID: {}, User email : {}'.format(group_id, request.user.email))
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
-
             serializer = GroupSerializer(group)
-
-            #cache.set(cache_key, serializer.data)
-
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
