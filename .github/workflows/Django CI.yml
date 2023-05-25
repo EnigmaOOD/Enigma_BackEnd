@@ -30,6 +30,10 @@ jobs:
       run: |
         cd Enigma
         python manage.py test
-      
+    - name: Generate Report
+      run: |
+        pip install coverage
+        coverage run manage.py test && coverage report && coverage xml
+
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3

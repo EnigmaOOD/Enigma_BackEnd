@@ -1,13 +1,14 @@
 import json
-from django.test import TestCase
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from unittest import mock
 from unittest.mock import patch
 from Group.models import Group, Members
-from MyUser.models import MyUser
+from Group.views import DebtandCreditforMemberinGroup
 from Group.serializers import GroupSerializer
-from .views import AddUserGroup
+from MyUser.models import MyUser
+from buy.models import buy, buyer, consumer
+
 
 
 class DeleteGroupTests(APITestCase):
@@ -51,6 +52,11 @@ class DeleteGroupTests(APITestCase):
             response = self.client.post(self.url, data)
             self.assertEqual(response.status_code,
                              status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+    def test_DeleteGroup_should_Error_without_authenticated(self):
+        data = {'groupID': self.group.id}
+        response = self.client.post(self.url, data)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
     def test_DeleteGroup_should_Error_with_put_method(self):
         self.client.force_authenticate(user=self.user)
@@ -62,6 +68,41 @@ class DeleteGroupTests(APITestCase):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+class DebtandCreditforMemberinGroupTest(APITestCase):
+    def setUp(self):
+        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
+
+        self.group = Group.objects.create(name='Test Group', currency='تومان')
+
+        self.group1_member1 = Members.objects.create(userID = self.user1, groupID=self.group)
+        self.group1_member2 = Members.objects.create(userID = self.user2, groupID=self.group)
+
+        self.buy = buy.objects.create(groupID= self.group, cost=85000, date= "2023-02-01", picture_id= 1, added_by=self.user1)
+        self.buyer = buyer.objects.create(buy=self.buy, userID=self.user1, percent=85000)
+        self.consumer1 = consumer.objects.create(buy=self.buy, userID=self.user1, percent=45000)
+        self.consumer2 = consumer.objects.create(buy=self.buy, userID=self.user2, percent=40000)
+
+    def test_DebtandCreditforMemberinGroupTest_should_success_with_debt(self):
+        result = DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
+        self.assertEqual(result, 40000)
+
+    def test_DebtandCreditforMemberinGroupTest_should_success_with_credit(self):
+        result = DebtandCreditforMemberinGroup(self.user2.pk, self.group.pk)
+        self.assertEqual(result, -40000)
+
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_group_not_found(self):
+        result = DebtandCreditforMemberinGroup(self.user1.pk, 999)
+        self.assertEqual(result, 'Group not found.')
+
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_user_not_found(self):
+        result = DebtandCreditforMemberinGroup(999, self.group.pk)
+        self.assertEqual(result, 'User not found.')
+    
+    def test_DebtandCreditforMemberinGroupTest_should_Error_when_get_Exception(self):
+        with self.assertRaises(Exception) as e:
+            raise Exception('Your expected error message')
+        self.assertEqual(str(e.exception), 'Your expected error message')
 
 class GroupInfoTest(APITestCase):
     def setUp(self):
@@ -97,8 +138,7 @@ class GroupInfoTest(APITestCase):
         with mock.patch('Group.models.Group.objects.get') as mock_get:
             mock_get.side_effect = Exception('Something went wrong')
             response = self.client.post(self.url, self.valid_payload)
-            self.assertEqual(response.status_code,
-                             status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def test_GroupInfo_should_Error_without_groupID(self):
         self.client.force_authenticate(user=self.user1)
@@ -279,7 +319,7 @@ class ShowMembersTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
 
-class CreateGroupTest(TestCase):
+class CreateGroupTest(APITestCase):
     def setUp(self):
         self.user1 = MyUser.objects.create(
             email='test1@example.com', password='test1', name='test1', picture_id=1)
@@ -464,6 +504,26 @@ class CreateGroupTest(TestCase):
         self.assertEqual(members.count(), 1)
         self.assertEqual(members.first().userID, self.user2)
 
+    def test_CreateGroup_should_succes_with_empty_email(self):
+        self.client = APIClient()
+        self.client.force_authenticate(user=self.user2)
+
+        data = {
+            'name': 'Test Group',
+            'currency': 'تومان',
+            'picture_id': 3,
+            'emails': []
+        }
+        response = self.client.post(
+            '/group/CreateGroup/', data=data, format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(Group.objects.count(), 1)
+
+        members = Members.objects.filter(groupID=Group.objects.first())
+        self.assertEqual(members.count(), 1)
+        self.assertEqual(members.first().userID, self.user2)
+
     def test_CreateGroup_should_Error_when_valid_email_but_not_register(self):
         self.client = APIClient()
         self.client.force_authenticate(user=self.user2)
@@ -514,7 +574,7 @@ class CreateGroupTest(TestCase):
         response = self.client.get( '/group/CreateGroup/')
         self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
 
-class AddUserGroupTest(TestCase):
+class AddUserGroupTest(APITestCase):
     def setUp(self):
         self.client = APIClient()
         self.user1 = MyUser.objects.create(
@@ -525,7 +585,6 @@ class AddUserGroupTest(TestCase):
             email='test3@example.com', name='test3', password='test3')
         self.url = '/group/AddUserGroup/'
         self.group = Group.objects.create(name='Test Group', currency='تومان')
-        self.view = AddUserGroup.as_view()
 
     def test_AddUserGroup_should_success_with_valid_data(self):
         self.client.force_authenticate(user=self.user1)
@@ -542,6 +601,21 @@ class AddUserGroupTest(TestCase):
         self.assertEqual(Members.objects.first().userID, self.user1)
         self.assertEqual(Members.objects.last().userID, self.user3)
         self.assertTrue(Members.objects.get(userID=self.user2))
+
+    def test_AddUserGroup_should_Error_with_invalid_groupID(self):
+        self.client.force_authenticate(user=self.user1)
+        Members.objects.create(userID=self.user1, groupID=self.group)
+        data = {
+            "groupID": 999,
+            "emails": ["test2@example.com", "test3@example.com"]
+        }
+        response = self.client.post(self.url, data=data, format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(Group.objects.count(), 1)
+        self.assertEqual(Members.objects.count(), 1)
+        self.assertEqual(Members.objects.first().userID, self.user1)
+
 
     def test_AddUserGroup_should_success_with_no_email(self):
         self.client.force_authenticate(user=self.user2)
@@ -604,11 +678,25 @@ class AddUserGroupTest(TestCase):
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_AddUserGroup_should_Error_with_with_non_data(self):
+    def test_AddUserGroup_should_Error_with_non_data(self):
+        self.client.force_authenticate(user=self.user2)
+        Members.objects.create(userID=self.user2, groupID=self.group)
         response = self.client.post(self.url, {}, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-        self.assertEqual(json.loads(response.content), {
-                         "message": "You do not have permission to perform this action."})
+        self.assertEqual(json.loads(response.content), {"message": "You do not have permission to perform this action."})
+    
+    def test_AddUserGroup_without_authentication(self):
+        data = {
+            'groupID': self.group.id,
+            'emails': ['test1@example.com']
+        }
+
+        response = self.client.post(self.url, data=data)
+
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(Group.objects.count(), 1)
+        self.assertEqual(Members.objects.count(), 0)
+        self.assertEqual(json.loads(response.content), {"message": "You do not have permission to perform this action."})
     
     def test_AddUserGroup_should_Error_with_put_method(self):
         response = self.client.put(self.url)

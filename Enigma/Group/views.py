@@ -211,6 +211,5 @@ def DebtandCreditforMemberinGroup(user_id, group_id):
             sum -= buy.percent
         return sum
     except Exception as e:
-
         logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
         return str(e)
