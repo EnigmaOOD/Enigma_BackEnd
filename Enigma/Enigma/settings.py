@@ -203,7 +203,7 @@ LOGGING ={
 
     }
 }
-
+"""
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -212,4 +212,4 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     }
-}
+}"""
