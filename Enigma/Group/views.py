@@ -146,6 +146,8 @@ class ShowMembers(APIView):
 
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+#from django.core.cache import cache
+#from django_redis import get_redis_connection
 
 class GroupInfo(APIView):
     permission_classes = [permissions.IsAuthenticated ]
@@ -154,6 +156,14 @@ class GroupInfo(APIView):
         try:
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
+
+            #cache_key = f"group_info:{group_id}"
+            #cached_data = cache.get(cache_key)
+            #if cached_data is not None:
+            #   logger.info('Group info retrieved from cache. Group ID: {}'.format(group_id))
+            #   return Response(cached_data, status=status.HTTP_200_OK)
+
+
             group = Group.objects.get(id=group_id)
 
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
@@ -162,6 +172,10 @@ class GroupInfo(APIView):
 
 
             serializer = GroupSerializer(group)
+
+            #cache.set(cache_key, serializer.data)
+
+
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Group.DoesNotExist:
@@ -170,6 +184,7 @@ class GroupInfo(APIView):
         except:
             logger.error('An error occurred while retrieving group info. Group ID: {}'.format(group_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 
