@@ -1710,3 +1710,47 @@ ERROR 2023-05-24 19:28:17,653 views 10120 7716 Error: Test Exception
 ERROR 2023-05-24 19:28:17,653 log 10120 7716 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-24 19:28:18,670 views 10120 7716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-24 19:28:18,670 log 10120 7716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-25 11:33:09,457 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,473 views 9920 7804 User with email:test3.example.com not found.
+ERROR 2023-05-25 11:33:09,473 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,473 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,473 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,473 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,489 views 9920 7804 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 11:33:09,500 views 9920 7804 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-25 11:33:09,516 views 9920 7804 Invalid group data.
+ERROR 2023-05-25 11:33:09,517 views 9920 7804 User with email:miss_ramazani not found.
+ERROR 2023-05-25 11:33:09,517 views 9920 7804 User with email:miss_ramazani not found.
+ERROR 2023-05-25 11:33:09,517 views 9920 7804 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-25 11:33:09,517 views 9920 7804 Invalid group data.
+ERROR 2023-05-25 11:33:09,517 views 9920 7804 Invalid group data.
+ERROR 2023-05-25 11:33:09,532 views 9920 7804 Invalid group data.
+ERROR 2023-05-25 11:33:09,532 views 9920 7804 Invalid group data.
+ERROR 2023-05-25 11:33:09,532 views 9920 7804 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 11:33:09,532 views 9920 7804 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-25 11:33:09,532 views 9920 7804 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-25 11:33:09,629 views 9920 7804 An error occurred: Something went wrong
+ERROR 2023-05-25 11:33:09,629 log 9920 7804 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-25 11:33:09,642 views 9920 7804 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-25 11:33:09,642 log 9920 7804 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-25 11:33:09,642 views 9920 7804 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-25 11:33:09,642 log 9920 7804 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-25 11:33:09,642 views 9920 7804 Group not found. Group ID: 999
+ERROR 2023-05-25 11:33:09,657 views 9920 7804 Group not found. Group ID: None
+ERROR 2023-05-25 11:33:09,673 log 9920 7804 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-25 11:33:09,689 views 9920 7804 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-25 11:33:09,689 views 9920 7804 Error: Test Exception
+ERROR 2023-05-25 11:33:09,689 log 9920 7804 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-25 11:33:09,769 views 9920 7804 Error: Group not found.
+ERROR 2023-05-25 11:33:09,784 views 9920 7804 Error: User not found.
+ERROR 2023-05-25 11:33:09,831 views 9920 7804 Error: Internal Server Error
+ERROR 2023-05-25 11:33:09,831 log 9920 7804 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-25 11:33:12,711 views 9920 7804 User not found. User ID: None
+ERROR 2023-05-25 11:33:12,711 views 9920 7804 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-25 11:33:12,711 views 9920 7804 Error: Something went wrong
+ERROR 2023-05-25 11:33:12,711 log 9920 7804 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-25 11:33:12,935 views 9920 7804 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-25 11:33:12,935 views 9920 7804 Error: Test Exception
+ERROR 2023-05-25 11:33:12,935 log 9920 7804 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-25 11:33:13,147 views 9920 7804 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-25 11:33:13,147 log 9920 7804 Internal Server Error: /buy/UserGroupBuys/
