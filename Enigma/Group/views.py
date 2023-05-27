@@ -65,13 +65,9 @@ class AddUserGroup(APIView):
 
             emails = data.get('emails', [])
             group_id = data.get('groupID')
-            try:
-                group = Group.objects.get(id=group_id)
-                logger.info(f"Found group with ID:{group_id}")
-
-            except Group.DoesNotExist:
-                logger.error(f"Group with ID:{group_id} not found.")
-                return Response({'message': 'group not found.'}, status=status.HTTP_404_NOT_FOUND)
+            
+            group = Group.objects.get(id=group_id)
+            logger.info(f"Found group with ID:{group_id}")
 
             for emailUser in emails:
                 try:

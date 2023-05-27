@@ -10,7 +10,6 @@ from MyUser.models import MyUser
 from buy.models import buy, buyer, consumer
 
 
-
 class DeleteGroupTests(APITestCase):
     def setUp(self):
         self.client = APIClient()
