@@ -300,6 +300,13 @@ class ShowMembersTests(APITestCase):
         response = self.client.post(self.url, {'groupID': group.id})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+    def test_ShowMembers_should_Error_with_exception(self):
+        self.client.force_authenticate(user=self.user1)
+        with mock.patch('Group.views.DebtandCreditforMemberinGroup', side_effect=Exception('Test Exception')):
+            response = self.client.post(self.url, {'groupID': self.group.id})
+            self.assertEqual(response.status_code,
+                             status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(response.data, {'Error': 'Test Exception'})
 
     def test_ShowMembers_should_Error_with_put_method(self):
         self.client.force_authenticate(user=self.user1)
