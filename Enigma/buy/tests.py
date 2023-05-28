@@ -5,6 +5,11 @@ from MyUser.models import MyUser
 from unittest import mock
 from buy.models import buy, buyer, consumer
 import json
+from django.test import TestCase
+from django.urls import resolve
+from buy.views import GetGroupBuys, UserGroupBuys, CreateBuyView
+from buy.serializers import (BuyerSerializer, ConsumerSerializer, CreateBuySerializer,
+                             BuyListSerializer, MyUserSerializer, BuyerSerializer1, ConsumerSerializer1, BuySerializer)
 
 
 class UserGroupBuysTest(APITestCase):
@@ -272,21 +277,29 @@ class GetGroupBuysTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
 
-
 class CreateBuyViewTest(APITestCase):
     def setUp(self):
         self.client = APIClient()
-        self.user1 = MyUser.objects.create(email='test1@example.com', name='test1', password='test1')
-        self.user2 = MyUser.objects.create(email='test2@example.com', name='test2', password='test2')
-        self.user3 = MyUser.objects.create(email='test3@example.com', name='test3', password='test3')
-        self.user4 = MyUser.objects.create(email='test4@example.com', name='test4', password='test4')
+        self.user1 = MyUser.objects.create(
+            email='test1@example.com', name='test1', password='test1')
+        self.user2 = MyUser.objects.create(
+            email='test2@example.com', name='test2', password='test2')
+        self.user3 = MyUser.objects.create(
+            email='test3@example.com', name='test3', password='test3')
+        self.user4 = MyUser.objects.create(
+            email='test4@example.com', name='test4', password='test4')
 
-        self.group1 = Group.objects.create(name='Test Group1', currency='تومان')
-        self.group2 = Group.objects.create(name='Test Group2', currency='تومان')
+        self.group1 = Group.objects.create(
+            name='Test Group1', currency='تومان')
+        self.group2 = Group.objects.create(
+            name='Test Group2', currency='تومان')
 
-        self.group1_member1 = Members.objects.create(userID = self.user1, groupID=self.group1)
-        self.group1_member2 = Members.objects.create(userID = self.user2, groupID=self.group1)
-        self.group1_member3 = Members.objects.create(userID = self.user3, groupID=self.group1)
+        self.group1_member1 = Members.objects.create(
+            userID=self.user1, groupID=self.group1)
+        self.group1_member2 = Members.objects.create(
+            userID=self.user2, groupID=self.group1)
+        self.group1_member3 = Members.objects.create(
+            userID=self.user3, groupID=self.group1)
 
         self.url = '/buy/CreateBuyView/'
 
@@ -358,7 +371,7 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(list_buyer.count(), 1)
         self.assertEqual(list_buyer.first().userID, self.user1)
         self.assertEqual(list_buyer.first().percent, 85000)
-        
+
         list_consumer = consumer.objects.filter(buy=buy1)
         self.assertEqual(list_consumer.count(), 2)
         self.assertEqual(list_consumer.first().userID, self.user1)
@@ -407,14 +420,14 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(list_buyer.count(), 1)
         self.assertEqual(list_buyer.first().userID, self.user1)
         self.assertEqual(list_buyer.first().percent, 85000)
-        
+
         list_consumer = consumer.objects.filter(buy=buy1)
         self.assertEqual(list_consumer.count(), 2)
         self.assertEqual(list_consumer.first().userID, self.user1)
         self.assertEqual(list_consumer.first().percent, 45000)
         self.assertEqual(list_consumer.last().userID, self.user3)
         self.assertEqual(list_consumer.last().percent, 40000)
-    
+
     def test_CreateBuyView_should_Error_when_date_null(self):
         self.client.force_authenticate(user=self.user1)
 
@@ -443,7 +456,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"date": ['Date has wrong format. Use one of these formats instead: ''YYYY-MM-DD.']})
+        self.assertEqual(json.loads(response.content), {"date": [
+                         'Date has wrong format. Use one of these formats instead: ''YYYY-MM-DD.']})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_no_cost(self):
@@ -474,7 +488,8 @@ class CreateBuyViewTest(APITestCase):
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(buy.objects.count(), 0)
-        self.assertEqual(json.loads(response.content), {"cost":["This field is required."]})
+        self.assertEqual(json.loads(response.content), {
+                         "cost": ["This field is required."]})
 
     def test_CreateBuyView_should_success_when_pictureID_null(self):
         self.client.force_authenticate(user=self.user1)
@@ -516,14 +531,14 @@ class CreateBuyViewTest(APITestCase):
         self.assertEqual(list_buyer.count(), 1)
         self.assertEqual(list_buyer.first().userID, self.user1)
         self.assertEqual(list_buyer.first().percent, 85000)
-        
+
         list_consumer = consumer.objects.filter(buy=buy1)
         self.assertEqual(list_consumer.count(), 2)
         self.assertEqual(list_consumer.first().userID, self.user1)
         self.assertEqual(list_consumer.first().percent, 45000)
         self.assertEqual(list_consumer.last().userID, self.user3)
         self.assertEqual(list_consumer.last().percent, 40000)
-    
+
     def test_CreateBuyView_should_Error_when_pictureID_nagative(self):
         self.client.force_authenticate(user=self.user1)
 
@@ -552,7 +567,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"picture_id": ["Ensure this value is greater than or equal to 0."]})
+        self.assertEqual(json.loads(response.content), {"picture_id": [
+                         "Ensure this value is greater than or equal to 0."]})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_pictureID_more_than_values(self):
@@ -583,9 +599,10 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {"picture_id": ["Ensure this value is less than or equal to 35."]})
+        self.assertEqual(json.loads(response.content), {"picture_id": [
+                         "Ensure this value is less than or equal to 35."]})
         self.assertEqual(buy.objects.count(), 0)
-    
+
     def test_CreateBuyView_should_ErrorPermission_when_user_no_memebers_of_group(self):
         self.client.force_authenticate(user=self.user1)
 
@@ -614,7 +631,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-        self.assertEqual(json.loads(response.content), {"detail":"You do not have permission to perform this action."})
+        self.assertEqual(json.loads(response.content), {
+                         "detail": "You do not have permission to perform this action."})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_buyers_null(self):
@@ -639,7 +657,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {'buyers':['This field is required.']})
+        self.assertEqual(json.loads(response.content), {
+                         'buyers': ['This field is required.']})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_consumers_null(self):
@@ -660,7 +679,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {'consumers':['This field is required.']})
+        self.assertEqual(json.loads(response.content), {
+                         'consumers': ['This field is required.']})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_userID_in_buyers_is_not_a_memeber_of_group(self):
@@ -691,7 +711,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Buyer with group ID 1 and user ID 4 is not a member of ''the group']})
+        self.assertEqual(json.loads(response.content), {'non_field_errors': [
+                         'Buyer with group ID 1 and user ID 4 is not a member of ''the group']})
         self.assertEqual(buy.objects.count(), 0)
 
     def test_CreateBuyView_should_Error_when_userID_in_consumers_is_not_a_memeber_of_group(self):
@@ -722,7 +743,8 @@ class CreateBuyViewTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        self.assertEqual(json.loads(response.content), {'non_field_errors': ['Consumer with group ID 1 and user ID 4 is not a member of ''the group']})
+        self.assertEqual(json.loads(response.content), {'non_field_errors': [
+                         'Consumer with group ID 1 and user ID 4 is not a member of ''the group']})
         self.assertEqual(buy.objects.count(), 0)
 
     # def test_CreateBuyView_should_Error_when_sum_percent_of_buyers_different_with_cost(self):
@@ -785,3 +807,16 @@ class CreateBuyViewTest(APITestCase):
     #     self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
     #     self.assertEqual(buy.objects.count(), 0)
 
+
+class BuyURLTest(TestCase):
+    def test_get_group_buys_url(self):
+        url = '/buy/GetGroupBuys/'
+        self.assertEqual(resolve(url).func.view_class, GetGroupBuys)
+
+    def test_user_group_buys_url(self):
+        url = '/buy/UserGroupBuys/'
+        self.assertEqual(resolve(url).func.view_class, UserGroupBuys)
+
+    def test_create_buy_view_url(self):
+        url = '/buy/CreateBuyView/'
+        self.assertEqual(resolve(url).func.view_class, CreateBuyView)

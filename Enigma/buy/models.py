@@ -14,7 +14,7 @@ class buy(models.Model):
         Group, related_name='groupID', on_delete=models.CASCADE)
     
     description = models.TextField(null=True, blank=True, max_length=100)
-    cost = models.BigIntegerField()
+    cost = models.FloatField()
     date = models.DateField(null=True, blank=True, default=timezone.now)
     picture_id = models.IntegerField(blank=False, default=0, validators=[MinValueValidator(0), MaxValueValidator(35)])
     added_by =  models.ForeignKey(MyUser, on_delete=models.CASCADE, blank=True)

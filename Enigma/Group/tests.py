@@ -4,10 +4,12 @@ from rest_framework import status
 from unittest import mock
 from unittest.mock import patch
 from Group.models import Group, Members
-from Group.views import DebtandCreditforMemberinGroup
 from Group.serializers import GroupSerializer
 from MyUser.models import MyUser
 from buy.models import buy, buyer, consumer
+from django.test import TestCase
+from django.urls import resolve
+from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups, DebtandCreditforMemberinGroup
 
 
 class DeleteGroupTests(APITestCase):
@@ -720,3 +722,28 @@ class AddUserGroupTest(APITestCase):
     def test_AddUserGroup_should_Error_with_get_method(self):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+
+class GroupURLTest(TestCase):
+    def test_group_info_url(self):
+        url = '/group/GroupInfo/'
+        self.assertEqual(resolve(url).func.view_class, GroupInfo)
+
+    def test_delete_group_url(self):
+        url = '/group/DeleteGroup/'
+        self.assertEqual(resolve(url).func.view_class, DeleteGroup)
+
+    def test_show_members_url(self):
+        url = '/group/ShowMembers/'
+        self.assertEqual(resolve(url).func.view_class, ShowMembers)
+
+    def test_show_groups_url(self):
+        url = '/group/ShowGroups/'
+        self.assertEqual(resolve(url).func.view_class, ShowGroups)
+
+    def test_create_group_url(self):
+        url = '/group/CreateGroup/'
+        self.assertEqual(resolve(url).func.view_class, CreateGroup)
+
+    def test_add_user_group_url(self):
+        url = '/group/AddUserGroup/'
+        self.assertEqual(resolve(url).func.view_class, AddUserGroup)

@@ -9,6 +9,10 @@ from MyUser.models import MyUser
 from MyUser.serializers import UpdateUserSerializer
 from Group.models import Group, Members
 from buy.models import buy, buyer, consumer
+from django.test import TestCase
+from django.urls import resolve
+from rest_framework.authtoken.views import obtain_auth_token
+from MyUser.views import RegisterUser, VerifyEmail, UserInfo, EditProfile, LeaveGroup
 
 
 class RegisterAndAuthenticateTest(APITestCase):
@@ -523,3 +527,28 @@ class DebtandCreditforMemberinGroupTest(APITestCase):
         with self.assertRaises(Exception) as e:
             raise Exception('Your expected error message')
         self.assertEqual(str(e.exception), 'Your expected error message')
+
+class APITestCase(TestCase):
+    def test_token_url(self):
+        url = '/auth/token/'
+        self.assertEqual(resolve(url).func, obtain_auth_token)
+
+    def test_register_url(self):
+        url = '/auth/register/'
+        self.assertEqual(resolve(url).func.view_class, RegisterUser)
+
+    def test_verify_email_url(self):
+        url = '/auth/verify-email/'
+        self.assertEqual(resolve(url).func.view_class, VerifyEmail)
+
+    def test_user_info_url(self):
+        url = '/auth/UserInfo/'
+        self.assertEqual(resolve(url).func.view_class, UserInfo)
+
+    def test_edit_profile_url(self):
+        url = '/auth/EditProfile/'
+        self.assertEqual(resolve(url).func.view_class, EditProfile)
+
+    def test_leave_group_url(self):
+        url = '/auth/LeaveGroup/'
+        self.assertEqual(resolve(url).func.view_class, LeaveGroup)
