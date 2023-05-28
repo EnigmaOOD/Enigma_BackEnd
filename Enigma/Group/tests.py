@@ -626,7 +626,7 @@ class AddUserGroupTest(APITestCase):
         }
         response = self.client.post(self.url, data=data, format='json')
 
-        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
         self.assertEqual(Group.objects.count(), 1)
         self.assertEqual(Members.objects.count(), 1)
         self.assertEqual(Members.objects.first().userID, self.user1)
