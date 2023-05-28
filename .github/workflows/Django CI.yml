@@ -28,11 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r .github/workflows/requirements.txt
 
-    - name: Start Redis Server
-      run: |
-        # Start the Redis server
-        redis-server --daemonize yes
-
     - name: Run Tests
       run: |
         cd Enigma
