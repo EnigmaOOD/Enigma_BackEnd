@@ -17,6 +17,8 @@ from rest_framework.response import Response
 from rest_framework import status
 import logging
 import time
+#import json
+#from django_redis import get_redis_connection
 
 
 
@@ -111,8 +113,6 @@ class EditProfile(UpdateAPIView):
         logger.info(f"User:{self.request.user.pk} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
         return Response(serializer.data, status=status.HTTP_200_OK)
     
-import json
-from django_redis import get_redis_connection
 
 class UserInfo(APIView):
     permission_classes = [permissions.IsAuthenticated]

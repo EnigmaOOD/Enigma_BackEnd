@@ -11,6 +11,9 @@ from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditM
 from MyUser.models import MyUser
 from .permissions import IsGroupUser
 import logging
+#import redis
+#import json
+#from django_redis import get_redis_connection
 
 logger = logging.getLogger('django')
 
@@ -126,17 +129,16 @@ class ShowMembers(APIView):
         try:
             cost=[]
             group_id=request.data['groupID']
-
-            # Try to fetch the data from cache
+            """
+                # Try to fetch the data from cache
             cache_key = f"show_members_{group_id}"
             redis_conn = get_redis_connection("default")
             cached_data = redis_conn.get(cache_key)
-
             if cached_data:
-                # If data is found in cache, return it
                 logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
                 cached_data = json.loads(cached_data.decode())
                 return Response(cached_data, status=status.HTTP_200_OK)
+            """
 
 
 
@@ -153,10 +155,15 @@ class ShowMembers(APIView):
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
            
-            # Cache the data for future requests
+            """
+                # Cache the data for future requests
+            #serialized_data = json.dumps(serializer.data)
+            #redis_conn.set(cache_key, serialized_data)
+            # redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
             serialized_data = json.dumps(serializer.data)
             redis_conn.set(cache_key, serialized_data)
             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
+            """
 
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
@@ -178,6 +185,15 @@ class GroupInfo(APIView):
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
 
+            """ 
+            cache_key = f"group_info:{group_id}"
+            redis_conn = get_redis_connection("default")
+            cached_data = redis_conn.get(cache_key)
+            if cached_data:
+                cached_data = json.loads(cached_data.decode())
+                return Response(cached_data, status=status.HTTP_200_OK)
+            else:
+            """
             group = Group.objects.get(id=group_id)
 
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
@@ -185,6 +201,10 @@ class GroupInfo(APIView):
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GroupSerializer(group)
+            
+                #serialized_data = json.dumps(serializer.data)
+                #redis_conn.set(cache_key, serialized_data)
+                #redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
