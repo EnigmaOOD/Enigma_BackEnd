@@ -204,7 +204,7 @@ LOGGING ={
 
     }
 }
-
+"""
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -216,3 +216,4 @@ CACHES = {
 }
 
 INTERNAL_IPS =['127.0.0.1']
+"""
