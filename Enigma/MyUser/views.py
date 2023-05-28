@@ -16,7 +16,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 import logging
-from django.core.cache import cache
 import time
 
 
@@ -112,6 +111,8 @@ class EditProfile(UpdateAPIView):
         logger.info(f"User:{self.request.user.pk} data updated successfully.(name:{self.request.user.name}, picture_id:{self.request.user.picture_id})")
         return Response(serializer.data, status=status.HTTP_200_OK)
     
+import json
+from django_redis import get_redis_connection
 
 class UserInfo(APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -121,7 +122,16 @@ class UserInfo(APIView):
             if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-                
+            
+            
+            #cache_key = f"user_info:{user.user_id}"
+            #redis_conn = get_redis_connection()
+            #cached_data = redis_conn.get(cache_key)
+            #if cached_data:
+                # If cached data exists, return it
+            #    user_info = json.loads(cached_data.decode())
+            #else:
+            
             user_info = {
                 'user_id': user.user_id,
                 'email': user.email,
@@ -131,6 +141,10 @@ class UserInfo(APIView):
                 'is_admin': user.is_admin,
                 'is_staff': user.is_staff,
             }
+            
+            
+            #    redis_conn.set(cache_key, json.dumps(user_info))
+            #   redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
             logger.info('User information retrieved successfully. User ID: {}, Email: {}'.format(user.user_id, user.email))
             logger.debug('User information: {}'.format(user_info))
