@@ -1798,3 +1798,61 @@ ERROR 2023-05-25 12:11:53,619 views 2812 5772 Error: Test Exception
 ERROR 2023-05-25 12:11:53,619 log 2812 5772 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-05-25 12:11:53,818 views 2812 5772 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-05-25 12:11:53,818 log 2812 5772 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-05-28 18:25:36,161 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,187 views 16832 20164 User with email:test3.example.com not found.
+ERROR 2023-05-28 18:25:36,202 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,213 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,220 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,227 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,242 views 16832 20164 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-28 18:25:36,311 views 16832 20164 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-05-28 18:25:36,319 views 16832 20164 Invalid group data.
+ERROR 2023-05-28 18:25:36,334 views 16832 20164 User with email:miss_ramazani not found.
+ERROR 2023-05-28 18:25:36,339 views 16832 20164 User with email:miss_ramazani not found.
+ERROR 2023-05-28 18:25:36,340 views 16832 20164 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-28 18:25:36,355 views 16832 20164 Invalid group data.
+ERROR 2023-05-28 18:25:36,365 views 16832 20164 Invalid group data.
+ERROR 2023-05-28 18:25:36,371 views 16832 20164 Invalid group data.
+ERROR 2023-05-28 18:25:36,379 views 16832 20164 Invalid group data.
+ERROR 2023-05-28 18:25:36,393 views 16832 20164 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-28 18:25:36,405 views 16832 20164 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-05-28 18:25:36,406 views 16832 20164 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-05-28 18:25:36,651 views 16832 20164 An error occurred: Something went wrong
+ERROR 2023-05-28 18:25:36,651 log 16832 20164 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-05-28 18:25:36,686 views 16832 20164 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-05-28 18:25:36,687 log 16832 20164 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-28 18:25:36,703 views 16832 20164 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-05-28 18:25:36,704 log 16832 20164 Internal Server Error: /group/GroupInfo/
+ERROR 2023-05-28 18:25:36,716 views 16832 20164 Group not found. Group ID: 999
+ERROR 2023-05-28 18:25:36,733 views 16832 20164 Group not found. Group ID: None
+ERROR 2023-05-28 18:25:36,772 views 16832 20164 An error occurred: test exception
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\Group\views.py", line 106, in post
+    user_groups = Members.objects.filter(userID=self.request.user.user_id).values_list('groupID', flat=True)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\unittest\mock.py", line 1118, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\unittest\mock.py", line 1122, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\unittest\mock.py", line 1177, in _execute_mock_call
+    raise effect
+Exception: test exception
+ERROR 2023-05-28 18:25:36,779 log 16832 20164 Internal Server Error: /group/ShowGroups/
+ERROR 2023-05-28 18:25:36,837 views 16832 20164 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-05-28 18:25:36,837 views 16832 20164 Error: Test Exception
+ERROR 2023-05-28 18:25:36,838 log 16832 20164 Internal Server Error: /group/ShowMembers/
+ERROR 2023-05-28 18:25:37,023 views 16832 20164 Error: Group not found.
+ERROR 2023-05-28 18:25:37,051 views 16832 20164 Error: User not found.
+ERROR 2023-05-28 18:25:37,173 views 16832 20164 Error: Internal Server Error
+ERROR 2023-05-28 18:25:37,174 log 16832 20164 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-05-28 18:25:39,219 views 16832 20164 User not found. User ID: None
+ERROR 2023-05-28 18:25:39,228 views 16832 20164 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-05-28 18:25:39,228 views 16832 20164 Error: Something went wrong
+ERROR 2023-05-28 18:25:39,228 log 16832 20164 Internal Server Error: /auth/UserInfo/
+ERROR 2023-05-28 18:25:39,572 views 16832 20164 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-05-28 18:25:39,572 views 16832 20164 Error: Test Exception
+ERROR 2023-05-28 18:25:39,573 log 16832 20164 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-05-28 18:25:39,995 views 16832 20164 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-05-28 18:25:39,996 log 16832 20164 Internal Server Error: /buy/UserGroupBuys/
