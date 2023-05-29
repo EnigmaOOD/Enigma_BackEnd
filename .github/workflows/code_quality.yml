@@ -12,8 +12,6 @@ jobs:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-        - name: Run Qodana analysis
-          uses: JetBrains/qodana-action@*
         - name: 'Qodana Scan'
           uses: JetBrains/qodana-action@main
           env:
