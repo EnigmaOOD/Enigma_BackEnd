@@ -6,7 +6,7 @@ on:
     branches:
       - main
       - 'releases/*'
-#####
+######
 jobs:
   qodana:
     timeout-minutes: 15
