@@ -552,3 +552,41 @@ class APITestCase(TestCase):
     def test_leave_group_url(self):
         url = '/auth/LeaveGroup/'
         self.assertEqual(resolve(url).func.view_class, LeaveGroup)
+
+class MyUserModelTest(APITestCase):
+    def test_create_user(self):
+        # Test creating a regular user
+        user = MyUser.objects.create_user(email='test@example.com', name='Test User', password='password', picture_id=10)
+        self.assertEqual(user.email, 'test@example.com')
+        self.assertEqual(user.name, 'Test User')
+        self.assertTrue(user.check_password('password'))
+        self.assertFalse(user.is_staff)
+        self.assertFalse(user.is_active)
+
+        with self.assertRaises(ValueError):
+            MyUser.objects.create_user(email='', name='Test User', password='password', picture_id=10)
+
+    def test_create_superuser(self):
+        superuser = MyUser.objects.create_superuser(email='admin@example.com', name='Admin', password='adminpass', picture_id=5)
+        self.assertEqual(superuser.email, 'admin@example.com')
+        self.assertEqual(superuser.name, 'Admin')
+        self.assertTrue(superuser.check_password('adminpass'))
+        self.assertTrue(superuser.is_staff)
+        self.assertTrue(superuser.is_superuser)
+        self.assertTrue(superuser.is_active)
+
+    def test_str_representation(self):
+        user = MyUser.objects.create_user(email='test@example.com', name='Test User', password='password', picture_id=10)
+        self.assertEqual(str(user), 'Test User')
+
+    def test_has_perm(self):
+        user = MyUser.objects.create_user(email='test@example.com', name='Test User', password='password', picture_id=10)
+        self.assertTrue(user.has_perm('some_permission'))
+    
+    def test_has_module_perms(self):
+        user = MyUser.objects.create_user(email='test@example.com', name='Test User', password='password', picture_id=10)
+        self.assertTrue(user.has_module_perms('some_module'))
+    
+    def test_get_is_staff(self):
+        user = MyUser.objects.create_user(email='test@example.com', name='Test User', password='password', picture_id=10)
+        self.assertFalse(user.get_is_staff())
