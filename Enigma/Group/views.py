@@ -142,8 +142,7 @@ class ShowMembers(APIView):
 
             cache_key = f"show_members_{group_id}"
             cached_data = cache_get(cache_key)
-            print(cached_data)
-            print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+
             if cached_data != None:
                  return Response(cached_data, status=status.HTTP_200_OK)
 
@@ -169,11 +168,8 @@ class ShowMembers(APIView):
             redis_conn.set(cache_key, serialized_data)
             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
             """
-            serialized_data = json.dumps(serializer.data)
 
-            cache_set(cache_key, serialized_data)
-            cached_data = cache_get(cache_key)
-            print(cached_data)
+            cache_set(cache_key, serializer.data)
 
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)

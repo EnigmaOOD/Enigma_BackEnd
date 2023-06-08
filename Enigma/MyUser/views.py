@@ -7,7 +7,7 @@ from rest_framework.exceptions import ValidationError
 from .utils import Util
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
-
+from redis_cache import cache_get, cache_set
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
@@ -131,7 +131,12 @@ class UserInfo(APIView):
                 # If cached data exists, return it
             #    user_info = json.loads(cached_data.decode())
             #else:
-            
+            cache_key = f"user_info:{user.user_id}"
+            cached_data = cache_get(cache_key)
+
+            if cached_data != None:
+                 return Response(cached_data, status=status.HTTP_200_OK)
+
             user_info = {
                 'user_id': user.user_id,
                 'email': user.email,
@@ -148,6 +153,8 @@ class UserInfo(APIView):
 
             logger.info('User information retrieved successfully. User ID: {}, Email: {}'.format(user.user_id, user.email))
             logger.debug('User information: {}'.format(user_info))
+            
+            cache_set(cache_key, user_info)
 
             return Response({'user_info': user_info})
         except Exception as e:
