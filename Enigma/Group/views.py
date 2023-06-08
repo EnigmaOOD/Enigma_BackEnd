@@ -5,6 +5,7 @@ from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
 from rest_framework.views import APIView
 from rest_framework import status
+from redis_cache import cache_get, cache_set
 from Group.models import Group, Members
 from buy.models import buyer, consumer
 from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
@@ -116,12 +117,6 @@ class ShowGroups(APIView):
         except Exception as e:
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-
-import redis
-import json
-
-from django_redis import get_redis_connection
-
 class ShowMembers(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
@@ -185,6 +180,10 @@ class GroupInfo(APIView):
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
 
+            cache_key = f"group_info:{group_id}"
+            cached_data = cache_get(cache_key)
+            if cached_data:
+                 return Response(cached_data, status=status.HTTP_200_OK)
             """ 
             cache_key = f"group_info:{group_id}"
             redis_conn = get_redis_connection("default")
@@ -201,7 +200,8 @@ class GroupInfo(APIView):
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GroupSerializer(group)
-            
+            cache_set(cache_key, serializer)
+
                 #serialized_data = json.dumps(serializer.data)
                 #redis_conn.set(cache_key, serialized_data)
                 #redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
