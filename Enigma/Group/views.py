@@ -1,4 +1,5 @@
 from asyncio.log import logger
+from asyncio.windows_events import NULL
 
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
@@ -182,7 +183,8 @@ class GroupInfo(APIView):
 
             cache_key = f"group_info:{group_id}"
             cached_data = cache_get(cache_key)
-            if cached_data:
+
+            if cached_data != None:
                  return Response(cached_data, status=status.HTTP_200_OK)
             """ 
             cache_key = f"group_info:{group_id}"
@@ -200,7 +202,8 @@ class GroupInfo(APIView):
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GroupSerializer(group)
-            cache_set(cache_key, serializer)
+            cache_set(cache_key, serializer.data)
+
 
                 #serialized_data = json.dumps(serializer.data)
                 #redis_conn.set(cache_key, serialized_data)

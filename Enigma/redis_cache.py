@@ -11,6 +11,7 @@ def cache_set(key, data):
     redis_conn.set(key, serialized_data)
     #redis_conn.expire(key, expire)
     redis_conn.expire(key, 3600) #تغییر داده شود
+    return
 
 def cache_get(key):
     redis_conn = get_redis_connection("default")
