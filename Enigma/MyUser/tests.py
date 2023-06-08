@@ -181,13 +181,13 @@ class UserInfoTestCase(APITestCase):
         self.client.force_authenticate(user=self.user)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data['user_info']['user_id'], (self.user.user_id))
-        self.assertEqual(response.data['user_info']['email'], self.user.email)
-        self.assertEqual(response.data['user_info']['name'], self.user.name)
-        self.assertEqual(response.data['user_info']['picture_id'], self.user.picture_id)
-        self.assertEqual(response.data['user_info']['is_active'], self.user.is_active)
-        self.assertEqual(response.data['user_info']['is_admin'], self.user.is_admin)
-        self.assertEqual(response.data['user_info']['is_staff'], self.user.is_staff)
+        self.assertEqual(response.data['user_id'], (self.user.user_id))
+        self.assertEqual(response.data['email'], self.user.email)
+        self.assertEqual(response.data['name'], self.user.name)
+        self.assertEqual(response.data['picture_id'], self.user.picture_id)
+        self.assertEqual(response.data['is_active'], self.user.is_active)
+        self.assertEqual(response.data['is_admin'], self.user.is_admin)
+        self.assertEqual(response.data['is_staff'], self.user.is_staff)
     
 
 
@@ -212,7 +212,7 @@ class UserInfoTestCase(APITestCase):
         response = self.client.post(self.url, data={'extra_field': 'extra_value'})
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         # Check that the extra field is not present in the response
-        self.assertFalse('extra_field' in response.data['user_info'])
+        self.assertFalse('extra_field' in response.data)
     
     def test_UserInfo_should_Error_when_nonexistent_user(self):
         # Test that a nonexistent user returns a 404 Not Found error

@@ -116,6 +116,7 @@ class EditProfile(UpdateAPIView):
 
 class UserInfo(APIView):
     permission_classes = [permissions.IsAuthenticated]
+    
     def post(self, request):
         try:
             user = self.request.user
@@ -131,12 +132,13 @@ class UserInfo(APIView):
                 # If cached data exists, return it
             #    user_info = json.loads(cached_data.decode())
             #else:
+
+            
             cache_key = f"user_info:{user.user_id}"
             cached_data = cache_get(cache_key)
-
             if cached_data != None:
                  return Response(cached_data, status=status.HTTP_200_OK)
-
+            
             user_info = {
                 'user_id': user.user_id,
                 'email': user.email,
@@ -156,7 +158,7 @@ class UserInfo(APIView):
             
             cache_set(cache_key, user_info)
 
-            return Response({'user_info': user_info})
+            return Response(user_info)
         except Exception as e:
             logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
             logger.error('Error: '+ str(e))
