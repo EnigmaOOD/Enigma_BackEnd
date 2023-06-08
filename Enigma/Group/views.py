@@ -118,6 +118,9 @@ class ShowGroups(APIView):
         except Exception as e:
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
+import json
+
 class ShowMembers(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
@@ -137,6 +140,14 @@ class ShowMembers(APIView):
             """
 
 
+            cache_key = f"show_members_{group_id}"
+            cached_data = cache_get(cache_key)
+            print(cached_data)
+            print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+            if cached_data != None:
+                 return Response(cached_data, status=status.HTTP_200_OK)
+
+
 
             members = Members.objects.filter(groupID=request.data['groupID'])
             logger.debug('Number of members retrieved: {}'.format(len(members)))
@@ -153,20 +164,22 @@ class ShowMembers(APIView):
            
             """
                 # Cache the data for future requests
-            #serialized_data = json.dumps(serializer.data)
-            #redis_conn.set(cache_key, serialized_data)
-            # redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
+
             serialized_data = json.dumps(serializer.data)
             redis_conn.set(cache_key, serialized_data)
             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
             """
+            serialized_data = json.dumps(serializer.data)
+
+            cache_set(cache_key, serialized_data)
+            cached_data = cache_get(cache_key)
+            print(cached_data)
 
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
             logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
             logger.error('Error: {}'.format(str(e)))
-
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
