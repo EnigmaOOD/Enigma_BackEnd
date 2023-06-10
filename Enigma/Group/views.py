@@ -216,6 +216,14 @@ class GroupInfo(APIView):
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
 
+            cache_key = f"group_info:{group_id}"
+            cache = RedisCache()
+            cached_data = cache.get(cache_key)
+            if cached_data:
+                logger.info('GroupInfo retrieved successfully from cache for Group ID: {}'.format(group_id))
+                cached_data = json.loads(cached_data)
+                return Response(cached_data, status=status.HTTP_200_OK)
+
             """ 
             cache_key = f"group_info:{group_id}"
             redis_conn = get_redis_connection("default")
@@ -236,6 +244,7 @@ class GroupInfo(APIView):
                 #serialized_data = json.dumps(serializer.data)
                 #redis_conn.set(cache_key, serialized_data)
                 #redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
+            cache.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
