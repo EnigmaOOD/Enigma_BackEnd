@@ -181,15 +181,13 @@ class UserInfoTestCase(APITestCase):
         self.client.force_authenticate(user=self.user)
         response = self.client.post(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        print(type(response.data))
-        response_data = json.loads(response.data)
-        self.assertEqual(response_data['user_id'], self.user.user_id)
-        self.assertEqual(response_data['email'], self.user.email)
-        self.assertEqual(response_data['name'], self.user.name)
-        self.assertEqual(response_data['picture_id'], self.user.picture_id)
-        self.assertEqual(response_data['is_active'], self.user.is_active)
-        self.assertEqual(response_data['is_admin'], self.user.is_admin)
-        self.assertEqual(response_data['is_staff'], self.user.is_staff)
+        self.assertEqual(response.data['user_id'], self.user.user_id)
+        self.assertEqual(response.data['email'], self.user.email)
+        self.assertEqual(response.data['name'], self.user.name)
+        self.assertEqual(response.data['picture_id'], self.user.picture_id)
+        self.assertEqual(response.data['is_active'], self.user.is_active)
+        self.assertEqual(response.data['is_admin'], self.user.is_admin)
+        self.assertEqual(response.data['is_staff'], self.user.is_staff)
     
 
 

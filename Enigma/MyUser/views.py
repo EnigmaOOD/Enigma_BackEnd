@@ -120,23 +120,16 @@ class UserInfo(APIView):
     def post(self, request):
         try:
             user = self.request.user
-            print(user.is_admin)
-            print("********************************")
             if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-            print(user.is_admin)
-            print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
             cache_key = f"user_info:{user.user_id}"
             cache = RedisCache()
-            # Try to fetch the data from cache
+
             cached_data = cache.get(cache_key)
-            print(user.is_admin)
-            print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
             if cached_data:
                 logger.info('UserInfo retrieved successfully from cache for Group ID: {}'.format(user.user_id))
                 cached_data = json.loads(cached_data)
-                print(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
             
             #cache_key = f"user_info:{user.user_id}"
@@ -156,7 +149,7 @@ class UserInfo(APIView):
                 'is_admin': user.is_admin,
                 'is_staff': user.is_staff,
             }
-            cache.set(cache_key, json.dumps(user_info), 3600)
+            cache.set(cache_key, user_info, 3600)
             #    redis_conn.set(cache_key, json.dumps(user_info))
             #   redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
