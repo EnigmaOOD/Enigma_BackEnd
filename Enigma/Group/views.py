@@ -6,16 +6,18 @@ from rest_framework.exceptions import PermissionDenied
 from rest_framework import permissions
 from rest_framework.views import APIView
 from rest_framework import status
-from redis_cache import cache_get, cache_set
+
 from Group.models import Group, Members
 from buy.models import buyer, consumer
-from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from MyUser.models import MyUser
+from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
 from .permissions import IsGroupUser
 import logging
-#import redis
-#import json
-#from django_redis import get_redis_connection
+
+import redis
+import json
+from redis_cache import RedisCache
+from django_redis import get_redis_connection
 
 logger = logging.getLogger('django')
 
@@ -118,58 +120,89 @@ class ShowGroups(APIView):
         except Exception as e:
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+# class ShowMembers(APIView):
+#     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
+
+#     def post(self, request):
+#         try:
+#             cost=[]
+#             group_id=request.data['groupID']
+#             """
+#                 # Try to fetch the data from cache
+#             cache_key = f"show_members_{group_id}"
+#             redis_conn = get_redis_connection("default")
+#             cached_data = redis_conn.get(cache_key)
+#             if cached_data:
+#                 logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
+#                 cached_data = json.loads(cached_data.decode())
+#                 return Response(cached_data, status=status.HTTP_200_OK)
+#             """
+
+#             members = Members.objects.filter(groupID=request.data['groupID'])
+#             logger.debug('Number of members retrieved: {}'.format(len(members)))
+
+#             for member in members:
+#                 member_id = member.userID.user_id
+
+#                 # Call dobet function to get cost for this member
+#                 cost.append(DebtandCreditforMemberinGroup(member_id, group_id)) 
+
+#             serializer = ShowMemberSerializer(members, many=True)
+#             for member in reversed(serializer.data):
+#                 member['cost'] = cost.pop()
+           
+#             """
+#                 # Cache the data for future requests
+
+#             serialized_data = json.dumps(serializer.data)
+#             redis_conn.set(cache_key, serialized_data)
+#             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
+#             """
+
+#             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
+#             return Response(serializer.data, status=status.HTTP_200_OK)
+#         except Exception as e:
+#             logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
+#             logger.error('Error: {}'.format(str(e)))
+#             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 class ShowMembers(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
 
     def post(self, request):
         try:
-            cost=[]
-            group_id=request.data['groupID']
-            """
-                # Try to fetch the data from cache
+            cost = []
+            group_id = request.data['groupID']
             cache_key = f"show_members_{group_id}"
-            redis_conn = get_redis_connection("default")
-            cached_data = redis_conn.get(cache_key)
+            cache = RedisCache()
+            # Try to fetch the data from cache
+            cached_data = cache.get(cache_key)
             if cached_data:
                 logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
-                cached_data = json.loads(cached_data.decode())
+                cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
-            """
-            cache_key = f"show_members_{group_id}"
-            cached_data = cache_get(cache_key)
 
-            if cached_data != None:
-                 return Response(cached_data, status=status.HTTP_200_OK)
-
-            members = Members.objects.filter(groupID=request.data['groupID'])
+            members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
 
             for member in members:
                 member_id = member.userID.user_id
-
-                # Call dobet function to get cost for this member
-                cost.append(DebtandCreditforMemberinGroup(member_id, group_id)) 
+                cost.append(DebtandCreditforMemberinGroup(member_id, group_id))
 
             serializer = ShowMemberSerializer(members, many=True)
             for member in reversed(serializer.data):
                 member['cost'] = cost.pop()
-           
-            """
-                # Cache the data for future requests
 
-            serialized_data = json.dumps(serializer.data)
-            redis_conn.set(cache_key, serialized_data)
-            redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
-            """
-            
-            cache_set(cache_key, serializer.data)
+            # Cache the data for future requests
+            cache.set(cache_key, serializer.data, 3600)
 
-            logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
+            logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(group_id, serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
-            logger.error('An error occurred while retrieving members for Group ID: {}'.format(request.data['groupID']))
+            logger.error('An error occurred while retrieving members for Group ID: {}'.format(group_id))
             logger.error('Error: {}'.format(str(e)))
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 
@@ -183,11 +216,6 @@ class GroupInfo(APIView):
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
 
-            cache_key = f"group_info:{group_id}"
-            cached_data = cache_get(cache_key)
-
-            if cached_data != None:
-                 return Response(cached_data, status=status.HTTP_200_OK)
             """ 
             cache_key = f"group_info:{group_id}"
             redis_conn = get_redis_connection("default")
@@ -204,8 +232,6 @@ class GroupInfo(APIView):
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GroupSerializer(group)
-            cache_set(cache_key, serializer.data)
-
 
                 #serialized_data = json.dumps(serializer.data)
                 #redis_conn.set(cache_key, serialized_data)

@@ -2,22 +2,28 @@ import json
 import redis
 from django.conf import settings
 from django_redis import get_redis_connection
+from abc import ABC, abstractmethod
 
-#def cache_set(key, data, expire=settings.CACHE_EXPIRATION):
-def cache_set(key, data):
-    redis_conn = get_redis_connection("default", default=bool)
-    #redis_conn = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
-    serialized_data = json.dumps(data, default=bool)
-    redis_conn.set(key, serialized_data)
-    #redis_conn.expire(key, expire)
-    redis_conn.expire(key, 3600) #تغییر داده شود
-    return
+class CacheInterface(ABC):
+    @abstractmethod
+    def get(self, key):
+        pass
+    
+    @abstractmethod
+    def set(self, key, value, expiration):
+        pass
 
-def cache_get(key):
-    redis_conn = get_redis_connection("default")
-    #redis_conn = redis.Redis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
-    cached_data = redis_conn.get(key)
-    if cached_data:
-        deserialized_data = json.loads(cached_data.decode())
-        return deserialized_data
-    return None
+
+class RedisCache(CacheInterface):
+    def __init__(self):
+        self.redis_conn = get_redis_connection("default")
+
+    def get(self, key):
+        cached_data = self.redis_conn.get(key)
+        return cached_data.decode() if cached_data else None
+
+    def set(self, key, value, expiration):
+        serialized_value = json.dumps(value)
+        self.redis_conn.set(key, serialized_value)
+        self.redis_conn.expire(key, expiration)
+        return

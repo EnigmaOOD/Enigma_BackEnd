@@ -13,6 +13,7 @@ from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowM
 
 
 class DeleteGroupTests(APITestCase):
+    #arrange
     def setUp(self):
         self.client = APIClient()
         self.user = MyUser.objects.create(
@@ -645,13 +646,16 @@ class AddUserGroupTest(APITestCase):
         self.assertEqual(Members.objects.count(), 1)
 
     def test_AddUserGroup_should_Error_with_invalid_email(self):
+
         self.client.force_authenticate(user=self.user1)
         Members.objects.create(userID=self.user1, groupID=self.group)
         data = {
             "groupID": self.group.id,
             "emails": ["test2@example.com", "test3.example.com", "test3@example.com"]
         }
+
         response = self.client.post(self.url, data, format='json')
+        
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertEqual(json.loads(response.content), {
                          "message": "user not found."})
