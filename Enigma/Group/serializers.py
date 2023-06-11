@@ -40,8 +40,3 @@ class ShowMemberSerializer(serializers.ModelSerializer):
 #     emails = serializers.ListField(child=serializers.EmailField())
 #     groupID = serializers.IntegerField()
 
-
-class AmountDebtandCreditMemberSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Members
-        fields = "__all__"

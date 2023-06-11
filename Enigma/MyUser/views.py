@@ -1,9 +1,15 @@
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
-
-
 from rest_framework import permissions, generics
 from rest_framework.exceptions import ValidationError
+from debt import DebtAndCreditCalculate
+from .models import MyUser
+from Group.models import Group, Members
+from .serializers import MyUserSerializer, UpdateUserSerializer
+from rest_framework import permissions, generics
+from rest_framework.exceptions import ValidationError
+from .utils import Util
+from django.contrib.sites.shortcuts import get_current_site
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
@@ -19,7 +25,6 @@ from .serializers import MyUserSerializer, UpdateUserSerializer
 from .utils import Util
 
 import logging
-import time
 import json
 import dependencies
 
@@ -174,8 +179,8 @@ class LeaveGroup(APIView):
         try:
             group_id = request.data['groupID']
             logger.info(f"Group ID:{group_id} for leave group")
-            result = DebtandCreditforMemberinGroup(self.request.user, group_id)
-            # logger.info(result)
+            debt = DebtAndCreditCalculate()
+            result = debt.DebtandCreditforMemberinGroup(self.request.user, group_id)
             if isinstance(result, str):
                 if result == 'Group not found.':
                      logger.error(f"Error: {result}")
@@ -203,26 +208,5 @@ class LeaveGroup(APIView):
             logger.error(f"Error: {str(e)}")
             return Response({'message': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
-def DebtandCreditforMemberinGroup(user_id, group_id):
-    try:
-        if not (Group.objects.filter(id = group_id).exists()):
-            logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
-            return 'Group not found.'
-
-        if not Members.objects.filter(groupID = group_id, userID=user_id).exists():
-            logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
-            return 'User not found.'
-        
-        list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-        list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-        sum = 0
-        for buy in list_buyer:
-            sum += buy.percent
-        for buy in list_consumer:
-            sum -= buy.percent
-        return sum
-    except Exception as e:
-        logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
-        return str(e)
 
 

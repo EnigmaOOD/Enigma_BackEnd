@@ -10,7 +10,9 @@ from rest_framework import status
 from Group.models import Group, Members
 from buy.models import buyer, consumer
 from MyUser.models import MyUser
-from .serializers import GroupSerializer, MemberSerializer, AmountDebtandCreditMemberSerializer, ShowMemberSerializer
+from cache import RedisCache
+from debt import DebtAndCreditCalculate
+from .serializers import GroupSerializer, MemberSerializer, ShowMemberSerializer
 from .permissions import IsGroupUser
 import logging
 
@@ -158,10 +160,11 @@ class ShowMembers(APIView):
 
             members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
+            debt = DebtAndCreditCalculate()
 
             for member in members:
                 member_id = member.userID.user_id
-                cost.append(DebtandCreditforMemberinGroup(member_id, group_id))
+                cost.append(debt.DebtandCreditforMemberinGroup(member_id, group_id))
 
             serializer = ShowMemberSerializer(members, many=True)
             for member in reversed(serializer.data):
@@ -187,11 +190,12 @@ class ShowMembers(APIView):
 class GroupInfo(APIView):
     permission_classes = [permissions.IsAuthenticated ]
 
+    
     def post(self, request):
         try:
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
-
+            cache = RedisCache()
             cache_key = f"group_info:{group_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
@@ -252,24 +256,3 @@ class DeleteGroup(APIView):
     
 
 
-def DebtandCreditforMemberinGroup(user_id, group_id):
-    try:
-        if not (Group.objects.filter(id = group_id).exists()):
-            logger.warning(f"DebtandCreditforMemberinGroup_Group not found.(groupID:{group_id})")
-            return 'Group not found.'
-
-        if not Members.objects.filter(groupID = group_id, userID=user_id).exists():
-            logger.warning(f"DebtandCreditforMemberinGroup_User not found.(userID:{user_id})")
-            return 'User not found.'
-        
-        list_buyer = buyer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-        list_consumer = consumer.objects.filter(userID=user_id, buy__groupID=group_id).distinct()
-        sum = 0
-        for buy in list_buyer:
-            sum += buy.percent
-        for buy in list_consumer:
-            sum -= buy.percent
-        return sum
-    except Exception as e:
-        logger.warning(f"DebtandCreditforMemberinGroup_Error occurred:{str(e)}")
-        return str(e)

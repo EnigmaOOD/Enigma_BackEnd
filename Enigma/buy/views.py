@@ -93,26 +93,3 @@ class UserGroupBuys(APIView):
 
             logger.error('An error occurred while retrieving group buys. Group ID: {}, User ID: {}'.format(group_id, user_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    """
-    def post(self, request):
-  
-            group_id = request.data.get('groupID')
-            user_id =self.request.user.user_id
-
-            # Get buys where the user is a buyer
-            buyer_buys = buy.objects.filter(
-                Buyer__userID=user_id, groupID=group_id).distinct()
-            buyer_serializer = BuyListSerializer(buyer_buys, many=True)
-
-            # Get buys where the user is a consumer
-            consumer_buys = buy.objects.filter(
-                consumer__userID=user_id, groupID=group_id).distinct()
-            consumer_serializer = BuyListSerializer(consumer_buys, many=True)
-
-            response_data = {
-                'buyer_buys': buyer_serializer.data,
-                'consumer_buys': consumer_serializer.data
-            }
-
-            return Response(response_data, status=status.HTTP_200_OK)
-"""
