@@ -13949,3 +13949,43 @@ ERROR 2023-06-11 19:33:56,769 views 4616 10688 Error: Test Exception
 ERROR 2023-06-11 19:33:56,769 log 4616 10688 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-06-11 19:33:57,093 views 4616 10688 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-06-11 19:33:57,093 log 4616 10688 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 19:49:33,333 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,339 views 11792 1764 User with email:test3.example.com not found.
+ERROR 2023-06-11 19:49:33,343 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,346 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,349 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,353 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,357 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,364 views 11792 1764 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 19:49:33,385 views 11792 1764 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 19:49:33,388 views 11792 1764 Invalid group data.
+ERROR 2023-06-11 19:49:33,393 views 11792 1764 User with email:miss_ramazani not found.
+ERROR 2023-06-11 19:49:33,398 views 11792 1764 User with email:miss_ramazani not found.
+ERROR 2023-06-11 19:49:33,398 views 11792 1764 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 19:49:33,403 views 11792 1764 Invalid group data.
+ERROR 2023-06-11 19:49:33,406 views 11792 1764 Invalid group data.
+ERROR 2023-06-11 19:49:33,408 views 11792 1764 Invalid group data.
+ERROR 2023-06-11 19:49:33,413 views 11792 1764 Invalid group data.
+ERROR 2023-06-11 19:49:33,420 views 11792 1764 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 19:49:33,422 views 11792 1764 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 19:49:33,422 views 11792 1764 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 19:49:33,517 views 11792 1764 An error occurred: Something went wrong
+ERROR 2023-06-11 19:49:33,517 log 11792 1764 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 19:49:33,531 views 11792 1764 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 19:49:33,531 log 11792 1764 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 19:49:33,542 views 11792 1764 Group not found. Group ID: 999
+ERROR 2023-06-11 19:49:33,550 views 11792 1764 Group not found. Group ID: None
+ERROR 2023-06-11 19:49:33,569 log 11792 1764 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 19:49:33,657 views 11792 1764 Error: Group not found.
+ERROR 2023-06-11 19:49:33,672 views 11792 1764 Error: User not found.
+ERROR 2023-06-11 19:49:33,723 views 11792 1764 Error: Internal Server Error
+ERROR 2023-06-11 19:49:33,724 log 11792 1764 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 19:49:38,022 views 11792 1764 User not found. User ID: None
+ERROR 2023-06-11 19:49:38,027 views 11792 1764 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 19:49:38,027 views 11792 1764 Error: Something went wrong
+ERROR 2023-06-11 19:49:38,027 log 11792 1764 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 19:49:38,177 views 11792 1764 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 19:49:38,177 views 11792 1764 Error: Test Exception
+ERROR 2023-06-11 19:49:38,177 log 11792 1764 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 19:49:38,367 views 11792 1764 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 19:49:38,367 log 11792 1764 Internal Server Error: /buy/UserGroupBuys/

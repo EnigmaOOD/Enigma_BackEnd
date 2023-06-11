@@ -128,27 +128,6 @@ class ShowMembers(APIView):
             cost = []
             group_id = request.data['groupID']
 
- #without interface:
-#                 # Try to fetch the data from cache
-#             cache_key = f"show_members_{group_id}"
-#             redis_conn = get_redis_connection("default")
-#             cached_data = redis_conn.get(cache_key)
-#             if cached_data:
-#                 logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
-#                 cached_data = json.loads(cached_data.decode())
-#                 return Response(cached_data, status=status.HTTP_200_OK)
-#             """
-
-#with interface:
-            #cache_key = f"show_members_{group_id}"
-            #cache = RedisCache()
-            # Try to fetch the data from cache
-            #cached_data = cache.get(cache_key)
-            #if cached_data:
-            #    logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
-            #    cached_data = json.loads(cached_data)
-            #    return Response(cached_data, status=status.HTTP_200_OK)
-
             cache_key = f"show_members_{group_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
@@ -169,14 +148,8 @@ class ShowMembers(APIView):
                 member['cost'] = cost.pop()
 
             # Cache the data for future requests
-            #cache.set(cache_key, serializer.data, 3600)
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
-#without interface:
-#             serialized_data = json.dumps(serializer.data)
-#             redis_conn.set(cache_key, serialized_data)
-#             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
-#             """
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(group_id, serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
@@ -186,8 +159,7 @@ class ShowMembers(APIView):
 
 
 class GroupInfo(APIView):
-    permission_classes = [permissions.IsAuthenticated ]
-
+    permission_classes = [permissions.IsAuthenticated]
     
     def post(self, request):
         try:
@@ -201,15 +173,6 @@ class GroupInfo(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            """ 
-            cache_key = f"group_info:{group_id}"
-            redis_conn = get_redis_connection("default")
-            cached_data = redis_conn.get(cache_key)
-            if cached_data:
-                cached_data = json.loads(cached_data.decode())
-                return Response(cached_data, status=status.HTTP_200_OK)
-            else:
-            """
             group = Group.objects.get(id=group_id)
 
             if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
@@ -217,10 +180,6 @@ class GroupInfo(APIView):
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
             serializer = GroupSerializer(group)
-
-                #serialized_data = json.dumps(serializer.data)
-                #redis_conn.set(cache_key, serialized_data)
-                #redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
@@ -231,10 +190,7 @@ class GroupInfo(APIView):
         except:
             logger.error('An error occurred while retrieving group info. Group ID: {}'.format(group_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
-
-
+        
 
 class DeleteGroup(APIView):
     permission_classes = [permissions.IsAuthenticated and IsGroupUser]
