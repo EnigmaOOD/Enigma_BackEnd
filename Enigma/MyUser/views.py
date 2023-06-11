@@ -127,17 +127,18 @@ class UserInfo(APIView):
     def post(self, request):
         try:
             user = self.request.user
+
             if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-            
+
             cache_key = f"user_info:{user.user_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
                 logger.info('UserInfo retrieved successfully from cache for Group ID: {}'.format(user.user_id))
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
-            
+
             #cache_key = f"user_info:{user.user_id}"
             #redis_conn = get_redis_connection()
             #cached_data = redis_conn.get(cache_key)
@@ -145,6 +146,7 @@ class UserInfo(APIView):
                 # If cached data exists, return it
             #    user_info = json.loads(cached_data.decode())
             #else:
+
             user_info = {
                 'user_id': user.user_id,
                 'email': user.email,

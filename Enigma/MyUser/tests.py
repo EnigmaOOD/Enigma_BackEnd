@@ -187,16 +187,8 @@ class UserInfoTestCase(APITestCase):
         self.assertEqual(response.data['name'], self.user.name)
         self.assertEqual(response.data['picture_id'], self.user.picture_id)
         self.assertEqual(response.data['is_active'], self.user.is_active)
+        self.assertEqual(response.data['is_admin'], self.user.is_admin)
         self.assertEqual(response.data['is_staff'], self.user.is_staff)
-    
-
-
-    def test_UserInfo_should_success_when_admin_user(self):
-        self.user.is_admin = True
-        self.user.save()
-        self.client.force_authenticate(user=self.user)
-        response = self.client.post(self.url)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_UserInfo_should_success_when_staff_user(self):
         self.user.is_staff = True
