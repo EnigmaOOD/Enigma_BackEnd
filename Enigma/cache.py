@@ -1,6 +1,4 @@
 import json
-import redis
-from django.conf import settings
 from django_redis import get_redis_connection
 from abc import ABC, abstractmethod
 
