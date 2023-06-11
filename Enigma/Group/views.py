@@ -16,7 +16,7 @@ import logging
 
 import redis
 import json
-from redis_cache import RedisCache
+from cache import RedisCache
 from django_redis import get_redis_connection
 
 logger = logging.getLogger('django')
