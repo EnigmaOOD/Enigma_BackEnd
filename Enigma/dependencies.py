@@ -1,9 +1,6 @@
-from cache import RedisCache
+import importlib
+from Enigma import settings
 
-def get_cache_instance():
-    return RedisCache()
-
-API_VIEW_DEPENDENCIES = {
-    'ShowMembers': get_cache_instance,
-    'GroupInfo': get_cache_instance,
-}
+cache_servise_class_neme = settings.Cache_Redis_SERVICE
+cache_servise_class = getattr(importlib.import_module(cache_servise_class_neme.rsplit('.', 1)[0]), cache_servise_class_neme.rsplit('.', 1)[1])
+cache_servise_instance = cache_servise_class()

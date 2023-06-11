@@ -16,8 +16,7 @@ import logging
 
 import redis
 import json
-from cache import CacheInterface, RedisCache
-from django_redis import get_redis_connection
+import dependencies
 
 logger = logging.getLogger('django')
 
@@ -150,6 +149,13 @@ class ShowMembers(APIView):
             #    cached_data = json.loads(cached_data)
             #    return Response(cached_data, status=status.HTTP_200_OK)
 
+            cache_key = f"show_members_{group_id}"
+            cached_data = dependencies.cache_servise_instance.get(cache_key)
+            if cached_data:
+                logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
+                cached_data = json.loads(cached_data)
+                return Response(cached_data, status=status.HTTP_200_OK)
+
             members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
 
@@ -163,6 +169,7 @@ class ShowMembers(APIView):
 
             # Cache the data for future requests
             #cache.set(cache_key, serializer.data, 3600)
+            dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
 #without interface:
 #             serialized_data = json.dumps(serializer.data)
@@ -179,10 +186,6 @@ class ShowMembers(APIView):
 
 class GroupInfo(APIView):
     permission_classes = [permissions.IsAuthenticated ]
-    
-    def __init__(self, cache: CacheInterface):
-        super().__init__()
-        self.cache = cache
 
     def post(self, request):
         try:
@@ -190,7 +193,7 @@ class GroupInfo(APIView):
             group_id = request.data.get('groupID')
 
             cache_key = f"group_info:{group_id}"
-            cached_data = self.cache.get(cache_key)
+            cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
                 logger.info('GroupInfo retrieved successfully from cache for Group ID: {}'.format(group_id))
                 cached_data = json.loads(cached_data)
@@ -216,7 +219,7 @@ class GroupInfo(APIView):
                 #serialized_data = json.dumps(serializer.data)
                 #redis_conn.set(cache_key, serialized_data)
                 #redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
-            self.cache.set(cache_key, serializer.data, 3600)
+            dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)

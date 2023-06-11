@@ -1,13 +1,9 @@
-from cache import RedisCache
-from .models import MyUser
-from Group.models import Group, Members
-from buy.models import buyer, consumer
-from .serializers import MyUserSerializer, UpdateUserSerializer
-from rest_framework import permissions, generics
-from rest_framework.exceptions import ValidationError
-from .utils import Util
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
+
+
+from rest_framework import permissions, generics
+from rest_framework.exceptions import ValidationError
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
@@ -15,10 +11,17 @@ from rest_framework.generics import UpdateAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+
+from .models import MyUser
+from Group.models import Group, Members
+from buy.models import buyer, consumer
+from .serializers import MyUserSerializer, UpdateUserSerializer
+from .utils import Util
+
 import logging
 import time
 import json
-from django_redis import get_redis_connection
+import dependencies
 
 
 
@@ -120,14 +123,12 @@ class UserInfo(APIView):
     def post(self, request):
         try:
             user = self.request.user
-            print(user.is_admin)
             if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+            
             cache_key = f"user_info:{user.user_id}"
-            cache = RedisCache()
-
-            cached_data = cache.get(cache_key)
+            cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
                 logger.info('UserInfo retrieved successfully from cache for Group ID: {}'.format(user.user_id))
                 cached_data = json.loads(cached_data)
@@ -149,7 +150,8 @@ class UserInfo(APIView):
                 'is_admin': user.is_admin,
                 'is_staff': user.is_staff,
             }
-            cache.set(cache_key, user_info, 3600)
+            dependencies.cache_servise_instance.set(cache_key, user_info, 3600)
+
             #    redis_conn.set(cache_key, json.dumps(user_info))
             #   redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
