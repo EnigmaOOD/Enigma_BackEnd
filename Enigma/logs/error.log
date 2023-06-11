@@ -11701,3 +11701,896 @@ Traceback (most recent call last):
     self = cls(**initkwargs)
            ^^^^^^^^^^^^^^^^^
 TypeError: GroupInfo.__init__() missing 1 required positional argument: 'cache'
+ERROR 2023-06-11 16:52:41,356 views 20308 10996 An error occurred while retrieving members for Group ID: 3074
+ERROR 2023-06-11 16:52:41,356 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:41,356 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:41,357 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:41,613 views 20308 10996 An error occurred while retrieving members for Group ID: 2646
+ERROR 2023-06-11 16:52:41,614 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:41,614 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:41,614 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:42,220 views 20308 12892 An error occurred while retrieving members for Group ID: 1839
+ERROR 2023-06-11 16:52:42,220 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:42,221 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:42,221 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:42,724 views 20308 10996 An error occurred while retrieving members for Group ID: 128
+ERROR 2023-06-11 16:52:42,724 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:42,725 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:42,725 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:43,361 views 20308 21488 An error occurred while retrieving members for Group ID: 4848
+ERROR 2023-06-11 16:52:43,362 views 20308 21488 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:43,362 log 20308 21488 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:43,362 basehttp 20308 21488 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:43,590 views 20308 10996 An error occurred while retrieving members for Group ID: 2633
+ERROR 2023-06-11 16:52:43,590 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:43,591 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:43,591 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:44,010 views 20308 10996 An error occurred while retrieving members for Group ID: 2791
+ERROR 2023-06-11 16:52:44,010 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:44,011 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:44,011 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:44,278 views 20308 12892 An error occurred while retrieving members for Group ID: 3350
+ERROR 2023-06-11 16:52:44,279 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:44,279 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:44,279 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:44,519 views 20308 10996 An error occurred while retrieving members for Group ID: 3604
+ERROR 2023-06-11 16:52:44,519 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:44,520 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:44,521 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:44,780 views 20308 12892 An error occurred while retrieving members for Group ID: 1703
+ERROR 2023-06-11 16:52:44,780 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:44,780 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:44,781 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:45,283 views 20308 21488 An error occurred while retrieving members for Group ID: 3158
+ERROR 2023-06-11 16:52:45,284 views 20308 21488 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:45,284 log 20308 21488 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:45,286 basehttp 20308 21488 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:45,286 views 20308 12892 An error occurred while retrieving members for Group ID: 1480
+ERROR 2023-06-11 16:52:45,287 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:45,287 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:45,290 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:45,588 views 20308 10996 An error occurred while retrieving members for Group ID: 1586
+ERROR 2023-06-11 16:52:45,588 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:45,588 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:45,589 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:46,107 views 20308 10996 An error occurred while retrieving members for Group ID: 4816
+ERROR 2023-06-11 16:52:46,107 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:46,108 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:46,108 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:46,355 views 20308 21488 An error occurred while retrieving members for Group ID: 1536
+ERROR 2023-06-11 16:52:46,355 views 20308 21488 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:46,356 log 20308 21488 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:46,357 basehttp 20308 21488 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:46,362 views 20308 5084 An error occurred while retrieving members for Group ID: 37
+ERROR 2023-06-11 16:52:46,362 views 20308 5084 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:46,363 log 20308 5084 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:46,364 basehttp 20308 5084 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:47,105 views 20308 15620 An error occurred while retrieving members for Group ID: 2734
+ERROR 2023-06-11 16:52:47,105 views 20308 15620 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:47,105 log 20308 15620 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:47,107 basehttp 20308 15620 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:47,346 views 20308 10996 An error occurred while retrieving members for Group ID: 2570
+ERROR 2023-06-11 16:52:47,346 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:47,346 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:47,347 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:47,464 views 20308 19688 An error occurred while retrieving members for Group ID: 1777
+ERROR 2023-06-11 16:52:47,464 views 20308 19688 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:47,465 log 20308 19688 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:47,465 basehttp 20308 19688 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:47,540 views 20308 21488 An error occurred while retrieving members for Group ID: 3434
+ERROR 2023-06-11 16:52:47,541 views 20308 21488 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:47,541 log 20308 21488 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:47,542 basehttp 20308 21488 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:47,558 views 20308 5084 An error occurred while retrieving members for Group ID: 514
+ERROR 2023-06-11 16:52:47,558 views 20308 5084 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:47,559 log 20308 5084 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:47,559 basehttp 20308 5084 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:48,152 views 20308 19688 An error occurred while retrieving members for Group ID: 1745
+ERROR 2023-06-11 16:52:48,152 views 20308 19688 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:48,153 log 20308 19688 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:48,154 basehttp 20308 19688 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:48,222 views 20308 5084 An error occurred while retrieving members for Group ID: 555
+ERROR 2023-06-11 16:52:48,222 views 20308 5084 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:48,223 log 20308 5084 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:48,224 basehttp 20308 5084 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:48,460 views 20308 17472 An error occurred while retrieving members for Group ID: 3298
+ERROR 2023-06-11 16:52:48,461 views 20308 17472 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:48,462 log 20308 17472 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:48,463 basehttp 20308 17472 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:49,059 views 20308 12892 An error occurred while retrieving members for Group ID: 3475
+ERROR 2023-06-11 16:52:49,059 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:49,059 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:49,060 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:49,183 views 20308 17472 An error occurred while retrieving members for Group ID: 4304
+ERROR 2023-06-11 16:52:49,183 views 20308 17472 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:49,184 log 20308 17472 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:49,185 basehttp 20308 17472 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:49,657 views 20308 19688 An error occurred while retrieving members for Group ID: 4033
+ERROR 2023-06-11 16:52:49,657 views 20308 19688 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:49,657 log 20308 19688 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:49,658 basehttp 20308 19688 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:49,743 views 20308 5084 An error occurred while retrieving members for Group ID: 4866
+ERROR 2023-06-11 16:52:49,743 views 20308 5084 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:49,743 log 20308 5084 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:49,744 basehttp 20308 5084 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:49,898 views 20308 17472 An error occurred while retrieving members for Group ID: 4873
+ERROR 2023-06-11 16:52:49,898 views 20308 17472 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:49,899 log 20308 17472 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:49,899 basehttp 20308 17472 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:50,147 views 20308 17752 An error occurred while retrieving members for Group ID: 1441
+ERROR 2023-06-11 16:52:50,147 views 20308 17752 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:50,147 log 20308 17752 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:50,148 basehttp 20308 17752 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:50,380 views 20308 19688 An error occurred while retrieving members for Group ID: 3617
+ERROR 2023-06-11 16:52:50,381 views 20308 19688 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:50,381 log 20308 19688 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:50,382 basehttp 20308 19688 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:50,447 views 20308 5084 An error occurred while retrieving members for Group ID: 2330
+ERROR 2023-06-11 16:52:50,447 views 20308 5084 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:50,448 log 20308 5084 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:50,449 basehttp 20308 5084 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:50,541 views 20308 12892 An error occurred while retrieving members for Group ID: 2496
+ERROR 2023-06-11 16:52:50,542 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:50,543 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:50,543 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:50,821 views 20308 10996 An error occurred while retrieving members for Group ID: 594
+ERROR 2023-06-11 16:52:50,821 views 20308 10996 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:50,822 log 20308 10996 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:50,822 basehttp 20308 10996 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:52:51,347 views 20308 12892 An error occurred while retrieving members for Group ID: 3396
+ERROR 2023-06-11 16:52:51,348 views 20308 12892 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 16:52:51,348 log 20308 12892 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 16:52:51,349 basehttp 20308 12892 "POST /group/ShowMembers/ HTTP/1.1" 500 112
+ERROR 2023-06-11 16:53:54,826 views 6056 22224 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 16:53:54,826 views 6056 22224 Error: Test Exception
+ERROR 2023-06-11 16:53:54,826 log 6056 22224 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 16:53:55,076 views 6056 22224 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 16:53:55,076 log 6056 22224 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 16:54:12,682 views 11188 12028 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 16:54:12,682 views 11188 12028 Error: Test Exception
+ERROR 2023-06-11 16:54:12,683 log 11188 12028 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 16:54:12,927 views 11188 12028 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 16:54:12,928 log 11188 12028 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:03:50,265 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,275 views 8764 3268 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:03:50,281 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,287 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,291 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,296 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,301 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,308 views 8764 3268 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:03:50,338 views 8764 3268 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:03:50,343 views 8764 3268 Invalid group data.
+ERROR 2023-06-11 17:03:50,352 views 8764 3268 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:03:50,355 views 8764 3268 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:03:50,355 views 8764 3268 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:03:50,363 views 8764 3268 Invalid group data.
+ERROR 2023-06-11 17:03:50,366 views 8764 3268 Invalid group data.
+ERROR 2023-06-11 17:03:50,370 views 8764 3268 Invalid group data.
+ERROR 2023-06-11 17:03:50,375 views 8764 3268 Invalid group data.
+ERROR 2023-06-11 17:03:50,383 views 8764 3268 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:03:50,386 views 8764 3268 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:03:50,386 views 8764 3268 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:03:50,511 views 8764 3268 An error occurred: Something went wrong
+ERROR 2023-06-11 17:03:50,511 log 8764 3268 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:03:50,531 views 8764 3268 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:03:50,531 log 8764 3268 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:03:50,540 views 8764 3268 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-11 17:03:50,541 log 8764 3268 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:03:50,548 views 8764 3268 Group not found. Group ID: 999
+ERROR 2023-06-11 17:03:50,558 views 8764 3268 Group not found. Group ID: None
+ERROR 2023-06-11 17:03:50,587 log 8764 3268 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:03:50,634 views 8764 3268 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:03:50,634 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,634 log 8764 3268 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:03:50,642 views 8764 3268 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:03:50,642 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,643 log 8764 3268 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:03:50,717 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,717 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,732 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,732 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,747 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,747 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,763 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,764 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,836 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,836 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,851 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,851 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:50,867 views 8764 3268 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:03:50,867 log 8764 3268 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:03:54,738 views 8764 3268 User not found. User ID: None
+ERROR 2023-06-11 17:03:54,743 views 8764 3268 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:03:54,743 views 8764 3268 Error: Something went wrong
+ERROR 2023-06-11 17:03:54,743 log 8764 3268 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:03:54,961 views 8764 3268 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:03:54,961 views 8764 3268 Error: Test Exception
+ERROR 2023-06-11 17:03:54,962 log 8764 3268 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:03:55,220 views 8764 3268 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:03:55,221 log 8764 3268 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:04:10,676 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,684 views 1280 7676 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:04:10,692 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,696 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,699 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,703 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,708 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,716 views 1280 7676 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:04:10,746 views 1280 7676 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:04:10,751 views 1280 7676 Invalid group data.
+ERROR 2023-06-11 17:04:10,760 views 1280 7676 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:04:10,763 views 1280 7676 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:04:10,763 views 1280 7676 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:04:10,769 views 1280 7676 Invalid group data.
+ERROR 2023-06-11 17:04:10,775 views 1280 7676 Invalid group data.
+ERROR 2023-06-11 17:04:10,778 views 1280 7676 Invalid group data.
+ERROR 2023-06-11 17:04:10,783 views 1280 7676 Invalid group data.
+ERROR 2023-06-11 17:04:10,792 views 1280 7676 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:04:10,794 views 1280 7676 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:04:10,794 views 1280 7676 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:04:10,913 views 1280 7676 An error occurred: Something went wrong
+ERROR 2023-06-11 17:04:10,914 log 1280 7676 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:04:10,933 views 1280 7676 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:04:10,933 log 1280 7676 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:04:10,944 views 1280 7676 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-11 17:04:10,944 log 1280 7676 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:04:10,950 views 1280 7676 Group not found. Group ID: 999
+ERROR 2023-06-11 17:04:10,961 views 1280 7676 Group not found. Group ID: None
+ERROR 2023-06-11 17:04:10,988 log 1280 7676 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:04:11,032 views 1280 7676 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:04:11,033 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,033 log 1280 7676 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:04:11,041 views 1280 7676 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:04:11,041 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,041 log 1280 7676 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:04:11,119 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,119 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,133 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,133 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,148 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,149 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,164 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,165 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,236 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,237 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,251 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,252 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:11,266 views 1280 7676 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:04:11,266 log 1280 7676 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:04:15,135 views 1280 7676 User not found. User ID: None
+ERROR 2023-06-11 17:04:15,141 views 1280 7676 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:04:15,141 views 1280 7676 Error: Something went wrong
+ERROR 2023-06-11 17:04:15,141 log 1280 7676 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:04:15,346 views 1280 7676 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:04:15,346 views 1280 7676 Error: Test Exception
+ERROR 2023-06-11 17:04:15,346 log 1280 7676 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:04:15,581 views 1280 7676 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:04:15,582 log 1280 7676 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:26:39,360 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,368 views 16840 9012 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:26:39,372 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,377 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,380 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,383 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,386 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,392 views 16840 9012 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:39,412 views 16840 9012 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:39,415 views 16840 9012 Invalid group data.
+ERROR 2023-06-11 17:26:39,421 views 16840 9012 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:26:39,422 views 16840 9012 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:26:39,423 views 16840 9012 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:26:39,428 views 16840 9012 Invalid group data.
+ERROR 2023-06-11 17:26:39,431 views 16840 9012 Invalid group data.
+ERROR 2023-06-11 17:26:39,433 views 16840 9012 Invalid group data.
+ERROR 2023-06-11 17:26:39,436 views 16840 9012 Invalid group data.
+ERROR 2023-06-11 17:26:39,442 views 16840 9012 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:39,444 views 16840 9012 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:39,444 views 16840 9012 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:26:39,526 views 16840 9012 An error occurred: Something went wrong
+ERROR 2023-06-11 17:26:39,527 log 16840 9012 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:26:39,540 views 16840 9012 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:26:39,540 log 16840 9012 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:26:39,551 views 16840 9012 Group not found. Group ID: 999
+ERROR 2023-06-11 17:26:39,557 views 16840 9012 Group not found. Group ID: None
+ERROR 2023-06-11 17:26:39,575 log 16840 9012 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:26:39,604 views 16840 9012 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:26:39,604 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,604 log 16840 9012 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:26:39,609 views 16840 9012 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:26:39,609 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,609 log 16840 9012 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:26:39,659 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,659 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,669 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,670 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,680 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,681 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,690 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,691 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,740 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,740 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,750 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,750 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:39,760 views 16840 9012 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:39,761 log 16840 9012 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:43,933 views 16840 9012 User not found. User ID: None
+ERROR 2023-06-11 17:26:43,937 views 16840 9012 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:26:43,937 views 16840 9012 Error: Something went wrong
+ERROR 2023-06-11 17:26:43,938 log 16840 9012 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:26:44,085 views 16840 9012 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:26:44,085 views 16840 9012 Error: Test Exception
+ERROR 2023-06-11 17:26:44,085 log 16840 9012 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:26:44,273 views 16840 9012 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:26:44,274 log 16840 9012 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:26:48,955 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,962 views 12776 13200 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:26:48,968 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,972 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,974 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,977 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,979 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:48,985 views 12776 13200 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:49,006 views 12776 13200 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:26:49,009 views 12776 13200 Invalid group data.
+ERROR 2023-06-11 17:26:49,014 views 12776 13200 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:26:49,017 views 12776 13200 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:26:49,017 views 12776 13200 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:26:49,021 views 12776 13200 Invalid group data.
+ERROR 2023-06-11 17:26:49,024 views 12776 13200 Invalid group data.
+ERROR 2023-06-11 17:26:49,027 views 12776 13200 Invalid group data.
+ERROR 2023-06-11 17:26:49,030 views 12776 13200 Invalid group data.
+ERROR 2023-06-11 17:26:49,036 views 12776 13200 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:49,038 views 12776 13200 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:26:49,039 views 12776 13200 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:26:49,122 views 12776 13200 An error occurred: Something went wrong
+ERROR 2023-06-11 17:26:49,122 log 12776 13200 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:26:49,135 views 12776 13200 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:26:49,136 log 12776 13200 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:26:49,146 views 12776 13200 Group not found. Group ID: 999
+ERROR 2023-06-11 17:26:49,154 views 12776 13200 Group not found. Group ID: None
+ERROR 2023-06-11 17:26:49,172 log 12776 13200 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:26:49,202 views 12776 13200 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:26:49,202 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,203 log 12776 13200 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:26:49,207 views 12776 13200 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:26:49,207 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,207 log 12776 13200 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:26:49,258 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,258 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,270 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,270 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,278 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,279 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,289 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,289 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,338 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,339 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,350 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,350 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:49,359 views 12776 13200 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:26:49,359 log 12776 13200 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:26:53,547 views 12776 13200 User not found. User ID: None
+ERROR 2023-06-11 17:26:53,551 views 12776 13200 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:26:53,551 views 12776 13200 Error: Something went wrong
+ERROR 2023-06-11 17:26:53,551 log 12776 13200 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:26:53,699 views 12776 13200 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:26:53,699 views 12776 13200 Error: Test Exception
+ERROR 2023-06-11 17:26:53,700 log 12776 13200 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:26:53,893 views 12776 13200 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:26:53,894 log 12776 13200 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:33:28,169 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,176 views 7960 11100 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:33:28,181 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,184 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,187 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,193 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,196 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,202 views 7960 11100 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:33:28,224 views 7960 11100 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:33:28,228 views 7960 11100 Invalid group data.
+ERROR 2023-06-11 17:33:28,233 views 7960 11100 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:33:28,235 views 7960 11100 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:33:28,235 views 7960 11100 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:33:28,241 views 7960 11100 Invalid group data.
+ERROR 2023-06-11 17:33:28,244 views 7960 11100 Invalid group data.
+ERROR 2023-06-11 17:33:28,247 views 7960 11100 Invalid group data.
+ERROR 2023-06-11 17:33:28,250 views 7960 11100 Invalid group data.
+ERROR 2023-06-11 17:33:28,255 views 7960 11100 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:33:28,258 views 7960 11100 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:33:28,258 views 7960 11100 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:33:28,343 views 7960 11100 An error occurred: Something went wrong
+ERROR 2023-06-11 17:33:28,344 log 7960 11100 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:33:28,357 views 7960 11100 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:33:28,358 log 7960 11100 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:33:28,367 views 7960 11100 Group not found. Group ID: 999
+ERROR 2023-06-11 17:33:28,375 views 7960 11100 Group not found. Group ID: None
+ERROR 2023-06-11 17:33:28,394 log 7960 11100 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:33:28,425 views 7960 11100 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:33:28,425 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,425 log 7960 11100 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:33:28,429 views 7960 11100 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:33:28,429 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,429 log 7960 11100 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:33:28,478 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,478 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,488 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,488 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,498 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,498 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,509 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,509 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,530 views 7960 11100 Error: Internal Server Error
+ERROR 2023-06-11 17:33:28,530 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,563 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,563 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,573 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,574 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:28,582 views 7960 11100 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:33:28,583 log 7960 11100 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:33:32,782 views 7960 11100 User not found. User ID: None
+ERROR 2023-06-11 17:33:32,787 views 7960 11100 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:33:32,787 views 7960 11100 Error: Something went wrong
+ERROR 2023-06-11 17:33:32,787 log 7960 11100 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:33:32,931 views 7960 11100 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:33:32,931 views 7960 11100 Error: Test Exception
+ERROR 2023-06-11 17:33:32,931 log 7960 11100 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:33:33,120 views 7960 11100 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:33:33,121 log 7960 11100 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:37:37,485 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,493 views 17440 14220 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:37:37,498 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,502 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,504 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,507 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,511 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,517 views 17440 14220 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:37:37,536 views 17440 14220 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:37:37,539 views 17440 14220 Invalid group data.
+ERROR 2023-06-11 17:37:37,547 views 17440 14220 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:37:37,548 views 17440 14220 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:37:37,549 views 17440 14220 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:37:37,553 views 17440 14220 Invalid group data.
+ERROR 2023-06-11 17:37:37,556 views 17440 14220 Invalid group data.
+ERROR 2023-06-11 17:37:37,560 views 17440 14220 Invalid group data.
+ERROR 2023-06-11 17:37:37,563 views 17440 14220 Invalid group data.
+ERROR 2023-06-11 17:37:37,568 views 17440 14220 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:37:37,570 views 17440 14220 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:37:37,570 views 17440 14220 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:37:37,655 views 17440 14220 An error occurred: Something went wrong
+ERROR 2023-06-11 17:37:37,655 log 17440 14220 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:37:37,669 views 17440 14220 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:37:37,669 log 17440 14220 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:37:37,681 views 17440 14220 Group not found. Group ID: 999
+ERROR 2023-06-11 17:37:37,687 views 17440 14220 Group not found. Group ID: None
+ERROR 2023-06-11 17:37:37,705 log 17440 14220 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:37:37,735 views 17440 14220 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:37:37,735 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,735 log 17440 14220 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:37:37,739 views 17440 14220 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:37:37,740 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,740 log 17440 14220 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:37:37,791 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,791 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,801 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,802 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,812 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,812 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,822 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,822 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,844 views 17440 14220 Error: Internal Server Error
+ERROR 2023-06-11 17:37:37,844 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,874 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,874 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,884 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,884 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:37,894 views 17440 14220 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:37:37,894 log 17440 14220 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:37:42,078 views 17440 14220 User not found. User ID: None
+ERROR 2023-06-11 17:37:42,082 views 17440 14220 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:37:42,082 views 17440 14220 Error: Something went wrong
+ERROR 2023-06-11 17:37:42,083 log 17440 14220 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:37:42,230 views 17440 14220 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:37:42,230 views 17440 14220 Error: Test Exception
+ERROR 2023-06-11 17:37:42,230 log 17440 14220 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:37:42,424 views 17440 14220 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:37:42,425 log 17440 14220 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:38:51,595 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,602 views 20128 16932 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:38:51,608 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,612 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,615 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,620 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,623 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,628 views 20128 16932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:38:51,650 views 20128 16932 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:38:51,654 views 20128 16932 Invalid group data.
+ERROR 2023-06-11 17:38:51,659 views 20128 16932 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:38:51,661 views 20128 16932 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:38:51,661 views 20128 16932 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:38:51,666 views 20128 16932 Invalid group data.
+ERROR 2023-06-11 17:38:51,670 views 20128 16932 Invalid group data.
+ERROR 2023-06-11 17:38:51,674 views 20128 16932 Invalid group data.
+ERROR 2023-06-11 17:38:51,677 views 20128 16932 Invalid group data.
+ERROR 2023-06-11 17:38:51,682 views 20128 16932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:38:51,685 views 20128 16932 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:38:51,685 views 20128 16932 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:38:51,772 views 20128 16932 An error occurred: Something went wrong
+ERROR 2023-06-11 17:38:51,772 log 20128 16932 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:38:51,787 views 20128 16932 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:38:51,788 log 20128 16932 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:38:51,798 views 20128 16932 Group not found. Group ID: 999
+ERROR 2023-06-11 17:38:51,806 views 20128 16932 Group not found. Group ID: None
+ERROR 2023-06-11 17:38:51,825 log 20128 16932 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:38:51,857 views 20128 16932 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:38:51,857 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,857 log 20128 16932 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:38:51,862 views 20128 16932 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:38:51,862 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,862 log 20128 16932 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:38:51,913 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,914 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:51,925 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,925 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:51,936 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,936 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:51,947 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:51,947 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:51,968 views 20128 16932 Error: Internal Server Error
+ERROR 2023-06-11 17:38:51,969 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:52,005 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:52,005 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:52,015 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:52,015 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:52,026 views 20128 16932 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:38:52,027 log 20128 16932 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:38:56,233 views 20128 16932 User not found. User ID: None
+ERROR 2023-06-11 17:38:56,238 views 20128 16932 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:38:56,238 views 20128 16932 Error: Something went wrong
+ERROR 2023-06-11 17:38:56,238 log 20128 16932 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:38:56,393 views 20128 16932 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:38:56,393 views 20128 16932 Error: Test Exception
+ERROR 2023-06-11 17:38:56,393 log 20128 16932 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:38:56,590 views 20128 16932 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:38:56,590 log 20128 16932 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:41:47,282 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,288 views 10980 19244 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:41:47,293 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,297 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,300 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,303 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,306 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,311 views 10980 19244 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:41:47,332 views 10980 19244 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:41:47,335 views 10980 19244 Invalid group data.
+ERROR 2023-06-11 17:41:47,340 views 10980 19244 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:41:47,342 views 10980 19244 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:41:47,342 views 10980 19244 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:41:47,348 views 10980 19244 Invalid group data.
+ERROR 2023-06-11 17:41:47,351 views 10980 19244 Invalid group data.
+ERROR 2023-06-11 17:41:47,354 views 10980 19244 Invalid group data.
+ERROR 2023-06-11 17:41:47,357 views 10980 19244 Invalid group data.
+ERROR 2023-06-11 17:41:47,363 views 10980 19244 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:41:47,365 views 10980 19244 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:41:47,365 views 10980 19244 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:41:47,450 views 10980 19244 An error occurred: Something went wrong
+ERROR 2023-06-11 17:41:47,451 log 10980 19244 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:41:47,465 views 10980 19244 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:41:47,465 log 10980 19244 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:41:47,475 views 10980 19244 Group not found. Group ID: 999
+ERROR 2023-06-11 17:41:47,483 views 10980 19244 Group not found. Group ID: None
+ERROR 2023-06-11 17:41:47,500 log 10980 19244 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:41:47,530 views 10980 19244 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:41:47,530 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,530 log 10980 19244 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:41:47,535 views 10980 19244 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:41:47,535 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,535 log 10980 19244 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:41:47,584 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,584 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,594 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,594 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,604 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,604 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,616 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,616 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,637 views 10980 19244 Error: Internal Server Error
+ERROR 2023-06-11 17:41:47,637 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,670 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,670 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,681 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,681 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:47,690 views 10980 19244 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:41:47,690 log 10980 19244 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:41:51,872 views 10980 19244 User not found. User ID: None
+ERROR 2023-06-11 17:41:51,876 views 10980 19244 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:41:51,876 views 10980 19244 Error: Something went wrong
+ERROR 2023-06-11 17:41:51,876 log 10980 19244 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:41:52,022 views 10980 19244 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:41:52,023 views 10980 19244 Error: Test Exception
+ERROR 2023-06-11 17:41:52,023 log 10980 19244 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:41:52,217 views 10980 19244 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:41:52,218 log 10980 19244 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:46:57,120 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,126 views 15084 14068 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:46:57,131 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,134 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,138 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,141 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,145 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,150 views 15084 14068 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:46:57,170 views 15084 14068 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:46:57,174 views 15084 14068 Invalid group data.
+ERROR 2023-06-11 17:46:57,180 views 15084 14068 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:46:57,181 views 15084 14068 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:46:57,182 views 15084 14068 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:46:57,187 views 15084 14068 Invalid group data.
+ERROR 2023-06-11 17:46:57,190 views 15084 14068 Invalid group data.
+ERROR 2023-06-11 17:46:57,193 views 15084 14068 Invalid group data.
+ERROR 2023-06-11 17:46:57,196 views 15084 14068 Invalid group data.
+ERROR 2023-06-11 17:46:57,201 views 15084 14068 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:46:57,204 views 15084 14068 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:46:57,204 views 15084 14068 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:46:57,289 views 15084 14068 An error occurred: Something went wrong
+ERROR 2023-06-11 17:46:57,290 log 15084 14068 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:46:57,303 views 15084 14068 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:46:57,304 log 15084 14068 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:46:57,314 views 15084 14068 Group not found. Group ID: 999
+ERROR 2023-06-11 17:46:57,322 views 15084 14068 Group not found. Group ID: None
+ERROR 2023-06-11 17:46:57,341 log 15084 14068 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:46:57,370 views 15084 14068 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:46:57,370 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,371 log 15084 14068 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:46:57,375 views 15084 14068 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:46:57,375 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,376 log 15084 14068 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:46:57,425 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,425 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,434 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,435 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,446 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,446 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,456 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,457 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,476 views 15084 14068 Error: Internal Server Error
+ERROR 2023-06-11 17:46:57,476 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,509 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,509 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,518 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,518 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:46:57,529 views 15084 14068 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:46:57,529 log 15084 14068 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:47:01,714 views 15084 14068 User not found. User ID: None
+ERROR 2023-06-11 17:47:01,719 views 15084 14068 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:47:01,719 views 15084 14068 Error: Something went wrong
+ERROR 2023-06-11 17:47:01,719 log 15084 14068 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:47:01,864 views 15084 14068 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:47:01,864 views 15084 14068 Error: Test Exception
+ERROR 2023-06-11 17:47:01,865 log 15084 14068 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:47:02,060 views 15084 14068 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:47:02,061 log 15084 14068 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 17:48:40,290 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,296 views 5804 15612 User with email:test3.example.com not found.
+ERROR 2023-06-11 17:48:40,301 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,306 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,309 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,312 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,315 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,320 views 5804 15612 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:48:40,341 views 5804 15612 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 17:48:40,344 views 5804 15612 Invalid group data.
+ERROR 2023-06-11 17:48:40,349 views 5804 15612 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:48:40,351 views 5804 15612 User with email:miss_ramazani not found.
+ERROR 2023-06-11 17:48:40,352 views 5804 15612 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:48:40,356 views 5804 15612 Invalid group data.
+ERROR 2023-06-11 17:48:40,359 views 5804 15612 Invalid group data.
+ERROR 2023-06-11 17:48:40,362 views 5804 15612 Invalid group data.
+ERROR 2023-06-11 17:48:40,364 views 5804 15612 Invalid group data.
+ERROR 2023-06-11 17:48:40,370 views 5804 15612 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:48:40,372 views 5804 15612 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 17:48:40,373 views 5804 15612 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 17:48:40,455 views 5804 15612 An error occurred: Something went wrong
+ERROR 2023-06-11 17:48:40,455 log 5804 15612 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 17:48:40,469 views 5804 15612 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 17:48:40,469 log 5804 15612 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 17:48:40,480 views 5804 15612 Group not found. Group ID: 999
+ERROR 2023-06-11 17:48:40,487 views 5804 15612 Group not found. Group ID: None
+ERROR 2023-06-11 17:48:40,504 log 5804 15612 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 17:48:40,533 views 5804 15612 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:48:40,534 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,534 log 5804 15612 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:48:40,539 views 5804 15612 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 17:48:40,539 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,540 log 5804 15612 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 17:48:40,589 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,589 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,598 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,598 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,608 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,608 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,618 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,619 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,638 views 5804 15612 Error: Internal Server Error
+ERROR 2023-06-11 17:48:40,638 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,668 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,668 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,678 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,679 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:40,688 views 5804 15612 Error: DebtAndCreditCalculate.DebtandCreditforMemberinGroup() takes 2 positional arguments but 3 were given
+ERROR 2023-06-11 17:48:40,688 log 5804 15612 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 17:48:44,900 views 5804 15612 User not found. User ID: None
+ERROR 2023-06-11 17:48:44,904 views 5804 15612 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 17:48:44,904 views 5804 15612 Error: Something went wrong
+ERROR 2023-06-11 17:48:44,904 log 5804 15612 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 17:48:45,049 views 5804 15612 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 17:48:45,049 views 5804 15612 Error: Test Exception
+ERROR 2023-06-11 17:48:45,051 log 5804 15612 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 17:48:45,240 views 5804 15612 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 17:48:45,240 log 5804 15612 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 18:23:57,817 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,823 views 12100 11048 User with email:test3.example.com not found.
+ERROR 2023-06-11 18:23:57,828 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,832 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,836 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,839 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,842 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,846 views 12100 11048 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:23:57,866 views 12100 11048 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:23:57,869 views 12100 11048 Invalid group data.
+ERROR 2023-06-11 18:23:57,875 views 12100 11048 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:23:57,876 views 12100 11048 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:23:57,877 views 12100 11048 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:23:57,881 views 12100 11048 Invalid group data.
+ERROR 2023-06-11 18:23:57,885 views 12100 11048 Invalid group data.
+ERROR 2023-06-11 18:23:57,887 views 12100 11048 Invalid group data.
+ERROR 2023-06-11 18:23:57,890 views 12100 11048 Invalid group data.
+ERROR 2023-06-11 18:23:57,895 views 12100 11048 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:23:57,897 views 12100 11048 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:23:57,898 views 12100 11048 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:23:57,985 views 12100 11048 An error occurred: Something went wrong
+ERROR 2023-06-11 18:23:57,985 log 12100 11048 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 18:23:57,999 views 12100 11048 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 18:23:58,000 log 12100 11048 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:23:58,006 views 12100 11048 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-11 18:23:58,006 log 12100 11048 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:23:58,011 views 12100 11048 Group not found. Group ID: 999
+ERROR 2023-06-11 18:23:58,019 views 12100 11048 Group not found. Group ID: None
+ERROR 2023-06-11 18:23:58,038 log 12100 11048 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 18:23:58,137 views 12100 11048 Error: Group not found.
+ERROR 2023-06-11 18:23:58,150 views 12100 11048 Error: User not found.
+ERROR 2023-06-11 18:23:58,200 views 12100 11048 Error: Internal Server Error
+ERROR 2023-06-11 18:23:58,201 log 12100 11048 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 18:24:02,471 views 12100 11048 User not found. User ID: None
+ERROR 2023-06-11 18:24:02,476 views 12100 11048 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 18:24:02,476 views 12100 11048 Error: Something went wrong
+ERROR 2023-06-11 18:24:02,476 log 12100 11048 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 18:24:02,633 views 12100 11048 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 18:24:02,633 views 12100 11048 Error: Test Exception
+ERROR 2023-06-11 18:24:02,634 log 12100 11048 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 18:24:02,823 views 12100 11048 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 18:24:02,824 log 12100 11048 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 18:25:07,856 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,864 views 10704 18584 User with email:test3.example.com not found.
+ERROR 2023-06-11 18:25:07,868 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,872 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,874 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,878 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,881 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,887 views 10704 18584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:25:07,910 views 10704 18584 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:25:07,914 views 10704 18584 Invalid group data.
+ERROR 2023-06-11 18:25:07,920 views 10704 18584 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:25:07,922 views 10704 18584 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:25:07,922 views 10704 18584 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:25:07,928 views 10704 18584 Invalid group data.
+ERROR 2023-06-11 18:25:07,931 views 10704 18584 Invalid group data.
+ERROR 2023-06-11 18:25:07,934 views 10704 18584 Invalid group data.
+ERROR 2023-06-11 18:25:07,937 views 10704 18584 Invalid group data.
+ERROR 2023-06-11 18:25:07,942 views 10704 18584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:25:07,945 views 10704 18584 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:25:07,945 views 10704 18584 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:25:08,045 views 10704 18584 An error occurred: Something went wrong
+ERROR 2023-06-11 18:25:08,046 log 10704 18584 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 18:25:08,059 views 10704 18584 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 18:25:08,060 log 10704 18584 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:25:08,071 views 10704 18584 Group not found. Group ID: 999
+ERROR 2023-06-11 18:25:08,077 views 10704 18584 Group not found. Group ID: None
+ERROR 2023-06-11 18:25:08,095 log 10704 18584 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 18:25:08,181 views 10704 18584 Error: Group not found.
+ERROR 2023-06-11 18:25:08,195 views 10704 18584 Error: User not found.
+ERROR 2023-06-11 18:25:08,248 views 10704 18584 Error: Internal Server Error
+ERROR 2023-06-11 18:25:08,248 log 10704 18584 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 18:25:12,522 views 10704 18584 User not found. User ID: None
+ERROR 2023-06-11 18:25:12,526 views 10704 18584 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 18:25:12,527 views 10704 18584 Error: Something went wrong
+ERROR 2023-06-11 18:25:12,527 log 10704 18584 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 18:25:12,666 views 10704 18584 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 18:25:12,666 views 10704 18584 Error: Test Exception
+ERROR 2023-06-11 18:25:12,667 log 10704 18584 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 18:25:12,857 views 10704 18584 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 18:25:12,857 log 10704 18584 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 18:26:58,282 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,290 views 7624 12072 User with email:test3.example.com not found.
+ERROR 2023-06-11 18:26:58,295 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,298 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,301 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,306 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,311 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,316 views 7624 12072 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:26:58,340 views 7624 12072 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:26:58,343 views 7624 12072 Invalid group data.
+ERROR 2023-06-11 18:26:58,349 views 7624 12072 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:26:58,351 views 7624 12072 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:26:58,351 views 7624 12072 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:26:58,357 views 7624 12072 Invalid group data.
+ERROR 2023-06-11 18:26:58,360 views 7624 12072 Invalid group data.
+ERROR 2023-06-11 18:26:58,363 views 7624 12072 Invalid group data.
+ERROR 2023-06-11 18:26:58,365 views 7624 12072 Invalid group data.
+ERROR 2023-06-11 18:26:58,372 views 7624 12072 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:26:58,375 views 7624 12072 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:26:58,375 views 7624 12072 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:26:58,462 views 7624 12072 An error occurred: Something went wrong
+ERROR 2023-06-11 18:26:58,462 log 7624 12072 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 18:26:58,477 views 7624 12072 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 18:26:58,477 log 7624 12072 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:26:58,489 views 7624 12072 Group not found. Group ID: 999
+ERROR 2023-06-11 18:26:58,495 views 7624 12072 Group not found. Group ID: None
+ERROR 2023-06-11 18:26:58,513 log 7624 12072 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 18:26:58,599 views 7624 12072 Error: Group not found.
+ERROR 2023-06-11 18:26:58,614 views 7624 12072 Error: User not found.
+ERROR 2023-06-11 18:26:58,667 views 7624 12072 Error: Internal Server Error
+ERROR 2023-06-11 18:26:58,668 log 7624 12072 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 18:27:02,964 views 7624 12072 User not found. User ID: None
+ERROR 2023-06-11 18:27:02,969 views 7624 12072 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 18:27:02,969 views 7624 12072 Error: Something went wrong
+ERROR 2023-06-11 18:27:02,969 log 7624 12072 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 18:27:03,117 views 7624 12072 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 18:27:03,117 views 7624 12072 Error: Test Exception
+ERROR 2023-06-11 18:27:03,117 log 7624 12072 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 18:27:03,307 views 7624 12072 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 18:27:03,307 log 7624 12072 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-11 18:27:37,602 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,608 views 2520 5644 User with email:test3.example.com not found.
+ERROR 2023-06-11 18:27:37,614 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,619 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,621 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,624 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,627 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,632 views 2520 5644 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:27:37,652 views 2520 5644 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-11 18:27:37,655 views 2520 5644 Invalid group data.
+ERROR 2023-06-11 18:27:37,660 views 2520 5644 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:27:37,662 views 2520 5644 User with email:miss_ramazani not found.
+ERROR 2023-06-11 18:27:37,662 views 2520 5644 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:27:37,667 views 2520 5644 Invalid group data.
+ERROR 2023-06-11 18:27:37,670 views 2520 5644 Invalid group data.
+ERROR 2023-06-11 18:27:37,672 views 2520 5644 Invalid group data.
+ERROR 2023-06-11 18:27:37,675 views 2520 5644 Invalid group data.
+ERROR 2023-06-11 18:27:37,681 views 2520 5644 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:27:37,683 views 2520 5644 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-11 18:27:37,683 views 2520 5644 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-11 18:27:37,768 views 2520 5644 An error occurred: Something went wrong
+ERROR 2023-06-11 18:27:37,768 log 2520 5644 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-11 18:27:37,782 views 2520 5644 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-11 18:27:37,782 log 2520 5644 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:27:37,789 views 2520 5644 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-11 18:27:37,789 log 2520 5644 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-11 18:27:37,793 views 2520 5644 Group not found. Group ID: 999
+ERROR 2023-06-11 18:27:37,800 views 2520 5644 Group not found. Group ID: None
+ERROR 2023-06-11 18:27:37,819 log 2520 5644 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-11 18:27:37,840 views 2520 5644 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-11 18:27:37,840 views 2520 5644 Error: Test Exception
+ERROR 2023-06-11 18:27:37,841 log 2520 5644 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-11 18:27:37,909 views 2520 5644 Error: Group not found.
+ERROR 2023-06-11 18:27:37,923 views 2520 5644 Error: User not found.
+ERROR 2023-06-11 18:27:37,973 views 2520 5644 Error: Internal Server Error
+ERROR 2023-06-11 18:27:37,973 log 2520 5644 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-11 18:27:42,280 views 2520 5644 User not found. User ID: None
+ERROR 2023-06-11 18:27:42,284 views 2520 5644 An error occurred while retrieving user information. User ID: 1, Email: testuser@example.com
+ERROR 2023-06-11 18:27:42,284 views 2520 5644 Error: Something went wrong
+ERROR 2023-06-11 18:27:42,285 log 2520 5644 Internal Server Error: /auth/UserInfo/
+ERROR 2023-06-11 18:27:42,449 views 2520 5644 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-11 18:27:42,450 views 2520 5644 Error: Test Exception
+ERROR 2023-06-11 18:27:42,450 log 2520 5644 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-11 18:27:42,637 views 2520 5644 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-11 18:27:42,637 log 2520 5644 Internal Server Error: /buy/UserGroupBuys/

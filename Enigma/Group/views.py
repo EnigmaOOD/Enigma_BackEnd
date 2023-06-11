@@ -10,8 +10,6 @@ from rest_framework import status
 from Group.models import Group, Members
 from buy.models import buyer, consumer
 from MyUser.models import MyUser
-from cache import RedisCache
-from debt import DebtAndCreditCalculate
 from .serializers import GroupSerializer, MemberSerializer, ShowMemberSerializer
 from .permissions import IsGroupUser
 import logging
@@ -160,7 +158,7 @@ class ShowMembers(APIView):
 
             members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
-            debt = DebtAndCreditCalculate()
+            debt = dependencies.debtandcredit_calculate_servise_instance
 
             for member in members:
                 member_id = member.userID.user_id
@@ -195,7 +193,7 @@ class GroupInfo(APIView):
         try:
             user_id = request.user.user_id
             group_id = request.data.get('groupID')
-            cache = RedisCache()
+
             cache_key = f"group_info:{group_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:

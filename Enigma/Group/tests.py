@@ -9,9 +9,8 @@ from MyUser.models import MyUser
 from buy.models import buy, buyer, consumer
 from django.test import TestCase
 from django.urls import resolve
-from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups, DebtandCreditforMemberinGroup
-from cache import RedisCache
-
+from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups
+import dependencies
 
 class DeleteGroupTests(APITestCase):
     # arrange
@@ -96,19 +95,19 @@ class DebtandCreditforMemberinGroupTest(APITestCase):
             buy=self.buy, userID=self.user2, percent=40000)
 
     def test_DebtandCreditforMemberinGroupTest_should_success_with_debt(self):
-        result = DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
         self.assertEqual(result, 40000)
 
     def test_DebtandCreditforMemberinGroupTest_should_success_with_credit(self):
-        result = DebtandCreditforMemberinGroup(self.user2.pk, self.group.pk)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.user2.pk, self.group.pk)
         self.assertEqual(result, -40000)
 
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_group_not_found(self):
-        result = DebtandCreditforMemberinGroup(self.user1.pk, 999)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.user1.pk, 999)
         self.assertEqual(result, 'Group not found.')
 
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_user_not_found(self):
-        result = DebtandCreditforMemberinGroup(999, self.group.pk)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(999, self.group.pk)
         self.assertEqual(result, 'User not found.')
 
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_get_Exception(self):
@@ -318,7 +317,7 @@ class ShowMembersTests(APITestCase):
 
     def test_ShowMembers_should_Error_with_exception(self):
         self.client.force_authenticate(user=self.user1)
-        with mock.patch('Group.views.DebtandCreditforMemberinGroup', side_effect=Exception('Test Exception')):
+        with mock.patch('dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup', side_effect=Exception('Test Exception')):
             response = self.client.post(self.url, {'groupID': self.group.id})
             self.assertEqual(response.status_code,
                              status.HTTP_500_INTERNAL_SERVER_ERROR)

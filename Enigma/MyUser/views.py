@@ -2,7 +2,6 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 from rest_framework import permissions, generics
 from rest_framework.exceptions import ValidationError
-from debt import DebtAndCreditCalculate
 from .models import MyUser
 from Group.models import Group, Members
 from .serializers import MyUserSerializer, UpdateUserSerializer
@@ -179,8 +178,8 @@ class LeaveGroup(APIView):
         try:
             group_id = request.data['groupID']
             logger.info(f"Group ID:{group_id} for leave group")
-            debt = DebtAndCreditCalculate()
-            result = debt.DebtandCreditforMemberinGroup(self.request.user, group_id)
+
+            result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.request.user, group_id)
             if isinstance(result, str):
                 if result == 'Group not found.':
                      logger.error(f"Error: {result}")

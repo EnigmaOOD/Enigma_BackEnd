@@ -4,7 +4,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from unittest.mock import patch
-from MyUser.views import DebtandCreditforMemberinGroup, LeaveGroup
+from MyUser.views import LeaveGroup
 from MyUser.models import MyUser
 from MyUser.serializers import UpdateUserSerializer
 from Group.models import Group, Members
@@ -13,6 +13,7 @@ from django.test import TestCase
 from django.urls import resolve
 from rest_framework.authtoken.views import obtain_auth_token
 from MyUser.views import RegisterUser, VerifyEmail, UserInfo, EditProfile, LeaveGroup
+import dependencies
 
 
 class RegisterAndAuthenticateTest(APITestCase):
@@ -473,7 +474,7 @@ class LeaveGroupTest(APITestCase):
 
     def test_LeaveGroup_should_Error_with_internal_server_error(self):
         # Mock the DebtandCreditforMemberinGroup function to raise an exception
-        with patch('MyUser.views.DebtandCreditforMemberinGroup') as mock_function:
+        with patch('dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup') as mock_function:
             mock_function.side_effect = Exception('Internal Server Error')
             self.client.force_authenticate(user=self.user1)
             response = self.client.post(self.url, data={'groupID': self.group1.id})
@@ -511,15 +512,15 @@ class DebtandCreditforMemberinGroupTest(APITestCase):
         self.consumer2 = consumer.objects.create(buy=self.buy, userID=self.user2, percent=40000)
 
     def test_DebtandCreditforMemberinGroupTest_should_success_with_member_in_group(self):
-        result = DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.user1.pk, self.group.pk)
         self.assertEqual(result, 40000)
 
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_group_not_found(self):
-        result = DebtandCreditforMemberinGroup(self.user1.pk, 999)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(self.user1.pk, 999)
         self.assertEqual(result, 'Group not found.')
 
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_user_not_found(self):
-        result = DebtandCreditforMemberinGroup(999, self.group.pk)
+        result = dependencies.debtandcredit_calculate_servise_instance.DebtandCreditforMemberinGroup(999, self.group.pk)
         self.assertEqual(result, 'User not found.')
     
     def test_DebtandCreditforMemberinGroupTest_should_Error_when_get_Exception(self):
