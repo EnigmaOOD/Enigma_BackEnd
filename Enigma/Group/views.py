@@ -151,13 +151,7 @@ class ShowGroups(APIView):
 #             for member in reversed(serializer.data):
 #                 member['cost'] = cost.pop()
            
-#             """
-#                 # Cache the data for future requests
 
-#             serialized_data = json.dumps(serializer.data)
-#             redis_conn.set(cache_key, serialized_data)
-#             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
-#             """
 
 #             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(request.data['groupID'], serializer.data))
 #             return Response(serializer.data, status=status.HTTP_200_OK)
@@ -173,14 +167,14 @@ class ShowMembers(APIView):
         try:
             cost = []
             group_id = request.data['groupID']
-            cache_key = f"show_members_{group_id}"
-            cache = RedisCache()
+            #cache_key = f"show_members_{group_id}"
+            #cache = RedisCache()
             # Try to fetch the data from cache
-            cached_data = cache.get(cache_key)
-            if cached_data:
-                logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
-                cached_data = json.loads(cached_data)
-                return Response(cached_data, status=status.HTTP_200_OK)
+            #cached_data = cache.get(cache_key)
+            #if cached_data:
+            #    logger.info('Members retrieved successfully from cache for Group ID: {}'.format(group_id))
+            #    cached_data = json.loads(cached_data)
+            #    return Response(cached_data, status=status.HTTP_200_OK)
 
             members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
@@ -194,8 +188,15 @@ class ShowMembers(APIView):
                 member['cost'] = cost.pop()
 
             # Cache the data for future requests
-            cache.set(cache_key, serializer.data, 3600)
+            #cache.set(cache_key, serializer.data, 3600)
 
+#without interface:
+#                 # Cache the data for future requests
+
+#             serialized_data = json.dumps(serializer.data)
+#             redis_conn.set(cache_key, serialized_data)
+#             redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
+#             """
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(group_id, serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Exception as e:

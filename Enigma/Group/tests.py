@@ -10,6 +10,7 @@ from buy.models import buy, buyer, consumer
 from django.test import TestCase
 from django.urls import resolve
 from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups, DebtandCreditforMemberinGroup
+from cache import RedisCache
 
 
 class DeleteGroupTests(APITestCase):
@@ -108,15 +109,14 @@ class DebtandCreditforMemberinGroupTest(APITestCase):
 
 class GroupInfoTest(APITestCase):
     def setUp(self):
-        self.user1 = MyUser.objects.create(
-            email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
+        self.user1 = MyUser.objects.create(email='maryam@test.local', name='maryam', password='maryam', picture_id=2)
         self.client = APIClient()
-        self.group = Group.objects.create(
-            name='Test Group', description="Family", currency="تومان", picture_id=2)
+        self.group = Group.objects.create(name='Test Group', description="Family", currency="تومان", picture_id=2)
         Members.objects.create(userID=self.user1, groupID=self.group)
         self.valid_payload = {'groupID': self.group.id}
         self.invalid_payload = {'groupID': 999}
         self.url = '/group/GroupInfo/'
+
 
     def test_GroupInfo_should_success_with_valid_GroupID(self):
         self.client.force_authenticate(user=self.user1)

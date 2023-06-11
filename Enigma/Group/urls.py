@@ -3,6 +3,7 @@ from django.urls import path, re_path
 from Group.views import GroupInfo, CreateGroup, DeleteGroup, AddUserGroup, ShowMembers, ShowGroups
 #just simple comment
 app_name = 'Group'
+
 urlpatterns = [
 
     path('GroupInfo/', GroupInfo.as_view(), name='GroupInfo'),
