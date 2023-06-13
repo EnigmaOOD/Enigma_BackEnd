@@ -10,11 +10,10 @@ from rest_framework import status
 from Group.models import Group, Members
 from buy.models import buyer, consumer
 from MyUser.models import MyUser
-from .serializers import GroupSerializer, MemberSerializer, ShowMemberSerializer
+from .serializers import GroupSerializer, MemberSerializer
 from .permissions import IsGroupUser
 import logging
 
-import redis
 import json
 import dependencies
 
@@ -101,21 +100,14 @@ class ShowGroups(APIView):
 
     def post(self, request):
         try:
-            user_groups = Members.objects.filter(
-                userID=self.request.user.user_id).values_list('groupID', flat=True)
-            groups = Group.objects.filter(pk__in=user_groups)
-            groups_count = groups.count()
+            
+            user_id=self.request.user.user_id
+            #group_list=dependencies.....
 
-            if groups_count>0:
-                group_list = [{'id': group.id, 'name': group.name,
-                           'currency': group.currency} for group in groups]
-               
-                logger.info('Groups retrieved successfully for User ID : {}'.format(self.request.user.user_id))
-                logger.debug('Number of groups retrieved: {}'.format(groups_count))
-
-                return Response({'groups': group_list})
-            else:
-                return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
+            return Response(group_list)
+            
+            #else:
+            #    return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
