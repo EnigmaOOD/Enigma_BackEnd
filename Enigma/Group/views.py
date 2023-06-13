@@ -138,7 +138,6 @@ class ShowMembers(APIView):
             members = Members.objects.filter(groupID=group_id)
             logger.debug('Number of members retrieved: {}'.format(len(members)))
             debt = dependencies.debtandcredit_calculate_servise_instance
-
             for member in members:
                 member_id = member.userID.user_id
                 cost.append(debt.DebtandCreditforMemberinGroup(member_id, group_id))
@@ -173,13 +172,8 @@ class GroupInfo(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            group = Group.objects.get(id=group_id)
+            #serializer = dependencies......
 
-            if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
-                logger.warning('User is not a member of the group. Group ID: {}, User email : {}'.format(group_id, request.user.email))
-                return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
-
-            serializer = GroupSerializer(group)
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
