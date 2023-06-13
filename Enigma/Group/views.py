@@ -125,7 +125,6 @@ class ShowMembers(APIView):
 
     def post(self, request):
         try:
-            cost = []
             group_id = request.data['groupID']
 
             cache_key = f"show_members_{group_id}"
@@ -135,16 +134,7 @@ class ShowMembers(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            members = Members.objects.filter(groupID=group_id)
-            logger.debug('Number of members retrieved: {}'.format(len(members)))
-            debt = dependencies.debtandcredit_calculate_servise_instance
-            for member in members:
-                member_id = member.userID.user_id
-                cost.append(debt.DebtandCreditforMemberinGroup(member_id, group_id))
-
-            serializer = ShowMemberSerializer(members, many=True)
-            for member in reversed(serializer.data):
-                member['cost'] = cost.pop()
+            #serializer = dependencies......           
 
             # Cache the data for future requests
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
