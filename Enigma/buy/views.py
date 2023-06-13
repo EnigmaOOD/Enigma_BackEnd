@@ -8,6 +8,7 @@ from rest_framework.generics import CreateAPIView
 from buy.serializers import BuySerializer, CreateBuySerializer, BuyListSerializer
 from Group.permissions import IsGroupUser
 import logging
+import dependencies
 
 logger = logging.getLogger('django')
 
@@ -39,7 +40,10 @@ class GetGroupBuys(APIView):
 
     def post(self, request):
         try:
-            perch = buy.objects.filter(groupID=request.data['groupID'])
+            perch = dependencies...(request.data['groupID'], "buy")
+            
+            
+            #perch = buy.objects.filter(groupID=request.data['groupID'])
             if 'sort' in request.data:
                 perch = perch.order_by('cost')
             perchase = BuySerializer(perch, many=True)
@@ -56,21 +60,28 @@ class UserGroupBuys(APIView):
             user_id = request.user.user_id
 
             group_id = request.data.get('groupID')
-            group_exists = Group.objects.filter(id=group_id).exists()
+            
+            group= dependencies....(group_id,"Group")
+            # group_exists = Group.objects.filter(id=group_id).exists()
 
-            if not group_exists:
+            if not group.exists():
                 logger.warning('Group ID not provided. GroupID:{}'.format(group_id))
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
             
-            if not Members.objects.filter(groupID=group_id, userID=user_id).exists():
+            members= dependencies....(group_id,"Members")
+            #Members.objects.filter(groupID=group_id, userID=user_id).
+            if not members.exists():
                 logger.warning('User is not a member of the group. Group ID: {}, User ID: {}'.format(group_id, user_id))
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
                 # Get buys where the user is a buyer
-            buyer_buys = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
+            #buyer_buys = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
+            buyer_buys=dependencies.....(user_id,group_id,"buy_Buyer")
+
 
                 # Get buys where the user is a consumer
-            consumer_buys = buy.objects.filter(consumers__userID=user_id, groupID=group_id).distinct()
+            #consumer_buys = buy.objects.filter(consumers__userID=user_id, groupID=group_id).distinct()
+            consumer_buys=dependencies.....(user_id, group_id, "buy_consumer")
 
             if 'sort' in request.data:
                 consumer_buys = consumer_buys.order_by('cost')

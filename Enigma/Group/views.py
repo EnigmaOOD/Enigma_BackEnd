@@ -73,7 +73,11 @@ class AddUserGroup(APIView):
             for emailUser in emails:
                 try:
                     user = MyUser.objects.get(email=emailUser)
-                    if not Members.objects.filter(groupID=group, userID=user).exists():
+
+                    members= dependencies....(group_id,"Members")
+
+                    if not members.exists():
+                    #if not Members.objects.filter(groupID=group, userID=user).exists():
                         member = Members(groupID=group, userID=user)
                         member.save()
                     logger.info(f'Add user with email:{emailUser} to the group:{group_id}')
@@ -102,10 +106,11 @@ class ShowGroups(APIView):
         try:
             
             user_id=self.request.user.user_id
-            #group_list=dependencies.....
+            
+            group_list=dependencies.....(userGroup_iterface)
 
             return Response(group_list)
-            
+
             #else:
             #    return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
@@ -126,7 +131,7 @@ class ShowMembers(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            #serializer = dependencies......           
+            serializer = dependencies......(cost_inteface)           
 
             # Cache the data for future requests
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
@@ -154,7 +159,7 @@ class GroupInfo(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            #serializer = dependencies......
+            serializer = dependencies......(Info_interface)
 
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 

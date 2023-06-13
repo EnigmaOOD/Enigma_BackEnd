@@ -126,9 +126,13 @@ class UserInfo(APIView):
     
     def post(self, request):
         try:
-            user = self.request.user
+            
+            user_id = request.user.user_id
+            user= dependencies....(user_id,"MyUser")
+            if not user.exists():
 
-            if not MyUser.objects.filter(pk=user.pk).exists():
+                
+            #if not MyUser.objects.filter(pk=user.pk).exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
 

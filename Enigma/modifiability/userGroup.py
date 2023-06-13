@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from Group.models import Group, Members
 import logging
 logger = logging.getLogger('django')
+import dependencies
 
 class UserGroupInterface(ABC):
     @abstractmethod
@@ -11,7 +12,10 @@ class UserGroupInterface(ABC):
 class userGroup(UserGroupInterface):
 
     def group(user_id):
-            user_groups = Members.objects.filter(userID=user_id).values_list('groupID', flat=True)
+
+            user_groups=dependencies....(user_id,"Members")
+            user_groups= user_groups.values_list('groupID', flat=True)
+            #user_groups = Members.objects.filter(userID=user_id).values_list('groupID', flat=True)
             groups = Group.objects.filter(pk__in=user_groups)
             groups_count = groups.count()
 
