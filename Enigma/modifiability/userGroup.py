@@ -13,13 +13,13 @@ class userGroup(UserGroupInterface):
 
     def group(user_id):
 
-            user_groups=dependencies....(user_id,"Members")
+            user_groups=dependencies.filter_servise_instance(user_id,"Members")
             user_groups= user_groups.values_list('groupID', flat=True)
             #user_groups = Members.objects.filter(userID=user_id).values_list('groupID', flat=True)
             groups = Group.objects.filter(pk__in=user_groups)
             groups_count = groups.count()
 
-            if groups_count>0:
+            if groups_count > 0:
                 group_list = [{'id': group.id, 'name': group.name,
                            'currency': group.currency} for group in groups]
                

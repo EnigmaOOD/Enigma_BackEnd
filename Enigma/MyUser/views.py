@@ -128,7 +128,7 @@ class UserInfo(APIView):
         try:
             
             user_id = request.user.user_id
-            user= dependencies....(user_id,"MyUser")
+            user= dependencies.filter_servise_instance(user_id,"MyUser")
             if not user.exists():
 
                 

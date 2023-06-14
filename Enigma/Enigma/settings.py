@@ -215,6 +215,11 @@ CACHES = {
     }
 }
 
-Cache_Redis_SERVICE = 'Enigma.cache.RedisCache'
+Cache_Redis_SERVICE = 'modifiability.cache.RedisCache'
+Debt_And_Credit_Calculate_SERVICE = 'modifiability.debt.DebtAndCreditCalculate'
+Filter_SERVICE = 'modifiability.filter.Filter'
+Information_SERVICE = 'modifiability.info.Info'
+Calculate_Cost_Service =  'modifiability.cost.CostForMember'
+User_Group_SERVICE = 'modifiability.userGroup.userGroup'
 
 INTERNAL_IPS =['127.0.0.1']

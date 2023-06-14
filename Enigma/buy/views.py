@@ -40,7 +40,7 @@ class GetGroupBuys(APIView):
 
     def post(self, request):
         try:
-            perch = dependencies...(request.data['groupID'], "buy")
+            perch = dependencies.filter_servise_instance(request.data['groupID'], "buy")
             
             
             #perch = buy.objects.filter(groupID=request.data['groupID'])
@@ -61,14 +61,14 @@ class UserGroupBuys(APIView):
 
             group_id = request.data.get('groupID')
             
-            group= dependencies....(group_id,"Group")
+            group= dependencies.filter_servise_instance(group_id,"Group")
             # group_exists = Group.objects.filter(id=group_id).exists()
 
             if not group.exists():
                 logger.warning('Group ID not provided. GroupID:{}'.format(group_id))
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
             
-            members= dependencies....(group_id,"Members")
+            members= dependencies.filter_servise_instance(group_id,"Members")
             #Members.objects.filter(groupID=group_id, userID=user_id).
             if not members.exists():
                 logger.warning('User is not a member of the group. Group ID: {}, User ID: {}'.format(group_id, user_id))
@@ -76,12 +76,12 @@ class UserGroupBuys(APIView):
 
                 # Get buys where the user is a buyer
             #buyer_buys = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
-            buyer_buys=dependencies.....(user_id,group_id,"buy_Buyer")
+            buyer_buys=dependencies.filter_servise_instance(user_id,group_id,"buy_Buyer")
 
 
                 # Get buys where the user is a consumer
             #consumer_buys = buy.objects.filter(consumers__userID=user_id, groupID=group_id).distinct()
-            consumer_buys=dependencies.....(user_id, group_id, "buy_consumer")
+            consumer_buys=dependencies.filter_servise_instance(user_id, group_id, "buy_consumer")
 
             if 'sort' in request.data:
                 consumer_buys = consumer_buys.order_by('cost')

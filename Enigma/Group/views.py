@@ -74,7 +74,7 @@ class AddUserGroup(APIView):
                 try:
                     user = MyUser.objects.get(email=emailUser)
 
-                    members= dependencies....(group_id,"Members")
+                    members= dependencies.filter_servise_instance(group_id,"Members")
 
                     if not members.exists():
                     #if not Members.objects.filter(groupID=group, userID=user).exists():
@@ -106,8 +106,7 @@ class ShowGroups(APIView):
         try:
             
             user_id=self.request.user.user_id
-            
-            group_list=dependencies.....(userGroup_iterface)
+            group_list=dependencies.user_group_servise_instance(user_id)
 
             return Response(group_list)
 
@@ -131,7 +130,7 @@ class ShowMembers(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            serializer = dependencies......(cost_inteface)           
+            serializer = dependencies.cost_calculate_servise_instance(group_id)      
 
             # Cache the data for future requests
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
@@ -159,8 +158,7 @@ class GroupInfo(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            serializer = dependencies......(Info_interface)
-
+            serializer = dependencies.info_servise_instance(user_id, group_id)
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
