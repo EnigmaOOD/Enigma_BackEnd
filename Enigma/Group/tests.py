@@ -150,8 +150,7 @@ class GroupInfoTest(APITestCase):
         with mock.patch('Group.models.Group.objects.get') as mock_get:
             mock_get.side_effect = Exception('Something went wrong')
             response = self.client.post(self.url, self.valid_payload)
-            self.assertEqual(response.status_code,
-                             status.HTTP_500_INTERNAL_SERVER_ERROR)
+            self.assertEqual(response.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def test_GroupInfo_should_Error_without_groupID(self):
         self.client.force_authenticate(user=self.user1)

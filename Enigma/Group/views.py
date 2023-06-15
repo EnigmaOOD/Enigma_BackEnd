@@ -12,8 +12,8 @@ from buy.models import buyer, consumer
 from MyUser.models import MyUser
 from .serializers import GroupSerializer, MemberSerializer
 from .permissions import IsGroupUser
-import logging
 
+import logging
 import json
 import dependencies
 
@@ -152,7 +152,7 @@ class GroupInfo(APIView):
 
             cache_key = f"group_info:{group_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
-
+            
             if cached_data:
                 logger.info('GroupInfo retrieved successfully from cache for Group ID: {}'.format(group_id))
                 cached_data = json.loads(cached_data)
