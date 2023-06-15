@@ -13,10 +13,6 @@ filter_servise_class_neme = settings.Filter_SERVICE
 filter_servise_class = getattr(importlib.import_module(filter_servise_class_neme.rsplit('.', 1)[0]), filter_servise_class_neme.rsplit('.', 1)[1])
 filter_servise_instance = filter_servise_class()
 
-info_servise_class_neme = settings.Information_SERVICE
-info_servise_class = getattr(importlib.import_module(info_servise_class_neme.rsplit('.', 1)[0]), info_servise_class_neme.rsplit('.', 1)[1])
-info_servise_instance = info_servise_class()
-
 cost_calculate_servise_class_neme = settings.Calculate_Cost_Service
 cost_calculate_servise_class = getattr(importlib.import_module(cost_calculate_servise_class_neme.rsplit('.', 1)[0]), cost_calculate_servise_class_neme.rsplit('.', 1)[1])
 cost_calculate_servise_instance = cost_calculate_servise_class()

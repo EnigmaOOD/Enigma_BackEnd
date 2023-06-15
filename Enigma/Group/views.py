@@ -73,8 +73,7 @@ class AddUserGroup(APIView):
             for emailUser in emails:
                 try:
                     user = MyUser.objects.get(email=emailUser)
-
-                    members= dependencies.filter_servise_instance.FilterByGroup(group_id, "Members")
+                    members= dependencies.filter_servise_instance.FilterByBoth(user, group_id, "Members")
 
                     if not members.exists():
                     #if not Members.objects.filter(groupID=group, userID=user).exists():
@@ -106,12 +105,9 @@ class ShowGroups(APIView):
         try:
             
             user_id=self.request.user.user_id
-            group_list=dependencies.user_group_servise_instance(user_id)
+            user=dependencies.filter_servise_instance.FilterByUser(user_id, "Members")
+            return dependencies.user_group_servise_instance.group(user)
 
-            return Response(group_list)
-
-            #else:
-            #    return Response({'Error': "User does not belong to any groups"},status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({'Error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
@@ -130,13 +126,16 @@ class ShowMembers(APIView):
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
 
-            serializer = dependencies.cost_calculate_servise_instance(group_id)      
+            members = dependencies.filter_servise_instance.FilterByGroup(group_id, 'Members')
+            logger.debug('Number of members retrieved: {}'.format(len(members)))
+            serializer = dependencies.cost_calculate_servise_instance.cost(group_id, members)      
 
             # Cache the data for future requests
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Members retrieved successfully for Group ID: {}, Group Members: {}'.format(group_id, serializer.data))
             return Response(serializer.data, status=status.HTTP_200_OK)
+        
         except Exception as e:
             logger.error('An error occurred while retrieving members for Group ID: {}'.format(group_id))
             logger.error('Error: {}'.format(str(e)))
@@ -153,19 +152,27 @@ class GroupInfo(APIView):
 
             cache_key = f"group_info:{group_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
+
             if cached_data:
                 logger.info('GroupInfo retrieved successfully from cache for Group ID: {}'.format(group_id))
                 cached_data = json.loads(cached_data)
                 return Response(cached_data, status=status.HTTP_200_OK)
-
-            serializer = dependencies.info_servise_instance(user_id, group_id)
+            
+            group = Group.objects.get(id=group_id)
+            if not dependencies.filter_servise_instance.FilterByBoth(user_id, group_id, 'Members').exists():
+                logger.warning('User is not a member of the group. Group ID: {}'.format(group_id))
+                return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
+            
+            serializer = GroupSerializer(group)
             dependencies.cache_servise_instance.set(cache_key, serializer.data, 3600)
 
             logger.info('Group info retrieved successfully. Group ID: {}. Group name: {}'.format(group_id, serializer.data['name']))
             return Response(serializer.data, status=status.HTTP_200_OK)
+        
         except Group.DoesNotExist:
             logger.error('Group not found. Group ID: {}'.format(group_id))
             return Response({'message': 'Group not found.'}, status=status.HTTP_404_NOT_FOUND)
+        
         except:
             logger.error('An error occurred while retrieving group info. Group ID: {}'.format(group_id))
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

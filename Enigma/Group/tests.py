@@ -335,6 +335,7 @@ class ShowMembersTests(APITestCase):
 
 
 class CreateGroupTest(APITestCase):
+
     def setUp(self):
         self.user1 = MyUser.objects.create(
             email='test1@example.com', password='test1', name='test1', picture_id=1)
@@ -670,8 +671,7 @@ class AddUserGroupTest(APITestCase):
         response = self.client.post(self.url, data, format='json')
 
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
-        self.assertEqual(json.loads(response.content), {
-                         "message": "user not found."})
+        self.assertEqual(json.loads(response.content), {"message": "user not found."})
         self.assertEqual(Members.objects.count(), 2)
         self.assertEqual(Members.objects.first().userID, self.user1)
         self.assertEqual(Members.objects.last().userID, self.user2)
