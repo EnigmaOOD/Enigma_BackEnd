@@ -126,16 +126,13 @@ class UserInfo(APIView):
     
     def post(self, request):
         try:
-            
-            user_id = request.user.user_id
-            user= dependencies.filter_servise_instance(user_id,"MyUser")
-            if not user.exists():
-
-                
+            user = request.user
             #if not MyUser.objects.filter(pk=user.pk).exists():
+            
+            if not dependencies.filter_servise_instance.FilterByUser(user.pk, "MyUser").exists():
                 logger.error('User not found. User ID: {}'.format(user.user_id))
                 return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-
+            
             cache_key = f"user_info:{user.user_id}"
             cached_data = dependencies.cache_servise_instance.get(cache_key)
             if cached_data:
@@ -161,14 +158,13 @@ class UserInfo(APIView):
                 'is_staff': user.is_staff,
             }
             dependencies.cache_servise_instance.set(cache_key, user_info, 3600)
-
             #    redis_conn.set(cache_key, json.dumps(user_info))
             #   redis_conn.expire(cache_key, 3600)  # Set expiration time for 1 hour (3600 seconds)
 
             logger.info('User information retrieved successfully. User ID: {}, Email: {}'.format(user.user_id, user.email))
             logger.debug('User information: {}'.format(user_info))
-
             return Response(user_info)
+        
         except Exception as e:
             logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
             logger.error('Error: '+ str(e))

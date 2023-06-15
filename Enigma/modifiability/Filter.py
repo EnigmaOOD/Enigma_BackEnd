@@ -20,6 +20,7 @@ class FilterInterface(ABC):
 
 
 class Filter(FilterInterface):
+
     def FilterByUser(self, user_id, table):
         if table == "buy":
             result = buy.objects.filter(userID=user_id)
@@ -28,7 +29,7 @@ class Filter(FilterInterface):
         elif table == "Group":
             result = Group.objects.filter(userID=user_id)
         elif table == "MyUser":
-            result = MyUser.objects.filter(userID=user_id)
+            result = MyUser.objects.filter(pk=user_id)
         return result
 
     def FilterByGroup(self, group_id, table):
