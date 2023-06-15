@@ -55,6 +55,8 @@ class GetGroupBuys(APIView):
             return Response({'message': 'An error occurred.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class UserGroupBuys(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    
     def post(self, request):
         
         try:
@@ -66,8 +68,8 @@ class UserGroupBuys(APIView):
             if not group_exists:
                 logger.warning('Group ID not provided. GroupID:{}'.format(group_id))
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
-
-            members_exists = dependencies.filter_servise_instance.FilterByGroup(group_id,"Members").exists()
+            
+            members_exists = dependencies.filter_servise_instance.FilterByBoth(user_id, group_id, "Members").exists()
             #Members.objects.filter(groupID=group_id, userID=user_id).exists()
             if not members_exists:
                 logger.warning('User is not a member of the group. Group ID: {}, User ID: {}'.format(group_id, user_id))

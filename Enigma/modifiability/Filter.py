@@ -43,6 +43,8 @@ class Filter(FilterInterface):
         return result
 
     def FilterByBoth(self, user_id, group_id, table):
+        if table == "Members":
+            result = Members.objects.filter(userID=user_id, groupID=group_id)
         if table == "buy_Buyer":
             result = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
         if table == "buy_consumer":

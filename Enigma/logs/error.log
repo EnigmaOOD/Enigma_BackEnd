@@ -18022,3 +18022,168 @@ ERROR 2023-06-15 11:47:39,562 views 6288 11280 Error: Test Exception
 ERROR 2023-06-15 11:47:39,563 log 6288 11280 Internal Server Error: /buy/GetGroupBuys/
 ERROR 2023-06-15 11:47:39,824 views 6288 11280 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-06-15 11:47:39,825 log 6288 11280 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:51:38,256 views 14876 1308 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:51:38,257 views 14876 1308 Error: Test Exception
+ERROR 2023-06-15 11:51:38,257 log 14876 1308 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:51:38,498 views 14876 1308 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:51:38,499 log 14876 1308 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:55:18,518 views 11640 15836 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:55:18,518 views 11640 15836 Error: Test Exception
+ERROR 2023-06-15 11:55:18,518 log 11640 15836 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:55:18,758 views 11640 15836 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:55:18,758 log 11640 15836 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:56:19,941 views 18896 12912 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:56:19,942 views 18896 12912 Error: Test Exception
+ERROR 2023-06-15 11:56:19,942 log 18896 12912 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:56:20,193 views 18896 12912 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:56:20,194 log 18896 12912 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:57:07,206 views 16084 2564 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:57:07,206 views 16084 2564 Error: Test Exception
+ERROR 2023-06-15 11:57:07,207 log 16084 2564 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:57:07,449 views 16084 2564 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:57:07,450 log 16084 2564 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:59:02,065 views 6276 8556 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:59:02,065 views 6276 8556 Error: Test Exception
+ERROR 2023-06-15 11:59:02,065 log 6276 8556 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:59:02,306 views 6276 8556 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:59:02,307 log 6276 8556 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:59:52,708 views 1148 11336 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:59:52,708 views 1148 11336 Error: Test Exception
+ERROR 2023-06-15 11:59:52,709 log 1148 11336 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:59:52,936 views 1148 11336 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:59:52,936 log 1148 11336 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,384 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 12:02:06,384 views 19376 16352 Error: Test Exception
+ERROR 2023-06-15 12:02:06,386 log 19376 16352 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 12:02:06,620 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:06,620 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,628 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:06,628 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,646 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:06,647 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,655 views 19376 16352 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 12:02:06,656 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,665 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:06,666 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,675 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:06,675 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:06,682 views 19376 16352 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:06,682 log 19376 16352 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:24,849 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 12:02:24,850 views 5020 10964 Error: Test Exception
+ERROR 2023-06-15 12:02:24,850 log 5020 10964 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 12:02:25,081 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:25,082 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,090 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:25,091 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,109 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:25,109 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,117 views 5020 10964 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 12:02:25,118 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,127 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:25,128 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,136 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 12:02:25,137 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:02:25,144 views 5020 10964 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:02:25,145 log 5020 10964 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:03:29,434 views 3504 2984 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 12:03:29,434 views 3504 2984 Error: Test Exception
+ERROR 2023-06-15 12:03:29,434 log 3504 2984 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 12:03:29,671 views 3504 2984 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 12:03:29,672 log 3504 2984 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 12:03:47,875 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,882 views 7012 15836 User with email:test3.example.com not found.
+ERROR 2023-06-15 12:03:47,887 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,894 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,897 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,901 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,906 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,914 views 7012 15836 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:03:47,943 views 7012 15836 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:03:47,948 views 7012 15836 Invalid group data.
+ERROR 2023-06-15 12:03:47,958 views 7012 15836 User with email:miss_ramazani not found.
+ERROR 2023-06-15 12:03:47,962 views 7012 15836 User with email:miss_ramazani not found.
+ERROR 2023-06-15 12:03:47,962 views 7012 15836 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 12:03:47,969 views 7012 15836 Invalid group data.
+ERROR 2023-06-15 12:03:47,973 views 7012 15836 Invalid group data.
+ERROR 2023-06-15 12:03:47,977 views 7012 15836 Invalid group data.
+ERROR 2023-06-15 12:03:47,980 views 7012 15836 Invalid group data.
+ERROR 2023-06-15 12:03:47,988 views 7012 15836 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:03:47,991 views 7012 15836 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:03:47,992 views 7012 15836 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 12:03:48,110 views 7012 15836 An error occurred: Something went wrong
+ERROR 2023-06-15 12:03:48,111 log 7012 15836 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-15 12:03:48,131 views 7012 15836 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-15 12:03:48,132 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,136 views 7012 15836 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:03:48,136 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,142 views 7012 15836 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:03:48,142 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,149 views 7012 15836 An error occurred while retrieving group info. Group ID: 999
+ERROR 2023-06-15 12:03:48,149 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,160 views 7012 15836 An error occurred while retrieving group info. Group ID: None
+ERROR 2023-06-15 12:03:48,160 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,164 views 7012 15836 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:03:48,164 log 7012 15836 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:03:48,174 log 7012 15836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:03:48,181 log 7012 15836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:03:48,183 log 7012 15836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:03:48,186 log 7012 15836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:03:48,192 log 7012 15836 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:03:48,213 views 7012 15836 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:03:48,213 views 7012 15836 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:03:48,213 log 7012 15836 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 12:03:48,227 views 7012 15836 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:03:48,227 views 7012 15836 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:03:48,228 log 7012 15836 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 12:03:48,231 views 7012 15836 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:03:48,231 views 7012 15836 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:03:48,231 log 7012 15836 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 12:04:05,270 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,277 views 1908 13060 User with email:test3.example.com not found.
+ERROR 2023-06-15 12:04:05,281 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,285 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,288 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,292 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,297 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,304 views 1908 13060 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:04:05,328 views 1908 13060 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 12:04:05,332 views 1908 13060 Invalid group data.
+ERROR 2023-06-15 12:04:05,342 views 1908 13060 User with email:miss_ramazani not found.
+ERROR 2023-06-15 12:04:05,346 views 1908 13060 User with email:miss_ramazani not found.
+ERROR 2023-06-15 12:04:05,346 views 1908 13060 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 12:04:05,352 views 1908 13060 Invalid group data.
+ERROR 2023-06-15 12:04:05,358 views 1908 13060 Invalid group data.
+ERROR 2023-06-15 12:04:05,362 views 1908 13060 Invalid group data.
+ERROR 2023-06-15 12:04:05,365 views 1908 13060 Invalid group data.
+ERROR 2023-06-15 12:04:05,374 views 1908 13060 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:04:05,378 views 1908 13060 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 12:04:05,378 views 1908 13060 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 12:04:05,496 views 1908 13060 An error occurred: Something went wrong
+ERROR 2023-06-15 12:04:05,496 log 1908 13060 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-15 12:04:05,516 views 1908 13060 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-15 12:04:05,516 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,520 views 1908 13060 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:04:05,521 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,526 views 1908 13060 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:04:05,526 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,531 views 1908 13060 An error occurred while retrieving group info. Group ID: 999
+ERROR 2023-06-15 12:04:05,531 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,542 views 1908 13060 An error occurred while retrieving group info. Group ID: None
+ERROR 2023-06-15 12:04:05,542 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,546 views 1908 13060 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 12:04:05,546 log 1908 13060 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 12:04:05,555 log 1908 13060 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:04:05,562 log 1908 13060 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:04:05,564 log 1908 13060 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:04:05,570 log 1908 13060 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:04:05,576 log 1908 13060 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 12:04:05,597 views 1908 13060 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:04:05,597 views 1908 13060 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:04:05,597 log 1908 13060 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 12:04:05,611 views 1908 13060 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:04:05,611 views 1908 13060 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:04:05,612 log 1908 13060 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 12:04:05,615 views 1908 13060 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 12:04:05,615 views 1908 13060 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 12:04:05,616 log 1908 13060 Internal Server Error: /group/ShowMembers/
