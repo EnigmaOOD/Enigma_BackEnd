@@ -17578,3 +17578,447 @@ ERROR 2023-06-15 09:45:08,682 views 7224 9580 An error occurred while retrieving
 ERROR 2023-06-15 09:45:08,682 log 7224 9580 Internal Server Error: /buy/UserGroupBuys/
 ERROR 2023-06-15 09:45:08,688 views 7224 9580 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
 ERROR 2023-06-15 09:45:08,689 log 7224 9580 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,873 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:51:32,873 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,880 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:51:32,880 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,895 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:51:32,895 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,900 views 15584 16724 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:51:32,901 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,909 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:51:32,910 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,916 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:51:32,917 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:51:32,924 views 15584 16724 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:51:32,924 log 15584 16724 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,941 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:53:51,941 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,947 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:53:51,947 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,962 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:53:51,962 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,969 views 9024 8716 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:53:51,969 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,976 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:53:51,976 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,983 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:53:51,983 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:53:51,990 views 9024 8716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:53:51,990 log 9024 8716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,733 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:54:41,733 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,740 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:54:41,741 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,755 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:54:41,756 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,762 views 15632 17756 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:54:41,763 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,772 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:54:41,772 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,779 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:54:41,779 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:54:41,787 views 15632 17756 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:54:41,787 log 15632 17756 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,413 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:56:54,413 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,420 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:56:54,420 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,435 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:56:54,436 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,442 views 14208 14660 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:56:54,443 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,449 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:56:54,450 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,457 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:56:54,458 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:56:54,463 views 14208 14660 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:56:54,464 log 14208 14660 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,615 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:57:46,616 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,622 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:57:46,623 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,637 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:57:46,637 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,643 views 11472 16432 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:57:46,643 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,651 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:57:46,652 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,659 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:57:46,659 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:57:46,664 views 11472 16432 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:57:46,665 log 11472 16432 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,098 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:59:02,098 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,105 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:59:02,105 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,122 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:59:02,122 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,129 views 4140 8872 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 09:59:02,130 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,138 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:59:02,138 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,145 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 09:59:02,145 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 09:59:02,151 views 4140 8872 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 09:59:02,151 log 4140 8872 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,335 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:01:57,336 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,343 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:01:57,343 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,359 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:01:57,359 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,365 views 3176 7416 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 10:01:57,365 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,373 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:01:57,373 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,380 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:01:57,380 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:01:57,388 views 3176 7416 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:01:57,388 log 3176 7416 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,035 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 10:02:57,035 views 1784 18108 Error: Test Exception
+ERROR 2023-06-15 10:02:57,035 log 1784 18108 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 10:02:57,223 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:02:57,223 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,229 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:02:57,229 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,242 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:02:57,242 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,248 views 1784 18108 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 10:02:57,249 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,255 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:02:57,255 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,261 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:02:57,261 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:02:57,267 views 1784 18108 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:02:57,267 log 1784 18108 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,513 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:15:37,513 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,519 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:15:37,519 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,534 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:15:37,534 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,542 views 12308 4400 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 10:15:37,542 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,549 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:15:37,549 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,555 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 10:15:37,556 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 10:15:37,564 views 12308 4400 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 10:15:37,564 log 12308 4400 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,554 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:37:28,555 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,561 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:37:28,561 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,584 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:37:28,585 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,594 views 11680 11020 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 11:37:28,594 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,604 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:37:28,605 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,615 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:37:28,616 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:37:28,625 views 11680 11020 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:37:28,625 log 11680 11020 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:46,042 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,049 views 5624 11780 User with email:test3.example.com not found.
+ERROR 2023-06-15 11:38:46,055 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,062 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,067 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,072 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,079 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,085 views 5624 11780 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 11:38:46,115 views 5624 11780 Permission deneid: You do not have permission to perform this action.
+ERROR 2023-06-15 11:38:46,119 views 5624 11780 Invalid group data.
+ERROR 2023-06-15 11:38:46,130 views 5624 11780 User with email:miss_ramazani not found.
+ERROR 2023-06-15 11:38:46,132 views 5624 11780 User with email:miss_ramazani not found.
+ERROR 2023-06-15 11:38:46,133 views 5624 11780 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 11:38:46,140 views 5624 11780 Invalid group data.
+ERROR 2023-06-15 11:38:46,145 views 5624 11780 Invalid group data.
+ERROR 2023-06-15 11:38:46,149 views 5624 11780 Invalid group data.
+ERROR 2023-06-15 11:38:46,153 views 5624 11780 Invalid group data.
+ERROR 2023-06-15 11:38:46,163 views 5624 11780 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 11:38:46,166 views 5624 11780 User with email:miss_ramazani@yahoo.com not found.
+ERROR 2023-06-15 11:38:46,166 views 5624 11780 User not found.Removing the newly created group. Group ID: 1
+ERROR 2023-06-15 11:38:46,298 views 5624 11780 An error occurred: Something went wrong
+ERROR 2023-06-15 11:38:46,299 log 5624 11780 Internal Server Error: /group/DeleteGroup/
+ERROR 2023-06-15 11:38:46,323 views 5624 11780 An error occurred while retrieving group info. Group ID: invalid
+ERROR 2023-06-15 11:38:46,323 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,328 views 5624 11780 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 11:38:46,329 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,333 views 5624 11780 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 11:38:46,333 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,340 views 5624 11780 An error occurred while retrieving group info. Group ID: 999
+ERROR 2023-06-15 11:38:46,341 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,350 views 5624 11780 An error occurred while retrieving group info. Group ID: None
+ERROR 2023-06-15 11:38:46,351 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,354 views 5624 11780 An error occurred while retrieving group info. Group ID: 1
+ERROR 2023-06-15 11:38:46,355 log 5624 11780 Internal Server Error: /group/GroupInfo/
+ERROR 2023-06-15 11:38:46,365 log 5624 11780 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 11:38:46,372 log 5624 11780 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 11:38:46,376 log 5624 11780 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 11:38:46,380 log 5624 11780 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 11:38:46,384 log 5624 11780 Internal Server Error: /group/ShowGroups/
+ERROR 2023-06-15 11:38:46,408 views 5624 11780 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 11:38:46,409 views 5624 11780 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 11:38:46,409 log 5624 11780 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 11:38:46,423 views 5624 11780 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 11:38:46,423 views 5624 11780 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 11:38:46,423 log 5624 11780 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 11:38:46,429 views 5624 11780 An error occurred while retrieving members for Group ID: 1
+ERROR 2023-06-15 11:38:46,430 views 5624 11780 Error: 'CostForMember' object is not callable
+ERROR 2023-06-15 11:38:46,430 log 5624 11780 Internal Server Error: /group/ShowMembers/
+ERROR 2023-06-15 11:38:46,514 views 5624 11780 Error: Group not found.
+ERROR 2023-06-15 11:38:46,536 views 5624 11780 Error: User not found.
+ERROR 2023-06-15 11:38:46,616 views 5624 11780 Error: Internal Server Error
+ERROR 2023-06-15 11:38:46,616 log 5624 11780 Internal Server Error: /auth/LeaveGroup/
+ERROR 2023-06-15 11:38:51,452 log 5624 11780 Internal Server Error: /auth/UserInfo/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    user= dependencies.filter_servise_instance(user_id,"MyUser")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Filter' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 173, in post
+    logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+                                                                                                      ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+ERROR 2023-06-15 11:38:51,503 log 5624 11780 Internal Server Error: /auth/UserInfo/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    user= dependencies.filter_servise_instance(user_id,"MyUser")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Filter' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 173, in post
+    logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+                                                                                                      ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+ERROR 2023-06-15 11:38:51,509 log 5624 11780 Internal Server Error: /auth/UserInfo/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    user= dependencies.filter_servise_instance(user_id,"MyUser")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Filter' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 173, in post
+    logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+                                                                                                      ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+ERROR 2023-06-15 11:38:51,513 log 5624 11780 Internal Server Error: /auth/UserInfo/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    user= dependencies.filter_servise_instance(user_id,"MyUser")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Filter' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 173, in post
+    logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+                                                                                                      ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+ERROR 2023-06-15 11:38:51,516 log 5624 11780 Internal Server Error: /auth/UserInfo/
+Traceback (most recent call last):
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 131, in post
+    user= dependencies.filter_servise_instance(user_id,"MyUser")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Filter' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maryam\Documents\GitHub\Enigma_BackEnd\Enigma\MyUser\views.py", line 173, in post
+    logger.error('An error occurred while retrieving user information. User ID: {}, Email: {}'.format(user.user_id, user.email))
+                                                                                                      ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+ERROR 2023-06-15 11:38:51,706 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:38:51,706 views 5624 11780 Error: Test Exception
+ERROR 2023-06-15 11:38:51,707 log 5624 11780 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:38:51,955 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:38:51,955 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:51,962 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:38:51,963 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:51,981 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:38:51,982 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:51,991 views 5624 11780 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 11:38:51,992 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:52,001 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:38:52,001 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:52,011 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:38:52,012 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:38:52,022 views 5624 11780 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:38:52,023 log 5624 11780 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,669 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:39:15,669 views 13528 16588 Error: Test Exception
+ERROR 2023-06-15 11:39:15,669 log 13528 16588 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:39:15,903 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:39:15,903 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,909 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:39:15,909 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,930 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:39:15,931 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,939 views 13528 16588 An error occurred while retrieving group buys. Group ID: 2, User ID: 3
+ERROR 2023-06-15 11:39:15,939 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,949 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:39:15,949 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,958 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 3
+ERROR 2023-06-15 11:39:15,958 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:39:15,966 views 13528 16588 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:39:15,967 log 13528 16588 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:40:57,686 views 332 19196 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:40:57,687 log 332 19196 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:41:31,837 views 18416 1284 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:41:31,838 log 18416 1284 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:41:42,743 views 19080 5476 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:41:42,744 log 19080 5476 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:42:00,824 views 2404 16552 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:42:00,824 log 2404 16552 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:42:20,056 views 18508 14632 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:42:20,057 log 18508 14632 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:42:38,645 views 15424 4076 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:42:38,646 log 15424 4076 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:43:08,188 views 19260 19168 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:43:08,188 log 19260 19168 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:43:32,947 views 16692 17716 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:43:32,947 log 16692 17716 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:43:44,738 views 15836 4748 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:43:44,739 log 15836 4748 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:44:27,215 views 7576 16048 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:44:27,216 log 7576 16048 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:44:44,438 views 18948 10232 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:44:44,438 log 18948 10232 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:45:20,767 views 10960 13340 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:45:20,767 log 10960 13340 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:45:42,939 views 18068 8500 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:45:42,940 log 18068 8500 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:46:06,627 views 10764 6592 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:46:06,628 log 10764 6592 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:46:38,649 views 8036 2640 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:46:38,650 log 8036 2640 Internal Server Error: /buy/UserGroupBuys/
+ERROR 2023-06-15 11:47:39,562 views 6288 11280 An error occurred while retrieving group buys. Group ID: 1
+ERROR 2023-06-15 11:47:39,562 views 6288 11280 Error: Test Exception
+ERROR 2023-06-15 11:47:39,563 log 6288 11280 Internal Server Error: /buy/GetGroupBuys/
+ERROR 2023-06-15 11:47:39,824 views 6288 11280 An error occurred while retrieving group buys. Group ID: 1, User ID: 1
+ERROR 2023-06-15 11:47:39,825 log 6288 11280 Internal Server Error: /buy/UserGroupBuys/

@@ -29,7 +29,6 @@ class Filter(FilterInterface):
             result = Group.objects.filter(userID=user_id)
         elif table == "MyUser":
             result = MyUser.objects.filter(userID=user_id)
-
         return result
 
     def FilterByGroup(self, group_id, table):
@@ -48,3 +47,4 @@ class Filter(FilterInterface):
             result = buy.objects.filter(Buyers__userID=user_id, groupID=group_id).distinct()
         if table == "buy_consumer":
             result= buy.objects.filter(consumers__userID=user_id, groupID=group_id).distinct()
+        return result

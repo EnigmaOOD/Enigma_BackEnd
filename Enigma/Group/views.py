@@ -74,7 +74,7 @@ class AddUserGroup(APIView):
                 try:
                     user = MyUser.objects.get(email=emailUser)
 
-                    members= dependencies.filter_servise_instance.FilterByGroup(group_id,"Members")
+                    members= dependencies.filter_servise_instance.FilterByGroup(group_id, "Members")
 
                     if not members.exists():
                     #if not Members.objects.filter(groupID=group, userID=user).exists():

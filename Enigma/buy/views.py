@@ -56,21 +56,20 @@ class GetGroupBuys(APIView):
 
 class UserGroupBuys(APIView):
     def post(self, request):
+        
         try:
             user_id = request.user.user_id
-
             group_id = request.data.get('groupID')
-            group= dependencies.filter_servise_instance.FilterByGroup(group_id,"Group")
+            
+            group_exists = dependencies.filter_servise_instance.FilterByGroup(group_id,"Group").exists()
             # group_exists = Group.objects.filter(id=group_id).exists()
-
-            if not group.exists():
+            if not group_exists:
                 logger.warning('Group ID not provided. GroupID:{}'.format(group_id))
                 return Response({'error': 'Group ID not provided'}, status=status.HTTP_400_BAD_REQUEST)
 
-            members= dependencies.filter_servise_instance.FilterByGroup(group_id,"Members")
-            #Members.objects.filter(groupID=group_id, userID=user_id).
-
-            if not members.exists():
+            members_exists = dependencies.filter_servise_instance.FilterByGroup(group_id,"Members").exists()
+            #Members.objects.filter(groupID=group_id, userID=user_id).exists()
+            if not members_exists:
                 logger.warning('User is not a member of the group. Group ID: {}, User ID: {}'.format(group_id, user_id))
                 return Response({'error': 'User is not a member of the group.'}, status=status.HTTP_403_FORBIDDEN)
 
@@ -79,14 +78,14 @@ class UserGroupBuys(APIView):
 
             #consumer_buys = buy.objects.filter(consumers__userID=user_id, groupID=group_id).distinct()
             consumer_buys=dependencies.filter_servise_instance.FilterByBoth(user_id, group_id, "buy_consumer")
-
+            
             if 'sort' in request.data:
                 consumer_buys = consumer_buys.order_by('cost')
                 buyer_buys = buyer_buys.order_by('cost')
-
+            
             logger.debug('Buyer buys count: {}'.format(buyer_buys.count()))
             logger.debug('Consumer buys count: {}'.format(consumer_buys.count()))
-
+            
             consumer_serializer = BuySerializer(consumer_buys, many=True)
             buyer_serializer = BuySerializer(buyer_buys, many=True)
 
