@@ -6,8 +6,8 @@ EXPOSE 8000
 WORKDIR /app 
 COPY requirements.txt /app
 RUN python3 -m pip install --upgrade pip
-RUN apt-get update && apt-get install -y \
-    build-essential 
+#RUN apt-get update && apt-get install -y \
+#    build-essential 
  #   gfortran \
 #    liblapack-dev \
 #    libstdc++ \
@@ -25,17 +25,17 @@ ENTRYPOINT ["python3"]
 CMD ["manage.py", "runserver", "0.0.0.0:8000"]
 
 
-FROM builder as dev-envs
-RUN <<EOF
-apt-get update
-apt-get install -y git
-EOF
+#FROM builder as dev-envs
+#RUN <<EOF
+#apt-get update
+#apt-get install -y git
+#EOF
 
-RUN <<EOF
-addgroup -S docker
-adduser -S --shell /bin/bash --ingroup docker vscode
+#RUN <<EOF
+#addgroup -S docker
+#adduser -S --shell /bin/bash --ingroup docker vscode
 
-EOF
+#EOF
 # install Docker tools (cli, buildx, compose)
-COPY --from=gloursdocker/docker / /
-CMD ["manage.py", "runserver", "0.0.0.0:8000"]
+#COPY --from=gloursdocker/docker / /
+#CMD ["manage.py", "runserver", "0.0.0.0:8000"]
